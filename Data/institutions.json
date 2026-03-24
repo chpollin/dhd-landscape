@@ -141,8 +141,8 @@
         ]
       }
     ],
-    "wikidataId": null,
-    "rorId": null,
+    "wikidataId": "Q202442",
+    "rorId": "https://ror.org/00rcxh774",
     "dhPublicationCount": 0,
     "url": null
   },
@@ -159,7 +159,6 @@
     "openPositions": 0,
     "earliestYear": 2009,
     "disciplines": [
-      "Architecture",
       "Computational Linguistics",
       "Computational Literary Studies",
       "Data Science",
@@ -216,8 +215,7 @@
         "status": "filled",
         "temporary": true,
         "disciplines": [
-          "Digital Archaeology",
-          "Architecture"
+          "Digital Archaeology"
         ],
         "methods": [
           "3D Modeling",
@@ -958,8 +956,8 @@
         ]
       }
     ],
-    "wikidataId": null,
-    "rorId": null,
+    "wikidataId": "Q707272",
+    "rorId": "https://ror.org/01c1w6d29",
     "dhPublicationCount": 0,
     "url": null
   },
@@ -1594,8 +1592,8 @@
         ]
       }
     ],
-    "wikidataId": null,
-    "rorId": null,
+    "wikidataId": "Q156598",
+    "rorId": "https://ror.org/05591te55",
     "dhPublicationCount": 0,
     "url": null
   },
@@ -1679,7 +1677,7 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q1631816",
     "rorId": "https://ror.org/02hpadn98",
     "dhPublicationCount": 59,
     "url": "https://www.uni-bielefeld.de"
@@ -1901,7 +1899,7 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q500699",
     "rorId": "https://ror.org/03p14d497",
     "dhPublicationCount": 20,
     "url": "https://www.uni-augsburg.de"
@@ -2182,7 +2180,7 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q309948",
     "rorId": "https://ror.org/04tsk2644",
     "dhPublicationCount": 35,
     "url": "https://www.ruhr-uni-bochum.de"
@@ -2540,7 +2538,7 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q524989",
     "rorId": "https://ror.org/03bnmw459",
     "dhPublicationCount": 55,
     "url": "https://www.uni-potsdam.de/en/"
@@ -2680,7 +2678,7 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q154561",
     "rorId": "https://ror.org/05qpz1x62",
     "dhPublicationCount": 27,
     "url": "https://www.uni-jena.de/en"
@@ -2969,7 +2967,7 @@
     "city": "Augsburg",
     "country": "DE",
     "coordinates": [
-      10.8978,
+      10.8828,
       48.3705
     ],
     "totalPositions": 1,
@@ -3234,8 +3232,8 @@
     "city": "Berlin",
     "country": "DE",
     "coordinates": [
-      13.3933,
-      52.5186
+      13.3858,
+      52.531590381056766
     ],
     "totalPositions": 1,
     "openPositions": 0,
@@ -3285,8 +3283,8 @@
     "city": "Berlin",
     "country": "DE",
     "coordinates": [
-      13.3933,
-      52.5186
+      13.3858,
+      52.50560961894323
     ],
     "totalPositions": 1,
     "openPositions": 0,
@@ -3333,7 +3331,7 @@
     "city": "Köln",
     "country": "DE",
     "coordinates": [
-      6.9603,
+      6.9453000000000005,
       50.9375
     ],
     "totalPositions": 1,
@@ -3415,7 +3413,7 @@
     "city": "Potsdam",
     "country": "DE",
     "coordinates": [
-      13.0657,
+      13.050699999999999,
       52.3906
     ],
     "totalPositions": 1,
@@ -3445,7 +3443,7 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q153006",
     "rorId": "https://ror.org/03bnmw459",
     "dhPublicationCount": 55,
     "url": "https://www.uni-potsdam.de/en/"

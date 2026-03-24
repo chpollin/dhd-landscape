@@ -87,9 +87,43 @@ Inhaltliche Entwicklung des Projekts: Entscheidungen, Fortschritt, Daten, Visual
 8. OpenAlex-Publikationszahlen nicht sichtbar im UI
 9. Keine Aggregations-Views (Charts, Timelines) — nur Karte
 
-### Stand
+### Stand nach Iteration 1
 - 52 Institutionen, 130 Professuren, 282 OpenAlex-Einträge
 - Knowledge-Vault: 5 Dokumente (Data, Design, Research, Requirements, Promptotyping)
 - 2 Journale (Projekt + Promptotyping)
-- Repo: https://github.com/chpollin/dhd-landscape
+
+---
+
+## Promptotyping-Iteration 2: UI-Redesign & Datenbereinigung
+
+### Verifikation von Iteration 1 (Screenshot-Analyse)
+Systematische Analyse des Screenshots ergab 10 konkrete Probleme in 2 Kategorien:
+- **UI**: Filter zu groß, keine Hierarchie, keine Legende, kein Hover, kein Reset
+- **Daten**: AI-Klassifikation ungenau ("Architecture" bei TU Darmstadt), Berlin-Überlappung, Wikidata-Lücken
+
+### Fixes implementiert
+1. **Filter**: Reduziert auf Top-6 Disziplinen + Top-6 Methoden, stärkere Separatoren
+2. **Slide-in Panel** von rechts (ersetzt Bottom-Left Card)
+3. **DH-Publikationszahlen** sichtbar im Panel (aus OpenAlex)
+4. **Wikidata/ROR Links** im Panel
+5. **Hover-Effekt** via `setFeatureState` (hellerer Rand bei Mouseover)
+6. **Fly-To Animation** beim Laden (Zoom 3.5 → 5.5)
+7. **Legende** unten rechts (Farbcodierung + Größenskala)
+8. **Reset-Button** (erscheint bei aktiven Filtern)
+9. **Google Fonts**: Source Serif 4 (Headings) + Inter (Body)
+10. **Stats** nach links verschoben, besser lesbar
+11. **Berlin/Köln/Augsburg/Potsdam**: Offset für co-located Institutionen
+12. **"Architecture"** → "Digital Archaeology" korrigiert (TU Darmstadt)
+13. **Wikidata-Overrides**: 9 zusätzliche IDs manuell ergänzt (Köln, Bamberg, Bielefeld, LMU etc.)
+
+### Stand nach Iteration 2
+- 52 Institutionen, 26 mit Wikidata-IDs, 49 mit ROR-IDs
 - Live: https://chpollin.github.io/dhd-landscape/
+- Repo: https://github.com/chpollin/dhd-landscape
+
+### Offene Punkte für Iteration 3
+1. Aggregations-Views (D3.js Charts: Barchart, Timeline, Disziplin-Matrix)
+2. Use Case "Digitale Editionen" als geführtes Szenario
+3. Mehr Datenquellen (DH-Zentren, CLARIN, DH Course Registry)
+4. JSON-LD Export
+5. Konstellations-View (thematische Verbindungen)

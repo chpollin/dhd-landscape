@@ -452,7 +452,7 @@
     "coordinates": [8.6512, 49.8728],
     "type": "professorship",
     "level": "W2",
-    "disciplines": ["Digital Archaeology", "Architecture"],
+    "disciplines": ["Digital Archaeology"],
     "methods": ["3D Modeling", "GIS"],
     "person": "Brünenberg",
     "status": "filled",

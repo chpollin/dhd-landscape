@@ -140,6 +140,27 @@ const institutions = Object.values(groups).map(g => ({
     url: null
 })).sort((a, b) => b.totalPositions - a.totalPositions);
 
+// --- Offset co-located institutions (same city) ---
+const cityGroups = {};
+institutions.forEach(inst => {
+    const key = `${inst.city}-${inst.country}`;
+    if (!cityGroups[key]) cityGroups[key] = [];
+    cityGroups[key].push(inst);
+});
+Object.values(cityGroups).forEach(group => {
+    if (group.length <= 1) return;
+    const offsetStep = 0.015; // ~1.5km
+    group.forEach((inst, i) => {
+        if (i === 0) return;
+        const angle = (i * 2 * Math.PI) / (group.length);
+        inst.coordinates = [
+            inst.coordinates[0] + offsetStep * Math.cos(angle),
+            inst.coordinates[1] + offsetStep * Math.sin(angle)
+        ];
+    });
+    console.log(`  Offset ${group.length} institutions in ${group[0].city}: ${group.map(g => g.name).join(', ')}`);
+});
+
 // --- Enrich with OpenAlex data ---
 const openalexPath = path.join(__dirname, 'openalex-institutions.json');
 if (fs.existsSync(openalexPath)) {
@@ -185,6 +206,21 @@ if (fs.existsSync(openalexPath)) {
         }
     }
     console.log(`  Matched ${matched}/${institutions.length} institutions with OpenAlex data.`);
+}
+
+// --- Apply Wikidata/ROR overrides ---
+const overridesPath = path.join(__dirname, 'wikidata-overrides.json');
+if (fs.existsSync(overridesPath)) {
+    const overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
+    let overridden = 0;
+    for (const inst of institutions) {
+        const ov = overrides[inst.name];
+        if (ov) {
+            if (ov.wikidataId && !inst.wikidataId) { inst.wikidataId = ov.wikidataId; overridden++; }
+            if (ov.rorId && !inst.rorId) { inst.rorId = ov.rorId; }
+        }
+    }
+    console.log(`  Applied ${overridden} Wikidata/ROR overrides.`);
 }
 
 // --- Load TaDiRAH mapping ---

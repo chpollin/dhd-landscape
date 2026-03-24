@@ -58,7 +58,7 @@
         .f.on-g { background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3); color: #a7f3d0; }
         .f.on-a { background: rgba(245,158,11,0.15); border-color: rgba(245,158,11,0.3); color: #fcd34d; }
         .f .n { font-size: 0.55rem; color: #444; margin-left: 2px; }
-        .f-sep { width: 1px; height: 16px; background: rgba(255,255,255,0.06); margin: 0 2px; }
+        .f-sep { width: 1px; height: 14px; background: rgba(255,255,255,0.15); margin: 0 4px; flex-shrink: 0; }
         #reset-btn {
             padding: 3px 9px; border-radius: 11px;
             border: 1px solid rgba(239,68,68,0.2); background: rgba(239,68,68,0.08);
@@ -141,11 +141,11 @@
 
         /* Stats */
         #stats {
-            position: absolute; bottom: 16px; right: 16px; z-index: 10;
-            font-size: 0.62rem; color: #3a3a3a; text-align: right; line-height: 1.6;
+            position: absolute; bottom: 12px; left: 16px; z-index: 10;
+            font-size: 0.65rem; color: #555; line-height: 1.6;
         }
-        #stats a { color: #444; text-decoration: none; }
-        #stats a:hover { color: #888; }
+        #stats a { color: #666; text-decoration: none; }
+        #stats a:hover { color: #aaa; }
 
         /* Timeline */
         #timeline {
@@ -231,8 +231,8 @@
         countryCount[d.country] = (countryCount[d.country] || 0) + 1;
     });
 
-    const topDisc = Object.entries(discCount).filter(([,c]) => c >= 3).sort((a,b) => b[1]-a[1]).slice(0, 8);
-    const topMeth = Object.entries(methCount).filter(([,c]) => c >= 4).sort((a,b) => b[1]-a[1]).slice(0, 8);
+    const topDisc = Object.entries(discCount).filter(([,c]) => c >= 5).sort((a,b) => b[1]-a[1]).slice(0, 6);
+    const topMeth = Object.entries(methCount).filter(([,c]) => c >= 6).sort((a,b) => b[1]-a[1]).slice(0, 6);
     const countries = Object.entries(countryCount).sort((a,b) => b[1]-a[1]);
     const countryLabels = { DE: 'DE', AT: 'AT', CH: 'CH', LU: 'LU' };
 

@@ -65,3 +65,19 @@ Drei Glyph-Server-Wechsel (demotiles → openmaptiles → openfreemap → MapTil
 
 ### Beobachtung 10: Daten-Enrichment als Promptotyping-Stärke
 Die OpenAlex-Integration (282 Institutionen, Wikidata/ROR-IDs automatisch) zeigt wie Promptotyping Datenerhebung beschleunigt: ein Script geschrieben, sofort ausgeführt, 40/52 Matches. Ohne Promptotyping wäre das manuelle Recherche über Tage.
+
+---
+
+## Iteration 2 — Reflexion
+
+### Beobachtung 11: Screenshot-Analyse als Verification Milestone
+Die systematische Analyse des Screenshots (10 konkrete Probleme identifiziert) zeigt den Wert von visueller Verifikation. Abstrakte Code-Review hätte die meisten Probleme nicht aufgedeckt — die Konfrontation mit dem materiellen Artefakt ist unersetzlich.
+
+### Beobachtung 12: Daten-Qualität sichtbar durch Interface
+Die falsche Klassifikation "Architecture" bei TU Darmstadt wäre in der JSON-Datei nicht aufgefallen. Erst das UI machte den Fehler sichtbar. Das bestätigt: **Promptotyping-Interfaces sind Instrumente zur Datenvalidierung**, nicht nur Darstellung.
+
+### Beobachtung 13: Override-Pattern für Datenqualität
+Die Wikidata-Overrides-Datei (`wikidata-overrides.json`) zeigt ein nützliches Pattern: automatisierte Datenerhebung (OpenAlex) + manuelle Korrekturen in separater Datei. Build-Script merged beides. Das respektiert sowohl die Skalierbarkeit der Automatisierung als auch die Präzision manueller Kuratierung.
+
+### Beobachtung 14: Co-Location als Visualisierungsproblem
+Berlin hat 3 Unis auf denselben Koordinaten — ein Datenproblem, das erst im UI sichtbar wird. Die Offset-Lösung ist ein Hack, kein echtes Clustering. In Iteration 3 könnte ein Mini-Cluster oder eine andere visuelle Lösung besser sein.

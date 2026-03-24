@@ -39,9 +39,44 @@ This journal documents both the development of the DHd Landscape project and the
 - **Verification**: Researcher opened in browser, confirmed "schaut schon sehr gut aus" (looks very good)
 - **Data model established**: JSON with id, name, institution, city, country, coordinates, type, disciplines, methods, url, people, description
 
-### Next Steps (planned)
-1. Collect real data: Patrick Sahle's DH professorship list as primary source
-2. Expand to all known DH centers in DACH
-3. Add more filter dimensions (methods, countries)
-4. Clustering for dense areas
-5. Custom map styling
+---
+
+## 2026-03-24 — Session 1 (continued): Data Collection & Interface Evolution
+
+### Phase: Data Acquisition
+- **Prompt intent**: "Collect Sahle's list and build the dataset"
+- **Process**:
+  1. AI searched for Patrick Sahle's DH professorship list (tried multiple URLs)
+  2. Found active source at https://dhd-blog.org/?p=11018
+  3. WebFetch extracted all 150 entries with metadata (year, city, level, denomination, person, status)
+  4. AI geocoded all ~45 unique cities with coordinates
+  5. AI enriched entries with discipline and method classifications based on denomination titles
+- **Output**: `Data/dh-professorships.json` — ~120 entries with full metadata (some merged/unfilled entries excluded)
+- **Data quality note**: Discipline/method classifications are AI-inferred from denomination titles and known context. These need human verification in feedback cycles.
+
+### Phase: Second Promptotyping-Interface (Major Iteration)
+- **Prompt intent**: "Continue — plan and execute"
+- **Output**: Completely reworked `index.html`:
+  - **Clustering**: MapLibre GL JS native clustering for dense areas (Köln, Berlin, Erlangen etc.)
+  - **Multi-filter**: Discipline filters, method filters, country filters (DE/AT/CH/LU) — all with counts
+  - **Timeline slider**: Filter by year range (2008–2026), shows growth of DH professorships
+  - **Search**: Free-text search across person, city, institution, denomination
+  - **Visual encoding**: Filled positions (purple) vs. open positions (amber), temporary positions with reduced opacity
+  - **Cluster drill-down**: Click cluster → list of entries at that location
+  - **Stats footer**: Live counts, legend, source attribution
+- **Key design decisions**:
+  - Filters use OR logic within a group (show all matching any selected discipline)
+  - Cluster expands on click until zoom > 11, then shows list
+  - Dark academic aesthetic preserved and refined
+
+### Promptotyping Observations
+- The transition from 5 sample points to ~120 real entries required fundamental UI changes (clustering, search, timeline)
+- AI classification of disciplines/methods from denomination titles is a useful but imperfect heuristic — creates a testable hypothesis for the researcher to verify
+- The data acquisition step (web fetch → structured JSON) demonstrates how Promptotyping bridges manual and automated data collection
+
+### Next Steps
+1. Human verification of discipline/method classifications
+2. Add DH centers as second data category (not just professorships)
+3. Explore additional data sources (DHd conference data, institutional websites)
+4. Custom map style (replace desaturated OSM with purpose-built dark theme)
+5. Deploy to GitHub Pages

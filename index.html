@@ -16,7 +16,7 @@
         #header {
             position: absolute; top: 0; left: 0; right: 0; z-index: 10;
             padding: 20px 30px;
-            background: linear-gradient(180deg, rgba(10,10,15,0.9) 0%, rgba(10,10,15,0) 100%);
+            background: linear-gradient(180deg, rgba(10,10,15,0.92) 0%, rgba(10,10,15,0) 100%);
             pointer-events: none;
         }
         #header h1 {
@@ -26,56 +26,117 @@
         #header h1 span { font-weight: 600; }
         #header p { font-size: 0.85rem; color: #888; margin-top: 4px; }
 
-        /* Filter bar */
-        #filters {
-            position: absolute; top: 80px; left: 30px; z-index: 10;
-            display: flex; gap: 8px; flex-wrap: wrap;
+        /* Filter section */
+        #filter-section {
+            position: absolute; top: 78px; left: 30px; right: 30px; z-index: 10;
+        }
+        .filter-group {
+            margin-bottom: 6px;
+        }
+        .filter-group-label {
+            font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+            color: #555; margin-bottom: 4px; display: block;
+        }
+        .filter-row {
+            display: flex; gap: 5px; flex-wrap: wrap;
         }
         .filter-btn {
-            padding: 6px 14px; border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.15);
-            background: rgba(10,10,15,0.7); color: #ccc;
-            font-size: 0.8rem; cursor: pointer;
+            padding: 4px 10px; border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(10,10,15,0.7); color: #999;
+            font-size: 0.72rem; cursor: pointer;
             backdrop-filter: blur(10px);
             transition: all 0.2s ease;
+            white-space: nowrap;
         }
-        .filter-btn:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
-        .filter-btn.active { background: rgba(99,102,241,0.3); border-color: rgba(99,102,241,0.6); color: #fff; }
+        .filter-btn:hover { border-color: rgba(255,255,255,0.35); color: #ddd; }
+        .filter-btn.active { background: rgba(99,102,241,0.25); border-color: rgba(99,102,241,0.5); color: #c7d2fe; }
+        .filter-btn.active-green { background: rgba(16,185,129,0.2); border-color: rgba(16,185,129,0.4); color: #a7f3d0; }
+        .filter-btn .count {
+            font-size: 0.6rem; color: #666; margin-left: 3px;
+        }
+
+        /* Search */
+        #search-box {
+            position: absolute; top: 20px; right: 80px; z-index: 10;
+        }
+        #search-input {
+            padding: 6px 14px; border-radius: 18px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(10,10,15,0.8); color: #ccc;
+            font-size: 0.8rem; width: 220px;
+            backdrop-filter: blur(10px); outline: none;
+        }
+        #search-input::placeholder { color: #555; }
+        #search-input:focus { border-color: rgba(99,102,241,0.5); }
 
         /* Info card */
         #info-card {
             position: absolute; bottom: 30px; left: 30px; z-index: 10;
-            max-width: 380px; padding: 20px;
-            background: rgba(15,15,25,0.9); border: 1px solid rgba(255,255,255,0.1);
+            max-width: 400px; padding: 20px;
+            background: rgba(15,15,25,0.92); border: 1px solid rgba(255,255,255,0.1);
             border-radius: 12px; backdrop-filter: blur(20px);
-            display: none;
+            display: none; max-height: 60vh; overflow-y: auto;
         }
-        #info-card h2 { font-size: 1.1rem; font-weight: 500; margin-bottom: 4px; }
-        #info-card .institution { font-size: 0.85rem; color: #888; margin-bottom: 12px; }
-        #info-card .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
+        #info-card h2 { font-size: 1.05rem; font-weight: 500; margin-bottom: 2px; }
+        #info-card .institution { font-size: 0.8rem; color: #888; margin-bottom: 4px; }
+        #info-card .meta { font-size: 0.72rem; color: #666; margin-bottom: 10px; }
+        #info-card .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
         #info-card .tag {
-            padding: 2px 8px; border-radius: 10px; font-size: 0.7rem;
-            background: rgba(99,102,241,0.15); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.3);
+            padding: 2px 8px; border-radius: 10px; font-size: 0.68rem;
+            background: rgba(99,102,241,0.15); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.25);
         }
         #info-card .tag.method {
-            background: rgba(16,185,129,0.15); color: #6ee7b7; border-color: rgba(16,185,129,0.3);
+            background: rgba(16,185,129,0.12); color: #6ee7b7; border-color: rgba(16,185,129,0.25);
         }
-        #info-card .people { font-size: 0.8rem; color: #aaa; margin-bottom: 8px; }
-        #info-card .description { font-size: 0.8rem; color: #999; line-height: 1.4; margin-bottom: 12px; }
-        #info-card a {
-            font-size: 0.8rem; color: #818cf8; text-decoration: none;
-        }
+        #info-card .person { font-size: 0.82rem; color: #c7d2fe; margin-bottom: 6px; font-weight: 500; }
+        #info-card a { font-size: 0.78rem; color: #818cf8; text-decoration: none; }
         #info-card a:hover { text-decoration: underline; }
         #info-card .close {
             position: absolute; top: 10px; right: 14px;
-            background: none; border: none; color: #666; font-size: 1.2rem; cursor: pointer;
+            background: none; border: none; color: #555; font-size: 1.2rem; cursor: pointer;
+        }
+        #info-card .close:hover { color: #aaa; }
+
+        /* Cluster card — shown when clicking a cluster */
+        #cluster-list {
+            position: absolute; bottom: 30px; left: 30px; z-index: 10;
+            max-width: 400px; padding: 16px;
+            background: rgba(15,15,25,0.92); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px; backdrop-filter: blur(20px);
+            display: none; max-height: 60vh; overflow-y: auto;
+        }
+        #cluster-list h3 { font-size: 0.9rem; font-weight: 500; margin-bottom: 10px; }
+        .cluster-item {
+            padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); cursor: pointer;
+        }
+        .cluster-item:last-child { border-bottom: none; }
+        .cluster-item:hover { background: rgba(99,102,241,0.08); margin: 0 -8px; padding: 8px; border-radius: 6px; }
+        .cluster-item .ci-name { font-size: 0.82rem; color: #ddd; }
+        .cluster-item .ci-meta { font-size: 0.7rem; color: #666; }
+        #cluster-list .close {
+            position: absolute; top: 10px; right: 14px;
+            background: none; border: none; color: #555; font-size: 1.2rem; cursor: pointer;
         }
 
         /* Stats */
         #stats {
-            position: absolute; bottom: 30px; right: 30px; z-index: 10;
-            font-size: 0.75rem; color: #555; text-align: right;
+            position: absolute; bottom: 20px; right: 20px; z-index: 10;
+            font-size: 0.7rem; color: #444; text-align: right; line-height: 1.5;
         }
+        #stats a { color: #555; text-decoration: none; }
+        #stats a:hover { color: #888; }
+
+        /* Timeline */
+        #timeline {
+            position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%);
+            z-index: 10; display: flex; align-items: center; gap: 8px;
+        }
+        #timeline-label { font-size: 0.7rem; color: #555; }
+        #timeline-slider {
+            width: 200px; accent-color: #6366f1;
+        }
+        #timeline-value { font-size: 0.75rem; color: #aaa; min-width: 70px; }
     </style>
 </head>
 <body>
@@ -85,7 +146,23 @@
     <p>Digital Humanities Research in the German-Speaking World</p>
 </div>
 
-<div id="filters"></div>
+<div id="search-box">
+    <input id="search-input" type="text" placeholder="Search person, city, institution...">
+</div>
+
+<div id="filter-section">
+    <div class="filter-group">
+        <span class="filter-group-label">Discipline</span>
+        <div class="filter-row" id="discipline-filters"></div>
+    </div>
+    <div class="filter-group">
+        <span class="filter-group-label">Method</span>
+        <div class="filter-row" id="method-filters"></div>
+    </div>
+    <div class="filter-group">
+        <div class="filter-row" id="country-filters"></div>
+    </div>
+</div>
 
 <div id="map"></div>
 
@@ -93,64 +170,113 @@
     <button class="close" onclick="closeCard()">&times;</button>
     <h2 id="card-name"></h2>
     <div class="institution" id="card-institution"></div>
+    <div class="meta" id="card-meta"></div>
+    <div class="person" id="card-person"></div>
     <div class="tags" id="card-disciplines"></div>
     <div class="tags" id="card-methods"></div>
-    <div class="people" id="card-people"></div>
-    <div class="description" id="card-description"></div>
-    <a id="card-url" href="#" target="_blank">Visit website &rarr;</a>
 </div>
 
-<div id="stats" id="stats"></div>
+<div id="cluster-list">
+    <button class="close" onclick="closeCluster()">&times;</button>
+    <h3 id="cluster-title"></h3>
+    <div id="cluster-items"></div>
+</div>
+
+<div id="timeline">
+    <span id="timeline-label">Since</span>
+    <input type="range" id="timeline-slider" min="2008" max="2026" value="2008" step="1">
+    <span id="timeline-value">2008–2026</span>
+</div>
+
+<div id="stats"></div>
 
 <script>
 (async function() {
-    // Load data
-    const response = await fetch('Data/sample.json');
+    const response = await fetch('Data/dh-professorships.json');
     const data = await response.json();
 
-    // Convert to GeoJSON
+    // Collect unique values for filters
+    const disciplineCounts = {};
+    const methodCounts = {};
+    const countryCounts = {};
+
+    data.forEach(d => {
+        d.disciplines.forEach(disc => { disciplineCounts[disc] = (disciplineCounts[disc] || 0) + 1; });
+        d.methods.forEach(m => { methodCounts[m] = (methodCounts[m] || 0) + 1; });
+        countryCounts[d.country] = (countryCounts[d.country] || 0) + 1;
+    });
+
+    // Top disciplines and methods (show those with >= 3 entries)
+    const topDisciplines = Object.entries(disciplineCounts)
+        .filter(([,c]) => c >= 3)
+        .sort((a,b) => b[1] - a[1])
+        .map(([name, count]) => ({ name, count }));
+
+    const topMethods = Object.entries(methodCounts)
+        .filter(([,c]) => c >= 3)
+        .sort((a,b) => b[1] - a[1])
+        .map(([name, count]) => ({ name, count }));
+
+    const countries = Object.entries(countryCounts)
+        .sort((a,b) => b[1] - a[1])
+        .map(([name, count]) => ({ name, count }));
+
+    const countryLabels = { DE: 'Germany', AT: 'Austria', CH: 'Switzerland', LU: 'Luxembourg' };
+
+    // Build filter buttons
+    const activeFilters = { disciplines: new Set(), methods: new Set(), countries: new Set() };
+
+    function buildFilterButtons(items, containerId, filterSet, cssClass) {
+        const el = document.getElementById(containerId);
+        items.forEach(item => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            const label = containerId === 'country-filters' ? (countryLabels[item.name] || item.name) : item.name;
+            btn.innerHTML = `${label}<span class="count">${item.count}</span>`;
+            btn.onclick = () => {
+                if (filterSet.has(item.name)) {
+                    filterSet.delete(item.name);
+                    btn.classList.remove('active', 'active-green');
+                } else {
+                    filterSet.add(item.name);
+                    btn.classList.add(cssClass === 'green' ? 'active-green' : 'active');
+                }
+                applyFilters();
+            };
+            el.appendChild(btn);
+        });
+    }
+
+    buildFilterButtons(topDisciplines, 'discipline-filters', activeFilters.disciplines, 'blue');
+    buildFilterButtons(topMethods, 'method-filters', activeFilters.methods, 'green');
+    buildFilterButtons(countries, 'country-filters', activeFilters.countries, 'blue');
+
+    // GeoJSON conversion
     function toGeoJSON(entries) {
         return {
             type: 'FeatureCollection',
             features: entries.map(e => ({
                 type: 'Feature',
                 geometry: { type: 'Point', coordinates: e.coordinates },
-                properties: { ...e }
+                properties: {
+                    id: e.id,
+                    name: e.name,
+                    institution: e.institution,
+                    city: e.city,
+                    country: e.country,
+                    year: e.year,
+                    level: e.level,
+                    person: e.person || '',
+                    status: e.status,
+                    temporary: e.temporary,
+                    disciplines: JSON.stringify(e.disciplines),
+                    methods: JSON.stringify(e.methods)
+                }
             }))
         };
     }
 
-    // Extract unique disciplines and methods for filters
-    const allDisciplines = [...new Set(data.flatMap(d => d.disciplines))].sort();
-    const allTypes = [...new Set(data.map(d => d.type))];
-
-    // Build filter buttons
-    const filtersEl = document.getElementById('filters');
-    let activeFilter = null;
-
-    // Type filters
-    allTypes.forEach(type => {
-        const btn = document.createElement('button');
-        btn.className = 'filter-btn';
-        btn.textContent = type === 'center' ? 'Centers' : 'Professorships';
-        btn.dataset.filterType = 'type';
-        btn.dataset.filterValue = type;
-        btn.onclick = () => toggleFilter(btn);
-        filtersEl.appendChild(btn);
-    });
-
-    // Discipline filters
-    allDisciplines.forEach(disc => {
-        const btn = document.createElement('button');
-        btn.className = 'filter-btn';
-        btn.textContent = disc;
-        btn.dataset.filterType = 'discipline';
-        btn.dataset.filterValue = disc;
-        btn.onclick = () => toggleFilter(btn);
-        filtersEl.appendChild(btn);
-    });
-
-    // Initialize map
+    // Map
     const map = new maplibregl.Map({
         container: 'map',
         style: {
@@ -168,154 +294,285 @@
                 type: 'raster',
                 source: 'osm-tiles',
                 paint: {
-                    'raster-saturation': -0.8,
-                    'raster-brightness-max': 0.4,
-                    'raster-contrast': 0.2
+                    'raster-saturation': -0.85,
+                    'raster-brightness-max': 0.35,
+                    'raster-contrast': 0.3
                 }
             }],
             glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf'
         },
-        center: [10.5, 49.5],
-        zoom: 5.2,
+        center: [10.5, 50.0],
+        zoom: 5.5,
         pitch: 0,
         maxBounds: [[-5, 43], [25, 57]]
     });
 
     map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
+    let currentFiltered = data;
+
     map.on('load', () => {
-        // Add data source
+        // Clustered source
         map.addSource('dh-points', {
             type: 'geojson',
-            data: toGeoJSON(data)
+            data: toGeoJSON(data),
+            cluster: true,
+            clusterMaxZoom: 12,
+            clusterRadius: 45
         });
 
-        // Glow layer (larger, blurred)
+        // Cluster circles
         map.addLayer({
-            id: 'dh-glow',
+            id: 'clusters',
             type: 'circle',
             source: 'dh-points',
+            filter: ['has', 'point_count'],
             paint: {
-                'circle-radius': 20,
+                'circle-color': [
+                    'step', ['get', 'point_count'],
+                    'rgba(99,102,241,0.6)', 5,
+                    'rgba(99,102,241,0.7)', 15,
+                    'rgba(99,102,241,0.8)'
+                ],
+                'circle-radius': [
+                    'step', ['get', 'point_count'],
+                    18, 5, 24, 15, 32
+                ],
+                'circle-stroke-width': 2,
+                'circle-stroke-color': 'rgba(129,140,248,0.4)'
+            }
+        });
+
+        // Cluster glow
+        map.addLayer({
+            id: 'cluster-glow',
+            type: 'circle',
+            source: 'dh-points',
+            filter: ['has', 'point_count'],
+            paint: {
                 'circle-color': '#6366f1',
-                'circle-opacity': 0.15,
+                'circle-radius': [
+                    'step', ['get', 'point_count'],
+                    30, 5, 40, 15, 55
+                ],
+                'circle-opacity': 0.08,
+                'circle-blur': 1
+            }
+        }, 'clusters');
+
+        // Cluster count label
+        map.addLayer({
+            id: 'cluster-count',
+            type: 'symbol',
+            source: 'dh-points',
+            filter: ['has', 'point_count'],
+            layout: {
+                'text-field': '{point_count_abbreviated}',
+                'text-font': ['Open Sans Regular'],
+                'text-size': 12
+            },
+            paint: {
+                'text-color': '#fff'
+            }
+        });
+
+        // Individual points — glow
+        map.addLayer({
+            id: 'point-glow',
+            type: 'circle',
+            source: 'dh-points',
+            filter: ['!', ['has', 'point_count']],
+            paint: {
+                'circle-radius': 16,
+                'circle-color': '#6366f1',
+                'circle-opacity': 0.12,
                 'circle-blur': 1
             }
         });
 
-        // Main point layer
+        // Individual points
         map.addLayer({
             id: 'dh-points',
             type: 'circle',
             source: 'dh-points',
+            filter: ['!', ['has', 'point_count']],
             paint: {
                 'circle-radius': [
                     'case',
-                    ['==', ['get', 'type'], 'center'], 8,
+                    ['==', ['get', 'status'], 'open'], 5,
                     6
                 ],
                 'circle-color': [
                     'case',
-                    ['==', ['get', 'type'], 'center'], '#6366f1',
-                    '#10b981'
+                    ['==', ['get', 'status'], 'open'], '#f59e0b',
+                    '#6366f1'
                 ],
-                'circle-stroke-width': 2,
+                'circle-stroke-width': 1.5,
                 'circle-stroke-color': [
                     'case',
-                    ['==', ['get', 'type'], 'center'], '#818cf8',
-                    '#34d399'
+                    ['==', ['get', 'status'], 'open'], '#fbbf24',
+                    '#818cf8'
                 ],
-                'circle-opacity': 0.9
+                'circle-opacity': [
+                    'case',
+                    ['==', ['get', 'temporary'], true], 0.6,
+                    0.9
+                ]
             }
         });
 
-        // Label layer
+        // Labels for individual points
         map.addLayer({
             id: 'dh-labels',
             type: 'symbol',
             source: 'dh-points',
+            filter: ['!', ['has', 'point_count']],
+            minzoom: 7,
             layout: {
                 'text-field': ['get', 'city'],
-                'text-size': 11,
-                'text-offset': [0, 1.8],
+                'text-size': 10,
+                'text-offset': [0, 1.6],
                 'text-anchor': 'top',
-                'text-font': ['Open Sans Regular']
+                'text-font': ['Open Sans Regular'],
+                'text-allow-overlap': false
             },
             paint: {
-                'text-color': '#aaa',
-                'text-halo-color': 'rgba(10,10,15,0.8)',
+                'text-color': '#777',
+                'text-halo-color': 'rgba(10,10,15,0.9)',
                 'text-halo-width': 2
             }
         });
 
-        updateStats(data.length);
+        updateStats(data.length, data.length);
 
-        // Click interaction
+        // Click on cluster → zoom in or show list
+        map.on('click', 'clusters', async (e) => {
+            const features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
+            const clusterId = features[0].properties.cluster_id;
+            const zoom = await map.getSource('dh-points').getClusterExpansionZoom(clusterId);
+
+            if (zoom > 11) {
+                // Show cluster list instead of zooming further
+                const leaves = await getClusterLeaves(clusterId);
+                showClusterList(features[0].geometry.coordinates, leaves);
+            } else {
+                map.flyTo({ center: features[0].geometry.coordinates, zoom: zoom + 1, duration: 600 });
+            }
+        });
+
+        // Click on individual point
         map.on('click', 'dh-points', (e) => {
             const props = e.features[0].properties;
             showCard(props);
-            map.flyTo({ center: e.lngLat, zoom: Math.max(map.getZoom(), 7), duration: 800 });
+            closeCluster();
+            map.flyTo({ center: e.lngLat, zoom: Math.max(map.getZoom(), 8), duration: 600 });
         });
 
+        map.on('mouseenter', 'clusters', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.on('mouseleave', 'clusters', () => { map.getCanvas().style.cursor = ''; });
         map.on('mouseenter', 'dh-points', () => { map.getCanvas().style.cursor = 'pointer'; });
         map.on('mouseleave', 'dh-points', () => { map.getCanvas().style.cursor = ''; });
     });
 
-    // Filter logic
-    function toggleFilter(btn) {
-        if (btn.classList.contains('active')) {
-            btn.classList.remove('active');
-            activeFilter = null;
-        } else {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            activeFilter = { type: btn.dataset.filterType, value: btn.dataset.filterValue };
-        }
-        applyFilter();
+    // Helper to get cluster leaves
+    function getClusterLeaves(clusterId) {
+        return new Promise((resolve) => {
+            map.getSource('dh-points').getClusterLeaves(clusterId, 100, 0, (err, features) => {
+                resolve(features || []);
+            });
+        });
     }
 
-    function applyFilter() {
-        let filtered;
-        if (!activeFilter) {
-            filtered = data;
-        } else if (activeFilter.type === 'type') {
-            filtered = data.filter(d => d.type === activeFilter.value);
-        } else if (activeFilter.type === 'discipline') {
-            filtered = data.filter(d => d.disciplines.includes(activeFilter.value));
+    // Filter logic
+    let searchTerm = '';
+    let yearMin = 2008;
+
+    function applyFilters() {
+        let filtered = data;
+
+        // Year filter
+        filtered = filtered.filter(d => d.year >= yearMin);
+
+        // Discipline filter (OR within group)
+        if (activeFilters.disciplines.size > 0) {
+            filtered = filtered.filter(d =>
+                d.disciplines.some(disc => activeFilters.disciplines.has(disc))
+            );
         }
 
-        map.getSource('dh-points').setData(toGeoJSON(filtered));
-        updateStats(filtered.length);
+        // Method filter (OR within group)
+        if (activeFilters.methods.size > 0) {
+            filtered = filtered.filter(d =>
+                d.methods.some(m => activeFilters.methods.has(m))
+            );
+        }
 
-        // Fly to fit filtered points
+        // Country filter
+        if (activeFilters.countries.size > 0) {
+            filtered = filtered.filter(d => activeFilters.countries.has(d.country));
+        }
+
+        // Search filter
+        if (searchTerm) {
+            const term = searchTerm.toLowerCase();
+            filtered = filtered.filter(d =>
+                d.name.toLowerCase().includes(term) ||
+                d.institution.toLowerCase().includes(term) ||
+                d.city.toLowerCase().includes(term) ||
+                (d.person && d.person.toLowerCase().includes(term))
+            );
+        }
+
+        currentFiltered = filtered;
+        map.getSource('dh-points').setData(toGeoJSON(filtered));
+        updateStats(filtered.length, data.length);
+        closeCard();
+        closeCluster();
+
+        // Fly to fit if filtered
         if (filtered.length > 0 && filtered.length < data.length) {
             const bounds = new maplibregl.LngLatBounds();
             filtered.forEach(d => bounds.extend(d.coordinates));
-            map.fitBounds(bounds, { padding: 100, duration: 800 });
-        } else if (filtered.length === data.length) {
-            map.flyTo({ center: [10.5, 49.5], zoom: 5.2, duration: 800 });
+            map.fitBounds(bounds, { padding: 80, duration: 700, maxZoom: 10 });
         }
     }
+
+    // Search
+    document.getElementById('search-input').addEventListener('input', (e) => {
+        searchTerm = e.target.value;
+        applyFilters();
+    });
+
+    // Timeline
+    const slider = document.getElementById('timeline-slider');
+    const timelineValue = document.getElementById('timeline-value');
+    slider.addEventListener('input', () => {
+        yearMin = parseInt(slider.value);
+        timelineValue.textContent = yearMin === 2008 ? '2008–2026' : `${yearMin}–2026`;
+        applyFilters();
+    });
 
     // Info card
     function showCard(props) {
         const card = document.getElementById('info-card');
         document.getElementById('card-name').textContent = props.name;
-        document.getElementById('card-institution').textContent = props.institution + ' · ' + props.city + ', ' + props.country;
+        document.getElementById('card-institution').textContent = props.institution;
 
-        const discEl = document.getElementById('card-disciplines');
+        const meta = [];
+        if (props.year) meta.push(props.year);
+        if (props.level) meta.push(props.level);
+        if (props.city) meta.push(props.city + ', ' + props.country);
+        if (props.status === 'open') meta.push('⬡ Open');
+        if (props.temporary === true || props.temporary === 'true') meta.push('Temporary');
+        document.getElementById('card-meta').textContent = meta.join(' · ');
+
+        document.getElementById('card-person').textContent = props.person || '';
+
         const disciplines = typeof props.disciplines === 'string' ? JSON.parse(props.disciplines) : props.disciplines;
-        discEl.innerHTML = disciplines.map(d => `<span class="tag">${d}</span>`).join('');
+        document.getElementById('card-disciplines').innerHTML = disciplines.map(d => `<span class="tag">${d}</span>`).join('');
 
-        const methEl = document.getElementById('card-methods');
         const methods = typeof props.methods === 'string' ? JSON.parse(props.methods) : props.methods;
-        methEl.innerHTML = methods.map(m => `<span class="tag method">${m}</span>`).join('');
-
-        const people = typeof props.people === 'string' ? JSON.parse(props.people) : props.people;
-        document.getElementById('card-people').textContent = people.join(', ');
-
-        document.getElementById('card-description').textContent = props.description;
-        document.getElementById('card-url').href = props.url;
+        document.getElementById('card-methods').innerHTML = methods.map(m => `<span class="tag method">${m}</span>`).join('');
 
         card.style.display = 'block';
     }
@@ -324,8 +581,46 @@
         document.getElementById('info-card').style.display = 'none';
     };
 
-    function updateStats(count) {
-        document.getElementById('stats').textContent = count + ' entries · DHd Landscape 2026';
+    // Cluster list
+    function showClusterList(center, features) {
+        const el = document.getElementById('cluster-list');
+        const items = document.getElementById('cluster-items');
+        const city = features[0]?.properties?.city || 'Location';
+        document.getElementById('cluster-title').textContent = `${city} — ${features.length} entries`;
+
+        items.innerHTML = features.map(f => {
+            const p = f.properties;
+            return `<div class="cluster-item" data-id="${p.id}">
+                <div class="ci-name">${p.name}</div>
+                <div class="ci-meta">${p.person ? p.person + ' · ' : ''}${p.institution} · ${p.year}</div>
+            </div>`;
+        }).join('');
+
+        // Click handler for cluster items
+        items.querySelectorAll('.cluster-item').forEach(item => {
+            item.onclick = () => {
+                const id = item.dataset.id;
+                const feature = features.find(f => f.properties.id === id);
+                if (feature) showCard(feature.properties);
+            };
+        });
+
+        el.style.display = 'block';
+        closeCard();
+    }
+
+    window.closeCluster = function() {
+        document.getElementById('cluster-list').style.display = 'none';
+    };
+
+    function updateStats(shown, total) {
+        const filledCount = currentFiltered.filter(d => d.status === 'filled').length;
+        const openCount = currentFiltered.filter(d => d.status === 'open').length;
+        const cities = new Set(currentFiltered.map(d => d.city)).size;
+        document.getElementById('stats').innerHTML =
+            `${shown} of ${total} professorships · ${cities} cities<br>` +
+            `<span style="color:#818cf8">●</span> filled (${filledCount}) · <span style="color:#f59e0b">●</span> open (${openCount})<br>` +
+            `<a href="https://dhd-blog.org/?p=11018" target="_blank">Source: Patrick Sahle</a> · <a href="https://github.com/chpollin/dhd-landscape" target="_blank">GitHub</a>`;
     }
 })();
 </script>

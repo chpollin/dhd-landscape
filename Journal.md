@@ -1,18 +1,47 @@
-# Journal
+# Promptotyping Journal
 
-## 2026-03-24 — Project Kickoff
+This journal documents both the development of the DHd Landscape project and the Promptotyping process itself — how AI-assisted prompting, iteration, and verification shape the research output.
 
-**Decision**: Start the DHd Landscape project — an interactive map of the DH research landscape in the DACH region.
+---
 
-**Scope**: DH centers and professorships, filterable by discipline, method, and type.
+## 2026-03-24 — Session 1: Ideation & First Prototype
 
-**Tech choices**:
-- MapLibre GL JS via CDN (WebGL vector maps, no build step)
-- Vanilla JS, static HTML — deployable to GitHub Pages without any tooling
-- Data as JSON files in `Data/`
+### Promptotyping Context
+- **Setting**: Conversation between researcher and Claude (Opus 4.6) in Claude Code
+- **Knowledge sources used**: Researcher's domain knowledge (DH community, key figures, institutions), Obsidian Research Vault (curated second brain with stable cross-project knowledge)
+- **Method**: Conversational ideation → structured planning → immediate prototyping
 
-**Data source priority**: Patrick Sahle's DH professorship list as starting point.
+### Phase: Ideation
+- **Prompt intent**: "I want to study DH labs in the DACH region and create an information visualization"
+- **AI contribution**: Structured the idea into scope, data sources, tech options, and phases. Proposed MapLibre GL JS over Leaflet for aesthetic/animation capabilities.
+- **Human decision**: Vanilla JS, no frameworks, no npm — must be deployable to GitHub Pages without build steps. Named the project "DHd Landscape" (targeting the DHd community directly).
 
-**Dual purpose**: This repo also serves as a documented example of the Promptotyping method.
+### Phase: Project Setup (Promptotyping Structure)
+- **Prompt intent**: "Create the project structure following the Promptotyping method"
+- **Repo structure created**:
+  - `Knowledge/` — Obsidian-style research vault (Design.md, Data.md, Research.md)
+  - `Data/` — Datasets
+  - `Feedback/` — For verification cycles
+  - `Journal.md` — This file (dual-purpose: project + method documentation)
+  - `CLAUDE.md` — AI context file
+- **Methodological note**: Two knowledge layers identified:
+  1. **Promptotyping Vault** (in-repo) — project-specific knowledge
+  2. **Obsidian Research Vault** (external) — curated, stable, cross-project knowledge base (UI patterns, technologies, domain knowledge). Higher reliability than web search because human-curated.
 
-**Next steps**: Build first MapLibre prototype with sample data points (Graz, Berlin, Wuppertal), then systematically collect data from Sahle's list.
+### Phase: First Promptotyping-Interface
+- **Prompt intent**: "Build the prototype"
+- **Output**: `index.html` — a fully functional MapLibre GL JS map with:
+  - 5 sample DH locations (Graz, Berlin, Wuppertal, Trier, Basel)
+  - Dark academic aesthetic (desaturated OSM tiles, glow effects)
+  - Filter buttons by type (center/professorship) and discipline
+  - Click-to-inspect info cards with disciplines, methods, people
+  - Fly-to animations on filter and click
+- **Verification**: Researcher opened in browser, confirmed "schaut schon sehr gut aus" (looks very good)
+- **Data model established**: JSON with id, name, institution, city, country, coordinates, type, disciplines, methods, url, people, description
+
+### Next Steps (planned)
+1. Collect real data: Patrick Sahle's DH professorship list as primary source
+2. Expand to all known DH centers in DACH
+3. Add more filter dimensions (methods, countries)
+4. Clustering for dense areas
+5. Custom map styling

@@ -122,8 +122,150 @@ Systematische Analyse des Screenshots ergab 10 konkrete Probleme in 2 Kategorien
 - Repo: https://github.com/chpollin/dhd-landscape
 
 ### Offene Punkte für Iteration 3
-1. Aggregations-Views (D3.js Charts: Barchart, Timeline, Disziplin-Matrix)
+1. ~~Aggregations-Views (D3.js Charts: Barchart, Timeline, Disziplin-Matrix)~~ ✅
 2. Use Case "Digitale Editionen" als geführtes Szenario
 3. Mehr Datenquellen (DH-Zentren, CLARIN, DH Course Registry)
 4. JSON-LD Export
 5. Konstellations-View (thematische Verbindungen)
+
+---
+
+## Promptotyping-Iteration 3: Aggregation Views & Timeline Animation
+
+### Architektur-Entscheidungen
+- **D3.js v7** via CDN für alle Visualisierungen
+- **Separate `charts.js`** Datei statt alles in index.html (Wartbarkeit bei ~540 Zeilen index.html)
+- **`DHdCharts` globales Modul** mit `init()`, `update()`, `show()`, `hide()` API
+- **Tab-Navigation** unter der Filter-Leiste: Karte | Timeline | Institutionen | Disziplinen
+- **Split-Layout**: Map 45% oben, Chart-Panel 55% unten (statt Tabs die Karte ersetzen)
+- **Coordinated Views**: `applyFilters()` aktualisiert Map UND aktiven Chart gleichzeitig
+- **Konsistente Disziplin-Farbpalette** über alle Charts (15 Named Colors + d3.schemeSet3 Fallback)
+
+### Implementierte Charts
+
+#### 1. Stacked Area Chart (Timeline)
+- Kumulatives Wachstum der DH-Landschaft 2008–2026
+- `d3.stack()` + `d3.area()` mit `curveMonotoneX`
+- Toggle: nach Disziplin (Top-8) oder nach Land (DE/AT/CH/LU)
+- Hover: vertikale Linie + Tooltip mit Jahres-Breakdown
+- Legende unterhalb des Charts
+- Reagiert auf alle Filter
+
+#### 2. Horizontaler Barchart (Institutionen)
+- Alle gefilterten Institutionen, sortiert nach Stellenanzahl
+- Stacked Segments nach Disziplin-Farben
+- Klick → Map fly-to + Detail-Panel öffnen
+- Institutionsnamen als Y-Achse (bis 28 Zeichen, dann Ellipsis)
+- Scrollbar bei vielen Institutionen
+
+#### 3. Disziplin-Heatmap (Matrix)
+- Zeilen = Institutionen, Spalten = Disziplinen
+- Zellen-Intensität = Anzahl Positionen in Disziplin
+- Farbskala: `#1a1a2e` → `#6366f1` (dunkel-indigo Gradient)
+- Crosshair-Hover (ganze Zeile + Spalte hervorgehoben)
+- Toggle: Sortierung nach Häufigkeit oder A–Z
+- Klick → Map fly-to + Detail-Panel
+
+### Timeline-Animation
+- Play/Pause-Button neben Timeline-Slider (Unicode ▶/⏸)
+- `setInterval(800ms)` pro Jahr, auto-stopp bei 2026
+- Reset auf 2008 wenn am Ende Play gedrückt wird
+
+### Bug-Fixes nach Code-Audit
+- Script-Loading-Order: `charts.js` vor Hauptscript laden (sonst undefined bei frühem Tab-Klick)
+- Null-Checks: `inst.disciplines || []`, `pos.disciplines?.[0]`
+- Empty-State: "Keine Institutionen entsprechen den Filtern" bei 0 Ergebnissen
+- Tooltip: Duplikat-Prävention bei `initTooltip()`, Boundary-Clamping
+
+### Stand nach Iteration 3
+- 52 Institutionen mit 4 Views: Karte + 3 D3-Charts
+- Tab-Navigation + Split-Layout + Coordinated Filtering
+- Timeline-Animation mit Play/Pause
+- Live: https://chpollin.github.io/dhd-landscape/
+
+### Offene Punkte für Iteration 4
+1. ~~Landing-Sektion~~ → Map-as-Canvas mit Narrative Mode ✅
+2. ~~UI-Redesign~~ → 3-Mode-Architektur + neues Design-System ✅
+3. Use Case "Digitale Editionen" als geführtes Szenario
+4. Konstellations-View (thematische Verbindungen via deck.gl ArcLayer)
+5. Mehr Datenquellen (CLARIN, DH Course Registry, DBLP)
+6. JSON-LD Export
+
+---
+
+## Promptotyping-Iteration 4: Map-as-Canvas — Drei Modi, eine Karte
+
+### Zentrale Design-Entscheidung: Karte als Canvas
+
+Statt einer separaten Landing-Page oder einem Split-Layout wurde ein innovativer Ansatz gewählt: **Die Karte IST das gesamte Interface.** Sie bleibt immer 100% Viewport (position: fixed), und drei Modi wechseln, was über der Karte schwebt.
+
+Hintergrund: Kritische UI-Analyse nach Iteration 3 zeigte, dass die Karte als Startseite überfordert (25+ Buttons, kein Onboarding). Der User wollte keine konventionelle Landing-Page, sondern etwas Innovatives — alles sollte in und auf der Karte passieren.
+
+### Architektur
+
+**3 Modi:**
+1. **Narrative** — Scrollytelling auf der Karte: 7 Stationen (Intro → Pioniere → Köln → Berlin → Österreich → Timeline → Explore-CTA), glassmorphische Karten in linker Spalte, `IntersectionObserver` triggert `map.flyTo()` und Mini-Visualisierungen
+2. **Explore** — Freie Exploration: Floating draggable D3-Chart-Panels über der Karte, collapsible Filter-Sidebar (320px), Panel-Toggle-Buttons, Stats-Bar
+3. **Overview** — HUD-Dashboard: Animierte Zähler (52 Institutionen, 130 Professuren etc.), Country-Bars, Disziplin-Chart, Mini-Area-Chart als schwebende Widgets
+
+**Shared Infrastructure:** Map-Instanz, Event-Bus, Filter-Logik, Detail-Panel, Suche, Farbpaletten — alles mode-übergreifend.
+
+### Code-Architektur (Refactoring)
+
+Aufspaltung von einer monolithischen `index.html` in 5 Dateien:
+- `index.html` — Nur HTML-Struktur (263 Zeilen)
+- `styles.css` — Design-System mit CSS Custom Properties (478 Zeilen)
+- `app.js` — Shared Infrastructure: Map, Filter, Panel, Event-Bus (449 Zeilen)
+- `modes.js` — ModeController + 3 Mode-Implementierungen (741 Zeilen)
+- `charts.js` — D3-Charts mit `renderTo()` für Floating Panels (548 Zeilen)
+
+### Design-System
+
+- **Hintergrund**: `#1a1a1f` (wärmer als vorheriges `#0a0a0f`)
+- **Text**: `#f0f0f2` (primary), `#a1a1a8` (secondary, WCAG AA 6.3:1)
+- **Marker**: Indigo `#818cf8` (besetzt), Amber `#fbbf24` (offen) — Farbton-Wechsel statt nur Helligkeitsunterschied → colorblind-safe
+- **Minimum Font**: 0.75rem (12px) — vorher teilweise 0.55rem (8.8px)
+- **Glassmorphismus**: `backdrop-filter: blur(24px)` mit `rgba(26,26,31,0.85)`
+- **Typografie**: Source Serif 4 (Titel) + Inter (UI), Scale von 0.75rem bis 3rem
+
+### Narrative Stationen (Scrollytelling)
+
+| Station | Map-State | Filter | Mini-Viz |
+|---------|----------|--------|----------|
+| Intro | zoom 5.5, DACH-Überblick | alle | Animierte Zähler |
+| Pioniere | zoom 6.0 | ≤2012 | Mini-Timeline |
+| Köln | zoom 12 | city=Köln | Disziplin-Donut |
+| Berlin | zoom 11 | city=Berlin | Vergleichs-Balken |
+| Österreich | zoom 7 | country=AT | Summary-Cards |
+| Timeline | zoom 5.5 | alle | Stacked Area Chart |
+| Explore-CTA | zoom 5.5 | alle | CTA-Button |
+
+### Kritische Analyse
+
+**Was funktioniert:**
+- Narrative Mode gibt neuen Nutzern einen geführten Einstieg
+- Mode-Switcher ist kompakt und klar
+- Detail-Panel (420px) hat deutlich mehr Breathing Room
+- Marker-Farben Indigo/Amber sind klar unterscheidbar
+- Karte bleibt immer im Kontext — kein Kontext-Verlust beim View-Wechsel
+
+**Was noch nicht optimal ist:**
+- Farbschema insgesamt zu dunkel/monoton — DHd-Community ist bunt, innovativ, offen
+- Farbkodierung hat noch keine tiefe Semantik (Disziplin→Farbe nur in Charts, nicht auf Karte)
+- Nur 2 von 10 geplanten Datenquellen integriert (Sahle + OpenAlex)
+- Mini-Vizs in Narrative-Stationen können poliert werden
+
+### Stand nach Iteration 4
+- 5 Dateien statt 2 (bessere Wartbarkeit)
+- 3 Modi: Narrative, Explore, Overview
+- Neues Design-System mit CSS Custom Properties
+- WCAG AA Kontraste, min 0.75rem Fonts
+- Live: https://chpollin.github.io/dhd-landscape/
+
+### Offene Punkte für Iteration 5
+1. **Farbschema**: Buntere, semantisch kodierte Farben (Disziplin→Farbe durchgängig)
+2. **Datenquellen**: CLARIN Centre Registry, Wikidata-Reconciliation, DH Course Registry, DBLP
+3. **Narrative-Polish**: Mini-Vizs verfeinern, mehr Stationen, Texte erweitern
+4. Use Case "Digitale Editionen"
+5. JSON-LD Export
+6. Konstellations-View

@@ -19,21 +19,33 @@ No individual names are shown — the focus is on **institutional profiles**.
 
 ## Features
 
-- Interactive map (MapLibre GL JS) with dark academic aesthetic
-- Filter by **discipline** (Digital Humanities, Digital History, Computational Literary Studies, ...)
-- Filter by **method** (NLP, TEI/XML, GIS, Machine Learning, ...)
-- Filter by **country** (Germany, Austria, Switzerland)
-- **Timeline slider** (2008–2026) showing the growth of DH
+### Three Interaction Modes (Map-as-Canvas)
+The map is always the canvas — three modes change what floats above it:
+
+- **≡ Narrative Mode**: Scroll-driven storytelling through 7 stations (Köln, Berlin, Wien...) with fly-to animations and mini-visualizations
+- **◎ Explore Mode**: Free exploration with floating, draggable D3.js chart panels, collapsible filter sidebar, and stats bar
+- **⊞ Overview Mode**: HUD dashboard with animated counters, country distribution bars, discipline chart, and mini timeline
+
+### Interactive Map
+- MapLibre GL JS with dark academic aesthetic
+- Filter by **discipline**, **method**, **country**, and **time period** (2008–2026)
 - **Free-text search** across institutions, cities, and topics
-- Institution profile cards with position counts, disciplines, methods
-- Marker size encodes number of DH positions
+- Institution profile panel (420px) with stats, disciplines, methods, Wikidata/ROR links
+- Marker color: Indigo (filled) / Amber (open positions) — colorblind-safe
+
+### D3.js Visualizations
+- **Stacked Area Chart**: DH landscape growth since 2008 (by discipline or country)
+- **Horizontal Barchart**: Institutions ranked by position count, color-coded by discipline
+- **Discipline Heatmap**: Institutions × Disciplines matrix with crosshair hover
+- **Coordinated filtering**: All views update simultaneously
+- Click any chart element to fly to the institution on the map
 
 ## Data Sources
 
 | Source | Content | Status |
 |--------|---------|--------|
 | [Patrick Sahle's DH Professorship List](https://dhd-blog.org/?p=11018) | 150 DH professorships in DACH (2008–2026) | Integrated |
-| [OpenAlex](https://openalex.org/) | DH publication counts per institution | Planned |
+| [OpenAlex](https://openalex.org/) | DH publication counts per institution | Integrated |
 | [CLARIN Centre Registry](https://centres.clarin.eu) | DH infrastructure centers | Planned |
 | [DH Course Registry](https://dhcr.clarin-dariah.eu/) | DH study programs | Planned |
 | [Wikidata](https://www.wikidata.org/) | Institutional identifiers, LOD linking | Planned |
@@ -52,10 +64,11 @@ Read more: [Knowledge/Promptotyping.md](Knowledge/Promptotyping.md)
 ## Tech Stack
 
 - **MapLibre GL JS** via CDN — WebGL vector map rendering
+- **D3.js v7** via CDN — Stacked Area Chart, Barchart, Heatmap
 - **Vanilla JavaScript** — no frameworks, no build step
 - **CartoDB Dark Matter** tiles
 - **GitHub Pages** — zero-config deployment
-- Planned: **D3.js** for charts, **JSON-LD** for Linked Open Data
+- Planned: **JSON-LD** for Linked Open Data
 
 ## Data Model
 

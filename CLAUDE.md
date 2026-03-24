@@ -6,18 +6,21 @@ An interactive map of the Digital Humanities research landscape in the German-sp
 - **GitHub Pages**: https://chpollin.github.io/dhd-landscape
 - **Data Source**: Patrick Sahle's DH professorship list (https://dhd-blog.org/?p=11018)
 
-## Current State (after Iteration 2)
+## Current State (after Iteration 4)
 
 - **52 institutions** aggregated from 130 DH professorships (2008–2026)
 - **26 Wikidata-IDs**, **49 ROR-IDs**, **1906 DH publications** (OpenAlex)
-- Interactive MapLibre GL JS map with:
-  - Top-6 discipline + method filters, country filters, timeline, search
-  - Slide-in detail panel (right side) with pub counts, Wikidata/ROR links
-  - Hover effects, fly-to animation, legend, reset button
-  - Co-located institutions offset (Berlin 3x, Köln 2x, etc.)
+- **Map-as-Canvas Architecture** — Map is always 100% viewport, three modes:
+  - **Narrative Mode**: Scrollytelling with 7 stations (Intro → Köln → Berlin → Wien → Timeline → Explore-CTA). Map flies between stations, mini-visualizations in glassmorphic cards.
+  - **Explore Mode**: Floating draggable D3 chart panels (Timeline, Barchart, Heatmap) over the map. Collapsible filter sidebar (320px). Stats bar.
+  - **Overview Mode**: HUD dashboard with animated counters, country bars, discipline chart, mini timeline — all as floating widgets over the map.
+- Mode switcher: `[≡ Story | ◎ Explore | ⊞ Overview]`, keyboard shortcuts 1/2/3
+- D3.js charts: Stacked Area, Horizontal Barchart, Discipline Heatmap
+- Detail panel (420px, right side) with stats, tags, positions, Wikidata/ROR links
+- Marker colors: Indigo (#818cf8) = besetzt, Amber (#fbbf24) = offen (colorblind-safe)
+- Design system: CSS Custom Properties, WCAG AA contrast, min 0.75rem fonts
 - Knowledge vault: 5 documents aligned with Obsidian Research Vault conventions
 - No individual person names — institution-level profiles only
-- 2 Journals: project (Journal.md) + method reflection (Journal-Promptotyping.md)
 
 ### Build Pipeline
 ```
@@ -58,10 +61,17 @@ This repository serves dual purpose:
 
 - **No frameworks** — Vanilla JS, static HTML/CSS
 - **Map**: MapLibre GL JS via CDN
-- **Charts**: D3.js via CDN (planned)
+- **Charts**: D3.js v7 via CDN (`charts.js` — Stacked Area, Barchart, Heatmap)
 - **Tiles**: CartoDB Dark Matter (`basemaps.cartocdn.com/dark_all`)
-- **Fonts**: Noto Sans via `fonts.openmaptiles.org`
+- **Fonts**: Google Fonts (Source Serif 4 + Inter), Open Sans via MapTiler glyph server
 - **Deployment**: GitHub Pages from main branch (zero build step)
+
+### File Structure
+- `index.html` — HTML structure: Map + Chrome + 3 Mode containers + Detail panel
+- `styles.css` — Design system (CSS Custom Properties, all component styles)
+- `app.js` — Shared infrastructure (Map init, filters, panel, Event bus)
+- `modes.js` — ModeController + NarrativeMode + ExploreMode + OverviewMode
+- `charts.js` — D3.js chart module (DHdCharts with renderTo for floating panels)
 
 ## Data Model
 

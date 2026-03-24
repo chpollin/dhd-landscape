@@ -34,15 +34,22 @@ Mehrere verknüpfte Visualisierungen, bei denen Interaktion in einer Ansicht all
 
 ## Visualisierungs-Konzepte
 
-### 1. Karten-Interface (aktiv, Promptotyping-Interface v1)
-Geographische Verteilung der DH-Institutionen auf interaktiver Karte.
+### 1. Map-as-Canvas (Iteration 4: implementiert)
+Die Karte ist immer 100% Viewport — alles andere schwebt darüber. Drei Modi:
+- **Narrative Mode**: Scrollytelling mit 7 Stationen, `IntersectionObserver` triggert `map.flyTo()`, Mini-Vizs in glassmorphischen Karten
+- **Explore Mode**: Floating draggable D3-Chart-Panels, collapsible Filter-Sidebar (320px), Stats-Bar
+- **Overview Mode**: HUD-Dashboard mit animierten Zählern, Country-Bars, Disziplin-Chart, Mini-Timeline
 
-### 2. Aggregations-Ansichten (geplant)
-Datenqualitäts-abgestimmte Visualisierungen:
-- **Barchart / Treemap**: Positionen pro Universität, Disziplin-Verteilung
-- **Timeline**: Wachstum der DH-Landschaft seit 2008 (Stacked Area Chart)
-- **Disziplin-Matrix**: Institutionen × Disziplinen (Heatmap)
-- **Methoden-Radar**: Methodenprofile von Institutionen als Radarcharts
+Mode-Wechsel via `body[data-mode]` + CSS Transitions. Shared: Map, Event-Bus, Filter, Detail-Panel.
+
+### 2. D3.js Charts (Iteration 3+4: implementiert)
+Drei Visualisierungen, in Explore Mode als Floating Panels über der Karte:
+- **Stacked Area Chart**: Kumulatives DH-Wachstum 2008–2026, Toggle Disziplin/Land
+- **Horizontaler Barchart**: Institutionen nach Stellenanzahl, Disziplin-Segmente
+- **Disziplin-Matrix**: Institutionen × Disziplinen Heatmap mit Crosshair-Hover
+- Coordinated Filtering: `applyFilters()` → Map + Charts gleichzeitig
+- `DHdCharts.renderTo()` für Multi-Container-Support (Floating Panels + Mini-Vizs)
+- Offen: Methoden-Radar (niedrigere Priorität)
 
 ### 3. Thematische Verbindungen (geplant, Tier 2)
 - **Konstellations-View**: Institutionen mit geteilten Themen verbunden durch Arcs

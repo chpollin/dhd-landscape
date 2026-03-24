@@ -84,12 +84,20 @@ Dieses Beispiel steht stellvertretend für den generischen Use Case: **Die Entwi
 
 | User Story | Priorität | Status | Abhängigkeit |
 |------------|-----------|--------|-------------|
-| US-1 Thematische Exploration | Hoch | ✅ Basisversion | — |
-| US-4 Institutionsprofil | Hoch | ✅ Basisversion | — |
-| US-2 Zeitliche Entwicklung | Hoch | Teilweise (Slider) | Bessere Zeitdaten |
-| US-5 Landschafts-Überblick | Mittel | Teilweise (Stats) | Aggregations-Views |
-| US-3 Kooperationspartner | Mittel | Offen | Konstellations-View |
-| US-6 Entwicklungsgeschichte | Mittel | Offen | Timeline-Animation, Play-Modus |
+| US-1 Thematische Exploration | Hoch | ✅ Vollständig | — |
+| US-4 Institutionsprofil | Hoch | ✅ Vollständig | — |
+| US-2 Zeitliche Entwicklung | Hoch | ✅ Vollständig (Slider + Stacked Area + Play/Pause) | — |
+| US-5 Landschafts-Überblick | Mittel | ✅ Vollständig (Overview-HUD + Barchart + Heatmap) | — |
+| US-3 Kooperationspartner | Mittel | Teilweise (Heatmap zeigt Disziplin-Überlappungen) | Konstellations-View |
+| US-6 Entwicklungsgeschichte | Mittel | ✅ Vollständig (Narrative Mode + Timeline + Area Chart) | — |
+| US-7 Geführter Einstieg | Hoch | ✅ Vollständig (Narrative Scrollytelling, 7 Stationen) | — |
+
+## Iteration 4: Neue Interaktions-Modi
+
+Die Map-as-Canvas-Architektur (Iteration 4) führt drei Modi ein:
+- **Narrative** adressiert US-7 (geführter Einstieg) und US-6 (Entwicklungsgeschichte)
+- **Explore** adressiert US-1 (thematische Exploration) und US-3 (Kooperationspartner)
+- **Overview** adressiert US-5 (Landschafts-Überblick)
 
 ## Related
 

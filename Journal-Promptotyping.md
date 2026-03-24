@@ -81,3 +81,32 @@ Die Wikidata-Overrides-Datei (`wikidata-overrides.json`) zeigt ein nützliches P
 
 ### Beobachtung 14: Co-Location als Visualisierungsproblem
 Berlin hat 3 Unis auf denselben Koordinaten — ein Datenproblem, das erst im UI sichtbar wird. Die Offset-Lösung ist ein Hack, kein echtes Clustering. In Iteration 3 könnte ein Mini-Cluster oder eine andere visuelle Lösung besser sein.
+
+---
+
+## Iteration 3 — Reflexion
+
+### Beobachtung 15: Charts als zweite Erkenntnisschicht
+Die D3-Aggregationsviews (Stacked Area, Barchart, Heatmap) zeigen Muster, die auf der Karte unsichtbar sind: die Konzentration auf wenige Disziplinen, der Wachstumsknick ab 2020, die Dominanz von Köln. **Verschiedene Visualisierungen beantworten verschiedene Fragen** — ein zentraler Insight für die weitere Entwicklung.
+
+### Beobachtung 16: Code-Audit als Qualitätssicherung
+Der systematische Code-Audit nach der Charts-Implementierung deckte 16 Probleme auf (davon 2 kritisch: Script-Loading-Order, Null-Checks). Erkenntnis: **Nach jeder Promptotyping-Iteration ist ein Audit nötig**, auch wenn der Code "funktioniert". Bugs im Edge-Case-Verhalten sind nicht sichtbar.
+
+### Beobachtung 17: Split-Layout als Kompromiss
+Das Split-Layout (Map 45% / Chart 55%) war ein funktionaler Kompromiss, der aber die Karte zu stark einschränkte. Die kritische Analyse nach Iteration 3 zeigte: Tabs und Filter-Buttons sahen identisch aus, die visuelle Hierarchie fehlte. Das führte direkt zum Map-as-Canvas-Ansatz in Iteration 4.
+
+---
+
+## Iteration 4 — Reflexion
+
+### Beobachtung 18: Innovation durch Iteration, nicht durch Planung
+Der Map-as-Canvas-Ansatz (3 Modi auf einer Karte) entstand nicht aus theoretischer Planung, sondern aus der kritischen Konfrontation mit dem bestehenden Interface. Erst die Screenshot-Analyse ("zu viele Buttons, kein Onboarding, Tabs=Filter") führte zur Frage "Was wenn die Karte ALLES ist?" — und dann zur Entscheidung, alle drei Ansätze (Narrative, Explore, Overview) zu bauen, um zu lernen was am besten passt.
+
+### Beobachtung 19: Promptotyping als Methodenvalidierung
+Die Entscheidung, alle drei Modi zu implementieren statt einen auszuwählen, ist **typisch Promptotyping**: Materialisieren statt spezifizieren. Die Kosten des Bauens sind gering (dank AI-gestützter Implementierung), der Erkenntnisgewinn durch tatsächliches Ausprobieren ist hoch.
+
+### Beobachtung 20: Architektur-Refactoring als Enabling
+Die Aufspaltung von einer 675-Zeilen index.html in 5 Dateien (index.html + styles.css + app.js + modes.js + charts.js) war keine Verschönerung, sondern **Voraussetzung für Innovation**. Erst die saubere Trennung (Map-Init, Filter-Logik, Mode-Switching, Charts) ermöglichte die 3-Modi-Architektur. Erkenntnis: Technische Schulden blockieren konzeptuelle Weiterentwicklung.
+
+### Beobachtung 21: Design-Feedback als Forschungsfrage
+Das User-Feedback "zu dunkel, zu monoton — DHd ist bunt, innovativ, offen" zeigt, dass Farbgestaltung in DH-Tools nicht nur ästhetisch, sondern **identitätsstiftend** ist. Die Frage "Welches Farbschema repräsentiert die DHd-Community?" ist eine Forschungsfrage, keine Design-Entscheidung. Das öffnet die Tür zu semantischer Farbkodierung (Disziplin→Farbe→Identität).

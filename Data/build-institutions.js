@@ -1,0 +1,148 @@
+/**
+ * Aggregation script: Converts individual professorships into institution-level profiles.
+ * Run with: node Data/build-institutions.js
+ * Output: Data/institutions.json
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const raw = JSON.parse(fs.readFileSync(path.join(__dirname, 'dh-professorships.json'), 'utf8'));
+
+// Group by university (normalize institution name to base university)
+function getUniversityKey(entry) {
+    // Extract base university name from detailed institution string
+    const inst = entry.institution;
+    const city = entry.city;
+
+    // Map to canonical university names
+    const mappings = [
+        [/Universität Graz|Uni Graz/i, 'Universität Graz'],
+        [/Universität Wien/i, 'Universität Wien'],
+        [/Universität Klagenfurt/i, 'Universität Klagenfurt'],
+        [/Universität für Weiterbildung Krems|Donau-Universität/i, 'Universität für Weiterbildung Krems'],
+        [/Universität Zürich/i, 'Universität Zürich'],
+        [/Universität Basel/i, 'Universität Basel'],
+        [/Universität Bern/i, 'Universität Bern'],
+        [/University of Luxembourg/i, 'University of Luxembourg'],
+        [/HU Berlin|Humboldt/i, 'Humboldt-Universität zu Berlin'],
+        [/FU Berlin|Freie Universität/i, 'Freie Universität Berlin'],
+        [/TU Berlin/i, 'Technische Universität Berlin'],
+        [/LMU München/i, 'LMU München'],
+        [/TU Darmstadt/i, 'TU Darmstadt'],
+        [/TU Chemnitz/i, 'TU Chemnitz'],
+        [/RWTH Aachen/i, 'RWTH Aachen'],
+        [/Universität Erlangen|FAU/i, 'FAU Erlangen-Nürnberg'],
+        [/Universität zu Köln/i, 'Universität zu Köln'],
+        [/TH Köln/i, 'TH Köln'],
+        [/Universität Trier/i, 'Universität Trier'],
+        [/Universität Würzburg/i, 'Universität Würzburg'],
+        [/Universität Bamberg/i, 'Universität Bamberg'],
+        [/Universität Leipzig/i, 'Universität Leipzig'],
+        [/HTWK|Leipzig.*HTWK/i, 'HTWK Leipzig'],
+        [/Universität Stuttgart/i, 'Universität Stuttgart'],
+        [/Universität Göttingen/i, 'Universität Göttingen'],
+        [/Universität Heidelberg/i, 'Universität Heidelberg'],
+        [/Universität Paderborn/i, 'Universität Paderborn'],
+        [/Universität Bielefeld/i, 'Universität Bielefeld'],
+        [/Universität Marburg/i, 'Universität Marburg'],
+        [/Universität Halle/i, 'Universität Halle-Wittenberg'],
+        [/Universität Augsburg/i, 'Universität Augsburg'],
+        [/HS Augsburg|Augsburg.*FH|FH.*Augsburg/i, 'Hochschule Augsburg'],
+        [/Universität Potsdam/i, 'Universität Potsdam'],
+        [/FH Potsdam/i, 'FH Potsdam'],
+        [/Universität Passau/i, 'Universität Passau'],
+        [/Universität Regensburg/i, 'Universität Regensburg'],
+        [/Universität Rostock/i, 'Universität Rostock'],
+        [/Universität Hildesheim/i, 'Universität Hildesheim'],
+        [/Universität Freiburg/i, 'Universität Freiburg'],
+        [/FernUniversität.*Hagen/i, 'FernUniversität in Hagen'],
+        [/Universität Jena/i, 'Universität Jena'],
+        [/Universität Kiel/i, 'Universität Kiel'],
+        [/Universität Magdeburg/i, 'Universität Magdeburg'],
+        [/Universität Oldenburg/i, 'Universität Oldenburg'],
+        [/Universität Vechta/i, 'Universität Vechta'],
+        [/Ruhr-Universität Bochum/i, 'Ruhr-Universität Bochum'],
+        [/Universität des Saarlandes/i, 'Universität des Saarlandes'],
+        [/Universität Frankfurt/i, 'Universität Frankfurt'],
+        [/Bergische Universität Wuppertal/i, 'Bergische Universität Wuppertal'],
+        [/ADW Mainz|FH Mainz/i, 'Hochschule Mainz / ADW Mainz'],
+        [/THM Gießen/i, 'THM Gießen'],
+        [/FH Erfurt/i, 'FH Erfurt'],
+    ];
+
+    for (const [regex, name] of mappings) {
+        if (regex.test(inst)) return name;
+    }
+
+    // Fallback: use city as key
+    return inst.split(',')[0].trim();
+}
+
+// Aggregate
+const groups = {};
+
+for (const entry of raw) {
+    const key = getUniversityKey(entry);
+
+    if (!groups[key]) {
+        groups[key] = {
+            name: key,
+            city: entry.city,
+            country: entry.country,
+            coordinates: entry.coordinates,
+            positions: [],
+            disciplines: new Set(),
+            methods: new Set(),
+            denominations: [],
+            earliestYear: entry.year,
+            openPositions: 0,
+            totalPositions: 0
+        };
+    }
+
+    const g = groups[key];
+    g.totalPositions++;
+    if (entry.status === 'open') g.openPositions++;
+    if (entry.year < g.earliestYear) g.earliestYear = entry.year;
+
+    entry.disciplines.forEach(d => g.disciplines.add(d));
+    entry.methods.forEach(m => g.methods.add(m));
+
+    g.positions.push({
+        name: entry.name,
+        year: entry.year,
+        level: entry.level,
+        status: entry.status,
+        temporary: entry.temporary,
+        disciplines: entry.disciplines,
+        methods: entry.methods
+    });
+}
+
+// Convert to array
+const institutions = Object.values(groups).map(g => ({
+    id: g.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+    name: g.name,
+    city: g.city,
+    country: g.country,
+    coordinates: g.coordinates,
+    totalPositions: g.totalPositions,
+    openPositions: g.openPositions,
+    earliestYear: g.earliestYear,
+    disciplines: [...g.disciplines].sort(),
+    methods: [...g.methods].sort(),
+    positions: g.positions.sort((a, b) => b.year - a.year)
+})).sort((a, b) => b.totalPositions - a.totalPositions);
+
+fs.writeFileSync(
+    path.join(__dirname, 'institutions.json'),
+    JSON.stringify(institutions, null, 2),
+    'utf8'
+);
+
+console.log(`Aggregated ${raw.length} professorships into ${institutions.length} institutions.`);
+console.log(`Top 10:`);
+institutions.slice(0, 10).forEach(i =>
+    console.log(`  ${i.name}: ${i.totalPositions} positions (${i.disciplines.length} disciplines, ${i.methods.length} methods)`)
+);

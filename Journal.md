@@ -74,9 +74,31 @@ This journal documents both the development of the DHd Landscape project and the
 - AI classification of disciplines/methods from denomination titles is a useful but imperfect heuristic — creates a testable hypothesis for the researcher to verify
 - The data acquisition step (web fetch → structured JSON) demonstrates how Promptotyping bridges manual and automated data collection
 
-### Next Steps
-1. Human verification of discipline/method classifications
-2. Add DH centers as second data category (not just professorships)
-3. Explore additional data sources (DHd conference data, institutional websites)
-4. Custom map style (replace desaturated OSM with purpose-built dark theme)
+---
+
+## 2026-03-24 — Session 1 (cont.): Anonymization & Institution-Level Aggregation
+
+### Phase: Design Decision — No Individual Names
+- **Prompt intent**: "I don't want to name individual persons — how can we represent this elegantly?"
+- **Human reasoning**: The map should show the landscape, not expose individuals. Use cases are: "Who researches Semantic Web?" → show institutions, not persons. "Where is DH taught?" → show institutional profiles.
+- **AI contribution**: Proposed aggregation from individual professorships to institution-level profiles.
+- **Output**:
+  - `Data/build-institutions.js` — aggregation script (130 professorships → 52 institutions)
+  - `Data/institutions.json` — institution profiles with discipline/method mix, position counts
+  - Reworked `index.html`: marker size by position count, institution profile cards, no person names
+
+### Phase: Map Tiles Fix
+- Switched from OSM raster tiles (CORS issues locally) to CartoDB Dark tiles (`basemaps.cartocdn.com/dark_all`)
+- Fixed font glyphs: switched from broken `demotiles.maplibre.org` to `fonts.openmaptiles.org` with Noto Sans
+
+### Promptotyping Observations
+- The anonymization decision changed the fundamental unit of analysis (person → institution)
+- This is a good example of how Promptotyping surfaces design decisions through conversation — the researcher's ethical intuition ("I don't want to expose individuals") led to a better data model
+- Three perspectives emerged: Research (topics), Teaching (curricula), Networking (find collaborators by topic)
+
+### Ideas for Next Iteration
+1. Linked Open Data: represent data as JSON-LD, link to Wikidata entities
+2. Wikidata as additional data source for institutions
+3. Sync Knowledge vault with Obsidian Research Vault for verification
+4. Add DH centers (not just professorships)
 5. Deploy to GitHub Pages

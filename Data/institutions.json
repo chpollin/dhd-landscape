@@ -1,0 +1,3004 @@
+[
+  {
+    "id": "universit-t-zu-k-ln",
+    "name": "Universität zu Köln",
+    "city": "Köln",
+    "country": "DE",
+    "coordinates": [
+      6.9603,
+      50.9375
+    ],
+    "totalPositions": 7,
+    "openPositions": 0,
+    "earliestYear": 2013,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Archaeology",
+      "Digital Culture",
+      "Digital Edition",
+      "Digital History",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Data Modeling",
+      "Digital Edition",
+      "GIS",
+      "NLP",
+      "TEI/XML"
+    ],
+    "positions": [
+      {
+        "name": "Digital Practices in Culture/Humanities",
+        "year": 2023,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Culture"
+        ],
+        "methods": []
+      },
+      {
+        "name": "DH: Digital Editions",
+        "year": 2023,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Edition"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Digital Edition"
+        ]
+      },
+      {
+        "name": "DH: Language Information Processing",
+        "year": 2019,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      },
+      {
+        "name": "DH/Language Information Processing (CL)",
+        "year": 2015,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      },
+      {
+        "name": "DH/Historical-Cultural Information Processing",
+        "year": 2015,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital History"
+        ],
+        "methods": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2013,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Archaeoinformatics",
+        "year": 2013,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "GIS",
+          "3D Modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tu-darmstadt",
+    "name": "TU Darmstadt",
+    "city": "Darmstadt",
+    "country": "DE",
+    "coordinates": [
+      8.6512,
+      49.8728
+    ],
+    "totalPositions": 7,
+    "openPositions": 0,
+    "earliestYear": 2009,
+    "disciplines": [
+      "Architecture",
+      "Computational Linguistics",
+      "Computational Literary Studies",
+      "Data Science",
+      "Digital Archaeology",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Annotation",
+      "Corpus Linguistics",
+      "Data Science",
+      "Digital Edition",
+      "GIS",
+      "NLP",
+      "Stylometry",
+      "TEI/XML",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Digital Building Research & Archaeology",
+        "year": 2022,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Archaeology",
+          "Architecture"
+        ],
+        "methods": [
+          "3D Modeling",
+          "GIS"
+        ]
+      },
+      {
+        "name": "Humanities Data Science & Methodology",
+        "year": 2019,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Data Science"
+        ],
+        "methods": [
+          "Data Science"
+        ]
+      },
+      {
+        "name": "Digital Philology (German Literature)",
+        "year": 2017,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining",
+          "Annotation"
+        ]
+      },
+      {
+        "name": "German Linguistics: Corpus & Computational",
+        "year": 2015,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "Corpus Linguistics",
+          "NLP"
+        ]
+      },
+      {
+        "name": "Modern German Lit: Digital Literary Studies",
+        "year": 2015,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining",
+          "Stylometry"
+        ]
+      },
+      {
+        "name": "Language Technologies",
+        "year": 2010,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Text Mining"
+        ]
+      },
+      {
+        "name": "German Computational Philology/Humanities Computing",
+        "year": 2009,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Digital Edition"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-w-rzburg",
+    "name": "Universität Würzburg",
+    "city": "Würzburg",
+    "country": "DE",
+    "coordinates": [
+      9.9534,
+      49.7913
+    ],
+    "totalPositions": 6,
+    "openPositions": 1,
+    "earliestYear": 2008,
+    "disciplines": [
+      "Ancient Near Eastern Studies",
+      "Computational Humanities",
+      "Computational Literary Studies",
+      "Digital Humanities",
+      "Digital Musicology"
+    ],
+    "methods": [
+      "Data Visualization",
+      "Digital Edition",
+      "Machine Learning",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2025,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      },
+      {
+        "name": "DH (Ancient Near Eastern Studies)",
+        "year": 2023,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Ancient Near Eastern Studies"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Computational Humanities",
+        "year": 2021,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Humanities"
+        ],
+        "methods": [
+          "Machine Learning",
+          "Data Visualization"
+        ]
+      },
+      {
+        "name": "Digital Music Philology & Theory",
+        "year": 2021,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Musicology"
+        ],
+        "methods": [
+          "Digital Edition"
+        ]
+      },
+      {
+        "name": "DH (Ancient Near East)",
+        "year": 2020,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Ancient Near Eastern Studies"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Computer Philology",
+        "year": 2008,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining",
+          "Machine Learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fau-erlangen-n-rnberg",
+    "name": "FAU Erlangen-Nürnberg",
+    "city": "Erlangen",
+    "country": "DE",
+    "coordinates": [
+      11.0119,
+      49.5897
+    ],
+    "totalPositions": 6,
+    "openPositions": 3,
+    "earliestYear": 2017,
+    "disciplines": [
+      "Computational Linguistics",
+      "Computational Literary Studies",
+      "Digital Art History",
+      "Digital Humanities",
+      "Human-Computer Interaction",
+      "Spatial Humanities"
+    ],
+    "methods": [
+      "Computer Vision",
+      "Corpus Linguistics",
+      "GIS",
+      "HCI",
+      "Image Analysis",
+      "NLP",
+      "Spatial Analysis",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "DH: Human-Computer Interaction",
+        "year": 2025,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Human-Computer Interaction"
+        ],
+        "methods": [
+          "HCI"
+        ]
+      },
+      {
+        "name": "DH: Place and Space",
+        "year": 2025,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Spatial Humanities"
+        ],
+        "methods": [
+          "GIS",
+          "Spatial Analysis"
+        ]
+      },
+      {
+        "name": "DH: Images and Objects",
+        "year": 2024,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Art History"
+        ],
+        "methods": [
+          "Image Analysis",
+          "Computer Vision"
+        ]
+      },
+      {
+        "name": "Digital Literature and Methods",
+        "year": 2023,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining"
+        ]
+      },
+      {
+        "name": "Corpus & Computational Linguistics",
+        "year": 2017,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "Corpus Linguistics",
+          "NLP"
+        ]
+      },
+      {
+        "name": "DH: Art History Focus",
+        "year": 2017,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Art History"
+        ],
+        "methods": [
+          "Image Analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-paderborn",
+    "name": "Universität Paderborn",
+    "city": "Paderborn",
+    "country": "DE",
+    "coordinates": [
+      8.7522,
+      51.7189
+    ],
+    "totalPositions": 6,
+    "openPositions": 0,
+    "earliestYear": 2015,
+    "disciplines": [
+      "Digital Culture",
+      "Digital Edition",
+      "Digital Humanities",
+      "Digital Musicology",
+      "Media Studies"
+    ],
+    "methods": [
+      "Data Modeling",
+      "Digital Edition",
+      "NLP",
+      "TEI/XML",
+      "Virtual Reality"
+    ],
+    "positions": [
+      {
+        "name": "Digital Methods: Music/Media Edition",
+        "year": 2022,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Musicology",
+          "Digital Edition"
+        ],
+        "methods": [
+          "Digital Edition"
+        ]
+      },
+      {
+        "name": "Networked Virtual Data Spaces",
+        "year": 2022,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Virtual Reality",
+          "Data Modeling"
+        ]
+      },
+      {
+        "name": "Digital Musicology/DH",
+        "year": 2022,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Musicology",
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Digital Edition"
+        ]
+      },
+      {
+        "name": "Cultures of Digitality/DH",
+        "year": 2021,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Media Studies"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Digital Cultural Studies",
+        "year": 2016,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Culture"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      },
+      {
+        "name": "Musicology/Digital Music Edition/DH",
+        "year": 2015,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Musicology",
+          "Digital Edition"
+        ],
+        "methods": [
+          "Digital Edition",
+          "TEI/XML"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-graz",
+    "name": "Universität Graz",
+    "city": "Graz",
+    "country": "AT",
+    "coordinates": [
+      15.45,
+      47.0769
+    ],
+    "totalPositions": 5,
+    "openPositions": 1,
+    "earliestYear": 2015,
+    "disciplines": [
+      "Digital Archaeology",
+      "Digital Edition",
+      "Digital Humanities",
+      "Historical Linguistics",
+      "Museum Studies"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Corpus Linguistics",
+      "Data Modeling",
+      "GIS",
+      "Linked Data",
+      "NLP",
+      "TEI/XML"
+    ],
+    "positions": [
+      {
+        "name": "Digital Historical Linguistics",
+        "year": 2024,
+        "level": "TT",
+        "status": "open",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Historical Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Corpus Linguistics"
+        ]
+      },
+      {
+        "name": "Digital Archaeology",
+        "year": 2024,
+        "level": "TT",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "GIS",
+          "3D Modeling"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2020,
+        "level": "Professur",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Edition"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Linked Data",
+          "Data Modeling"
+        ]
+      },
+      {
+        "name": "DH: Museum Studies Focus",
+        "year": 2017,
+        "level": "Laufbahnprofessur",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Museum Studies"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2015,
+        "level": "A1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Edition"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Linked Data",
+          "Data Modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-bamberg",
+    "name": "Universität Bamberg",
+    "city": "Bamberg",
+    "country": "DE",
+    "coordinates": [
+      10.8868,
+      49.8988
+    ],
+    "totalPositions": 5,
+    "openPositions": 0,
+    "earliestYear": 2009,
+    "disciplines": [
+      "Computational Humanities",
+      "Computational Linguistics",
+      "Digital Archaeology",
+      "Digital Cultural Heritage",
+      "Digital History"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Data Visualization",
+      "GIS",
+      "Machine Learning",
+      "NLP",
+      "Network Analysis"
+    ],
+    "positions": [
+      {
+        "name": "Computational Humanities",
+        "year": 2024,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Humanities"
+        ],
+        "methods": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Foundations of Language Processing",
+        "year": 2022,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      },
+      {
+        "name": "Digital History",
+        "year": 2019,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital History"
+        ],
+        "methods": [
+          "Data Visualization",
+          "Network Analysis"
+        ]
+      },
+      {
+        "name": "Digital Heritage Technologies",
+        "year": 2016,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Cultural Heritage",
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "3D Modeling",
+          "GIS"
+        ]
+      },
+      {
+        "name": "Information Processing in Geoarchaeology",
+        "year": 2009,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "GIS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-trier",
+    "name": "Universität Trier",
+    "city": "Trier",
+    "country": "DE",
+    "coordinates": [
+      6.6853,
+      49.749
+    ],
+    "totalPositions": 5,
+    "openPositions": 0,
+    "earliestYear": 2011,
+    "disciplines": [
+      "Computational Linguistics",
+      "Computational Literary Studies",
+      "Digital Cultural Heritage",
+      "Digital History",
+      "Digital Humanities",
+      "Digital Lexicography"
+    ],
+    "methods": [
+      "Knowledge Graphs",
+      "Linked Data",
+      "Machine Learning",
+      "NLP",
+      "Stylometry",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Digital Lexicography",
+        "year": 2021,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Lexicography"
+        ],
+        "methods": [
+          "NLP",
+          "Linked Data"
+        ]
+      },
+      {
+        "name": "Digital Historical Heritage",
+        "year": 2021,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Cultural Heritage",
+          "Digital History"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Computational Linguistics",
+        "year": 2017,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Knowledge Graphs"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2016,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Stylometry",
+          "Text Mining",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2011,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-stuttgart",
+    "name": "Universität Stuttgart",
+    "city": "Stuttgart",
+    "country": "DE",
+    "coordinates": [
+      9.177,
+      48.7758
+    ],
+    "totalPositions": 4,
+    "openPositions": 1,
+    "earliestYear": 2014,
+    "disciplines": [
+      "Computational Linguistics",
+      "Computational Literary Studies",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Computer Vision",
+      "Machine Learning",
+      "NLP",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2024,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Computational Linguistics",
+        "year": 2019,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Computer Vision"
+        ]
+      },
+      {
+        "name": "Digital Phonetics",
+        "year": 2016,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2014,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-heidelberg",
+    "name": "Universität Heidelberg",
+    "city": "Heidelberg",
+    "country": "DE",
+    "coordinates": [
+      8.6724,
+      49.3988
+    ],
+    "totalPositions": 4,
+    "openPositions": 1,
+    "earliestYear": 2013,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Cultural Heritage",
+      "Digital Humanities",
+      "Machine Learning",
+      "Papyrology"
+    ],
+    "methods": [
+      "Digital Edition",
+      "Image Analysis",
+      "Machine Learning",
+      "NLP",
+      "Scientific Computing"
+    ],
+    "positions": [
+      {
+        "name": "Papyrology & Digital Research",
+        "year": 2024,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Papyrology"
+        ],
+        "methods": [
+          "Digital Edition",
+          "Image Analysis"
+        ]
+      },
+      {
+        "name": "Scientific Computing/ML",
+        "year": 2022,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Machine Learning"
+        ],
+        "methods": [
+          "Machine Learning",
+          "Scientific Computing"
+        ]
+      },
+      {
+        "name": "Cultural Heritage",
+        "year": 2022,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Cultural Heritage"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Computational Linguistics",
+        "year": 2013,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-wien",
+    "name": "Universität Wien",
+    "city": "Wien",
+    "country": "AT",
+    "coordinates": [
+      16.3738,
+      48.2082
+    ],
+    "totalPositions": 4,
+    "openPositions": 1,
+    "earliestYear": 2015,
+    "disciplines": [
+      "Digital Edition",
+      "Digital History",
+      "Digital Humanities",
+      "Medieval Studies"
+    ],
+    "methods": [
+      "Digital Edition",
+      "NLP",
+      "Stemmatology",
+      "TEI/XML"
+    ],
+    "positions": [
+      {
+        "name": "Historical Studies & DH",
+        "year": 2023,
+        "level": "Asst. Prof.",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital History",
+          "Medieval Studies"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Digital Editing",
+        "year": 2022,
+        "level": "A1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Edition"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Digital Edition"
+        ]
+      },
+      {
+        "name": "Digital Text Studies",
+        "year": 2018,
+        "level": "A1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Edition"
+        ],
+        "methods": [
+          "TEI/XML",
+          "NLP"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2015,
+        "level": "A1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Stemmatology"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-leipzig",
+    "name": "Universität Leipzig",
+    "city": "Leipzig",
+    "country": "DE",
+    "coordinates": [
+      12.3731,
+      51.3397
+    ],
+    "totalPositions": 4,
+    "openPositions": 0,
+    "earliestYear": 2012,
+    "disciplines": [
+      "Computational Humanities",
+      "Digital Archaeology",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Data Visualization",
+      "Digital Edition",
+      "GIS",
+      "NLP",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Digital Archaeology (Central Europe)",
+        "year": 2022,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "GIS",
+          "3D Modeling"
+        ]
+      },
+      {
+        "name": "Computational Humanities",
+        "year": 2016,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Humanities"
+        ],
+        "methods": [
+          "Data Visualization",
+          "Text Mining"
+        ]
+      },
+      {
+        "name": "Text Mining",
+        "year": 2015,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Text Mining",
+          "NLP"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2012,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "NLP",
+          "Digital Edition"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lmu-m-nchen",
+    "name": "LMU München",
+    "city": "München",
+    "country": "DE",
+    "coordinates": [
+      11.582,
+      48.1351
+    ],
+    "totalPositions": 4,
+    "openPositions": 0,
+    "earliestYear": 2019,
+    "disciplines": [
+      "Artificial Intelligence",
+      "Computational Linguistics",
+      "Computational Literary Studies",
+      "Digital Art History",
+      "Digital Cultural Heritage"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Image Analysis",
+      "Machine Learning",
+      "NLP",
+      "Stylometry",
+      "Text Mining",
+      "Virtual Reality"
+    ],
+    "positions": [
+      {
+        "name": "Digital Literary Studies",
+        "year": 2022,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining",
+          "Stylometry"
+        ]
+      },
+      {
+        "name": "Digital Cultural Heritage Studies",
+        "year": 2021,
+        "level": "Professur",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Cultural Heritage"
+        ],
+        "methods": [
+          "3D Modeling",
+          "Virtual Reality"
+        ]
+      },
+      {
+        "name": "AI and Computational Linguistics",
+        "year": 2020,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics",
+          "Artificial Intelligence"
+        ],
+        "methods": [
+          "NLP",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Digital Art History/Image Cultures",
+        "year": 2019,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Art History"
+        ],
+        "methods": [
+          "Image Analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-bielefeld",
+    "name": "Universität Bielefeld",
+    "city": "Bielefeld",
+    "country": "DE",
+    "coordinates": [
+      8.5327,
+      52.0302
+    ],
+    "totalPositions": 4,
+    "openPositions": 0,
+    "earliestYear": 2009,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital History",
+      "Medieval Studies"
+    ],
+    "methods": [
+      "Corpus Linguistics",
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "Computational Linguistics",
+        "year": 2019,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      },
+      {
+        "name": "Digital Linguistics",
+        "year": 2019,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "Corpus Linguistics"
+        ]
+      },
+      {
+        "name": "DH: Medieval History",
+        "year": 2019,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital History",
+          "Medieval Studies"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Computational Linguistics",
+        "year": 2009,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-halle-wittenberg",
+    "name": "Universität Halle-Wittenberg",
+    "city": "Halle",
+    "country": "DE",
+    "coordinates": [
+      11.9698,
+      51.4828
+    ],
+    "totalPositions": 3,
+    "openPositions": 1,
+    "earliestYear": 2016,
+    "disciplines": [
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Computer Vision"
+    ],
+    "positions": [
+      {
+        "name": "Computer Science in Humanities",
+        "year": 2025,
+        "level": "W2",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      },
+      {
+        "name": "eHumanities",
+        "year": 2020,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Computer Vision"
+        ]
+      },
+      {
+        "name": "eHumanities",
+        "year": 2016,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-marburg",
+    "name": "Universität Marburg",
+    "city": "Marburg",
+    "country": "DE",
+    "coordinates": [
+      8.7726,
+      50.8021
+    ],
+    "totalPositions": 3,
+    "openPositions": 1,
+    "earliestYear": 2020,
+    "disciplines": [
+      "Digital Art History",
+      "Digital Cultural Heritage",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Image Analysis",
+      "Network Analysis"
+    ],
+    "positions": [
+      {
+        "name": "Digital Cultural Heritage",
+        "year": 2024,
+        "level": "W2",
+        "status": "open",
+        "temporary": true,
+        "disciplines": [
+          "Digital Cultural Heritage"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2020,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Network Analysis"
+        ]
+      },
+      {
+        "name": "Art History and DH",
+        "year": 2020,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Art History"
+        ],
+        "methods": [
+          "Image Analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-augsburg",
+    "name": "Universität Augsburg",
+    "city": "Augsburg",
+    "country": "DE",
+    "coordinates": [
+      10.8978,
+      48.3705
+    ],
+    "totalPositions": 3,
+    "openPositions": 0,
+    "earliestYear": 2020,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Data Visualization",
+      "Image Analysis",
+      "Linked Data",
+      "Machine Learning",
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "Image Processing & Visualization in DH",
+        "year": 2022,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Image Analysis",
+          "Data Visualization"
+        ]
+      },
+      {
+        "name": "Language Understanding & DH",
+        "year": 2021,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Applied Computational Linguistics",
+        "year": 2020,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Linked Data"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "freie-universit-t-berlin",
+    "name": "Freie Universität Berlin",
+    "city": "Berlin",
+    "country": "DE",
+    "coordinates": [
+      13.3933,
+      52.5186
+    ],
+    "totalPositions": 3,
+    "openPositions": 0,
+    "earliestYear": 2008,
+    "disciplines": [
+      "Computational Literary Studies",
+      "Digital Archaeology",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Computer Vision",
+      "GIS",
+      "Network Analysis",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Archaeoinformatics",
+        "year": 2022,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "3D Modeling",
+          "GIS",
+          "Computer Vision"
+        ]
+      },
+      {
+        "name": "Digital Humanities (Lit. & CS)",
+        "year": 2020,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining",
+          "Network Analysis"
+        ]
+      },
+      {
+        "name": "Archaeoinformatics",
+        "year": 2008,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "GIS",
+          "3D Modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-g-ttingen",
+    "name": "Universität Göttingen",
+    "city": "Göttingen",
+    "country": "DE",
+    "coordinates": [
+      9.9354,
+      51.5328
+    ],
+    "totalPositions": 3,
+    "openPositions": 0,
+    "earliestYear": 2014,
+    "disciplines": [
+      "Computational Literary Studies",
+      "Digital Art History",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "3D Modeling",
+      "Image Analysis",
+      "NLP",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Digital Image & Object Studies",
+        "year": 2018,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Art History"
+        ],
+        "methods": [
+          "Image Analysis",
+          "3D Modeling"
+        ]
+      },
+      {
+        "name": "DH and German Literature",
+        "year": 2017,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Literary Studies"
+        ],
+        "methods": [
+          "Text Mining"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2014,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-hildesheim",
+    "name": "Universität Hildesheim",
+    "city": "Hildesheim",
+    "country": "DE",
+    "coordinates": [
+      9.9509,
+      52.1508
+    ],
+    "totalPositions": 2,
+    "openPositions": 1,
+    "earliestYear": 2019,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Humanities",
+      "Information Science"
+    ],
+    "methods": [
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "NLP and Information Systems",
+        "year": 2025,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics",
+          "Information Science"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2019,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ruhr-universit-t-bochum",
+    "name": "Ruhr-Universität Bochum",
+    "city": "Bochum",
+    "country": "DE",
+    "coordinates": [
+      7.2162,
+      51.4818
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2023,
+    "disciplines": [
+      "Digital Art History",
+      "Digital Curation",
+      "Digital Humanities",
+      "Religious Studies"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "DH in Religious Studies",
+        "year": 2023,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Religious Studies"
+        ],
+        "methods": []
+      },
+      {
+        "name": "Curating Digital Objects",
+        "year": 2023,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Art History",
+          "Digital Curation"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "thm-gie-en",
+    "name": "THM Gießen",
+    "city": "Gießen",
+    "country": "DE",
+    "coordinates": [
+      8.6724,
+      50.584
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2020,
+    "disciplines": [
+      "Data Science",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Data Science",
+      "Digital Methods"
+    ],
+    "positions": [
+      {
+        "name": "Data Science in Humanities",
+        "year": 2023,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Data Science"
+        ],
+        "methods": [
+          "Data Science"
+        ]
+      },
+      {
+        "name": "Application-oriented Digital Methods",
+        "year": 2020,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Digital Methods"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-basel",
+    "name": "Universität Basel",
+    "city": "Basel",
+    "country": "CH",
+    "coordinates": [
+      7.5886,
+      47.5596
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2014,
+    "disciplines": [
+      "Artificial Intelligence",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "AI",
+      "Image Analysis",
+      "Linked Data",
+      "Machine Learning"
+    ],
+    "positions": [
+      {
+        "name": "DH with focus on AI",
+        "year": 2022,
+        "level": "open rank",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Artificial Intelligence"
+        ],
+        "methods": [
+          "Machine Learning",
+          "AI"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2014,
+        "level": "open rank",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Image Analysis",
+          "Linked Data"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hochschule-mainz-adw-mainz",
+    "name": "Hochschule Mainz / ADW Mainz",
+    "city": "Mainz",
+    "country": "DE",
+    "coordinates": [
+      8.2473,
+      49.9929
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2015,
+    "disciplines": [
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Digital Methods",
+      "Linked Data",
+      "Web Development"
+    ],
+    "positions": [
+      {
+        "name": "Digital Methods in Humanities",
+        "year": 2021,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Digital Methods"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2015,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Linked Data",
+          "Web Development"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-passau",
+    "name": "Universität Passau",
+    "city": "Passau",
+    "country": "DE",
+    "coordinates": [
+      13.4319,
+      48.5665
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2012,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Corpus Linguistics",
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "Multilingual Computational Linguistics",
+        "year": 2021,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP",
+          "Corpus Linguistics"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2012,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "tu-chemnitz",
+    "name": "TU Chemnitz",
+    "city": "Chemnitz",
+    "country": "DE",
+    "coordinates": [
+      12.9252,
+      50.8322
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2019,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Corpus Linguistics"
+    ],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2020,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      },
+      {
+        "name": "English & Digital Linguistics",
+        "year": 2019,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "Corpus Linguistics"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fh-potsdam",
+    "name": "FH Potsdam",
+    "city": "Potsdam",
+    "country": "DE",
+    "coordinates": [
+      13.0657,
+      52.3906
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2016,
+    "disciplines": [
+      "Digital Humanities",
+      "Information Science"
+    ],
+    "methods": [
+      "Digitization"
+    ],
+    "positions": [
+      {
+        "name": "Digital Archiving & Digitization",
+        "year": 2020,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Information Science"
+        ],
+        "methods": [
+          "Digitization"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2016,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-bern",
+    "name": "Universität Bern",
+    "city": "Bern",
+    "country": "CH",
+    "coordinates": [
+      7.4474,
+      46.948
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2012,
+    "disciplines": [
+      "Digital History",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Handwriting Recognition",
+      "Machine Learning",
+      "Stemmatology",
+      "TEI/XML"
+    ],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2018,
+        "level": "Asst. Prof.",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital History"
+        ],
+        "methods": [
+          "Handwriting Recognition",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Digital Humanities",
+        "year": 2012,
+        "level": "Asst. Prof.",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Stemmatology"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-jena",
+    "name": "Universität Jena",
+    "city": "Jena",
+    "country": "DE",
+    "coordinates": [
+      11.5892,
+      50.9271
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2017,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Computer Vision",
+      "Image Analysis",
+      "Machine Learning",
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "DH: Image & Object Data",
+        "year": 2017,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Image Analysis",
+          "Computer Vision"
+        ]
+      },
+      {
+        "name": "DH: ML and Language Technology",
+        "year": 2017,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "Machine Learning",
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-frankfurt",
+    "name": "Universität Frankfurt",
+    "city": "Frankfurt",
+    "country": "DE",
+    "coordinates": [
+      8.6821,
+      50.1109
+    ],
+    "totalPositions": 2,
+    "openPositions": 0,
+    "earliestYear": 2008,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "NLP",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Applied Computational Linguistics",
+        "year": 2011,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      },
+      {
+        "name": "Text Technology & Computational Linguistics",
+        "year": 2008,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics",
+          "Digital Humanities"
+        ],
+        "methods": [
+          "NLP",
+          "Text Mining"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-freiburg",
+    "name": "Universität Freiburg",
+    "city": "Freiburg",
+    "country": "DE",
+    "coordinates": [
+      7.8421,
+      47.999
+    ],
+    "totalPositions": 1,
+    "openPositions": 1,
+    "earliestYear": 2026,
+    "disciplines": [
+      "Digital Humanities"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2026,
+        "level": "W3",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-f-r-weiterbildung-krems",
+    "name": "Universität für Weiterbildung Krems",
+    "city": "Krems",
+    "country": "AT",
+    "coordinates": [
+      15.61,
+      48.4092
+    ],
+    "totalPositions": 1,
+    "openPositions": 1,
+    "earliestYear": 2024,
+    "disciplines": [
+      "Digital Culture",
+      "Digital Humanities"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Digital Cultures and DH",
+        "year": 2024,
+        "level": "A1",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital Culture"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-z-rich",
+    "name": "Universität Zürich",
+    "city": "Zürich",
+    "country": "CH",
+    "coordinates": [
+      8.5417,
+      47.3769
+    ],
+    "totalPositions": 1,
+    "openPositions": 1,
+    "earliestYear": 2024,
+    "disciplines": [
+      "Digital Humanities",
+      "Theology"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Ancient Christianity & DH",
+        "year": 2024,
+        "level": "TT",
+        "status": "open",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Theology"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-des-saarlandes",
+    "name": "Universität des Saarlandes",
+    "city": "Saarbrücken",
+    "country": "DE",
+    "coordinates": [
+      6.9965,
+      49.2354
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2024,
+    "disciplines": [
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Digital Methods"
+    ],
+    "positions": [
+      {
+        "name": "Digital Methods in Humanities",
+        "year": 2024,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": [
+          "Digital Methods"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fh-erfurt",
+    "name": "FH Erfurt",
+    "city": "Erfurt",
+    "country": "DE",
+    "coordinates": [
+      11.0299,
+      50.9787
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2023,
+    "disciplines": [
+      "Digital Humanities",
+      "Education"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "DH: Hybrid Educational Spaces",
+        "year": 2023,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities",
+          "Education"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-regensburg",
+    "name": "Universität Regensburg",
+    "city": "Regensburg",
+    "country": "DE",
+    "coordinates": [
+      12.0956,
+      49.0134
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2021,
+    "disciplines": [
+      "Digital Humanities"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2021,
+        "level": "W1",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "hochschule-augsburg",
+    "name": "Hochschule Augsburg",
+    "city": "Augsburg",
+    "country": "DE",
+    "coordinates": [
+      10.8978,
+      48.3705
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2021,
+    "disciplines": [
+      "Computational Linguistics"
+    ],
+    "methods": [
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "Language Technologies & Cognitive Assistance",
+        "year": 2021,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fernuniversit-t-in-hagen",
+    "name": "FernUniversität in Hagen",
+    "city": "Hagen",
+    "country": "DE",
+    "coordinates": [
+      7.4609,
+      51.3671
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2021,
+    "disciplines": [
+      "Computational Linguistics"
+    ],
+    "methods": [
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "Computational Linguistics",
+        "year": 2021,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-vechta",
+    "name": "Universität Vechta",
+    "city": "Vechta",
+    "country": "DE",
+    "coordinates": [
+      8.286,
+      52.7264
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2020,
+    "disciplines": [
+      "Digital Humanities"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2020,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-oldenburg",
+    "name": "Universität Oldenburg",
+    "city": "Oldenburg",
+    "country": "DE",
+    "coordinates": [
+      8.2146,
+      53.1435
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2019,
+    "disciplines": [
+      "Digital Humanities",
+      "Media Studies"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Knowledge Processes & Digital Media",
+        "year": 2019,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Media Studies"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-klagenfurt",
+    "name": "Universität Klagenfurt",
+    "city": "Klagenfurt",
+    "country": "AT",
+    "coordinates": [
+      14.3053,
+      46.6247
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2019,
+    "disciplines": [
+      "Computational Linguistics",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "Computational Linguistics & DH",
+        "year": 2019,
+        "level": "A1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Computational Linguistics",
+          "Digital Humanities"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-magdeburg",
+    "name": "Universität Magdeburg",
+    "city": "Magdeburg",
+    "country": "DE",
+    "coordinates": [
+      11.6292,
+      52.1205
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2018,
+    "disciplines": [
+      "Digital Humanities",
+      "Research Infrastructure"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Research Infrastructures for DH",
+        "year": 2018,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Research Infrastructure"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-rostock",
+    "name": "Universität Rostock",
+    "city": "Rostock",
+    "country": "DE",
+    "coordinates": [
+      12.0991,
+      54.0924
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2018,
+    "disciplines": [
+      "Digital Humanities"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Digital Humanities",
+        "year": 2018,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "humboldt-universit-t-zu-berlin",
+    "name": "Humboldt-Universität zu Berlin",
+    "city": "Berlin",
+    "country": "DE",
+    "coordinates": [
+      13.3933,
+      52.5186
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2018,
+    "disciplines": [
+      "Digital History"
+    ],
+    "methods": [
+      "Data Visualization",
+      "Digital Source Criticism",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "Digital History",
+        "year": 2018,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital History"
+        ],
+        "methods": [
+          "Text Mining",
+          "Data Visualization",
+          "Digital Source Criticism"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "technische-universit-t-berlin",
+    "name": "Technische Universität Berlin",
+    "city": "Berlin",
+    "country": "DE",
+    "coordinates": [
+      13.3933,
+      52.5186
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2018,
+    "disciplines": [
+      "Digital Art History",
+      "Provenance Research"
+    ],
+    "methods": [
+      "Data Modeling",
+      "Linked Data"
+    ],
+    "positions": [
+      {
+        "name": "Digital Provenance Research",
+        "year": 2018,
+        "level": "W1",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital Art History",
+          "Provenance Research"
+        ],
+        "methods": [
+          "Linked Data",
+          "Data Modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "th-k-ln",
+    "name": "TH Köln",
+    "city": "Köln",
+    "country": "DE",
+    "coordinates": [
+      6.9603,
+      50.9375
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2018,
+    "disciplines": [
+      "Digital Humanities",
+      "Information Science"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Open Access & Digital Resources Management",
+        "year": 2018,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Information Science",
+          "Digital Humanities"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-kiel",
+    "name": "Universität Kiel",
+    "city": "Kiel",
+    "country": "DE",
+    "coordinates": [
+      10.1228,
+      54.3233
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2017,
+    "disciplines": [
+      "Digital Archaeology"
+    ],
+    "methods": [
+      "3D Modeling",
+      "GIS"
+    ],
+    "positions": [
+      {
+        "name": "Archaeoinformatics",
+        "year": 2017,
+        "level": "W2",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Archaeology"
+        ],
+        "methods": [
+          "GIS",
+          "3D Modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "universit-t-potsdam",
+    "name": "Universität Potsdam",
+    "city": "Potsdam",
+    "country": "DE",
+    "coordinates": [
+      13.0657,
+      52.3906
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2017,
+    "disciplines": [
+      "Computational Linguistics"
+    ],
+    "methods": [
+      "NLP"
+    ],
+    "positions": [
+      {
+        "name": "Foundations of Computational Linguistics",
+        "year": 2017,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Computational Linguistics"
+        ],
+        "methods": [
+          "NLP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bergische-universit-t-wuppertal",
+    "name": "Bergische Universität Wuppertal",
+    "city": "Wuppertal",
+    "country": "DE",
+    "coordinates": [
+      7.1498,
+      51.2456
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2016,
+    "disciplines": [
+      "Digital History",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Data Modeling",
+      "TEI/XML"
+    ],
+    "positions": [
+      {
+        "name": "DH (Historical-Cultural Information Processing)",
+        "year": 2016,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Digital History"
+        ],
+        "methods": [
+          "TEI/XML",
+          "Data Modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rwth-aachen",
+    "name": "RWTH Aachen",
+    "city": "Aachen",
+    "country": "DE",
+    "coordinates": [
+      6.0839,
+      50.7753
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2016,
+    "disciplines": [
+      "Computational Social Science",
+      "Digital Humanities"
+    ],
+    "methods": [
+      "Data Science",
+      "Network Analysis"
+    ],
+    "positions": [
+      {
+        "name": "Methodology: Computer-based Humanities & Social Sciences",
+        "year": 2016,
+        "level": "W3",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital Humanities",
+          "Computational Social Science"
+        ],
+        "methods": [
+          "Network Analysis",
+          "Data Science"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "university-of-luxembourg",
+    "name": "University of Luxembourg",
+    "city": "Luxemburg",
+    "country": "LU",
+    "coordinates": [
+      6.1296,
+      49.6116
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2012,
+    "disciplines": [
+      "Digital History"
+    ],
+    "methods": [],
+    "positions": [
+      {
+        "name": "Digital History",
+        "year": 2012,
+        "level": "open rank",
+        "status": "filled",
+        "temporary": false,
+        "disciplines": [
+          "Digital History"
+        ],
+        "methods": []
+      }
+    ]
+  },
+  {
+    "id": "universit-t-m-nster",
+    "name": "Universität Münster",
+    "city": "Münster",
+    "country": "DE",
+    "coordinates": [
+      7.6261,
+      51.9607
+    ],
+    "totalPositions": 1,
+    "openPositions": 0,
+    "earliestYear": 2019,
+    "disciplines": [
+      "Digital History"
+    ],
+    "methods": [
+      "Data Visualization",
+      "Text Mining"
+    ],
+    "positions": [
+      {
+        "name": "DH in History & Culture",
+        "year": 2019,
+        "level": "W2",
+        "status": "filled",
+        "temporary": true,
+        "disciplines": [
+          "Digital History"
+        ],
+        "methods": [
+          "Text Mining",
+          "Data Visualization"
+        ]
+      }
+    ]
+  }
+]

@@ -1,51 +1,75 @@
-# Promptotyping — Methodenbeschreibung (Meta-Ebene)
+---
+type: specification
+created: 2026-03-24
+tags: [promptotyping, methodology, context-engineering]
+status: draft
+---
 
-## Was ist Promptotyping?
+# Promptotyping — Methodenbeschreibung
 
-Promptotyping ist eine Methode zur iterativen Entwicklung digitaler Forschungsartefakte im Dialog zwischen Mensch und KI. Der Name verbindet "Prompt" (die Eingabe an ein KI-System) mit "Prototyping" (iteratives Entwerfen).
+> Abgleich mit [[Promptotyping]] im Obsidian Research Vault (Applied Generative AI/Promptotyping.md)
 
-## Kernprinzipien
+## Kernprinzip
 
-1. **Konversationelle Ideation** — Ideen entstehen im Dialog, nicht im Vakuum
-2. **Sofortige Materialisierung** — Jede Idee wird unmittelbar in ein testbares Artefakt übersetzt
-3. **Verifizierbare Outputs** — Jedes "Promptotyping-Interface" ist eine prüfbare Hypothese
-4. **Transparente Dokumentation** — Der gesamte Prozess wird im Journal festgehalten
-5. **Zwei Wissensebenen** — Projekt-Vault + kuratierte Wissensbasis (Obsidian)
+**"Documents as Source of Truth, Code as Disposable Artifact."**
 
-## Struktur eines Promptotyping-Projekts
+Promptotyping ist eine iterative Context-Engineering-Arbeitstechnik, die Prompt Engineering mit nutzerzentriertem Design verbindet, um Forschungsartefakte (Interfaces, Tools, Workflows) kollaborativ mit Frontier-LLMs zu entwickeln.
 
-```
-project-repo/
-├── CLAUDE.md            # KI-Kontextdatei (Projektbeschreibung, Konventionen)
-├── Journal.md           # Promptotyping-Journal (dual: Projekt + Methode)
-├── Knowledge/           # Promptotyping-Vault (Obsidian-kompatibel)
-│   ├── Design.md        # Visuelle Konzepte, UI, Ästhetik
-│   ├── Data.md          # Datenquellen, Datenmodell, Verarbeitung
-│   ├── Research.md      # Forschungsfragen, Related Work, Kontext
-│   └── Promptotyping.md # Methoden-Dokumentation (dieses Dokument)
-├── Data/                # Datensätze (JSON, CSV, JSON-LD)
-├── Feedback/            # Verifikations-Zyklen, Feedback-Skripte
-└── index.html           # Promptotyping-Interface (Web-Visualisierung)
-```
+## Vier Phasen
+
+### 1. Preparation (Vorbereitung)
+Alle Quellmaterialien sammeln (Forschungsdaten, Standards, Domänenwissen) **bevor** technische Entscheidungen fallen.
+
+### 2. Exploration & Mapping
+Systematisches Erkunden der Schnittstelle zwischen Rohdaten und Forschungskontext.
+
+### 3. Destillation
+Context Compression — maximale Information, minimale Tokens. Produziert **Promptotyping-Dokumente**.
+
+### 4. Implementation
+Iterative Entwicklung mit LLMs, validiert durch **Critical Expert-in-the-Loop**.
+
+## Promptotyping-Dokumente (7 Typen)
+
+| Dokument | Kategorie | Funktion |
+|----------|-----------|----------|
+| README.md / CLAUDE.md | Knowledge | Projektkontext, Forschungsfragen |
+| DATA.md | Knowledge | Datenmodelle, Beispieldaten, Query-Logik |
+| REQUIREMENTS.md | Knowledge | User Stories, Anforderungen |
+| DESIGN.md | Knowledge/Action | Design-Entscheidungen, Agent Socialization |
+| JOURNAL.md | Process | Prozessdokumentation, Entscheidungen, Dead Ends |
+| INSTRUCTIONS.md | Action | Implementierungsschritte |
+| RULES.md | Action | Globale Entwicklungsprinzipien |
+
+### Mapping auf dieses Projekt
+
+| Promptotyping-Typ | DHd Landscape Pendant |
+|---|---|
+| README.md | CLAUDE.md |
+| DATA.md | Knowledge/Data.md |
+| REQUIREMENTS.md | (noch nicht angelegt) |
+| DESIGN.md | Knowledge/Design.md |
+| JOURNAL.md | Journal.md |
+| INSTRUCTIONS.md | (nicht nötig — direkte Umsetzung) |
+| RULES.md | (in CLAUDE.md integriert) |
 
 ## Zwei Wissensebenen
 
 ### 1. Promptotyping-Vault (im Repo)
 - **Projektspezifisch**: Design, Daten, Forschungsfragen dieses Projekts
-- **Entsteht im Projekt, lebt im Projekt**
-- **Versioniert** mit dem Code (Git)
+- Entsteht im Projekt, lebt im Projekt, versioniert mit Git
 
 ### 2. Obsidian Research Vault (extern)
 - **Kuratiertes "zweites Hirn"**: Stabiles, projektübergreifendes Wissen
-- UI-Patterns, Technologien, Methoden, Domain-Wissen, Institutionswissen
+- Pfad: `C:\Users\Chrisi\Documents\obsidian`
+- Relevante Bereiche: Digital Humanities/, Applied Generative AI/, Research Data and Open Science/
 - **Höhere Verlässlichkeit als Web-Suche** — menschlich kuratiert
-- **Teilbar zwischen Projekten**: Wissen über UIs, Technologien, Prozesse
 - KI-Agenten können sich daraus bedienen
 
 ### Zusammenspiel
-Der Promptotyping-Prozess speist sich aus beiden Quellen. Das Repo-Knowledge ist der lokale Kontext, der Obsidian-Vault die geteilte Wissensbasis. Im Idealfall fließen Erkenntnisse aus dem Projekt zurück in den Vault.
+Der Promptotyping-Prozess speist sich aus beiden Quellen. Erkenntnisse aus dem Projekt fließen zurück in den Vault.
 
-## Der Promptotyping-Zyklus
+## Promptotyping-Zyklus
 
 ```
   Prompt → Interface → Verifikation → Feedback → Prompt → ...
@@ -53,34 +77,26 @@ Der Promptotyping-Prozess speist sich aus beiden Quellen. Das Repo-Knowledge ist
      └──── Knowledge-Vault (aktualisiert) ←─────────┘
 ```
 
-1. **Prompt**: Forscher formuliert Absicht ("Ich will sehen, wer Semantic Web macht")
-2. **AI-Beitrag**: KI strukturiert, recherchiert, implementiert
-3. **Interface**: Testbares Web-Artefakt entsteht (Promptotyping-Interface)
-4. **Verifikation**: Forscher prüft: Stimmt das? Fehlt etwas? Ist die Darstellung richtig?
-5. **Feedback**: Korrekturen, neue Ideen, Richtungsänderungen
-6. **Knowledge-Update**: Erkenntnisse fließen zurück in die Dokumentation
+## Schlüsselkonzepte (aus Obsidian Vault)
 
-## Journal-Struktur
+- **Critical Expert-in-the-Loop**: Qualitätssicherung durch Domänenexpertise, AI Literacy und metakognitive Wachsamkeit
+- **Agent Socialization**: DESIGN.md als Agentenkonfiguration, parametrisiert Verhalten und Entscheidungsmuster
+- **Verification Milestones**: Definierte Checkpoints, an denen Domänenexpertise systematisch angewendet wird
+- **Promptotyping-Interfaces**: Browser-basierte Validierungstools, die Zwischenergebnisse sichtbar und korrigierbar machen
+- **Asymmetric Amplification**: LLMs verstärken, automatisieren nicht
+- **Epistemic Infrastructure**: Integriertes System aus Verification Milestones, Interfaces, Dokumenten, Versionskontrolle
 
-Jeder Session-Eintrag dokumentiert:
-- **Promptotyping Context**: Setting, verwendete Wissensquellen, Methode
-- **Phasen** mit:
-  - **Prompt Intent**: Was wollte der Forscher?
-  - **AI Contribution**: Was hat die KI beigetragen?
-  - **Human Decision**: Welche Entscheidungen hat der Forscher getroffen?
-  - **Verification**: Wurde das Output geprüft? Mit welchem Ergebnis?
-- **Promptotyping Observations**: Meta-Beobachtungen über den Prozess selbst
+## Dieses Projekt als Case Study
 
-## Git-Commit-Konventionen
-
-- Commits dokumentieren den Promptotyping-Fortschritt
-- Jeder Commit beschreibt **was** gebaut wurde und **warum** (nicht nur das Was)
-- `Co-Authored-By: Claude` markiert KI-generierte Beiträge
-- Commits spiegeln die Promptotyping-Phasen wider
-
-## Dieses Projekt als Beispiel
-
-**DHd Landscape** demonstriert Promptotyping anhand eines konkreten Forschungsprojekts:
-- Ideation → Tech-Entscheidung → Prototyp → Datenerhebung → Refactoring → Verifikation
-- Jede Phase ist im Journal dokumentiert
+**DHd Landscape** demonstriert Promptotyping als "Data Exploration" Case Study (vgl. corresp-explorer, herdata, m3gim im Obsidian Vault):
+- Ideation → Datenerhebung → Modellierung → Visualisierung → Verifikation
+- Jede Phase im Journal dokumentiert
 - Das Repo ist sowohl Produkt als auch methodisches Artefakt
+
+## Related
+
+- [[Context Engineering]]
+- [[Vibe Coding]] (Kontrast: intuitive vs. strukturierte Entwicklung)
+- [[Scholar-Centered Design]]
+- [[Information Visualization]]
+- [[Asymmetric Amplification]]

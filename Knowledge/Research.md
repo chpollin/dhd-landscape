@@ -1,4 +1,13 @@
+---
+type: research
+created: 2026-03-24
+tags: [digital-humanities, dach, linked-open-data, research-landscape]
+status: draft
+---
+
 # Research
+
+> Informiert durch [[Digital-Humanities MOC]], [[Linked Open Data]], [[CIDOC-CRM]], [[TaDiRAH]] im Obsidian Research Vault
 
 ## Forschungsfragen
 
@@ -7,69 +16,90 @@
 3. Gibt es **Cluster** bestimmter DH-Subdisziplinen?
 4. Wie hat sich die DH-Landschaft **entwickelt** (zeitliche Dimension)?
 5. Welche **Lücken** gibt es — unterrepräsentierte Regionen oder Disziplinen?
-6. Wer könnte **Kooperationspartner** sein? ("Ich forsche zu Semantic Web — wo noch?")
+6. Wer könnte **Kooperationspartner** sein? ("Ich forsche zu X — wo noch?")
 
 ## Drei Perspektiven
 
 1. **Forschung** — Welche DH-Themen werden wo beforscht?
 2. **Lehre** — Wo wird DH unterrichtet? Schwerpunkte der Curricula?
+   - Datenquelle: DH Course Registry (DARIAH + CLARIN): https://dhcr.clarin-dariah.eu/
 3. **Vernetzung** — Themenbasierte Verbindungen zwischen Institutionen
 
 ## Kontext
 
-Die Digital Humanities im deutschsprachigen Raum sind seit den 2000ern stark gewachsen. Der DHd-Verband ist die zentrale Community-Organisation. Trotz dieses Wachstums gibt es keine interaktive, filterbare Übersicht, die zeigt: wer macht was wo.
+Die Digital Humanities im deutschsprachigen Raum sind seit den 2000ern stark gewachsen. Der DHd-Verband (https://digitalhumanities.de/) ist die zentrale Community-Organisation mit 17+ Arbeitsgruppen und jährlicher Konferenz (seit 2014).
+
+Trotz dieses Wachstums gibt es keine interaktive, filterbare Übersicht, die zeigt: wer macht was wo. Die DH Course Registry (DARIAH/CLARIN) kommt dem am nächsten, ist aber auf Studiengänge fokussiert.
 
 ## Related Work
 
 ### Datensammlungen
-- **Patrick Sahle**: Professuren-Listen (statisch, nicht interaktiv) — https://dhd-blog.org/?p=11018
-- **DH Course Registry** (DARIAH + CLARIN): https://dhcr.clarin-dariah.eu/ — DH-Programme an Institutionen
-- **CLARIN Centre Registry**: https://centres.clarin.eu — Infrastruktur-Zentren
+- Patrick Sahle: Professuren-Listen — https://dhd-blog.org/?p=11018
+- DH Course Registry (DARIAH + CLARIN): https://dhcr.clarin-dariah.eu/
+- CLARIN Centre Registry: https://centres.clarin.eu
+- OpenAlex Topic T12377: 137.000+ DH-Publikationen
 
-### Visualisierungen
-- **Sahle Visualisierung**: https://dhd-blog.org/?p=21260
-- **DARIAH-DE**: Infrastruktur-Karten (Fokus auf Infrastruktur, nicht Forschungsprofile)
-- **centerNet**: International DH Centers (veraltet)
-
-### Taxonomien
-- **TaDiRAH**: Taxonomy of Digital Research Activities in the Humanities — https://vocabs.dariah.eu/tadirah/
+### Taxonomien & Vokabulare
+- **TaDiRAH**: Taxonomy of Digital Research Activities in the Humanities
+  - URL: https://vocabs.dariah.eu/tadirah/
+  - Format: SKOS (RDF/XML, Turtle, JSON-LD)
   - Drei Facetten: Research Activities, Research Objects, Research Techniques
-  - SKOS-Format, publiziert als LOD
-  - Ideal für Methoden-Klassifikation
+  - URI-Pattern: `https://vocabs.dariah.eu/tadirah/encoding`
 - **NeDiMAH Methods Ontology (NeMO)**: Granularer als TaDiRAH, OWL-Ontologie
+- **CIDOC-CRM**: Cultural Heritage Ontologie (vgl. [[CIDOC-CRM]] im Vault)
 
 ### Identifikatoren
-- **ROR** (Research Organization Registry): https://ror.org/ — Persistente IDs für Institutionen, CC0
-- **GND**: Gemeinsame Normdatei — Autoritätsdatei für Institutionen
-- **GeoNames**: https://sws.geonames.org/ — Stabile URIs für Orte
+- **ROR**: https://ror.org/ — Persistente IDs, CC0, JSON-LD, Parent-Child
+- **GND**: Gemeinsame Normdatei
+- **GeoNames**: https://sws.geonames.org/ — Stabile Orts-URIs
+- **VIAF**: Virtual International Authority File
 
 ## Linked Open Data Modell
 
 ### Vokabular-Stack
-1. **Schema.org** — Strukturelles Rückgrat (breiteste Interoperabilität)
-2. **Wikidata URIs** — Für Entitäten (Länder, Städte, Disziplinen)
+1. **Schema.org** — Strukturelles Rückgrat (`ResearchOrganization`, `EducationalOrganization`)
+2. **Wikidata URIs** — Entitäten (Q-Items für Länder, Städte, Disziplinen)
 3. **TaDiRAH URIs** — DH-spezifische Methoden und Aktivitäten
-4. **ROR** — Institutions-Identifikatoren
-5. **GeoNames/Wikidata** — Geographische Entitäten
+4. **ROR** — Persistente Institutions-IDs
+5. **GeoNames / Wikidata** — Geographische Entitäten
 
-### Schema.org Types
-- `ResearchOrganization` + `EducationalOrganization` (dual-typed)
-- `knowsAbout` für Disziplinen/Methoden (akzeptiert URLs)
-- `sameAs` für Wikidata, GND, VIAF, ROR
-- `GeoCoordinates` für Standorte
-- `parentOrganization` für Universität → Zentrum
-
-### Best Practices (aus DH-Projekten)
-- DARIAH/ACDH-CH: Schema.org + Wikidata + GND
-- CLARIN: CMDI-Metadaten, konvertierbar zu RDF
-- Linked Pasts: GeoJSON-LD für historische Ortsdaten
-- ROR: CC0-Datenbank mit JSON-LD, Parent-Child-Relationen
+### Schema.org Mapping
+- `@type`: `ResearchOrganization` + `EducationalOrganization` (dual-typed)
+- `knowsAbout`: Disziplinen/Methoden (akzeptiert URLs → Wikidata/TaDiRAH)
+- `sameAs`: Wikidata, GND, VIAF, ROR
+- `geo`: `GeoCoordinates` mit `latitude`/`longitude`
+- `parentOrganization`: Universität → Zentrum
+- `foundingDate`: Jahr der Einrichtung
+- `numberOfEmployees`: `QuantitativeValue` für Positionen
 
 ### Architektur-Entscheidung
-**Separierung**: JSON-LD für Semantik, GeoJSON für Kartendarstellung. Nicht mischen (GeoJSON-LD ist experimentell und schlecht unterstützt).
+**Separierung**: JSON-LD für Semantik, GeoJSON für Kartendarstellung.
+GeoJSON-LD ist experimentell und schlecht unterstützt (vgl. [[Linked Open Data]] im Vault: "Sustainability: SPARQL endpoints and data maintenance not secured after project end").
 
-## Methodische Notiz: Promptotyping
+### Best Practices aus DH-Projekten
+- **DARIAH/ACDH-CH**: Schema.org + Wikidata + GND, ARCHE Repository
+- **CLARIN**: CMDI-Metadaten, konvertierbar zu RDF
+- **Linked Pasts**: GeoJSON-LD für historische Ortsdaten
+- **WarSampo**: 14M RDF Triples, 6 koordinierte Perspektiven
+- **ResearchSpace** (British Museum): CIDOC-CRM Knowledge Graph
 
-Dieses Projekt ist gleichzeitig Forschungsoutput und Demonstration der **Promptotyping-Methode**. Der iterative Zyklus von Datenerhebung → Modellierung → Visualisierung → Verifikation wird transparent in diesem Repository dokumentiert.
+### Reconciliation (vgl. Obsidian Vault)
+- **OpenRefine** als primäres Reconciliation-Tool
+- Abgleich gegen GND, Wikidata, VIAF, GeoNames
+- Tim Berners-Lee's Five-Star Model als Qualitätsziel
 
-Jedes "Promptotyping-Interface" (Web-Visualisierung) ist eine testbare Hypothese über die Daten — es kann verifiziert, korrigiert und verfeinert werden.
+## Methodische Einbettung
+
+Dieses Projekt ist gleichzeitig:
+1. **Forschungsoutput**: Interaktive Kartierung der DH-Landschaft
+2. **Promptotyping Case Study**: Dokumentiertes Beispiel der Methode (vgl. [[Promptotyping]])
+3. **LOD-Beispiel**: Die Datengrundlage selbst als Linked Open Data publiziert
+
+## Related
+
+- [[Digital-Humanities MOC]]
+- [[Linked Open Data]]
+- [[CIDOC-CRM]]
+- [[Information Visualization]]
+- [[Promptotyping]]
+- [[Scholar-Centered Design]]

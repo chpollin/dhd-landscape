@@ -1,90 +1,75 @@
+---
+type: knowledge
+created: 2026-03-24
+tags: [data-sources, data-modeling, json-ld, linked-open-data]
+status: draft
+---
+
 # Data
 
-## Data Sources (Priority Ranking)
+> Informiert durch [[Linked Open Data]], [[GeoJSON]], [[CIDOC-CRM]] im Obsidian Research Vault
 
-### 1. Patrick Sahle — DH Professorship List ✅ integriert
+## Datenquellen (Priorität)
+
+### Prio 1: Patrick Sahle — DH Professorship List ✅
 - **URL**: https://dhd-blog.org/?p=11018
-- **Content**: 150 DH-denominierte Professuren im DACH-Raum (2008–2026)
-- **Format**: HTML-Tabelle, von uns als JSON extrahiert
+- **Content**: 150 DH-Professuren im DACH-Raum (2008–2026)
 - **Status**: Integriert, aggregiert auf 52 Institutionen
-- **Visualisierung der Liste**: https://dhd-blog.org/?p=21260
+- **Visualisierung**: https://dhd-blog.org/?p=21260
 
-### 2. OpenAlex API ⭐ höchste Priorität
+### Prio 2: OpenAlex API ⭐
 - **URL**: https://api.openalex.org
-- **Content**: 137.206 DH-Publikationen weltweit, Topic `T12377` (Digital Humanities and Scholarship)
-- **Deutschland**: 3.283 Works, **77 Institutionen** identifiziert
-- **Österreich**: 519 Works
-- **Schweiz**: 639 Works
-- **Top DE-Institutionen**: Universität Trier (222), TIB Hannover (130), FH Potsdam (97)
-- **Query-Pattern**: `/works?filter=topics.id:T12377,authorships.institutions.country_code:DE`
+- **Topic**: `T12377` (Digital Humanities and Scholarship) — 137.206 Works
+- **DE**: 3.283 Works, 77 Institutionen | **AT**: 519 | **CH**: 639
+- **Query**: `/works?filter=topics.id:T12377,authorships.institutions.country_code:DE`
 - **Format**: REST API, JSON, CC0
-- **Aufwand**: Niedrig — API ist gut dokumentiert, erlaubt Gruppierung nach Institution
-- **Wert**: Hoch — ergänzt Sahle-Liste um Forschungsoutput-Perspektive
+- **Aufwand**: Niedrig | **Wert**: Hoch
 
-### 3. DHd Zenodo Communities
-- **URLs**:
-  - `zenodo.org/communities/dhd` — Konferenzmaterialien
-  - `zenodo.org/communities/dhd-verbandsaktivitaeten` — AG-Berichte
-- **Content**: 12 Jahreskonferenzen (2014–2026), Books of Abstracts mit Autor-Institutions-Zuordnungen
+### Prio 3: DHd Zenodo Communities
+- `zenodo.org/communities/dhd` — Konferenzmaterialien (2014–2026)
+- `zenodo.org/communities/dhd-verbandsaktivitaeten` — AG-Berichte
 - **Format**: REST API + OAI-PMH
-- **Aufwand**: Niedrig
-- **Wert**: Hoch — reichhaltige Autor-Institutions-Topic-Daten
+- **Aufwand**: Niedrig | **Wert**: Hoch
 
-### 4. CLARIN Centre Registry
+### Prio 4: CLARIN Centre Registry
 - **URL**: https://centres.clarin.eu
-- **Content**: ~20 DACH-Zentren mit Name, Typ (B/C/K), Zertifizierung, Stadt
-- **Deutschland**: ~14 Zentren (BAS München, BBAW Berlin, Tübingen, GWDG Göttingen...)
-- **Österreich**: 3 Zentren (ACDH-ARCHE Wien, DH-Graz, GermanAT)
-- **Schweiz**: 2–3 Zentren
-- **Aufwand**: Niedrig — strukturierte Registry
-- **Wert**: Mittel — Infrastruktur-Dimension
+- ~20 DACH-Zentren (DE: ~14, AT: 3, CH: 2-3)
+- **Aufwand**: Niedrig | **Wert**: Mittel
 
-### 5. DBLP — DHd Conference Proceedings
-- **URL**: https://dblp.org
-- **Content**: 1.429 DH-Publikationen, vollständige DHd-Proceedings (2014–2025)
-- **Format**: API (XML, JSON, BibTeX, RDF), SPARQL-Endpoint
-- **Aufwand**: Niedrig-Mittel
-- **Wert**: Mittel — Autor-Institutions-Mappings aller DHd-Konferenzbeiträge
+### Prio 5: DBLP — DHd Proceedings
+- 1.429 DH-Publikationen, DHd 2014–2025
+- SPARQL-Endpoint: sparql.dblp.org
+- **Aufwand**: Niedrig-Mittel | **Wert**: Mittel
 
-### 6. Wikidata
-- **URL**: https://query.wikidata.org
-- **Content**: Entities für Universitäten, Departments, Disziplinen
-- **SPARQL-Konzept**: `?item wdt:P101 wd:Q5157565` (field of work: Digital Humanities)
-- **Limitation**: Lückenhaft — viele DH-Departments noch nicht erfasst
-- **Aufwand**: Mittel
-- **Wert**: Mittel — gut zum Verlinken/Anreichern, weniger als Primärquelle
+### Prio 6: Wikidata
+- SPARQL: `?item wdt:P101 wd:Q5157565` (Digital Humanities)
+- Lückenhaft, aber gut zum Verlinken/Anreichern
+- **Aufwand**: Mittel | **Wert**: Mittel
 
-### 7. DHd-Verband
+### Prio 7: DH Course Registry
+- **URL**: https://dhcr.clarin-dariah.eu/
+- DH-Studiengänge an Institutionen (DARIAH + CLARIN)
+- **Aufwand**: Niedrig | **Wert**: Mittel (Lehr-Perspektive)
+
+### Prio 8: DHd-Verband
 - **URL**: https://digitalhumanities.de/
-- **Content**: 17+ Arbeitsgruppen, ~50 Projekte, Konferenzen
-- **Kein öffentliches Mitgliederverzeichnis**
-- **Aufwand**: Mittel (Scraping nötig)
-
-### 8. NFDI-Konsortien
-- **NFDI4Culture**: https://nfdi4culture.de — 100+ Partner
-- **Text+**, **NFDI4Memory**, **NFDI4Objects**
-- **Aufwand**: Mittel (HTML-Listen)
-
-### 9. Studiengänge (BA/MA)
-- **studycheck.de**: ~20 DH-Programme
-- **Hochschulkompass**: Offizielle HRK-Datenbank
-- **DHd AG Referenzcurriculum**: Autoritative Quelle für DH-Curricula
+- 17+ AGs, ~50 Projekte, kein Mitgliederverzeichnis
 - **Aufwand**: Mittel
 
-### 10. DARIAH-DE
-- **URL**: https://de.dariah.eu
-- **Content**: 16 Partnerinstitutionen, CC-BY-4.0
-- **Aufwand**: Mittel
+### Prio 9: NFDI-Konsortien
+- NFDI4Culture (100+ Partner), Text+, NFDI4Memory, NFDI4Objects
+
+### Prio 10: Studiengänge
+- studycheck.de (~20 Programme), Hochschulkompass, DHd AG Referenzcurriculum
 
 ### Nicht empfohlen
-- **centerNet**: International, schlecht filterbar, veraltet
-- **CRIS/KDSF**: Kein zentrales Aggregat, jede Uni hat eigenes System
+- centerNet (veraltet), CRIS/KDSF (kein zentrales Aggregat)
 
 ---
 
-## Data Model
+## Datenmodell
 
-### Institutions (aggregiert)
+### Aktuell: Institutionsprofile (JSON)
 ```json
 {
   "id": "uni-graz",
@@ -95,29 +80,42 @@
   "totalPositions": 5,
   "openPositions": 1,
   "earliestYear": 2015,
-  "disciplines": ["Digital Humanities", "Digital Edition", ...],
-  "methods": ["TEI/XML", "Linked Data", ...],
-  "positions": [{ "name": "...", "year": 2024, "level": "TT", ... }]
+  "disciplines": ["Digital Humanities", "Digital Edition"],
+  "methods": ["TEI/XML", "Linked Data"],
+  "positions": [...]
 }
 ```
 
-### JSON-LD Modell (geplant)
+### Geplant: JSON-LD (Linked Open Data)
+
 Dreischichtiges Vokabular:
-1. **Schema.org** — Strukturelles Rückgrat (`ResearchOrganization`, `EducationalOrganization`)
-2. **Wikidata URIs** — Für Entitäten (Länder, Städte, Disziplinen)
-3. **TaDiRAH** — DH-spezifische Taxonomie für Methoden/Aktivitäten (DARIAH)
-4. **ROR** — Persistente Institutions-IDs (`https://ror.org/`)
+1. **Schema.org** — `ResearchOrganization`, `EducationalOrganization`, `knowsAbout`, `sameAs`
+2. **Wikidata** — Q-Items für Disziplinen (`wd:Q1026532` = Digital Humanities)
+3. **TaDiRAH** — DH-Methoden (`tadirah:encoding`, `tadirah:modeling`)
+4. **ROR** — Persistente IDs (`https://ror.org/01faaaf77`)
+5. **GeoNames** — Orts-URIs (`https://sws.geonames.org/2778067/` = Graz)
 
-Zusätzlich: `sameAs`-Links zu Wikidata, GND, VIAF, ROR.
+### Reconciliation-Workflow (vgl. Obsidian: [[Linked Open Data]])
+- **OpenRefine** für Abgleich gegen GND, Wikidata, VIAF
+- Five-Star LOD als Qualitätsziel
+- `sameAs`-Links zu mindestens Wikidata + ROR pro Institution
 
-Separate Dateien: JSON-LD für Semantik, GeoJSON für Kartendarstellung.
+---
 
-## Data Processing Workflow
+## Data Processing Pipeline
 
 1. **Collect** — Quellen anzapfen (API, Scraping, manuell)
 2. **Model** — Strukturieren nach Datenmodell (JSON)
 3. **Aggregate** — Einzelpositionen → Institutionsprofile (`build-institutions.js`)
-4. **Geocode** — Koordinaten für jeden Standort
-5. **Enrich** — Wikidata-IDs, ROR-IDs, TaDiRAH-Mappings
-6. **Validate** — Menschliche Verifikation im Feedback-Zyklus
-7. **Publish** — JSON + JSON-LD + GeoJSON für Web-Visualisierung
+4. **Geocode** — Koordinaten (WGS 84, [lng, lat] — vgl. [[GeoJSON]] im Vault)
+5. **Reconcile** — Wikidata-IDs, ROR-IDs, GND via OpenRefine
+6. **Enrich** — TaDiRAH-Mappings für Methoden
+7. **Validate** — Verification Milestone: Forscher prüft Datenqualität
+8. **Transform** — JSON → JSON-LD (semantisch) + GeoJSON (Karte) — separate Dateien
+9. **Publish** — GitHub Pages, LOD-Endpoint
+
+## Related
+
+- [[Linked Open Data]]
+- [[GeoJSON]]
+- [[CIDOC-CRM]]

@@ -263,9 +263,96 @@ Aufspaltung von einer monolithischen `index.html` in 5 Dateien:
 - Live: https://chpollin.github.io/dhd-landscape/
 
 ### Offene Punkte für Iteration 5
-1. **Farbschema**: Buntere, semantisch kodierte Farben (Disziplin→Farbe durchgängig)
-2. **Datenquellen**: CLARIN Centre Registry, Wikidata-Reconciliation, DH Course Registry, DBLP
-3. **Narrative-Polish**: Mini-Vizs verfeinern, mehr Stationen, Texte erweitern
+1. ~~**Farbschema**: Buntere, semantisch kodierte Farben~~ → TaDiRAH-Farbsystem ✅
+2. ~~**Datenquellen**: CLARIN, Wikidata, DH Course Registry, DBLP~~ ✅
+3. ~~**Narrative-Polish**~~ → Narrative Mode entfernt, durch Übersicht-View ersetzt ✅
 4. Use Case "Digitale Editionen"
-5. JSON-LD Export
+5. ~~JSON-LD Export~~ → `Data/context.jsonld` erstellt ✅
 6. Konstellations-View
+
+---
+
+## Promptotyping-Iteration 5+6: Light Mode Redesign + Data Enrichment
+
+### Zentrale Design-Entscheidung: Light Mode
+
+User-Feedback nach Iteration 4: "Zu dunkel, zu monoton — die DHd-Community ist bunt, innovativ, offen." Die Analyse zeigte, dass der Dark-Mode-Ansatz mit Glassmorphismus zwar technisch elegant, aber für ein wissenschaftliches Forschungstool unpassend war. Entscheidung: **Kompletter Wechsel zu Light Mode.**
+
+- **Hintergrund**: Warm off-white `#F5F3EF` (statt `#1a1a1f`)
+- **Text**: Dunkles Grau (statt helles Grau auf Dunkel)
+- **Karten**: Card Shadows statt Glassmorphismus (`backdrop-filter: blur()` entfernt)
+- **Basemap**: CartoDB Light/Positron (statt Dark Matter)
+- **Ton**: Wissenschaftlich-sachlich, keine Marketing-Sprache
+
+### Architektur-Pivot: 3 Views statt 3 Modes
+
+Die Narrative/Explore/Overview-Trias aus Iteration 4 wurde grundlegend überarbeitet:
+
+| Alt (Iteration 4) | Neu (Iteration 6) | Begründung |
+|--------------------|--------------------|----|
+| Narrative Mode (Scrollytelling) | **Übersicht** (Startseite mit Stats) | Scrollytelling zu komplex, Startseite mit Kernzahlen effektiver |
+| Explore Mode (Floating Panels) | **Karte** (TaDiRAH-Marker + Filter) | Floating draggable Panels → feste Kartenansicht mit Farbkodierung |
+| Overview Mode (HUD-Dashboard) | **Explorer** (Timeline/Institutionen/Disziplinen) | Dashboard-Widgets → dedizierte Chart-Ansichten |
+
+- `modes.js` ist deprecated, ersetzt durch `views.js`
+- Kein Mode-Switcher mehr, sondern View-Navigation: `[Übersicht | Karte | Explorer]`
+
+### TaDiRAH als semantisches Farbsystem
+
+Die Farbkodierung der Karte basiert jetzt durchgängig auf dem TaDiRAH-Vokabular (8 Kategorien):
+
+| TaDiRAH-Kategorie | Farbe | Hex |
+|---|---|---|
+| Capture | Blue | — |
+| Creation | Purple | — |
+| Enrichment | Green | — |
+| Analysis | Orange | — |
+| Interpretation | Red | — |
+| Storage | Slate | — |
+| Dissemination | Teal | — |
+| Meta-Activities | Gray | — |
+
+Die besetzt/offen-Unterscheidung (Indigo/Amber) wurde entfernt — Stellenstatus ist keine inhaltliche Dimension. Stattdessen repräsentiert die Markerfarbe das TaDiRAH-Profil der Institution.
+
+### 5 neue Datenquellen integriert
+
+| Quelle | Abgerufen | Matched | Neue Felder |
+|--------|-----------|---------|-------------|
+| **Wikidata** | 806 DACH-Universitäten | 51/52 (98%) | `gndId`, `founded`, Wikidata-IDs |
+| **Zenodo** (DHd Community) | 2112 Records | 50/52 (96%) | `zenodoRecordCount` |
+| **CLARIN Centre Registry** | 23 Zentren | 5/52 (10%) | `clarinCentre` |
+| **DH Course Registry** | 196 Kurse | 24/52 (46%) | `dhCourses` |
+| **DBLP** | 500 Records | — | Publikationsmetadaten |
+
+Zusammen mit Sahle und OpenAlex sind nun **7 Datenquellen** integriert.
+
+### JSON-LD Context
+
+`Data/context.jsonld` erstellt mit Vokabular-Mappings:
+- Schema.org (ResearchOrganization, EducationalOrganization)
+- Wikidata (Q-Items)
+- TaDiRAH (DARIAH-Vokabular-URIs)
+- ROR (persistente Institutions-IDs)
+- GND (Normdaten)
+
+### Entfernte Features
+- **Narrative Mode / Scrollytelling**: Zu komplex, lenkt von Daten ab
+- **Dark Theme**: Komplett ersetzt durch Light Mode
+- **Glassmorphismus**: Ersetzt durch Card Shadows
+- **besetzt/offen-Farbkodierung**: Ersetzt durch TaDiRAH-Farben
+- **modes.js**: Deprecated, ersetzt durch views.js
+
+### Stand nach Iteration 6
+- 52 Institutionen, 7 Datenquellen, 3 Views
+- Light Mode mit TaDiRAH-Farbsystem
+- JSON-LD Context erstellt
+- 5 Dateien: index.html, styles.css, app.js, views.js, charts.js
+- Live: https://chpollin.github.io/dhd-landscape/
+
+### Offene Punkte für Iteration 7
+1. Use Case "Digitale Editionen" als geführtes Szenario
+2. Konstellations-View (thematische Verbindungen)
+3. JSON-LD vollständiger Export (nicht nur Context)
+4. DBLP-Matching verfeinern
+5. Responsive Design / Mobile-Optimierung
+6. Accessibility-Audit (Screenreader, Keyboard-Navigation)

@@ -1,6 +1,6 @@
 /**
  * DHd Landscape — app.js
- * Shared infrastructure: Event Bus, Map, Data, Filters, Detail Panel
+ * Light-mode redesign with TaDiRAH-based marker colors
  */
 
 /* ------------------------------------------------
@@ -13,7 +13,31 @@ const Events = {
 };
 
 /* ------------------------------------------------
-   2. App Object (global)
+   2. TaDiRAH Color Constants
+   ------------------------------------------------ */
+const TADIRAH_COLORS = {
+  'Capture': '#3498DB',
+  'Creation': '#9B59B6',
+  'Enrichment': '#27AE60',
+  'Analysis': '#E67E22',
+  'Interpretation': '#C0392B',
+  'Storage': '#34495E',
+  'Dissemination': '#16A085',
+  'Meta': '#95A5A6'
+};
+
+/* ------------------------------------------------
+   3. TaDiRAH Helper
+   ------------------------------------------------ */
+function getDominantTadirah(inst) {
+  const profile = inst.tadirahProfile || {};
+  const entries = Object.entries(profile);
+  if (entries.length === 0) return 'Meta';
+  return entries.sort((a, b) => b[1] - a[1])[0][0];
+}
+
+/* ------------------------------------------------
+   4. App Object (global)
    ------------------------------------------------ */
 const App = {
   map: null,
@@ -26,11 +50,17 @@ const App = {
   // --- Helper: method label (handles string or {label, tadirahUri} objects) ---
   mLabel(m) { return typeof m === 'object' ? m.label : m; },
 
+  // --- Helper: get TaDiRAH category for a method object ---
+  mCategory(m) {
+    if (typeof m === 'object' && m.tadirahCategory) return m.tadirahCategory;
+    return null;
+  },
+
   // --- Parse JSON string or return array ---
   parse(v) { return typeof v === 'string' ? JSON.parse(v) : v; },
 
   /* ------------------------------------------------
-     3. Convert items array to GeoJSON FeatureCollection
+     5. Convert items array to GeoJSON FeatureCollection
      ------------------------------------------------ */
   toGeoJSON(items) {
     return {
@@ -40,21 +70,20 @@ const App = {
         id: p._index,
         geometry: { type: 'Point', coordinates: p.coordinates },
         properties: {
-          id:                 p.id,
-          name:               p.name,
-          city:               p.city,
-          country:            p.country,
-          totalPositions:     p.totalPositions || 0,
-          openPositions:      p.openPositions  || 0,
-          dhPublicationCount: p.dhPublicationCount || 0,
-          earliestYear:       p.earliestYear   || null
+          id:               p.id,
+          name:             p.name,
+          city:             p.city,
+          country:          p.country,
+          totalPositions:   p.totalPositions || 0,
+          earliestYear:     p.earliestYear   || null,
+          dominantTadirah:  getDominantTadirah(p)
         }
       }))
     };
   },
 
   /* ------------------------------------------------
-     4. Apply filters and broadcast
+     6. Apply filters and broadcast
      ------------------------------------------------ */
   applyFilters() {
     const { disc, meth, country } = App.active;
@@ -113,11 +142,11 @@ const App = {
       App.map.fitBounds(bounds, { padding: 60, duration: 800 });
     }
 
-    console.log(`%c[Filter]%c ${App.filtered.length}/${App.data.length} Institutionen`, 'color:#fbbf24;font-weight:bold', 'color:inherit');
+    console.log(`%c[Filter]%c ${App.filtered.length}/${App.data.length} Institutionen`, 'color:#3498DB;font-weight:bold', 'color:inherit');
   },
 
   /* ------------------------------------------------
-     5. Update map data source
+     7. Update map data source
      ------------------------------------------------ */
   updateMapData(items) {
     const src = App.map.getSource('institutions');
@@ -125,7 +154,7 @@ const App = {
   },
 
   /* ------------------------------------------------
-     6. Show detail panel
+     8. Show detail panel
      ------------------------------------------------ */
   showPanel(p) {
     const panel = document.getElementById('detail-panel');
@@ -135,63 +164,134 @@ const App = {
     const nameEl = document.getElementById('p-name');
     if (nameEl) nameEl.textContent = p.name;
 
-    // Location
+    // Location + founded
     const locEl = document.getElementById('p-loc');
     if (locEl) {
-      const year = p.earliestYear ? ` · seit ${p.earliestYear}` : '';
-      locEl.textContent = `${p.city}, ${p.country}${year}`;
+      const founded = p.founded ? ` · gegr. ${p.founded}` : '';
+      locEl.textContent = `${p.city}, ${p.country}${founded}`;
     }
 
-    // Stats
+    // Stats: Professuren, Zenodo-Records, DH-Kurse
     const statsEl = document.getElementById('p-stats');
     if (statsEl) {
+      const courses = App.parse(p.dhCourses || []);
       statsEl.innerHTML = `
         <div class="panel-stat">
           <div class="panel-stat-num">${p.totalPositions || 0}</div>
-          <div class="panel-stat-label">Stellen</div>
+          <div class="panel-stat-label">Professuren</div>
         </div>
         <div class="panel-stat">
-          <div class="panel-stat-num open">${p.openPositions || 0}</div>
-          <div class="panel-stat-label">Offen</div>
+          <div class="panel-stat-num">${p.zenodoRecordCount || 0}</div>
+          <div class="panel-stat-label">Zenodo-Records</div>
         </div>
         <div class="panel-stat">
-          <div class="panel-stat-num pubs">${p.dhPublicationCount || 0}</div>
-          <div class="panel-stat-label">Publikationen</div>
+          <div class="panel-stat-num">${courses.length}</div>
+          <div class="panel-stat-label">DH-Kurse</div>
         </div>`;
     }
 
-    // Disciplines
+    // TaDiRAH Profile as colored horizontal bars
+    const tadirahEl = document.getElementById('p-tadirah');
+    if (tadirahEl) {
+      const profile = p.tadirahProfile || {};
+      const entries = Object.entries(profile).sort((a, b) => b[1] - a[1]);
+      if (entries.length > 0) {
+        const maxVal = entries[0][1];
+        tadirahEl.innerHTML = `<div class="panel-section-title">TaDiRAH-Profil</div>` +
+          entries.map(([cat, val]) => {
+            const pct = Math.round((val / maxVal) * 100);
+            const color = TADIRAH_COLORS[cat] || TADIRAH_COLORS['Meta'];
+            return `<div class="panel-tadirah-bar">
+              <span class="panel-tadirah-label">${cat}</span>
+              <div class="panel-tadirah-track">
+                <div class="panel-tadirah-fill" style="width:${pct}%;background:${color}"></div>
+              </div>
+              <span class="panel-tadirah-val">${val}</span>
+            </div>`;
+          }).join('');
+      } else {
+        tadirahEl.innerHTML = '';
+      }
+    }
+
+    // Disciplines as tags
     const discEl = document.getElementById('p-disc');
     if (discEl) {
       const discs = App.parse(p.disciplines || []);
-      discEl.innerHTML = discs.map(d => `<span class="panel-tag">${d}</span>`).join('');
+      if (discs.length > 0) {
+        discEl.innerHTML = `<div class="panel-section-title">Disziplinen</div>
+          <div class="panel-tags">${discs.map(d => `<span class="panel-tag">${d}</span>`).join('')}</div>`;
+      } else {
+        discEl.innerHTML = '';
+      }
     }
 
-    // Methods
+    // Methods as tags with TaDiRAH category color
     const methEl = document.getElementById('p-meth');
     if (methEl) {
       const meths = App.parse(p.methods || []);
-      methEl.innerHTML = meths.map(m => `<span class="panel-tag method">${App.mLabel(m)}</span>`).join('');
+      if (meths.length > 0) {
+        methEl.innerHTML = `<div class="panel-section-title">Methoden</div>
+          <div class="panel-tags">${meths.map(m => {
+            const label = App.mLabel(m);
+            const cat = App.mCategory(m);
+            const color = cat && TADIRAH_COLORS[cat] ? TADIRAH_COLORS[cat] : '';
+            const style = color ? ` style="border-color:${color};color:${color}"` : '';
+            return `<span class="panel-tag"${style}>${label}</span>`;
+          }).join('')}</div>`;
+      } else {
+        methEl.innerHTML = '';
+      }
     }
 
-    // Positions
+    // DH-Studiengaenge
+    const coursesEl = document.getElementById('p-courses');
+    if (coursesEl) {
+      const courses = App.parse(p.dhCourses || []);
+      if (courses.length > 0) {
+        coursesEl.innerHTML = `<div class="panel-section-title">DH-Studiengänge</div>
+          <div class="panel-tags">${courses.map(c => {
+            const label = typeof c === 'object' ? (c.name || c.label || c) : c;
+            return `<span class="panel-tag">${label}</span>`;
+          }).join('')}</div>`;
+      } else {
+        coursesEl.innerHTML = '';
+      }
+    }
+
+    // CLARIN Centre
+    const clarinEl = document.getElementById('p-clarin');
+    if (clarinEl) {
+      if (p.clarinCentre) {
+        const cc = p.clarinCentre;
+        const typeLabel = typeof cc === 'object' ? (cc.type || cc.label || JSON.stringify(cc)) : cc;
+        clarinEl.innerHTML = `<div class="panel-section-title">CLARIN-Zentrum</div>
+          <div class="panel-tags"><span class="panel-tag">${typeLabel}</span></div>`;
+      } else {
+        clarinEl.innerHTML = '';
+      }
+    }
+
+    // Positions (without open/filled distinction)
     const posEl = document.getElementById('p-positions');
     if (posEl) {
       const positions = App.parse(p.positions || []);
-      posEl.innerHTML = positions.map(pos => {
-        const badge = pos.status === 'open'
-          ? '<span class="panel-pos-badge">offen</span>'
-          : '';
-        const temp = pos.temporary ? ' · befristet' : '';
-        return `
-          <div class="panel-position">
-            <div class="panel-pos-name">${pos.name}${badge}</div>
-            <div class="panel-pos-meta">${pos.level || ''} · ${pos.year || ''}${temp}</div>
-          </div>`;
-      }).join('');
+      if (positions.length > 0) {
+        posEl.innerHTML = `<div class="panel-section-title">Professuren</div>` +
+          positions.map(pos => {
+            const temp = pos.temporary ? ' · befristet' : '';
+            return `
+              <div class="panel-position">
+                <div class="panel-pos-name">${pos.name}</div>
+                <div class="panel-pos-meta">${pos.level || ''}${pos.year ? ' · ' + pos.year : ''}${temp}</div>
+              </div>`;
+          }).join('');
+      } else {
+        posEl.innerHTML = '';
+      }
     }
 
-    // Links
+    // Links: Website, Wikidata, ROR, GND
     const linksEl = document.getElementById('p-links');
     if (linksEl) {
       let html = '';
@@ -208,16 +308,20 @@ const App = {
         const rorUrl = p.rorId.startsWith('http') ? p.rorId : `https://ror.org/${p.rorId}`;
         html += `<a class="panel-link" href="${rorUrl}" target="_blank" rel="noopener">ROR</a>`;
       }
+      if (p.gndId) {
+        const gndUrl = p.gndId.startsWith('http') ? p.gndId : `https://d-nb.info/gnd/${p.gndId}`;
+        html += `<a class="panel-link" href="${gndUrl}" target="_blank" rel="noopener">GND</a>`;
+      }
       linksEl.innerHTML = html;
     }
 
     // Open panel
     panel.classList.add('open');
-    console.log(`%c[Panel]%c ${p.name}`, 'color:#818cf8;font-weight:bold', 'color:inherit');
+    console.log(`%c[Panel]%c ${p.name}`, 'color:#3498DB;font-weight:bold', 'color:inherit');
   },
 
   /* ------------------------------------------------
-     7. Close detail panel
+     9. Close detail panel
      ------------------------------------------------ */
   closePanel() {
     const panel = document.getElementById('detail-panel');
@@ -225,26 +329,44 @@ const App = {
   },
 
   /* ------------------------------------------------
-     8. Update stats bar
+     10. Update stats bar
      ------------------------------------------------ */
   updateStats() {
     const el = document.getElementById('stats-text');
     if (!el) return;
 
     const f = App.filtered;
-    const total = App.data.length;
     const stellen = f.reduce((s, p) => s + (p.totalPositions || 0), 0);
-    const pubs = f.reduce((s, p) => s + (p.dhPublicationCount || 0), 0);
+    const discs = new Set();
+    f.forEach(p => {
+      const d = App.parse(p.disciplines || []);
+      d.forEach(x => discs.add(x));
+    });
     const cities = new Set(f.map(p => p.city)).size;
 
-    el.textContent = `${f.length} von ${total} Institutionen · ${stellen} Stellen · ${pubs} Publikationen · ${cities} Städte`;
+    el.textContent = `${f.length} Institutionen · ${stellen} Professuren · ${discs.size} Disziplinen · ${cities} Standorte`;
   },
 
   /* ------------------------------------------------
-     9. Initialization
+     11. Build legend
+     ------------------------------------------------ */
+  buildLegend() {
+    const legendItems = document.getElementById('legend-items');
+    if (legendItems) {
+      Object.entries(TADIRAH_COLORS).forEach(([cat, color]) => {
+        const div = document.createElement('div');
+        div.className = 'legend-item';
+        div.innerHTML = `<span class="legend-dot" style="background:${color}"></span> ${cat}`;
+        legendItems.appendChild(div);
+      });
+    }
+  },
+
+  /* ------------------------------------------------
+     12. Initialization
      ------------------------------------------------ */
   async init() {
-    console.log('%c[DHd Landscape]%c Loading data...', 'color:#818cf8;font-weight:bold', 'color:inherit');
+    console.log('%c[DHd Landscape]%c Loading data...', 'color:#3498DB;font-weight:bold', 'color:inherit');
 
     // Load data
     const res = await fetch('Data/institutions.json');
@@ -254,17 +376,26 @@ const App = {
     App.data.forEach((p, i) => { p._index = i; });
     App.filtered = [...App.data];
 
-    console.log(`%c[DHd Landscape]%c ${App.data.length} institutions loaded`, 'color:#818cf8;font-weight:bold', 'color:inherit');
+    console.log(`%c[DHd Landscape]%c ${App.data.length} institutions loaded`, 'color:#3498DB;font-weight:bold', 'color:inherit');
+
+    // Build legend
+    App.buildLegend();
+
+    // Panel close button
+    const closeBtn = document.getElementById('panel-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => App.closePanel());
+    }
 
     // ---- Map Initialization ----
     App.map = new maplibregl.Map({
-      container: 'map',
+      container: 'map-container',
       style: {
         version: 8,
         sources: {
           'carto': {
             type: 'raster',
-            tiles: ['https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png'],
+            tiles: ['https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png'],
             tileSize: 256,
             attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
           }
@@ -287,7 +418,7 @@ const App = {
 
     // ---- Map Layers (on load) ----
     App.map.on('load', () => {
-      console.log('%c[Map]%c Loaded, adding layers...', 'color:#6ee7b7;font-weight:bold', 'color:inherit');
+      console.log('%c[Map]%c Loaded, adding layers...', 'color:#27AE60;font-weight:bold', 'color:inherit');
 
       // Source
       App.map.addSource('institutions', {
@@ -303,13 +434,22 @@ const App = {
         source: 'institutions',
         paint: {
           'circle-radius': 30,
-          'circle-color': '#818cf8',
+          'circle-color': ['match', ['get', 'dominantTadirah'],
+            'Capture', '#3498DB',
+            'Creation', '#9B59B6',
+            'Enrichment', '#27AE60',
+            'Analysis', '#E67E22',
+            'Interpretation', '#C0392B',
+            'Storage', '#34495E',
+            'Dissemination', '#16A085',
+            '#95A5A6'
+          ],
           'circle-blur': 1,
-          'circle-opacity': 0.06
+          'circle-opacity': 0.08
         }
       });
 
-      // Layer: circles
+      // Layer: circles (TaDiRAH-based color)
       App.map.addLayer({
         id: 'inst-circles',
         type: 'circle',
@@ -322,11 +462,15 @@ const App = {
             5, 12,
             7, 15
           ],
-          'circle-color': [
-            'case',
-            ['>', ['get', 'openPositions'], 0],
-            '#fbbf24',
-            '#818cf8'
+          'circle-color': ['match', ['get', 'dominantTadirah'],
+            'Capture', '#3498DB',
+            'Creation', '#9B59B6',
+            'Enrichment', '#27AE60',
+            'Analysis', '#E67E22',
+            'Interpretation', '#C0392B',
+            'Storage', '#34495E',
+            'Dissemination', '#16A085',
+            '#95A5A6'
           ],
           'circle-stroke-width': [
             'case',
@@ -337,8 +481,8 @@ const App = {
           'circle-stroke-color': [
             'case',
             ['boolean', ['feature-state', 'hover'], false],
-            '#ffffff',
-            'rgba(255,255,255,0.15)'
+            '#2C3E50',
+            'rgba(0,0,0,0.15)'
           ],
           'circle-opacity': 0.85
         }
@@ -375,9 +519,9 @@ const App = {
           'text-anchor': 'top'
         },
         paint: {
-          'text-color': 'rgba(255,255,255,0.6)',
-          'text-halo-color': 'rgba(0,0,0,0.7)',
-          'text-halo-width': 1
+          'text-color': 'rgba(44,62,80,0.7)',
+          'text-halo-color': 'rgba(255,255,255,0.9)',
+          'text-halo-width': 1.5
         }
       });
 
@@ -433,7 +577,7 @@ const App = {
         duration: 2000
       });
 
-      console.log('%c[Map]%c Layers ready', 'color:#6ee7b7;font-weight:bold', 'color:inherit');
+      console.log('%c[Map]%c Layers ready', 'color:#27AE60;font-weight:bold', 'color:inherit');
 
       // Emit ready event
       Events.emit('map:ready', { map: App.map, data: App.data });
@@ -442,8 +586,9 @@ const App = {
 };
 
 /* ------------------------------------------------
-   10. Boot
+   13. Boot
    ------------------------------------------------ */
 App.init().then(() => {
-  console.log('%c[DHd Landscape]%c Ready', 'color:#818cf8;font-weight:bold', 'color:inherit');
+  Events.emit('app:ready');
+  console.log('%c[DHd Landscape]%c Ready', 'color:#3498DB;font-weight:bold', 'color:inherit');
 });

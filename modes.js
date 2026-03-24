@@ -250,6 +250,116 @@ function renderMiniTimeline(containerId, data) {
   svg.selectAll('.domain, .tick line').attr('stroke', 'var(--border-subtle)');
 }
 
+function renderDigitalEditionsViz(containerId, filtered, allData) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = '';
+
+  if (!filtered || filtered.length === 0) return;
+
+  // Build nodes and links
+  const nodes = filtered.map(d => ({
+    id: d.id,
+    name: d.name.split(',')[0], // short name
+    city: d.city,
+    positions: d.totalPositions || 1,
+    methods: (d.methods || []).map(m => typeof m === 'object' ? m.label : m)
+  }));
+
+  // Links: institutions sharing methods
+  const links = [];
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i + 1; j < nodes.length; j++) {
+      const shared = nodes[i].methods.filter(m => nodes[j].methods.includes(m));
+      if (shared.length > 0) {
+        links.push({ source: nodes[i].id, target: nodes[j].id, shared });
+      }
+    }
+  }
+
+  // D3 force simulation (compact)
+  const width = el.clientWidth || 350;
+  const height = 200;
+
+  const svg = d3.select(el).append('svg')
+    .attr('width', width).attr('height', height);
+
+  const simulation = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(60))
+    .force('charge', d3.forceManyBody().strength(-80))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(d => Math.sqrt(d.positions) * 4 + 8));
+
+  // Draw links
+  const link = svg.selectAll('.link')
+    .data(links).join('line')
+    .attr('class', 'link')
+    .attr('stroke', 'rgba(255,255,255,0.15)')
+    .attr('stroke-width', d => d.shared.length);
+
+  // Draw nodes
+  const node = svg.selectAll('.node')
+    .data(nodes).join('circle')
+    .attr('class', 'node')
+    .attr('r', d => Math.sqrt(d.positions) * 4 + 3)
+    .attr('fill', '#F064B0')
+    .attr('opacity', 0.8)
+    .attr('stroke', '#fff')
+    .attr('stroke-width', 0.5);
+
+  // Tooltips on hover
+  node.append('title').text(d => d.name + ' (' + d.city + ')');
+
+  // Labels
+  const label = svg.selectAll('.label')
+    .data(nodes).join('text')
+    .attr('class', 'label')
+    .attr('fill', '#a1a1a8')
+    .attr('font-size', '9px')
+    .attr('font-family', 'Inter, sans-serif')
+    .attr('text-anchor', 'middle')
+    .attr('dy', d => Math.sqrt(d.positions) * 4 + 14)
+    .text(d => d.city);
+
+  simulation.on('tick', () => {
+    link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+        .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+    node.attr('cx', d => d.x).attr('cy', d => d.y);
+    label.attr('x', d => d.x).attr('y', d => d.y);
+  });
+
+  // Method breakdown below the network
+  const methodCounts = {};
+  filtered.forEach(inst => {
+    (inst.methods || []).forEach(m => {
+      const lbl = typeof m === 'object' ? m.label : m;
+      methodCounts[lbl] = (methodCounts[lbl] || 0) + 1;
+    });
+  });
+
+  const methodDiv = d3.select(el).append('div')
+    .style('margin-top', '12px')
+    .style('font-size', '11px')
+    .style('color', '#a1a1a8');
+
+  Object.entries(methodCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6)
+    .forEach(([method, count]) => {
+      const row = methodDiv.append('div')
+        .style('display', 'flex')
+        .style('align-items', 'center')
+        .style('gap', '8px')
+        .style('margin-bottom', '3px');
+      row.append('div')
+        .style('width', `${count * 20}px`)
+        .style('height', '4px')
+        .style('background', '#2DD4C0')
+        .style('border-radius', '2px');
+      row.append('span').text(`${method} (${count})`);
+    });
+}
+
 /* =============================================
    ANIMATED COUNTER (shared utility)
    ============================================= */
@@ -358,6 +468,19 @@ const STATIONS = [
     onEnter: function(data) {
       if (!data) return;
       renderMiniTimeline('viz-timeline', data);
+    }
+  },
+  {
+    id: 'digital-editions',
+    mapState: { center: [10.5, 50.0], zoom: 5.8, duration: 1500 },
+    filter: function(d) {
+      return (d.disciplines || []).includes('Digital Edition') ||
+             (d.methods || []).some(function(m) { return (typeof m === 'object' ? m.label : m) === 'Digital Edition'; }) ||
+             (d.methods || []).some(function(m) { return (typeof m === 'object' ? m.label : m) === 'TEI/XML'; });
+    },
+    onEnter: function(data, filtered) {
+      App.updateMapData(filtered);
+      renderDigitalEditionsViz('viz-digital-editions', filtered, data);
     }
   },
   {

@@ -25,31 +25,38 @@ status: draft
 - **Format**: REST API, JSON, CC0
 - **Aufwand**: Niedrig | **Wert**: Hoch
 
-### Prio 3: DHd Zenodo Communities
-- `zenodo.org/communities/dhd` — Konferenzmaterialien (2014–2026)
-- `zenodo.org/communities/dhd-verbandsaktivitaeten` — AG-Berichte
-- **Format**: REST API + OAI-PMH
-- **Aufwand**: Niedrig | **Wert**: Hoch
-
-### Prio 4: CLARIN Centre Registry
-- **URL**: https://centres.clarin.eu
-- ~20 DACH-Zentren (DE: ~14, AT: 3, CH: 2-3)
-- **Aufwand**: Niedrig | **Wert**: Mittel
-
-### Prio 5: DBLP — DHd Proceedings
-- 1.429 DH-Publikationen, DHd 2014–2025
-- SPARQL-Endpoint: sparql.dblp.org
-- **Aufwand**: Niedrig-Mittel | **Wert**: Mittel
-
-### Prio 6: Wikidata
+### Prio 3: Wikidata ✅
 - SPARQL: `?item wdt:P101 wd:Q5157565` (Digital Humanities)
-- Lückenhaft, aber gut zum Verlinken/Anreichern
-- **Aufwand**: Mittel | **Wert**: Mittel
+- **Abgerufen**: 806 DACH-Universitäten
+- **Matched**: 51/52 Institutionen (98%)
+- **Neue Felder**: `gndId`, `founded`, verbesserte Wikidata-IDs
+- **Status**: Integriert (Iteration 6)
 
-### Prio 7: DH Course Registry
+### Prio 4: DHd Zenodo Communities ✅
+- `zenodo.org/communities/dhd` — Konferenzmaterialien (2014–2026)
+- **Abgerufen**: 2112 Records
+- **Matched**: 50/52 Institutionen (96%)
+- **Neue Felder**: `zenodoRecordCount`
+- **Status**: Integriert (Iteration 6)
+
+### Prio 5: CLARIN Centre Registry ✅
+- **URL**: https://centres.clarin.eu
+- **Abgerufen**: 23 Zentren
+- **Matched**: 5/52 Institutionen (10%)
+- **Neue Felder**: `clarinCentre`
+- **Status**: Integriert (Iteration 6)
+
+### Prio 6: DH Course Registry ✅
 - **URL**: https://dhcr.clarin-dariah.eu/
-- DH-Studiengänge an Institutionen (DARIAH + CLARIN)
-- **Aufwand**: Niedrig | **Wert**: Mittel (Lehr-Perspektive)
+- **Abgerufen**: 196 Kurse
+- **Matched**: 24/52 Institutionen (46%)
+- **Neue Felder**: `dhCourses`
+- **Status**: Integriert (Iteration 6)
+
+### Prio 7: DBLP — DHd Proceedings ✅
+- **Abgerufen**: 500 DH-Records
+- SPARQL-Endpoint: sparql.dblp.org
+- **Status**: Integriert (Iteration 6)
 
 ### Prio 8: DHd-Verband
 - **URL**: https://digitalhumanities.de/
@@ -69,7 +76,7 @@ status: draft
 
 ## Datenmodell
 
-### Aktuell: Institutionsprofile (JSON)
+### Aktuell: Institutionsprofile (JSON, nach Iteration 6)
 ```json
 {
   "id": "uni-graz",
@@ -78,22 +85,32 @@ status: draft
   "country": "AT",
   "coordinates": [15.45, 47.08],
   "totalPositions": 5,
-  "openPositions": 1,
   "earliestYear": 2015,
+  "founded": 1585,
   "disciplines": ["Digital Humanities", "Digital Edition"],
   "methods": ["TEI/XML", "Linked Data"],
-  "positions": [...]
+  "positions": [...],
+  "tadirahProfile": { "Creation": 3, "Enrichment": 2 },
+  "gndId": "...",
+  "zenodoRecordCount": 12,
+  "clarinCentre": true,
+  "dhCourses": [...]
 }
 ```
 
-### Geplant: JSON-LD (Linked Open Data)
+> **Entfernt (Iteration 6)**: `openPositions` — besetzt/offen-Unterscheidung ist keine inhaltliche Dimension
+
+### JSON-LD Context (Iteration 6: erstellt)
+
+Datei: `Data/context.jsonld`
 
 Dreischichtiges Vokabular:
 1. **Schema.org** — `ResearchOrganization`, `EducationalOrganization`, `knowsAbout`, `sameAs`
 2. **Wikidata** — Q-Items für Disziplinen (`wd:Q1026532` = Digital Humanities)
 3. **TaDiRAH** — DH-Methoden (`tadirah:encoding`, `tadirah:modeling`)
 4. **ROR** — Persistente IDs (`https://ror.org/01faaaf77`)
-5. **GeoNames** — Orts-URIs (`https://sws.geonames.org/2778067/` = Graz)
+5. **GND** — Normdaten-IDs (`https://d-nb.info/gnd/...`)
+6. **GeoNames** — Orts-URIs (`https://sws.geonames.org/2778067/` = Graz)
 
 ### Reconciliation-Workflow (vgl. Obsidian: [[Linked Open Data]])
 - **OpenRefine** für Abgleich gegen GND, Wikidata, VIAF

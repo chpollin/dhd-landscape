@@ -231,9 +231,150 @@ if (fs.existsSync(tadirahPath)) {
     for (const inst of institutions) {
         inst.methods = inst.methods.map(m => {
             const mapping = tadirah[m];
-            return mapping ? { label: m, tadirahUri: mapping } : { label: m, tadirahUri: null };
+            if (mapping && typeof mapping === 'object' && mapping.uri) {
+                return { label: m, tadirahUri: mapping.uri, category: mapping.category || null };
+            } else if (typeof mapping === 'string') {
+                // Legacy format: plain URI string
+                return { label: m, tadirahUri: mapping, category: null };
+            }
+            return { label: m, tadirahUri: null, category: null };
         });
+        // Compute tadirahProfile: count methods per TaDiRAH category
+        const profile = {};
+        for (const method of inst.methods) {
+            if (method.category) {
+                profile[method.category] = (profile[method.category] || 0) + 1;
+            }
+        }
+        inst.tadirahProfile = profile;
     }
+}
+
+// --- Fuzzy name normalizer for enrichment matching ---
+function normalizeName(name) {
+    return name.toLowerCase()
+        .replace(/universit[äa]t\s*/g, '')
+        .replace(/university\s*(of\s*)?/g, '')
+        .replace(/hochschule\s*/g, '')
+        .replace(/technische\s*/g, '')
+        .replace(/fachhochschule\s*/g, '')
+        .replace(/\s*(e\.v\.|gmbh|ag)\s*/g, '')
+        .replace(/-/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function fuzzyMatch(nameA, nameB) {
+    const a = normalizeName(nameA);
+    const b = normalizeName(nameB);
+    return a === b || a.includes(b) || b.includes(a);
+}
+
+// --- Enrich with Wikidata data ---
+const wikidataEnrichPath = path.join(__dirname, 'wikidata-enrichment.json');
+if (fs.existsSync(wikidataEnrichPath)) {
+    const wikidata = JSON.parse(fs.readFileSync(wikidataEnrichPath, 'utf8'));
+    console.log(`\nEnriching with Wikidata data (${wikidata.length} entries)...`);
+    let matched = 0;
+    for (const inst of institutions) {
+        // Match by ROR ID first, then by name
+        let best = null;
+        if (inst.rorId) {
+            best = wikidata.find(w => w.rorId && w.rorId === inst.rorId);
+        }
+        if (!best) {
+            best = wikidata.find(w => fuzzyMatch(inst.name, w.name));
+        }
+        if (best) {
+            if (best.founded && !inst.founded) inst.founded = best.founded;
+            if (best.gndId) inst.gndId = best.gndId;
+            if (best.wikidataId && !inst.wikidataId) inst.wikidataId = best.wikidataId;
+            matched++;
+        }
+    }
+    console.log(`  Matched ${matched}/${institutions.length} institutions with Wikidata enrichment.`);
+}
+
+// --- Enrich with Zenodo records ---
+const zenodoPath = path.join(__dirname, 'zenodo-records.json');
+if (fs.existsSync(zenodoPath)) {
+    const zenodo = JSON.parse(fs.readFileSync(zenodoPath, 'utf8'));
+    const zenodoRecords = Array.isArray(zenodo) ? zenodo : [];
+    console.log(`\nEnriching with Zenodo records (${zenodoRecords.length} entries)...`);
+    // Count records per institution by parsing creator affiliations
+    const zenodoCounts = {};
+    for (const record of zenodoRecords) {
+        const seen = new Set(); // avoid double-counting per record
+        for (const creator of (record.creators || [])) {
+            const aff = creator.affiliation;
+            if (!aff) continue;
+            for (const inst of institutions) {
+                if (!seen.has(inst.id) && fuzzyMatch(inst.name, aff)) {
+                    zenodoCounts[inst.id] = (zenodoCounts[inst.id] || 0) + 1;
+                    seen.add(inst.id);
+                }
+            }
+        }
+    }
+    let matched = 0;
+    for (const inst of institutions) {
+        if (zenodoCounts[inst.id]) {
+            inst.zenodoRecordCount = zenodoCounts[inst.id];
+            matched++;
+        }
+    }
+    console.log(`  Matched ${matched}/${institutions.length} institutions with Zenodo records.`);
+}
+
+// --- Enrich with CLARIN centres ---
+const clarinPath = path.join(__dirname, 'clarin-centres.json');
+if (fs.existsSync(clarinPath)) {
+    const clarin = JSON.parse(fs.readFileSync(clarinPath, 'utf8'));
+    const clarinEntries = Array.isArray(clarin) ? clarin : [];
+    console.log(`\nEnriching with CLARIN centres (${clarinEntries.length} entries)...`);
+    let matched = 0;
+    for (const inst of institutions) {
+        const match = clarinEntries.find(c => fuzzyMatch(inst.name, c.name));
+        if (match) {
+            inst.clarinCentre = match;
+            matched++;
+        }
+    }
+    console.log(`  Matched ${matched}/${institutions.length} institutions with CLARIN centres.`);
+}
+
+// --- Enrich with DHCR programmes ---
+const dhcrPath = path.join(__dirname, 'dhcr-programmes.json');
+if (fs.existsSync(dhcrPath)) {
+    const dhcr = JSON.parse(fs.readFileSync(dhcrPath, 'utf8'));
+    const dhcrEntries = Array.isArray(dhcr) ? dhcr : [];
+    console.log(`\nEnriching with DHCR programmes (${dhcrEntries.length} entries)...`);
+    let matched = 0;
+    for (const inst of institutions) {
+        const courses = dhcrEntries.filter(d => fuzzyMatch(inst.name, d.institution || d.name || ''));
+        if (courses.length > 0) {
+            inst.dhCourses = courses;
+            matched++;
+        }
+    }
+    console.log(`  Matched ${matched}/${institutions.length} institutions with DHCR programmes.`);
+}
+
+// --- Enrich with DBLP records ---
+const dblpPath = path.join(__dirname, 'dblp-records.json');
+if (fs.existsSync(dblpPath)) {
+    const dblp = JSON.parse(fs.readFileSync(dblpPath, 'utf8'));
+    const dblpEntries = Array.isArray(dblp) ? dblp : [];
+    console.log(`\nEnriching with DBLP records (${dblpEntries.length} entries)...`);
+    let matched = 0;
+    for (const inst of institutions) {
+        const count = dblpEntries.filter(d => fuzzyMatch(inst.name, d.institution || d.name || '')).length;
+        if (count > 0) {
+            inst.dblpPublicationCount = count;
+            matched++;
+        }
+    }
+    console.log(`  Matched ${matched}/${institutions.length} institutions with DBLP records.`);
 }
 
 // --- Write output ---

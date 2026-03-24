@@ -34,21 +34,23 @@ Mehrere verknüpfte Visualisierungen, bei denen Interaktion in einer Ansicht all
 
 ## Visualisierungs-Konzepte
 
-### 1. Map-as-Canvas (Iteration 4: implementiert)
-Die Karte ist immer 100% Viewport — alles andere schwebt darüber. Drei Modi:
-- **Narrative Mode**: Scrollytelling mit 7 Stationen, `IntersectionObserver` triggert `map.flyTo()`, Mini-Vizs in glassmorphischen Karten
-- **Explore Mode**: Floating draggable D3-Chart-Panels, collapsible Filter-Sidebar (320px), Stats-Bar
-- **Overview Mode**: HUD-Dashboard mit animierten Zählern, Country-Bars, Disziplin-Chart, Mini-Timeline
+### 1. Map-as-Canvas (Iteration 4–6: implementiert)
+Die Karte ist immer 100% Viewport — alles andere schwebt darüber. Drei Views:
+- **Übersicht**: Startseite mit animierten Stats, Kernzahlen, Einstiegspunkt
+- **Karte**: Interaktive Karte mit TaDiRAH-farbkodierten Markern, Filtern, Detail-Panel
+- **Explorer**: D3.js Chart-Panels — Timeline, Institutionen, Disziplinen
 
-Mode-Wechsel via `body[data-mode]` + CSS Transitions. Shared: Map, Event-Bus, Filter, Detail-Panel.
+View-Wechsel via `body[data-view]` + CSS Transitions. Shared: Map, Event-Bus, Filter, Detail-Panel.
 
-### 2. D3.js Charts (Iteration 3+4: implementiert)
-Drei Visualisierungen, in Explore Mode als Floating Panels über der Karte:
+> **Iteration 6**: Narrative Mode (Scrollytelling) entfernt. Overview Mode → Übersicht (vereinfacht). Explore Mode → Karte + Explorer (aufgespalten).
+
+### 2. D3.js Charts (Iteration 3–6: implementiert)
+Drei Visualisierungen, im Explorer-View als Chart-Panels:
 - **Stacked Area Chart**: Kumulatives DH-Wachstum 2008–2026, Toggle Disziplin/Land
 - **Horizontaler Barchart**: Institutionen nach Stellenanzahl, Disziplin-Segmente
 - **Disziplin-Matrix**: Institutionen × Disziplinen Heatmap mit Crosshair-Hover
 - Coordinated Filtering: `applyFilters()` → Map + Charts gleichzeitig
-- `DHdCharts.renderTo()` für Multi-Container-Support (Floating Panels + Mini-Vizs)
+- `DHdCharts.renderTo()` für Multi-Container-Support (Explorer panels)
 - Offen: Methoden-Radar (niedrigere Priorität)
 
 ### 3. Thematische Verbindungen (geplant, Tier 2)
@@ -84,31 +86,37 @@ Die Karte ist der Einstiegspunkt, aber **nicht die einzige Ansicht**. Manche Fra
 ## Kartenästhetik
 
 ### Basemap
-CartoDB Dark Matter (`basemaps.cartocdn.com/dark_all`)
+CartoDB Light / Positron (`basemaps.cartocdn.com/light_all`)
 
-### Farbpalette
-- **Primary Accent**: `#6FDFDF` (Teal/Cyan)
-- **Secondary Accent**: `#E8A87C` (Warm Amber)
-- **Disziplin-Farben** (muted, L*55-70 in OKLCH):
-  - Computational Linguistics: `#7EB8DA`
-  - Cultural Heritage: `#D4A574`
-  - Data Science: `#82C9A5`
-  - Text Mining: `#C490D1`
-  - Spatial Humanities: `#E8B86D`
-  - Digital Editions: `#F09B9B`
+### Farbpalette (Light Mode — Iteration 6)
+- **Hintergrund**: `#F5F3EF` (warm off-white)
+- **Text**: Dunkles Grau (WCAG AA konform)
+- **Karten**: Card Shadows (kein Glassmorphismus)
+- **TaDiRAH-Farbsystem** (8 Kategorien):
+  - Capture: Blue
+  - Creation: Purple
+  - Enrichment: Green
+  - Analysis: Orange
+  - Interpretation: Red
+  - Storage: Slate
+  - Dissemination: Teal
+  - Meta-Activities: Gray
+
+> **Entfernt (Iteration 6)**: Dark Theme (`#1a1a1f`), Glassmorphismus (`backdrop-filter: blur()`), besetzt/offen-Farbkodierung (Indigo/Amber)
 
 ### Typografie
-- Headings: Source Serif Pro / IBM Plex Serif
-- Body/UI: Inter / DM Sans
+- Headings: Source Serif 4
+- Body/UI: Inter
 - Map Labels: Sans-serif, 11-13px, letter-spacing +0.02em
 
 ## UI-Architektur
 
 ### Layout-Prinzipien
 - **Visualisierung = 85-100% Viewport** — die Viz IST das Interface
-- **Transluzente Overlay-Panels** — `backdrop-filter: blur(12px)`
+- **Card Shadows** statt transluzenter Overlays — klare Abgrenzung auf hellem Grund
 - **Progressive Disclosure** — Information schrittweise aufdecken
 - **Data-Ink Ratio** maximieren (Tufte)
+- **Wissenschaftlich-sachlicher Ton** — keine Marketing-Sprache, keine Superlative
 
 ### Interaktions-Tiers
 

@@ -1,0 +1,6450 @@
+[
+  {
+    "name": "ETH Zürich",
+    "wikidataId": "Q11942",
+    "rorId": "05a28rw58",
+    "founded": 1855,
+    "gndId": "2023928-2",
+    "country": "CH"
+  },
+  {
+    "name": "Universität Bielefeld",
+    "wikidataId": "Q24382",
+    "rorId": "02hpadn98",
+    "founded": 1969,
+    "gndId": "2024177-X",
+    "country": "DE"
+  },
+  {
+    "name": "Martin-Luther-Universität Halle-Wittenberg",
+    "wikidataId": "Q32120",
+    "rorId": "05gqaka33",
+    "founded": 1933,
+    "gndId": "2024276-1",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Freiburg",
+    "wikidataId": "Q36188",
+    "rorId": "022fs9h90",
+    "founded": 1889,
+    "gndId": "2024211-6",
+    "country": "CH"
+  },
+  {
+    "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+    "wikidataId": "Q40025",
+    "rorId": "00f7hpc57",
+    "founded": 1742,
+    "gndId": "2000862-4",
+    "country": "DE"
+  },
+  {
+    "name": "Goethe-Universität Frankfurt am Main",
+    "wikidataId": "Q50662",
+    "rorId": "04cvxnb49",
+    "founded": 1914,
+    "gndId": "35074-6",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Berlin",
+    "wikidataId": "Q51985",
+    "rorId": "03v4gjf40",
+    "founded": 1946,
+    "gndId": "2114678-0",
+    "country": "DE"
+  },
+  {
+    "name": "Universität zu Köln",
+    "wikidataId": "Q54096",
+    "rorId": "00rcxh774",
+    "founded": 1388,
+    "gndId": "2024231-1",
+    "country": "DE"
+  },
+  {
+    "name": "Ludwig-Maximilians-Universität München",
+    "wikidataId": "Q55044",
+    "rorId": "05591te55",
+    "founded": 1472,
+    "gndId": "2002585-3",
+    "country": "DE"
+  },
+  {
+    "name": "Ruprecht-Karls-Universität Heidelberg",
+    "wikidataId": "Q151510",
+    "rorId": "038t36y30",
+    "founded": 1386,
+    "gndId": "2024349-2",
+    "country": "DE"
+  },
+  {
+    "name": "Humboldt-Universität zu Berlin",
+    "wikidataId": "Q152087",
+    "rorId": "01hcx6992",
+    "founded": 1809,
+    "gndId": "1220138-8",
+    "country": "DE"
+  },
+  {
+    "name": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+    "wikidataId": "Q152171",
+    "rorId": "041nas322",
+    "founded": 1818,
+    "gndId": "36150-1",
+    "country": "DE"
+  },
+  {
+    "name": "Georg-August-Universität Göttingen",
+    "wikidataId": "Q152838",
+    "rorId": "01y9bpm73",
+    "founded": 1734,
+    "gndId": "2024315-7",
+    "country": "DE"
+  },
+  {
+    "name": "Freie Universität Berlin",
+    "wikidataId": "Q153006",
+    "rorId": "046ak2485",
+    "founded": 1948,
+    "gndId": "2114189-7",
+    "country": "DE"
+  },
+  {
+    "name": "Eberhard Karls Universität Tübingen",
+    "wikidataId": "Q153978",
+    "rorId": "03a1kwz48",
+    "founded": 1477,
+    "gndId": "36187-2",
+    "country": "DE"
+  },
+  {
+    "name": "Albert-Ludwigs-Universität Freiburg",
+    "wikidataId": "Q153987",
+    "rorId": "0245cg223",
+    "founded": 1457,
+    "gndId": "2024338-8",
+    "country": "DE"
+  },
+  {
+    "name": "Friedrich-Schiller-Universität Jena",
+    "wikidataId": "Q154561",
+    "rorId": "05qpz1x62",
+    "founded": 1558,
+    "gndId": "36164-1",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Leipzig",
+    "wikidataId": "Q154804",
+    "rorId": "03s7gtk40",
+    "founded": 1409,
+    "gndId": "2024343-1",
+    "country": "DE"
+  },
+  {
+    "name": "Philipps-Universität Marburg",
+    "wikidataId": "Q155354",
+    "rorId": "01rdrb571",
+    "founded": 1527,
+    "gndId": "2001630-X",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Hamburg",
+    "wikidataId": "Q156725",
+    "rorId": "00g30e956",
+    "founded": 1919,
+    "gndId": "35534-3",
+    "country": "DE"
+  },
+  {
+    "name": "Christian-Albrechts-Universität zu Kiel",
+    "wikidataId": "Q156737",
+    "rorId": "04v76ef78",
+    "founded": 1665,
+    "gndId": "2024175-6",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität München",
+    "wikidataId": "Q157808",
+    "rorId": "02kkvpp62",
+    "founded": 1868,
+    "gndId": "36241-4",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Dresden",
+    "wikidataId": "Q158158",
+    "rorId": "042aqky30",
+    "founded": 1828,
+    "gndId": "2024114-8",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Rostock",
+    "wikidataId": "Q159895",
+    "rorId": "03zdwsf69",
+    "founded": 1419,
+    "gndId": "38329-6",
+    "country": "DE"
+  },
+  {
+    "name": "Julius-Maximilians-Universität Würzburg",
+    "wikidataId": "Q161976",
+    "rorId": "00fbnyb24",
+    "founded": 1402,
+    "gndId": "36189-6",
+    "country": "DE"
+  },
+  {
+    "name": "Johannes Gutenberg-Universität Mainz",
+    "wikidataId": "Q161982",
+    "rorId": "023b0x485",
+    "founded": 1477,
+    "gndId": "2024320-0",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Greifswald",
+    "wikidataId": "Q165528",
+    "rorId": "00r1edq15",
+    "founded": 1456,
+    "gndId": "36158-6",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Münster",
+    "wikidataId": "Q168426",
+    "rorId": "00pd74e08",
+    "founded": 1780,
+    "gndId": "1194191657",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Zürich",
+    "wikidataId": "Q206702",
+    "rorId": "02crff812",
+    "founded": 1833,
+    "gndId": "36190-2",
+    "country": "CH"
+  },
+  {
+    "name": "École polytechnique fédérale de Lausanne",
+    "wikidataId": "Q262760",
+    "rorId": "02s376052",
+    "founded": 1969,
+    "gndId": "1003500-X",
+    "country": "CH"
+  },
+  {
+    "name": "RWTH Aachen",
+    "wikidataId": "Q273263",
+    "rorId": "04xfq0f34",
+    "founded": 1870,
+    "gndId": "36225-6",
+    "country": "DE"
+  },
+  {
+    "name": "Universität der Bundeswehr München",
+    "wikidataId": "Q283099",
+    "rorId": "05kkv3f82",
+    "founded": 1973,
+    "gndId": "2119356-3",
+    "country": "DE"
+  },
+  {
+    "name": "Ruhr-Universität Bochum",
+    "wikidataId": "Q309948",
+    "rorId": "04tsk2644",
+    "founded": 1962,
+    "gndId": "7409-3",
+    "country": "DE"
+  },
+  {
+    "name": "Karlsruher Institut für Technologie",
+    "wikidataId": "Q309988",
+    "rorId": "04t3en479",
+    "founded": 2009,
+    "gndId": "10141290-3",
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Universität Eichstätt-Ingolstadt",
+    "wikidataId": "Q315161",
+    "rorId": "00mx91s63",
+    "founded": 1980,
+    "gndId": "10031250-0",
+    "country": "DE"
+  },
+  {
+    "name": "Heinrich-Heine-Universität Düsseldorf",
+    "wikidataId": "Q317032",
+    "rorId": "024z2rq82",
+    "founded": 1965,
+    "gndId": "36152-5",
+    "country": "DE"
+  },
+  {
+    "name": "Justus-Liebig-Universität Gießen",
+    "wikidataId": "Q317053",
+    "rorId": "033eqas34",
+    "founded": 1607,
+    "gndId": "36154-9",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Basel",
+    "wikidataId": "Q372608",
+    "rorId": "02s6k3f65",
+    "founded": 1460,
+    "gndId": "36146-X",
+    "country": "CH"
+  },
+  {
+    "name": "Universität Genf",
+    "wikidataId": "Q503473",
+    "rorId": "01swzsf04",
+    "founded": 1559,
+    "gndId": "1010450-1",
+    "country": "CH"
+  },
+  {
+    "name": "Universität Neuenburg",
+    "wikidataId": "Q541548",
+    "rorId": "00vasag41",
+    "founded": 1838,
+    "gndId": "1010467-7",
+    "country": "CH"
+  },
+  {
+    "name": "Universität Regensburg",
+    "wikidataId": "Q574571",
+    "rorId": "01eezs655",
+    "founded": 1962,
+    "gndId": "1012048-8",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Augsburg",
+    "wikidataId": "Q616905",
+    "rorId": "03p14d497",
+    "founded": 1970,
+    "gndId": "7871-2",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Lausanne",
+    "wikidataId": "Q658975",
+    "rorId": "019whta54",
+    "founded": 1537,
+    "gndId": "37579-2",
+    "country": "CH"
+  },
+  {
+    "name": "Universität Bern",
+    "wikidataId": "Q659080",
+    "rorId": "02k7v4d05",
+    "founded": 1834,
+    "gndId": "2023768-6",
+    "country": "CH"
+  },
+  {
+    "name": "Universität St. Gallen",
+    "wikidataId": "Q673354",
+    "rorId": "0561a3s31",
+    "founded": 1898,
+    "gndId": "5149015-8",
+    "country": "CH"
+  },
+  {
+    "name": "Leibniz Universität Hannover",
+    "wikidataId": "Q678982",
+    "rorId": "0304hq317",
+    "founded": 1831,
+    "gndId": "64681-7",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Paderborn",
+    "wikidataId": "Q679134",
+    "rorId": "058kzsd48",
+    "founded": 1972,
+    "gndId": "64857-7",
+    "country": "DE"
+  },
+  {
+    "name": "Johannes-Kepler-Universität",
+    "wikidataId": "Q682739",
+    "rorId": "052r2xn60",
+    "founded": 1966,
+    "gndId": "63794-4",
+    "country": "AT"
+  },
+  {
+    "name": "Fernuniversität in Hagen",
+    "wikidataId": "Q687017",
+    "rorId": "04tkkr536",
+    "founded": 1974,
+    "gndId": "19455-4",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Wien",
+    "wikidataId": "Q689400",
+    "rorId": "04d836q62",
+    "founded": 1815,
+    "gndId": "55426-1",
+    "country": "AT"
+  },
+  {
+    "name": "Technische Universität Graz",
+    "wikidataId": "Q689775",
+    "rorId": "00d7xrm67",
+    "founded": 1811,
+    "gndId": "2042894-7",
+    "country": "AT"
+  },
+  {
+    "name": "Technische Universität Bergakademie Freiberg",
+    "wikidataId": "Q689854",
+    "rorId": "031vc2293",
+    "founded": 1765,
+    "gndId": "2134021-3",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Duisburg-Essen",
+    "wikidataId": "Q696757",
+    "rorId": "04mz5ra38",
+    "founded": 1972,
+    "gndId": "10050375-5",
+    "country": "DE"
+  },
+  {
+    "name": "Universität des Saarlandes",
+    "wikidataId": "Q700758",
+    "rorId": "01jdpyv68",
+    "founded": 1948,
+    "gndId": "2024427-7",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Bayreuth",
+    "wikidataId": "Q702482",
+    "rorId": "0234wmv40",
+    "founded": 1975,
+    "gndId": "1029605-0",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Trier",
+    "wikidataId": "Q702486",
+    "rorId": "02778hg05",
+    "founded": 1473,
+    "gndId": "26331-X",
+    "country": "DE"
+  },
+  {
+    "name": "Central European University",
+    "wikidataId": "Q757391",
+    "rorId": "02zx40v98",
+    "founded": 1991,
+    "gndId": "5095127-0",
+    "country": "AT"
+  },
+  {
+    "name": "Universität Konstanz",
+    "wikidataId": "Q835440",
+    "rorId": "0546hnb39",
+    "founded": 1966,
+    "gndId": "2003070-8",
+    "country": "DE"
+  },
+  {
+    "name": "Philosophisch-Theologische Hochschule Sankt Georgen",
+    "wikidataId": "Q895645",
+    "rorId": "01x84xc38",
+    "founded": 1926,
+    "gndId": "1004607-0",
+    "country": "DE"
+  },
+  {
+    "name": "Medizinische Hochschule Hannover",
+    "wikidataId": "Q911561",
+    "rorId": "00f2yqf98",
+    "founded": 1961,
+    "gndId": "2019538-2",
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Karlsruhe",
+    "wikidataId": "Q1310061",
+    "rorId": "01t1kq612",
+    "founded": 1962,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Heidelberg",
+    "wikidataId": "Q1429906",
+    "rorId": "0044w3h23",
+    "founded": 1962,
+    "gndId": "2017338-6",
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Freiburg",
+    "wikidataId": "Q1441203",
+    "rorId": "02rtsfd15",
+    "founded": 1962,
+    "gndId": "31702-0",
+    "country": "DE"
+  },
+  {
+    "name": "Genfer Hochschulinstitut für internationale Studien",
+    "wikidataId": "Q1502191",
+    "rorId": null,
+    "founded": 1927,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Vinzenz Pallotti University",
+    "wikidataId": "Q1619104",
+    "rorId": "036smcz74",
+    "founded": 1896,
+    "gndId": "16102226-1",
+    "country": "DE"
+  },
+  {
+    "name": "Medizinische Akademie Erfurt",
+    "wikidataId": "Q1649504",
+    "rorId": "04dmvwm54",
+    "founded": 1954,
+    "gndId": "2019498-5",
+    "country": "DE"
+  },
+  {
+    "name": "International University of Cooperative Education Freiburg",
+    "wikidataId": "Q1667017",
+    "rorId": null,
+    "founded": 2009,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Iba - Internationale Berufsakademie",
+    "wikidataId": "Q1667074",
+    "rorId": "01nbps758",
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Medizinische Akademie Magdeburg",
+    "wikidataId": "Q1916554",
+    "rorId": null,
+    "founded": 1954,
+    "gndId": "2019522-9",
+    "country": "DE"
+  },
+  {
+    "name": "Philosophisch-Theologische Hochschule Benedikt XVI.",
+    "wikidataId": "Q2088264",
+    "rorId": null,
+    "founded": 2007,
+    "gndId": "16039000-X",
+    "country": "AT"
+  },
+  {
+    "name": "Philosophisch-Theologische Hochschule Benediktbeuern",
+    "wikidataId": "Q2088266",
+    "rorId": "00vcnds94",
+    "founded": 1931,
+    "gndId": "2017736-7",
+    "country": "DE"
+  },
+  {
+    "name": "Philosophisch-Theologische Hochschule Münster",
+    "wikidataId": "Q2088268",
+    "rorId": "00717c553",
+    "founded": 1971,
+    "gndId": "10002888-3",
+    "country": "DE"
+  },
+  {
+    "name": "Kölner Hochschule für Katholische Theologie",
+    "wikidataId": "Q2088271",
+    "rorId": "01ej3e061",
+    "founded": 1925,
+    "gndId": "213851-7",
+    "country": "DE"
+  },
+  {
+    "name": "Philosophisch-Theologische Hochschule St. Pölten",
+    "wikidataId": "Q2088274",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": "2066678-0",
+    "country": "AT"
+  },
+  {
+    "name": "Philosophisch-theologische Hochschule Freising",
+    "wikidataId": "Q2088276",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Freiburg",
+    "wikidataId": "Q2120191",
+    "rorId": "048gre751",
+    "founded": 1996,
+    "gndId": "16059348-7",
+    "country": "CH"
+  },
+  {
+    "name": "Pädagogische Hochschule Weingarten",
+    "wikidataId": "Q2120222",
+    "rorId": "031eq5e98",
+    "founded": 1949,
+    "gndId": "1054248-6",
+    "country": "DE"
+  },
+  {
+    "name": "Landwirtschaftsschule (1913)",
+    "wikidataId": "Q6485296",
+    "rorId": null,
+    "founded": 1913,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Archäologisches Institut der Universität Göttingen",
+    "wikidataId": "Q19259589",
+    "rorId": null,
+    "founded": null,
+    "gndId": "2061085-3",
+    "country": "DE"
+  },
+  {
+    "name": "United Nations University (Germany)",
+    "wikidataId": "Q28971028",
+    "rorId": "040aqvh16",
+    "founded": 1973,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Alte Universität Kassel",
+    "wikidataId": "Q62015828",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Medizinische Universität Lausitz – Carl Thiem",
+    "wikidataId": "Q127256070",
+    "rorId": null,
+    "founded": 2024,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Philosophisch-Theologische Hochschule der Redemptoristen in Hennef-Geistingen",
+    "wikidataId": "Q127416249",
+    "rorId": null,
+    "founded": 1903,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "German University of Digital Science",
+    "wikidataId": "Q133538136",
+    "rorId": "0335fsx71",
+    "founded": 2025,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Polizei Sachsen-Anhalt",
+    "wikidataId": "Q1391214",
+    "rorId": "04mvanw22",
+    "founded": 1997,
+    "gndId": "5323874-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Rechtspflege Schwetzingen",
+    "wikidataId": "Q1391225",
+    "rorId": "048gb8814",
+    "founded": 1953,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Stralsund",
+    "wikidataId": "Q1391231",
+    "rorId": "04g99jx54",
+    "founded": 1991,
+    "gndId": "5166549-9",
+    "country": "DE"
+  },
+  {
+    "name": "FH Westküste",
+    "wikidataId": "Q1391235",
+    "rorId": "03bthq143",
+    "founded": 1993,
+    "gndId": "5300166-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Worms",
+    "wikidataId": "Q1391239",
+    "rorId": "031ph8d53",
+    "founded": 1978,
+    "gndId": "1065618468",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule der Sächsischen Verwaltung Meißen",
+    "wikidataId": "Q1391248",
+    "rorId": "03waye253",
+    "founded": 1992,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule des Bundes für öffentliche Verwaltung",
+    "wikidataId": "Q1391252",
+    "rorId": "03t7d6q88",
+    "founded": 1978,
+    "gndId": "1070019461",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Finanzen Rheinland-Pfalz",
+    "wikidataId": "Q1391265",
+    "rorId": "05d6z1532",
+    "founded": 1981,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Verwaltung und Dienstleistung",
+    "wikidataId": "Q1391272",
+    "rorId": "003xt6d81",
+    "founded": 1975,
+    "gndId": "10086834-4",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für öffentliche Verwaltung Rheinland-Pfalz",
+    "wikidataId": "Q1391292",
+    "rorId": "02nzadc54",
+    "founded": 1981,
+    "gndId": "1079191844",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik und Darstellende Kunst Mannheim",
+    "wikidataId": "Q1413500",
+    "rorId": "01w09y597",
+    "founded": 1971,
+    "gndId": "10011354-0",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Albstadt-Sigmaringen",
+    "wikidataId": "Q1441039",
+    "rorId": "03crxcn36",
+    "founded": 1971,
+    "gndId": "10122982-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hesse State University of Applied Sciences for Police and Public Administration Management",
+    "wikidataId": "Q1481465",
+    "rorId": "0113v9j97",
+    "founded": 1980,
+    "gndId": "16165290-6",
+    "country": "DE"
+  },
+  {
+    "name": "Popakademie Baden-Württemberg",
+    "wikidataId": "Q1492202",
+    "rorId": "011gev843",
+    "founded": 2003,
+    "gndId": "5557204-2",
+    "country": "DE"
+  },
+  {
+    "name": "Georg-Simon-Ohm-Hochschule für angewandte Wissenschaften – Fachhochschule Nürnberg",
+    "wikidataId": "Q1503440",
+    "rorId": "00nggaz43",
+    "founded": 1971,
+    "gndId": "10182995-4",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Hamm-Lippstadt",
+    "wikidataId": "Q1505130",
+    "rorId": "001rdde17",
+    "founded": 2009,
+    "gndId": "16342388-X",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Sächsischen Polizei",
+    "wikidataId": "Q1509323",
+    "rorId": "01qjbb734",
+    "founded": 1994,
+    "gndId": "10152656-8",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Aschaffenburg",
+    "wikidataId": "Q1523703",
+    "rorId": "04sms9203",
+    "founded": 1995,
+    "gndId": "1182947034",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Technik Stuttgart",
+    "wikidataId": "Q1540704",
+    "rorId": "039gdg280",
+    "founded": 1832,
+    "gndId": "10122879-X",
+    "country": "DE"
+  },
+  {
+    "name": "Filmuniversität Babelsberg „Konrad Wolf“",
+    "wikidataId": "Q1550192",
+    "rorId": "04qbqv677",
+    "founded": 1954,
+    "gndId": "1073278646",
+    "country": "DE"
+  },
+  {
+    "name": "HAWK Hochschule Hildesheim/Holzminden/Göttingen",
+    "wikidataId": "Q1562772",
+    "rorId": "00f5q5839",
+    "founded": 1971,
+    "gndId": "16050511-2",
+    "country": "DE"
+  },
+  {
+    "name": "HafenCity Universität Hamburg",
+    "wikidataId": "Q1567759",
+    "rorId": "01fzsd381",
+    "founded": 2006,
+    "gndId": "10178437-5",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für öffentliche Verwaltung und Finanzen Ludwigsburg",
+    "wikidataId": "Q1604537",
+    "rorId": "03gzxs418",
+    "founded": 1999,
+    "gndId": "10368597-2",
+    "country": "DE"
+  },
+  {
+    "name": "Tierärztliche Hochschule Hannover",
+    "wikidataId": "Q1607255",
+    "rorId": "015qjqf64",
+    "founded": 1778,
+    "gndId": "18462-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hessische Hochschule für Finanzen und Rechtspflege",
+    "wikidataId": "Q1615884",
+    "rorId": "035jc1316",
+    "founded": 1980,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Aalen",
+    "wikidataId": "Q1622071",
+    "rorId": "04gg60e72",
+    "founded": 1962,
+    "gndId": "2010005-X",
+    "country": "DE"
+  },
+  {
+    "name": "Ostbayerische Technische Hochschule Amberg-Weiden",
+    "wikidataId": "Q1622072",
+    "rorId": "00gm0aw40",
+    "founded": 1994,
+    "gndId": "1046085921",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Anhalt",
+    "wikidataId": "Q1622074",
+    "rorId": "0076zct58",
+    "founded": 1991,
+    "gndId": "2175166-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften Ansbach",
+    "wikidataId": "Q1622076",
+    "rorId": "0167rnj42",
+    "founded": 1996,
+    "gndId": "16018292-X",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Technik, Wirtschaft und Gesundheit Bochum",
+    "wikidataId": "Q1622078",
+    "rorId": "04x02q560",
+    "founded": 1971,
+    "gndId": "10183073-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Biberach",
+    "wikidataId": "Q1622079",
+    "rorId": "0004r6b85",
+    "founded": 1964,
+    "gndId": "10120390-1",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Bonn-Rhein-Sieg",
+    "wikidataId": "Q1622083",
+    "rorId": "04m2anh63",
+    "founded": 1995,
+    "gndId": "6524113-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Bremen",
+    "wikidataId": "Q1622092",
+    "rorId": "04f7jc139",
+    "founded": 1982,
+    "gndId": "2074189-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Bremerhaven",
+    "wikidataId": "Q1622093",
+    "rorId": "001yqrb02",
+    "founded": 1975,
+    "gndId": "115636-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Emden/Leer",
+    "wikidataId": "Q1622096",
+    "rorId": "01bc76c69",
+    "founded": 2009,
+    "gndId": "16172654-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Esslingen",
+    "wikidataId": "Q1622101",
+    "rorId": "056cezx90",
+    "founded": 1868,
+    "gndId": "10148501-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Harz",
+    "wikidataId": "Q1622105",
+    "rorId": "048yn7628",
+    "founded": 1991,
+    "gndId": "5328620-0",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Angewandte Wissenschaften Hof",
+    "wikidataId": "Q1622109",
+    "rorId": "04q5vv384",
+    "founded": 1994,
+    "gndId": "10185219-8",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Ingolstadt",
+    "wikidataId": "Q1622111",
+    "rorId": "02bxzcy64",
+    "founded": 1994,
+    "gndId": "1041846916",
+    "country": "DE"
+  },
+  {
+    "name": "University of Applied Sciences Kehl",
+    "wikidataId": "Q1622113",
+    "rorId": "01hqp1g48",
+    "founded": 1971,
+    "gndId": "10349520-4",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften Kempten",
+    "wikidataId": "Q1622115",
+    "rorId": "02m4p8096",
+    "founded": 1977,
+    "gndId": "16038919-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Koblenz",
+    "wikidataId": "Q1622117",
+    "rorId": "04j351e79",
+    "founded": 1996,
+    "gndId": "1025172531",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Konstanz Technik, Wirtschaft und Gestaltung",
+    "wikidataId": "Q1622118",
+    "rorId": "051qw9f78",
+    "founded": 1906,
+    "gndId": "5571176-5",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften Landshut",
+    "wikidataId": "Q1622121",
+    "rorId": "056z5bx32",
+    "founded": 1978,
+    "gndId": "10201299-4",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Magdeburg-Stendal",
+    "wikidataId": "Q1622123",
+    "rorId": "04vjfp916",
+    "founded": 1991,
+    "gndId": "10012321-1",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Wirtschaft und Gesellschaft Ludwigshafen",
+    "wikidataId": "Q1622125",
+    "rorId": "042xxdh20",
+    "founded": 1965,
+    "gndId": "1031941347",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Merseburg",
+    "wikidataId": "Q1622126",
+    "rorId": "04f8x5b20",
+    "founded": 1992,
+    "gndId": "10092169-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften Neu-Ulm",
+    "wikidataId": "Q1622129",
+    "rorId": "03ggzay52",
+    "founded": 1994,
+    "gndId": "16062366-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Neubrandenburg",
+    "wikidataId": "Q1622130",
+    "rorId": "03b9q7371",
+    "founded": 1991,
+    "gndId": "10115485-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Offenburg",
+    "wikidataId": "Q1622133",
+    "rorId": "03zh5eq96",
+    "founded": 1964,
+    "gndId": "10089542-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Osnabrück",
+    "wikidataId": "Q1622135",
+    "rorId": "059vymd37",
+    "founded": 2003,
+    "gndId": "16104840-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Rhein-Waal",
+    "wikidataId": "Q1622138",
+    "rorId": "04wdt0z89",
+    "founded": 2009,
+    "gndId": "7706528-1",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Ruhr West",
+    "wikidataId": "Q1622141",
+    "rorId": "02nkxrq89",
+    "founded": 2009,
+    "gndId": "1025981677",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Ulm",
+    "wikidataId": "Q1622143",
+    "rorId": "05e5kd476",
+    "founded": 1971,
+    "gndId": "10151702-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften Weihenstephan-Triesdorf",
+    "wikidataId": "Q1622145",
+    "rorId": "00gzkxz88",
+    "founded": 1971,
+    "gndId": "16073621-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Zittau/Görlitz",
+    "wikidataId": "Q1622147",
+    "rorId": "056tzgr32",
+    "founded": 1992,
+    "gndId": "10021646-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Bildenden Künste Saar",
+    "wikidataId": "Q1622149",
+    "rorId": "04z03cz64",
+    "founded": 1989,
+    "gndId": "5038263-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Forstwirtschaft Rottenburg",
+    "wikidataId": "Q1622175",
+    "rorId": "02pnhcc10",
+    "founded": 1954,
+    "gndId": "5569971-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Gestaltung Offenbach am Main",
+    "wikidataId": "Q1622179",
+    "rorId": "030sdwr92",
+    "founded": 1832,
+    "gndId": "2031204-0",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Gesundheit",
+    "wikidataId": "Q1622183",
+    "rorId": "03hj8rz96",
+    "founded": 2009,
+    "gndId": "16336457-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik Mainz",
+    "wikidataId": "Q1622203",
+    "rorId": null,
+    "founded": 1948,
+    "gndId": "6519931-5",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Polizei Baden-Württemberg",
+    "wikidataId": "Q1622214",
+    "rorId": "055s1wn27",
+    "founded": 1979,
+    "gndId": "10185751-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Technik, Wirtschaft und Kultur Leipzig",
+    "wikidataId": "Q1622216",
+    "rorId": "03xgcq477",
+    "founded": 1992,
+    "gndId": "2125894-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Technik und Wirtschaft Dresden",
+    "wikidataId": "Q1622222",
+    "rorId": "05q5pk319",
+    "founded": 1992,
+    "gndId": "16073189-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Wirtschaft und Umwelt Nürtingen-Geislingen",
+    "wikidataId": "Q1622229",
+    "rorId": "02rqsa469",
+    "founded": 1949,
+    "gndId": "10075382-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften Coburg",
+    "wikidataId": "Q1622234",
+    "rorId": "02p5hsv84",
+    "founded": 1814,
+    "gndId": "10193264-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für bildende Künste Hamburg",
+    "wikidataId": "Q1622237",
+    "rorId": "045gdxt02",
+    "founded": 1767,
+    "gndId": "2068270-0",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Würzburg-Schweinfurt",
+    "wikidataId": "Q1622239",
+    "rorId": "01k5h5v15",
+    "founded": 1807,
+    "gndId": "10344569-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Öffentliche Verwaltung Bremen",
+    "wikidataId": "Q1622242",
+    "rorId": "05q2pee13",
+    "founded": 1979,
+    "gndId": "2075757-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für nachhaltige Entwicklung Eberswalde",
+    "wikidataId": "Q1622244",
+    "rorId": "01ge5zt06",
+    "founded": 1830,
+    "gndId": "16070523-X",
+    "country": "DE"
+  },
+  {
+    "name": "Kunsthochschule Berlin-Weißensee",
+    "wikidataId": "Q1773894",
+    "rorId": "00zbhen47",
+    "founded": 1946,
+    "gndId": "2138124-0",
+    "country": "DE"
+  },
+  {
+    "name": "Kunstakademie Münster",
+    "wikidataId": "Q1792343",
+    "rorId": "00ztzxf77",
+    "founded": 1971,
+    "gndId": "5024195-3",
+    "country": "DE"
+  },
+  {
+    "name": "Kunsthochschule Mainz",
+    "wikidataId": "Q1792452",
+    "rorId": null,
+    "founded": 1959,
+    "gndId": "16091054-7",
+    "country": "DE"
+  },
+  {
+    "name": "Norddeutsche Hochschule für Rechtspflege",
+    "wikidataId": "Q1997776",
+    "rorId": "02743t710",
+    "founded": 2007,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Ostfalia Hochschule für angewandte Wissenschaften",
+    "wikidataId": "Q2035460",
+    "rorId": "01bk10867",
+    "founded": 1928,
+    "gndId": "16075056-8",
+    "country": "DE"
+  },
+  {
+    "name": "Palucca Hochschule für Tanz Dresden",
+    "wikidataId": "Q2048456",
+    "rorId": "01ptm9403",
+    "founded": 1925,
+    "gndId": "1133592236",
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Esslingen",
+    "wikidataId": "Q2120187",
+    "rorId": null,
+    "founded": 1811,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Schwäbisch Gmünd",
+    "wikidataId": "Q2120205",
+    "rorId": "02g2sh456",
+    "founded": 1825,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Ludwigsburg",
+    "wikidataId": "Q2120211",
+    "rorId": "02j0n6s98",
+    "founded": 1962,
+    "gndId": "31703-2",
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Akademie der Bildenden Künste Stuttgart",
+    "wikidataId": "Q2324294",
+    "rorId": "00zayq578",
+    "founded": 1761,
+    "gndId": "30916-3",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Vechta",
+    "wikidataId": "Q2496174",
+    "rorId": "045y6d111",
+    "founded": 1830,
+    "gndId": "16179905-X",
+    "country": "DE"
+  },
+  {
+    "name": "Universitätsmedizin Göttingen",
+    "wikidataId": "Q2496408",
+    "rorId": "021ft0n22",
+    "founded": 1732,
+    "gndId": "10165793-6",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Hamburg",
+    "wikidataId": "Q1060",
+    "rorId": "04bs1pb34",
+    "founded": 1978,
+    "gndId": "1112763473",
+    "country": "DE"
+  },
+  {
+    "name": "Deutsche Universität für Verwaltungswissenschaften Speyer",
+    "wikidataId": "Q22963",
+    "rorId": "01d30w739",
+    "founded": 1947,
+    "gndId": "16345320-2",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Köln",
+    "wikidataId": "Q54166",
+    "rorId": "014nnvj65",
+    "founded": 1971,
+    "gndId": "63951-5",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik und Tanz Köln",
+    "wikidataId": "Q55021",
+    "rorId": "05256tw11",
+    "founded": 1850,
+    "gndId": "6525138-6",
+    "country": "DE"
+  },
+  {
+    "name": "Universität der Künste Berlin",
+    "wikidataId": "Q55038",
+    "rorId": "03eznrw16",
+    "founded": 1696,
+    "gndId": "10029869-2",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Luxemburg",
+    "wikidataId": "Q59668",
+    "rorId": "036x5ad56",
+    "founded": 2003,
+    "gndId": "16033783-5",
+    "country": "LU"
+  },
+  {
+    "name": "Centre juridique franco-allemand",
+    "wikidataId": "Q118884",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Stuttgart",
+    "wikidataId": "Q122453",
+    "rorId": "04vnq7t77",
+    "founded": 1829,
+    "gndId": "36186-0",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Ilmenau",
+    "wikidataId": "Q129195",
+    "rorId": "01weqhp73",
+    "founded": 1952,
+    "gndId": "2125187-3",
+    "country": "DE"
+  },
+  {
+    "name": "Brandenburgische Technische Universität",
+    "wikidataId": "Q149433",
+    "rorId": "02wxx3e24",
+    "founded": 2013,
+    "gndId": "1037280792",
+    "country": "DE"
+  },
+  {
+    "name": "Europa-Universität Viadrina",
+    "wikidataId": "Q149481",
+    "rorId": "02msan859",
+    "founded": 1991,
+    "gndId": "5059953-7",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Potsdam",
+    "wikidataId": "Q153012",
+    "rorId": "03bnmw459",
+    "founded": 1991,
+    "gndId": "2120681-8",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Chemnitz",
+    "wikidataId": "Q159630",
+    "rorId": "00a208s56",
+    "founded": 1836,
+    "gndId": "5018951-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Mittweida",
+    "wikidataId": "Q202952",
+    "rorId": "024ga3r86",
+    "founded": 1867,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Hannover",
+    "wikidataId": "Q224514",
+    "rorId": "03m2kj587",
+    "founded": 1971,
+    "gndId": "16332530-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Gestaltung Schwäbisch Gmünd",
+    "wikidataId": "Q248702",
+    "rorId": "016zq4f37",
+    "founded": 1776,
+    "gndId": "10369808-5",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik Würzburg",
+    "wikidataId": "Q260107",
+    "rorId": "05m1pqv80",
+    "founded": 1797,
+    "gndId": "1079715-4",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Rosenheim",
+    "wikidataId": "Q263537",
+    "rorId": "03hbmgt12",
+    "founded": 1971,
+    "gndId": "1204497257",
+    "country": "DE"
+  },
+  {
+    "name": "Wirtschaftsuniversität Wien",
+    "wikidataId": "Q278044",
+    "rorId": "03yn8s215",
+    "founded": 1898,
+    "gndId": "115001-7",
+    "country": "AT"
+  },
+  {
+    "name": "Hochschule Darmstadt",
+    "wikidataId": "Q284992",
+    "rorId": "047wbd030",
+    "founded": 1971,
+    "gndId": "2010013-9",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Darmstadt",
+    "wikidataId": "Q310695",
+    "rorId": "05n911h24",
+    "founded": 1877,
+    "gndId": "2165342-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik und Theater „Felix Mendelssohn Bartholdy“ Leipzig",
+    "wikidataId": "Q312578",
+    "rorId": "04msbx814",
+    "founded": 1843,
+    "gndId": "2128246-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften München",
+    "wikidataId": "Q314089",
+    "rorId": "012k1v959",
+    "founded": 1971,
+    "gndId": "1034192469",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Mittelhessen",
+    "wikidataId": "Q314684",
+    "rorId": "02qdc9985",
+    "founded": 1971,
+    "gndId": "16102622-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Grafik und Buchkunst Leipzig",
+    "wikidataId": "Q315175",
+    "rorId": "03hzkp562",
+    "founded": 1764,
+    "gndId": "25145-8",
+    "country": "DE"
+  },
+  {
+    "name": "Deutsche Sporthochschule Köln",
+    "wikidataId": "Q315229",
+    "rorId": "0189raq88",
+    "founded": 1965,
+    "gndId": "37100-2",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Mannheim",
+    "wikidataId": "Q317070",
+    "rorId": "031bsb921",
+    "founded": 1907,
+    "gndId": "2024369-8",
+    "country": "DE"
+  },
+  {
+    "name": "Universität zu Lübeck",
+    "wikidataId": "Q317087",
+    "rorId": "00t3r8h32",
+    "founded": 1964,
+    "gndId": "10044490-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Reutlingen",
+    "wikidataId": "Q317125",
+    "rorId": "00q644y50",
+    "founded": 1855,
+    "gndId": "10120494-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+    "wikidataId": "Q317796",
+    "rorId": "03c0qqf32",
+    "founded": 1938,
+    "gndId": "508872-0",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik Detmold",
+    "wikidataId": "Q317855",
+    "rorId": "03y02pg02",
+    "founded": 1946,
+    "gndId": "5073685-1",
+    "country": "DE"
+  },
+  {
+    "name": "Stiftungsuniversität Hildesheim",
+    "wikidataId": "Q319333",
+    "rorId": "02f9det96",
+    "founded": 1946,
+    "gndId": "16032318-6",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Mannheim",
+    "wikidataId": "Q321369",
+    "rorId": "04p61dj41",
+    "founded": 1898,
+    "gndId": "10135385-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Düsseldorf",
+    "wikidataId": "Q322886",
+    "rorId": "00ftx0026",
+    "founded": 1971,
+    "gndId": "1072770350",
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Akademie der Bildenden Künste Karlsruhe",
+    "wikidataId": "Q322938",
+    "rorId": "02hdve317",
+    "founded": 1854,
+    "gndId": "1047610-6",
+    "country": "DE"
+  },
+  {
+    "name": "Akademie der Bildenden Künste Nürnberg",
+    "wikidataId": "Q414041",
+    "rorId": "03yxw1t21",
+    "founded": 1662,
+    "gndId": "2003753-3",
+    "country": "DE"
+  },
+  {
+    "name": "Akademie der bildenden Künste Wien",
+    "wikidataId": "Q414219",
+    "rorId": "029djt864",
+    "founded": 1692,
+    "gndId": "2003761-2",
+    "country": "AT"
+  },
+  {
+    "name": "Universität Luzern",
+    "wikidataId": "Q673308",
+    "rorId": "00kgrkn83",
+    "founded": 2000,
+    "gndId": "10007661-0",
+    "country": "CH"
+  },
+  {
+    "name": "Universität für Musik und darstellende Kunst Wien",
+    "wikidataId": "Q686522",
+    "rorId": "000ymgt65",
+    "founded": 1817,
+    "gndId": "5299670-0",
+    "country": "AT"
+  },
+  {
+    "name": "Medizinische Universität Wien",
+    "wikidataId": "Q700731",
+    "rorId": "05n3x4p02",
+    "founded": 2004,
+    "gndId": "10064424-7",
+    "country": "AT"
+  },
+  {
+    "name": "Universität Innsbruck",
+    "wikidataId": "Q875788",
+    "rorId": "054pv6659",
+    "founded": 1669,
+    "gndId": "36165-3",
+    "country": "AT"
+  },
+  {
+    "name": "Universität für Bodenkultur Wien",
+    "wikidataId": "Q876520",
+    "rorId": "057ff4y42",
+    "founded": 1872,
+    "gndId": "1033666-7",
+    "country": "AT"
+  },
+  {
+    "name": "Universität für angewandte Kunst Wien",
+    "wikidataId": "Q877686",
+    "rorId": "05yjy4360",
+    "founded": 1867,
+    "gndId": "5299671-2",
+    "country": "AT"
+  },
+  {
+    "name": "Leibniz Fachhochschule",
+    "wikidataId": "Q30263706",
+    "rorId": "03eqwj662",
+    "founded": 2011,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "CODE University of Applied Sciences",
+    "wikidataId": "Q40387612",
+    "rorId": "045tmdc16",
+    "founded": 2017,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "VWA und Berufsakademie Lüneburg",
+    "wikidataId": "Q55518129",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "XU Exponential University of Applied Sciences",
+    "wikidataId": "Q60867576",
+    "rorId": null,
+    "founded": 2018,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Clara Hoffbauer Potsdam",
+    "wikidataId": "Q61943383",
+    "rorId": "0191jdv19",
+    "founded": 2016,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Schleswig-Holstein",
+    "wikidataId": "Q80805367",
+    "rorId": "011ff5411",
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "HMU Health and Medical University",
+    "wikidataId": "Q84941339",
+    "rorId": "02xstm723",
+    "founded": 2019,
+    "gndId": "1243766255",
+    "country": "DE"
+  },
+  {
+    "name": "University of Labour",
+    "wikidataId": "Q110489587",
+    "rorId": null,
+    "founded": 2021,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Charlotte Fresenius Hochschule",
+    "wikidataId": "Q110624130",
+    "rorId": "05grahd76",
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "SRH University Campus Fürth",
+    "wikidataId": "Q110665671",
+    "rorId": null,
+    "founded": 2012,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Humanistische Hochschule Berlin",
+    "wikidataId": "Q115973023",
+    "rorId": null,
+    "founded": 2021,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Europäische Hochschule für Innovation und Perspektive",
+    "wikidataId": "Q118258797",
+    "rorId": "00ep5v251",
+    "founded": 2022,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Berufsakademie für Bankwirtschaft",
+    "wikidataId": "Q122575751",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Berufsakademie Melle",
+    "wikidataId": "Q122577611",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "IBS IT & Business School Oldenburg",
+    "wikidataId": "Q122577742",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Institut für künstlerische Forschung und Bildung München",
+    "wikidataId": "Q122762888",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Deutsche Internationale Universität Berlin",
+    "wikidataId": "Q122865100",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "GISMA Business School, Campus Potsdam",
+    "wikidataId": "Q122870890",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Tomorrow University of Applied Sciences (",
+    "wikidataId": "Q122911598",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Heilbronn",
+    "wikidataId": "Q327693",
+    "rorId": "04g5gcg95",
+    "founded": 1961,
+    "gndId": "2044263-4",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Flensburg",
+    "wikidataId": "Q328274",
+    "rorId": "01xpfrc74",
+    "founded": 1886,
+    "gndId": "511078-6",
+    "country": "DE"
+  },
+  {
+    "name": "Akademie für Darstellende Kunst Baden-Württemberg",
+    "wikidataId": "Q414258",
+    "rorId": null,
+    "founded": 2007,
+    "gndId": "1049742214",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Clausthal",
+    "wikidataId": "Q447354",
+    "rorId": "04qb8nc58",
+    "founded": 1775,
+    "gndId": "36230-X",
+    "country": "DE"
+  },
+  {
+    "name": "Bergische Universität Wuppertal",
+    "wikidataId": "Q447953",
+    "rorId": "00613ak93",
+    "founded": 1972,
+    "gndId": "64944-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik Karlsruhe",
+    "wikidataId": "Q448324",
+    "rorId": "03ps48j85",
+    "founded": 1971,
+    "gndId": "10167097-7",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Koblenz-Landau",
+    "wikidataId": "Q448590",
+    "rorId": "01j9f6752",
+    "founded": 1990,
+    "gndId": "5015912-4",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Fulda",
+    "wikidataId": "Q453821",
+    "rorId": "041bz9r75",
+    "founded": 1974,
+    "gndId": "3063957-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik, Theater und Medien Hannover",
+    "wikidataId": "Q455331",
+    "rorId": "00x67m532",
+    "founded": 1897,
+    "gndId": "16171931-4",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Mainz",
+    "wikidataId": "Q459724",
+    "rorId": "02re32a17",
+    "founded": 1971,
+    "gndId": "1063654211",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Wirtschaft und Recht Berlin",
+    "wikidataId": "Q464443",
+    "rorId": "03rkmps36",
+    "founded": 1971,
+    "gndId": "16006690-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Bildende Künste Dresden",
+    "wikidataId": "Q464752",
+    "rorId": "04wqsqf86",
+    "founded": 1764,
+    "gndId": "39352-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Künste Bremen",
+    "wikidataId": "Q466664",
+    "rorId": "02fstjp34",
+    "founded": 1873,
+    "gndId": "2115179-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik Carl Maria von Weber Dresden",
+    "wikidataId": "Q468181",
+    "rorId": "01y01jq30",
+    "founded": 1856,
+    "gndId": "2045018-7",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Deggendorf",
+    "wikidataId": "Q468553",
+    "rorId": "02kw5st29",
+    "founded": 1994,
+    "gndId": "1044493747",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Bremen",
+    "wikidataId": "Q500692",
+    "rorId": "04ers2y35",
+    "founded": 1971,
+    "gndId": "2001386-3",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Siegen",
+    "wikidataId": "Q504723",
+    "rorId": "02azyry73",
+    "founded": 1972,
+    "gndId": "64850-4",
+    "country": "DE"
+  },
+  {
+    "name": "Leuphana Universität Lüneburg",
+    "wikidataId": "Q505170",
+    "rorId": "02w2y2t16",
+    "founded": 1946,
+    "gndId": "2108701-5",
+    "country": "DE"
+  },
+  {
+    "name": "Europa-Universität Flensburg",
+    "wikidataId": "Q506436",
+    "rorId": "046e0mt33",
+    "founded": 1994,
+    "gndId": "10002951-6",
+    "country": "DE"
+  },
+  {
+    "name": "Musikhochschule Lübeck",
+    "wikidataId": "Q513622",
+    "rorId": "021f61w41",
+    "founded": 1973,
+    "gndId": "2102885-0",
+    "country": "DE"
+  },
+  {
+    "name": "Folkwang Universität der Künste",
+    "wikidataId": "Q521612",
+    "rorId": "03gf02c22",
+    "founded": 1927,
+    "gndId": "16159133-4",
+    "country": "DE"
+  },
+  {
+    "name": "Helmut-Schmidt-Universität/Universität der Bundeswehr Hamburg",
+    "wikidataId": "Q530991",
+    "rorId": "04e8jbs38",
+    "founded": 1972,
+    "gndId": "10072785-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik Franz Liszt Weimar",
+    "wikidataId": "Q536163",
+    "rorId": "000evwg49",
+    "founded": 1872,
+    "gndId": "2040344-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule RheinMain",
+    "wikidataId": "Q542415",
+    "rorId": "0378gm372",
+    "founded": 1971,
+    "gndId": "16024665-9",
+    "country": "DE"
+  },
+  {
+    "name": "FH Münster",
+    "wikidataId": "Q554425",
+    "rorId": "00pv45a02",
+    "founded": 1971,
+    "gndId": "2071118-9",
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+    "wikidataId": "Q568692",
+    "rorId": "057qv9h29",
+    "founded": 1857,
+    "gndId": "81500-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Fernsehen und Film München",
+    "wikidataId": "Q569350",
+    "rorId": "01a7snz60",
+    "founded": 1966,
+    "gndId": "2044423-0",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik „Hanns Eisler“ Berlin",
+    "wikidataId": "Q569460",
+    "rorId": "00dnfj623",
+    "founded": 1950,
+    "gndId": "2125824-7",
+    "country": "DE"
+  },
+  {
+    "name": "Bauhaus-Universität Weimar",
+    "wikidataId": "Q573975",
+    "rorId": "033bb5z47",
+    "founded": 1860,
+    "gndId": "5180842-0",
+    "country": "DE"
+  },
+  {
+    "name": "Carl von Ossietzky Universität Oldenburg",
+    "wikidataId": "Q597758",
+    "rorId": "033n9gh91",
+    "founded": 1973,
+    "gndId": "26375-8",
+    "country": "DE"
+  },
+  {
+    "name": "Archivschule Marburg",
+    "wikidataId": "Q636031",
+    "rorId": "02tdyw459",
+    "founded": 1949,
+    "gndId": "2005063-X",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik Freiburg",
+    "wikidataId": "Q650345",
+    "rorId": "03bavdz78",
+    "founded": 1946,
+    "gndId": "10098637-7",
+    "country": "DE"
+  },
+  {
+    "name": "Otto-von-Guericke-Universität Magdeburg",
+    "wikidataId": "Q655866",
+    "rorId": "00ggpsq73",
+    "founded": 1993,
+    "gndId": "5095826-4",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik und Theater München",
+    "wikidataId": "Q657167",
+    "rorId": "02m7p2c22",
+    "founded": 1846,
+    "gndId": "5301157-0",
+    "country": "DE"
+  },
+  {
+    "name": "Kunstakademie Düsseldorf",
+    "wikidataId": "Q662355",
+    "rorId": "040d40q10",
+    "founded": 1762,
+    "gndId": "2121796-8",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Kaiserslautern",
+    "wikidataId": "Q678965",
+    "rorId": "04zrf7b53",
+    "founded": 1970,
+    "gndId": "10066624-3",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Dortmund",
+    "wikidataId": "Q685557",
+    "rorId": "01k97gp34",
+    "founded": 1968,
+    "gndId": "16039348-6",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Wildau",
+    "wikidataId": "Q686171",
+    "rorId": "00k62pe27",
+    "founded": 1991,
+    "gndId": "16022790-2",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Hohenheim",
+    "wikidataId": "Q690912",
+    "rorId": "00b1c9541",
+    "founded": 1818,
+    "gndId": "36162-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Musik und Theater Hamburg",
+    "wikidataId": "Q700824",
+    "rorId": "00dfbms98",
+    "founded": 1950,
+    "gndId": "1223276-2",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Osnabrück",
+    "wikidataId": "Q702499",
+    "rorId": "04qmmjx98",
+    "founded": 1974,
+    "gndId": "2041141-8",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Erfurt",
+    "wikidataId": "Q702524",
+    "rorId": "03606hw36",
+    "founded": 1994,
+    "gndId": "5198149-X",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Passau",
+    "wikidataId": "Q704468",
+    "rorId": "05ydjnb78",
+    "founded": 1973,
+    "gndId": "13388-7",
+    "country": "DE"
+  },
+  {
+    "name": "Otto-Friedrich-Universität Bamberg",
+    "wikidataId": "Q707272",
+    "rorId": "01c1w6d29",
+    "founded": 1647,
+    "gndId": "2056127-1",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Braunschweig",
+    "wikidataId": "Q734324",
+    "rorId": "010nsgg66",
+    "founded": 1745,
+    "gndId": "36227-X",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Karlsruhe",
+    "wikidataId": "Q761708",
+    "rorId": "01c0m1t63",
+    "founded": 1878,
+    "gndId": "10115625-X",
+    "country": "DE"
+  },
+  {
+    "name": "Kunsthochschule für Medien Köln",
+    "wikidataId": "Q827038",
+    "rorId": "00f2wje32",
+    "founded": 1989,
+    "gndId": "2128885-9",
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Studienakademie Dresden",
+    "wikidataId": "Q828762",
+    "rorId": null,
+    "founded": 1991,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Studienakademie Plauen",
+    "wikidataId": "Q828771",
+    "rorId": null,
+    "founded": 1999,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Studienakademie Glauchau",
+    "wikidataId": "Q828773",
+    "rorId": null,
+    "founded": 1991,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Kassel",
+    "wikidataId": "Q833822",
+    "rorId": "04zc7p361",
+    "founded": 1971,
+    "gndId": "2055001-7",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Ulm",
+    "wikidataId": "Q835662",
+    "rorId": "032000t02",
+    "founded": 1967,
+    "gndId": "30607-1",
+    "country": "DE"
+  },
+  {
+    "name": "Berliner Hochschule für Technik",
+    "wikidataId": "Q851413",
+    "rorId": "00w7whj55",
+    "founded": 1823,
+    "gndId": "16179132-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Technik und Wirtschaft Berlin",
+    "wikidataId": "Q875138",
+    "rorId": "01xzwj424",
+    "founded": 1994,
+    "gndId": "16008929-3",
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Hochschule für Bildende Künste – Städelschule",
+    "wikidataId": "Q875722",
+    "rorId": "05b2tmp48",
+    "founded": 1829,
+    "gndId": "2073143-7",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Bingen",
+    "wikidataId": "Q878170",
+    "rorId": "01pxkj057",
+    "founded": 1897,
+    "gndId": "5262927-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Bildende Künste Braunschweig",
+    "wikidataId": "Q879216",
+    "rorId": "03aft2f80",
+    "founded": 1963,
+    "gndId": "2065721-3",
+    "country": "DE"
+  },
+  {
+    "name": "Filmakademie Baden-Württemberg",
+    "wikidataId": "Q880577",
+    "rorId": null,
+    "founded": 1991,
+    "gndId": "5072424-1",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Wismar",
+    "wikidataId": "Q883036",
+    "rorId": "00s1ckt27",
+    "founded": 1908,
+    "gndId": "5077582-0",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Technik und Wirtschaft des Saarlandes",
+    "wikidataId": "Q884111",
+    "rorId": "02ge27m07",
+    "founded": 1946,
+    "gndId": "5033773-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Pforzheim",
+    "wikidataId": "Q884358",
+    "rorId": "00qakfc35",
+    "founded": 1877,
+    "gndId": "10129475-X",
+    "country": "DE"
+  },
+  {
+    "name": "Westsächsische Hochschule Zwickau",
+    "wikidataId": "Q884503",
+    "rorId": "04ms51788",
+    "founded": 1897,
+    "gndId": "5198591-3",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Ostwestfalen-Lippe",
+    "wikidataId": "Q895634",
+    "rorId": "04eka8j06",
+    "founded": 1971,
+    "gndId": "10202719-5",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Schauspielkunst Ernst Busch Berlin",
+    "wikidataId": "Q895796",
+    "rorId": "03py54049",
+    "founded": 1951,
+    "gndId": "5112447-6",
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Hochschule für Gestaltung Karlsruhe",
+    "wikidataId": "Q896116",
+    "rorId": "04vq9c111",
+    "founded": 1992,
+    "gndId": "2133168-6",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Augsburg",
+    "wikidataId": "Q896468",
+    "rorId": "016604a03",
+    "founded": 1971,
+    "gndId": "16075397-1",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Angewandte Wissenschaft/Trier University of Applied Science",
+    "wikidataId": "Q896546",
+    "rorId": "02e3hdx05",
+    "founded": 1996,
+    "gndId": "5196396-6",
+    "country": "DE"
+  },
+  {
+    "name": "Ostbayerische Technische Hochschule Regensburg",
+    "wikidataId": "Q982435",
+    "rorId": "04b9vrm74",
+    "founded": 1971,
+    "gndId": "17847-0",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Lörrach",
+    "wikidataId": "Q1001338",
+    "rorId": null,
+    "founded": 1981,
+    "gndId": "16054177-3",
+    "country": "DE"
+  },
+  {
+    "name": "Burg Giebichenstein Kunsthochschule Halle",
+    "wikidataId": "Q1011953",
+    "rorId": "05re2x545",
+    "founded": 1915,
+    "gndId": "16086687-X",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Medien",
+    "wikidataId": "Q1233544",
+    "rorId": "022r03w28",
+    "founded": 2001,
+    "gndId": "5566554-8",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Südwestfalen",
+    "wikidataId": "Q1259168",
+    "rorId": "04t5phd24",
+    "founded": 2002,
+    "gndId": "10032081-8",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Karlsruhe",
+    "wikidataId": "Q1262599",
+    "rorId": null,
+    "founded": 1979,
+    "gndId": "10369092-X",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Heidenheim",
+    "wikidataId": "Q1262602",
+    "rorId": null,
+    "founded": 1976,
+    "gndId": "16083960-9",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Mannheim",
+    "wikidataId": "Q1262608",
+    "rorId": "04wrcmd18",
+    "founded": 1974,
+    "gndId": "16012636-8",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Stuttgart",
+    "wikidataId": "Q1262612",
+    "rorId": null,
+    "founded": 1974,
+    "gndId": "16002377-4",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Villingen-Schwenningen",
+    "wikidataId": "Q1262615",
+    "rorId": null,
+    "founded": 1975,
+    "gndId": "16060866-1",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Ravensburg",
+    "wikidataId": "Q1262617",
+    "rorId": "014cnmj57",
+    "founded": 1978,
+    "gndId": "16091916-2",
+    "country": "DE"
+  },
+  {
+    "name": "Freie Hochschule Stuttgart",
+    "wikidataId": "Q1453964",
+    "rorId": "001e43z98",
+    "founded": 1928,
+    "gndId": "5504583-2",
+    "country": "DE"
+  },
+  {
+    "name": "Freie Hochschule für Grafik-Design & Bildende Kunst Freiburg",
+    "wikidataId": "Q1453965",
+    "rorId": null,
+    "founded": 1986,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Freie Theologische Hochschule Gießen",
+    "wikidataId": "Q1454033",
+    "rorId": "03kzgcv48",
+    "founded": 1974,
+    "gndId": "1128844710",
+    "country": "DE"
+  },
+  {
+    "name": "Private Fachhochschule Döpfer für Physiotherapie und Ergotherapie",
+    "wikidataId": "Q1509126",
+    "rorId": null,
+    "founded": 2002,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "German Graduate School of Management and Law",
+    "wikidataId": "Q1513916",
+    "rorId": "04tenkb98",
+    "founded": 2005,
+    "gndId": "16155652-8",
+    "country": "DE"
+  },
+  {
+    "name": "German open Business School",
+    "wikidataId": "Q1514069",
+    "rorId": "018mbvt80",
+    "founded": 2011,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Wilhelm Löhe Hochschule für angewandte Wissenschaften",
+    "wikidataId": "Q1532259",
+    "rorId": "03bh13774",
+    "founded": 2012,
+    "gndId": "1029287279",
+    "country": "DE"
+  },
+  {
+    "name": "Graduate School Rhein-Neckar",
+    "wikidataId": "Q1541259",
+    "rorId": null,
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für internationale Wirtschaft und Logistik",
+    "wikidataId": "Q1545954",
+    "rorId": null,
+    "founded": 2009,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Großherzoglich-Sächsische Forstlehranstalt Eisenach",
+    "wikidataId": "Q1549322",
+    "rorId": null,
+    "founded": 1830,
+    "gndId": "1086591526",
+    "country": "DE"
+  },
+  {
+    "name": "HFH · Hamburger Fern-Hochschule",
+    "wikidataId": "Q1563580",
+    "rorId": "04580fn28",
+    "founded": 1997,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule 21",
+    "wikidataId": "Q1622069",
+    "rorId": "00xdvw685",
+    "founded": 2004,
+    "gndId": "6072327-0",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Fresenius",
+    "wikidataId": "Q1622099",
+    "rorId": "03hj50651",
+    "founded": 1848,
+    "gndId": "10369676-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Lausitz",
+    "wikidataId": "Q1622120",
+    "rorId": null,
+    "founded": 1991,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Deutschen Bundesbank",
+    "wikidataId": "Q1622151",
+    "rorId": "05fwp8t64",
+    "founded": 1976,
+    "gndId": "1034479253",
+    "country": "DE"
+  },
+  {
+    "name": "Akademie der Polizei Hamburg",
+    "wikidataId": "Q1622155",
+    "rorId": "05tn39y33",
+    "founded": 2013,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Finanzwirtschaft & Management",
+    "wikidataId": "Q1622157",
+    "rorId": null,
+    "founded": 2003,
+    "gndId": "7786253-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Wirtschaft für Management",
+    "wikidataId": "Q1622159",
+    "rorId": "026c3xn33",
+    "founded": 2011,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "SRH Hochschule der populären Künste",
+    "wikidataId": "Q1622160",
+    "rorId": "02kraxp86",
+    "founded": 2009,
+    "gndId": "1144374286",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Deutschen Gesetzlichen Unfallversicherung",
+    "wikidataId": "Q1622174",
+    "rorId": "03pcpfy27",
+    "founded": 1996,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "DHGS Deutsche Hochschule für Gesundheit und Sport",
+    "wikidataId": "Q1622185",
+    "rorId": "04j1sr579",
+    "founded": 2007,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Internationales Management Heidelberg",
+    "wikidataId": "Q1622188",
+    "rorId": "00zk46w34",
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Katholische Kirchenmusik und Musikpädagogik Regensburg",
+    "wikidataId": "Q1622189",
+    "rorId": null,
+    "founded": 2001,
+    "gndId": "10166081-9",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Kirchenmusik  Herford-Witten",
+    "wikidataId": "Q1622191",
+    "rorId": "0446hjy70",
+    "founded": 1948,
+    "gndId": "4538358-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Kirchenmusik der Evangelischen Kirche der schlesischen Oberlausitz",
+    "wikidataId": "Q1622193",
+    "rorId": null,
+    "founded": 1947,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Medien, Kommunikation und Wirtschaft",
+    "wikidataId": "Q1622198",
+    "rorId": "00jbwpt44",
+    "founded": 2008,
+    "gndId": "1099994721",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Politik München",
+    "wikidataId": "Q1622215",
+    "rorId": null,
+    "founded": 1950,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Telekommunikation Leipzig",
+    "wikidataId": "Q1622226",
+    "rorId": "05k9vmz93",
+    "founded": 1991,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Wissenschaften Bamberg",
+    "wikidataId": "Q1622233",
+    "rorId": null,
+    "founded": 2011,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Theologisches Seminar Elstal",
+    "wikidataId": "Q1623675",
+    "rorId": "02bwxev54",
+    "founded": 1880,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Stiftungshochschule München",
+    "wikidataId": "Q1632429",
+    "rorId": "01j2dwr66",
+    "founded": 1909,
+    "gndId": "118341871X",
+    "country": "DE"
+  },
+  {
+    "name": "Humboldt-Viadrina School of Governance",
+    "wikidataId": "Q1636934",
+    "rorId": null,
+    "founded": 2003,
+    "gndId": "1174754672",
+    "country": "DE"
+  },
+  {
+    "name": "IB Hochschule für Gesundheit und Soziales",
+    "wikidataId": "Q1653042",
+    "rorId": "0530gbs37",
+    "founded": 2007,
+    "gndId": "106011335X",
+    "country": "DE"
+  },
+  {
+    "name": "International School of Management",
+    "wikidataId": "Q1665159",
+    "rorId": "04sn8qj61",
+    "founded": 1990,
+    "gndId": "5236305-3",
+    "country": "DE"
+  },
+  {
+    "name": "International Business School of Service Management",
+    "wikidataId": "Q1666398",
+    "rorId": null,
+    "founded": 2007,
+    "gndId": "1047347806",
+    "country": "DE"
+  },
+  {
+    "name": "IU Internationale Hochschule",
+    "wikidataId": "Q1667281",
+    "rorId": "04fdat027",
+    "founded": 1998,
+    "gndId": "1060648857",
+    "country": "DE"
+  },
+  {
+    "name": "Internationale Hochschule Liebenzell",
+    "wikidataId": "Q1667283",
+    "rorId": "028njx347",
+    "founded": 2011,
+    "gndId": "1075080088",
+    "country": "DE"
+  },
+  {
+    "name": "Internationale Hochschule für Exekutives Management",
+    "wikidataId": "Q1667285",
+    "rorId": null,
+    "founded": 2007,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Thüringer Fachhochschule für öffentliche Verwaltung",
+    "wikidataId": "Q1698934",
+    "rorId": null,
+    "founded": 1994,
+    "gndId": "5277800-9",
+    "country": "DE"
+  },
+  {
+    "name": "ESCP Business School",
+    "wikidataId": "Q29293",
+    "rorId": "01r8xsy94",
+    "founded": 1819,
+    "gndId": "16067833-X",
+    "country": "DE"
+  },
+  {
+    "name": "Jacobs University Bremen",
+    "wikidataId": "Q59114",
+    "rorId": null,
+    "founded": 2001,
+    "gndId": "10188279-8",
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Privat-Universität Linz",
+    "wikidataId": "Q179640",
+    "rorId": "00mepd532",
+    "founded": 1672,
+    "gndId": "16029287-6",
+    "country": "AT"
+  },
+  {
+    "name": "Zeppelin Universität",
+    "wikidataId": "Q191426",
+    "rorId": "05tbp1g38",
+    "founded": 2003,
+    "gndId": "10105063-X",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Witten/Herdecke",
+    "wikidataId": "Q314305",
+    "rorId": "00yq55g44",
+    "founded": 1982,
+    "gndId": "511081-6",
+    "country": "DE"
+  },
+  {
+    "name": "EBS Universität für Wirtschaft und Recht",
+    "wikidataId": "Q316272",
+    "rorId": "01js9jv94",
+    "founded": 1971,
+    "gndId": "1032822171",
+    "country": "DE"
+  },
+  {
+    "name": "WHU – Otto Beisheim School of Management",
+    "wikidataId": "Q316595",
+    "rorId": "01yhahq71",
+    "founded": 1984,
+    "gndId": "10169267-5",
+    "country": "DE"
+  },
+  {
+    "name": "Hertie School",
+    "wikidataId": "Q317156",
+    "rorId": "0473a4773",
+    "founded": 2003,
+    "gndId": "10114572-X",
+    "country": "DE"
+  },
+  {
+    "name": "Accadis Hochschule Bad Homburg",
+    "wikidataId": "Q338514",
+    "rorId": "015a98c38",
+    "founded": 1990,
+    "gndId": "16076822-6",
+    "country": "DE"
+  },
+  {
+    "name": "Anton Bruckner Privatuniversität",
+    "wikidataId": "Q461551",
+    "rorId": "03rh9qr65",
+    "founded": 1823,
+    "gndId": "16035146-7",
+    "country": "AT"
+  },
+  {
+    "name": "European School of Management and Technology",
+    "wikidataId": "Q569528",
+    "rorId": "024xejm70",
+    "founded": 2002,
+    "gndId": "10103556-1",
+    "country": "DE"
+  },
+  {
+    "name": "Ukrainische Freie Universität München",
+    "wikidataId": "Q646136",
+    "rorId": "02ywmkj38",
+    "founded": 1921,
+    "gndId": "84138-9",
+    "country": "DE"
+  },
+  {
+    "name": "Bard College Berlin",
+    "wikidataId": "Q666828",
+    "rorId": "05k2sh226",
+    "founded": 1999,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Handelshochschule Leipzig",
+    "wikidataId": "Q679945",
+    "rorId": "00vjd4k74",
+    "founded": 1898,
+    "gndId": "2013180-X",
+    "country": "DE"
+  },
+  {
+    "name": "Bbw Hochschule",
+    "wikidataId": "Q812777",
+    "rorId": "03afcx965",
+    "founded": 2007,
+    "gndId": "1025752325",
+    "country": "DE"
+  },
+  {
+    "name": "Internationale Hochschule SDI München",
+    "wikidataId": "Q833743",
+    "rorId": null,
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Modul University Vienna",
+    "wikidataId": "Q872071",
+    "rorId": "04v2brz27",
+    "founded": 2007,
+    "gndId": "1160522251",
+    "country": "AT"
+  },
+  {
+    "name": "Steinbeis-Hochschule",
+    "wikidataId": "Q883471",
+    "rorId": "03efsge90",
+    "founded": 1969,
+    "gndId": "10089773-3",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Wedel",
+    "wikidataId": "Q976984",
+    "rorId": "00bwfj843",
+    "founded": 1948,
+    "gndId": "3001927-8",
+    "country": "DE"
+  },
+  {
+    "name": "BSP Business & Law School",
+    "wikidataId": "Q1017599",
+    "rorId": "017bbsh25",
+    "founded": 2009,
+    "gndId": "1151851124",
+    "country": "DE"
+  },
+  {
+    "name": "CVJM-Hochschule",
+    "wikidataId": "Q1024571",
+    "rorId": "05dbw7b97",
+    "founded": 2009,
+    "gndId": "16051955-X",
+    "country": "DE"
+  },
+  {
+    "name": "Diploma Hochschule",
+    "wikidataId": "Q1153856",
+    "rorId": "051rc7j94",
+    "founded": 1998,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Deutsche Hochschule für Prävention und Gesundheitsmanagement",
+    "wikidataId": "Q1203121",
+    "rorId": "047h65335",
+    "founded": 2002,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Dresden International University",
+    "wikidataId": "Q1258462",
+    "rorId": "01t4pxy10",
+    "founded": 2003,
+    "gndId": "10366456-7",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandtes Management",
+    "wikidataId": "Q1280712",
+    "rorId": "038fwdn76",
+    "founded": 2004,
+    "gndId": "1046902695",
+    "country": "DE"
+  },
+  {
+    "name": "Munich Business School",
+    "wikidataId": "Q1311824",
+    "rorId": "00jw3g525",
+    "founded": 1991,
+    "gndId": "10091263-1",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Macromedia",
+    "wikidataId": "Q1346417",
+    "rorId": "03czk8k96",
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Nordakademie",
+    "wikidataId": "Q1379386",
+    "rorId": "003r76697",
+    "founded": 1992,
+    "gndId": "6039247-2",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule Tabor",
+    "wikidataId": "Q1380215",
+    "rorId": null,
+    "founded": 2009,
+    "gndId": "6530624-7",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Dresden",
+    "wikidataId": "Q1391187",
+    "rorId": "01vbd1435",
+    "founded": 2010,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Ottersberg",
+    "wikidataId": "Q1391213",
+    "rorId": "00xnq7h44",
+    "founded": 1967,
+    "gndId": "10077277-8",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Interkulturelle Theologie",
+    "wikidataId": "Q1391271",
+    "rorId": "040erbe63",
+    "founded": 2012,
+    "gndId": "1034069845",
+    "country": "DE"
+  },
+  {
+    "name": "Private Hochschule für Wirtschaft und Technik Vechta/Diepholz/Oldenburg",
+    "wikidataId": "Q1391278",
+    "rorId": "05eyxqf74",
+    "founded": 1998,
+    "gndId": "6032489-2",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für die Wirtschaft",
+    "wikidataId": "Q1391282",
+    "rorId": "03z6vda50",
+    "founded": 1996,
+    "gndId": "5546390-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Weserbergland",
+    "wikidataId": "Q1400766",
+    "rorId": "0367m1n91",
+    "founded": 2010,
+    "gndId": "115494171X",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Bundesagentur für Arbeit",
+    "wikidataId": "Q1622148",
+    "rorId": "02d89at43",
+    "founded": 2006,
+    "gndId": "16002936-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Jüdische Studien",
+    "wikidataId": "Q1622186",
+    "rorId": "052gzq419",
+    "founded": 1979,
+    "gndId": "2076106-5",
+    "country": "DE"
+  },
+  {
+    "name": "International Psychoanalytic University Berlin",
+    "wikidataId": "Q1666832",
+    "rorId": "00b6j6x40",
+    "founded": 2009,
+    "gndId": "1072022796",
+    "country": "DE"
+  },
+  {
+    "name": "TCM Privatuniversität Li Shi Zhen",
+    "wikidataId": "Q1671646",
+    "rorId": null,
+    "founded": 2003,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Kühne Logistics University",
+    "wikidataId": "Q1683524",
+    "rorId": "00z9cn431",
+    "founded": 2010,
+    "gndId": "102443334X",
+    "country": "DE"
+  },
+  {
+    "name": "Joseph-Haydn-Privathochschule des Landes Burgenland",
+    "wikidataId": "Q1706345",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": "406613-3",
+    "country": "AT"
+  },
+  {
+    "name": "Karlshochschule International University",
+    "wikidataId": "Q1733921",
+    "rorId": "03yjyed28",
+    "founded": 2004,
+    "gndId": "16010891-3",
+    "country": "DE"
+  },
+  {
+    "name": "Mediadesign Hochschule",
+    "wikidataId": "Q1916178",
+    "rorId": "03aky0p13",
+    "founded": 2004,
+    "gndId": "16049934-3",
+    "country": "DE"
+  },
+  {
+    "name": "Medical School Berlin",
+    "wikidataId": "Q1916267",
+    "rorId": "001vjqx13",
+    "founded": 2012,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Merz Akademie",
+    "wikidataId": "Q1922219",
+    "rorId": "0167r2g29",
+    "founded": 1918,
+    "gndId": "2125662-7",
+    "country": "DE"
+  },
+  {
+    "name": "PFH Private Hochschule Göttingen",
+    "wikidataId": "Q2044046",
+    "rorId": "01we8bn75",
+    "founded": 1994,
+    "gndId": "1034343319",
+    "country": "DE"
+  },
+  {
+    "name": "Provadis School of International Management and Technology",
+    "wikidataId": "Q2113846",
+    "rorId": "01gm0md04",
+    "founded": 2001,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Psychologische Hochschule Berlin",
+    "wikidataId": "Q2115997",
+    "rorId": "02qchbs48",
+    "founded": 2010,
+    "gndId": "1297227085",
+    "country": "DE"
+  },
+  {
+    "name": "Quadriga Hochschule Berlin",
+    "wikidataId": "Q2121899",
+    "rorId": "04xsjvn35",
+    "founded": 2009,
+    "gndId": "16051784-9",
+    "country": "DE"
+  },
+  {
+    "name": "Sigmund Freud Privatuniversität Wien",
+    "wikidataId": "Q2157899",
+    "rorId": "04hwbg047",
+    "founded": 2005,
+    "gndId": "16064435-5",
+    "country": "AT"
+  },
+  {
+    "name": "SRH Hochschule für Gesundheit",
+    "wikidataId": "Q2207696",
+    "rorId": "026kenw55",
+    "founded": 2006,
+    "gndId": "104128991X",
+    "country": "DE"
+  },
+  {
+    "name": "SRH Fernhochschule",
+    "wikidataId": "Q2207700",
+    "rorId": "00yx29a03",
+    "founded": 1996,
+    "gndId": "1026911621",
+    "country": "DE"
+  },
+  {
+    "name": "SRH Hochschule Heidelberg",
+    "wikidataId": "Q2207707",
+    "rorId": "00g07sz63",
+    "founded": 1969,
+    "gndId": "10197728-1",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Magdeburg",
+    "wikidataId": "Q2399299",
+    "rorId": null,
+    "founded": 1953,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Touro College Berlin",
+    "wikidataId": "Q2446761",
+    "rorId": null,
+    "founded": 2003,
+    "gndId": "1028218982",
+    "country": "DE"
+  },
+  {
+    "name": "VWA und Berufsakademie Göttingen",
+    "wikidataId": "Q2519262",
+    "rorId": null,
+    "founded": 1936,
+    "gndId": "5016249-4",
+    "country": "DE"
+  },
+  {
+    "name": "Webster Vienna Private University",
+    "wikidataId": "Q2553612",
+    "rorId": "03nhjjj32",
+    "founded": 1981,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Welfenakademie Braunschweig",
+    "wikidataId": "Q2557506",
+    "rorId": null,
+    "founded": 1993,
+    "gndId": "1064919936",
+    "country": "DE"
+  },
+  {
+    "name": "Wilhelm Büchner Hochschule",
+    "wikidataId": "Q2572209",
+    "rorId": "00vkbtf98",
+    "founded": 1997,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Allensbach Hochschule",
+    "wikidataId": "Q2586224",
+    "rorId": "00x67g916",
+    "founded": 1996,
+    "gndId": "5552440-0",
+    "country": "DE"
+  },
+  {
+    "name": "HTMi",
+    "wikidataId": "Q5636114",
+    "rorId": null,
+    "founded": 1999,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "VWA Hochschule",
+    "wikidataId": "Q15852343",
+    "rorId": "016p3a611",
+    "founded": 2013,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Medizinische Hochschule Brandenburg Theodor Fontane",
+    "wikidataId": "Q16320336",
+    "rorId": "04839sh14",
+    "founded": 2014,
+    "gndId": "1141300486",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Sport und Management Potsdam",
+    "wikidataId": "Q17123097",
+    "rorId": "00kcgm063",
+    "founded": 2009,
+    "gndId": "1043767401",
+    "country": "DE"
+  },
+  {
+    "name": "VICTORIA | Internationale Hochschule",
+    "wikidataId": "Q17123645",
+    "rorId": null,
+    "founded": 2011,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Barenboim-Said-Akademie",
+    "wikidataId": "Q18356619",
+    "rorId": null,
+    "founded": 2012,
+    "gndId": "1170091075",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der bildenden Künste Essen",
+    "wikidataId": "Q19964930",
+    "rorId": "03redkt21",
+    "founded": 2013,
+    "gndId": "1082354155",
+    "country": "DE"
+  },
+  {
+    "name": "Cusanus Hochschule",
+    "wikidataId": "Q20828998",
+    "rorId": "00kck3n79",
+    "founded": 2015,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Bayerischen Wirtschaft",
+    "wikidataId": "Q21036325",
+    "rorId": null,
+    "founded": 2012,
+    "gndId": "1054570205",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Kommunikation und Gestaltung",
+    "wikidataId": "Q21040608",
+    "rorId": null,
+    "founded": 2012,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "FOM Hochschule für Oekonomie & Management",
+    "wikidataId": "Q55156",
+    "rorId": "05m3vpd98",
+    "founded": 1993,
+    "gndId": "16073665-1",
+    "country": "DE"
+  },
+  {
+    "name": "AKAD Bildungsgesellschaft",
+    "wikidataId": "Q294098",
+    "rorId": null,
+    "founded": 1959,
+    "gndId": "1049901886",
+    "country": "DE"
+  },
+  {
+    "name": "Adam-Ries-Fachhochschule",
+    "wikidataId": "Q348411",
+    "rorId": null,
+    "founded": 2008,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Akademie für digitale Medienproduktion",
+    "wikidataId": "Q414353",
+    "rorId": null,
+    "founded": 1998,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule Nürnberg",
+    "wikidataId": "Q475312",
+    "rorId": "01tbgce33",
+    "founded": 1995,
+    "gndId": "16062745-X",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Furtwangen",
+    "wikidataId": "Q529572",
+    "rorId": "02m11x738",
+    "founded": 1850,
+    "gndId": "10137131-7",
+    "country": "DE"
+  },
+  {
+    "name": "Theologische Hochschule Friedensau",
+    "wikidataId": "Q538520",
+    "rorId": "038rep477",
+    "founded": 1899,
+    "gndId": "5157442-1",
+    "country": "DE"
+  },
+  {
+    "name": "Naturwissenschaftlich-Technische Akademie Isny",
+    "wikidataId": "Q569899",
+    "rorId": "04fxab197",
+    "founded": 1945,
+    "gndId": "1094937-9",
+    "country": "DE"
+  },
+  {
+    "name": "Apollon Hochschule der Gesundheitswirtschaft",
+    "wikidataId": "Q619201",
+    "rorId": "04kzfg204",
+    "founded": 2005,
+    "gndId": "16329609-1",
+    "country": "DE"
+  },
+  {
+    "name": "Augustana-Hochschule Neuendettelsau",
+    "wikidataId": "Q765928",
+    "rorId": "04nkken68",
+    "founded": 1947,
+    "gndId": "2005236-4",
+    "country": "DE"
+  },
+  {
+    "name": "BEST-Sabel-Hochschule Berlin",
+    "wikidataId": "Q795830",
+    "rorId": null,
+    "founded": 2007,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Baltic College",
+    "wikidataId": "Q805685",
+    "rorId": null,
+    "founded": 2001,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Frankfurt University of Applied Sciences",
+    "wikidataId": "Q812648",
+    "rorId": "02r625m11",
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Berliner Technische Kunsthochschule",
+    "wikidataId": "Q821803",
+    "rorId": "05f3gj938",
+    "founded": 2006,
+    "gndId": "10356448-2",
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Hochschule Mainz",
+    "wikidataId": "Q872180",
+    "rorId": "05m0ggf57",
+    "founded": 1972,
+    "gndId": "16345568-5",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule Freiburg",
+    "wikidataId": "Q880440",
+    "rorId": "03w3a0h43",
+    "founded": 1918,
+    "gndId": "16171953-3",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Philosophie München",
+    "wikidataId": "Q881849",
+    "rorId": "02kqy4228",
+    "founded": 1925,
+    "gndId": "1004601-X",
+    "country": "DE"
+  },
+  {
+    "name": "Theologische Fakultät Paderborn",
+    "wikidataId": "Q883284",
+    "rorId": "00e8f1a50",
+    "founded": 1614,
+    "gndId": "36181-1",
+    "country": "DE"
+  },
+  {
+    "name": "Kirchliche Hochschule Wuppertal",
+    "wikidataId": "Q885105",
+    "rorId": "05n1ym881",
+    "founded": 2007,
+    "gndId": "10158862-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Kirchenmusik Heidelberg",
+    "wikidataId": "Q946968",
+    "rorId": null,
+    "founded": 1931,
+    "gndId": "10144690-1",
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Hochschule für Kirchenmusik St. Gregorius",
+    "wikidataId": "Q1287680",
+    "rorId": null,
+    "founded": 1881,
+    "gndId": "10169347-3",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule Ludwigsburg",
+    "wikidataId": "Q1338536",
+    "rorId": "03ccc5z68",
+    "founded": 1971,
+    "gndId": "10367364-7",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule Rheinland-Westfalen-Lippe",
+    "wikidataId": "Q1380172",
+    "rorId": "03vz3qc29",
+    "founded": 1971,
+    "gndId": "1123045836",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule Berlin",
+    "wikidataId": "Q1380205",
+    "rorId": "007bw6q41",
+    "founded": 1972,
+    "gndId": "16072780-7",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule Darmstadt",
+    "wikidataId": "Q1380207",
+    "rorId": "04w23p232",
+    "founded": 1971,
+    "gndId": "16106444-9",
+    "country": "DE"
+  },
+  {
+    "name": "Theologisch Pädagogisches Institut Moritzburg",
+    "wikidataId": "Q1380210",
+    "rorId": null,
+    "founded": 1872,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Kirchenmusik Dresden",
+    "wikidataId": "Q1380217",
+    "rorId": null,
+    "founded": 1949,
+    "gndId": "1902046-6",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule für Kirchenmusik Tübingen",
+    "wikidataId": "Q1380220",
+    "rorId": null,
+    "founded": 1998,
+    "gndId": "10344994-2",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule für Kirchenmusik Halle",
+    "wikidataId": "Q1380222",
+    "rorId": null,
+    "founded": 1926,
+    "gndId": "5239429-3",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule für Soziale Arbeit & Diakonie",
+    "wikidataId": "Q1380223",
+    "rorId": "04wb1en98",
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Hochschule für Soziale Arbeit Dresden",
+    "wikidataId": "Q1380226",
+    "rorId": "02r724415",
+    "founded": 1991,
+    "gndId": "5321143-1",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule der Diakonie",
+    "wikidataId": "Q1391246",
+    "rorId": "00yvfbm89",
+    "founded": 2006,
+    "gndId": "16069598-3",
+    "country": "DE"
+  },
+  {
+    "name": "Religionspädagogisches Institut Loccum",
+    "wikidataId": "Q1545399",
+    "rorId": null,
+    "founded": 1950,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für evangelische Kirchenmusik Bayreuth",
+    "wikidataId": "Q1622241",
+    "rorId": null,
+    "founded": 1921,
+    "gndId": "10350588-X",
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Hochschule Freiburg",
+    "wikidataId": "Q1736342",
+    "rorId": "00vd2h880",
+    "founded": 1971,
+    "gndId": "1101372958",
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Hochschule für Kirchenmusik Rottenburg",
+    "wikidataId": "Q1736343",
+    "rorId": "04e7egx43",
+    "founded": 1949,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Hochschule Nordrhein-Westfalen",
+    "wikidataId": "Q1736344",
+    "rorId": "024nr0776",
+    "founded": 1971,
+    "gndId": "10357133-4",
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Hochschule für Sozialwesen Berlin",
+    "wikidataId": "Q1736348",
+    "rorId": "00996c044",
+    "founded": 1991,
+    "gndId": "10094695-1",
+    "country": "DE"
+  },
+  {
+    "name": "Kirchliche Hochschule Berlin",
+    "wikidataId": "Q1743329",
+    "rorId": null,
+    "founded": 1935,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Lutherische Theologische Hochschule Oberursel",
+    "wikidataId": "Q1877909",
+    "rorId": "04vmbkv36",
+    "founded": 1948,
+    "gndId": "2040728-2",
+    "country": "DE"
+  },
+  {
+    "name": "Bundesakademie für Sicherheitspolitik",
+    "wikidataId": "Q466748",
+    "rorId": null,
+    "founded": 1992,
+    "gndId": "10074944-6",
+    "country": "DE"
+  },
+  {
+    "name": "Theresianische Militärakademie",
+    "wikidataId": "Q568705",
+    "rorId": "03314b546",
+    "founded": 1751,
+    "gndId": "15245-6",
+    "country": "AT"
+  },
+  {
+    "name": "Artillerieschule",
+    "wikidataId": "Q712974",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": "2005112-8",
+    "country": "DE"
+  },
+  {
+    "name": "Marineschule Mürwik",
+    "wikidataId": "Q881870",
+    "rorId": null,
+    "founded": null,
+    "gndId": "2083964-9",
+    "country": "DE"
+  },
+  {
+    "name": "Militärakademie",
+    "wikidataId": "Q1119617",
+    "rorId": null,
+    "founded": 1911,
+    "gndId": "1250706-4",
+    "country": "CH"
+  },
+  {
+    "name": "Militärische Ausbildungsstätte",
+    "wikidataId": "Q1935147",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Offizierschule des Heeres",
+    "wikidataId": "Q2015896",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": "2174824-X",
+    "country": "DE"
+  },
+  {
+    "name": "Offiziershochschule des Ministeriums des Innern Artur Becker – Bereitschaften",
+    "wikidataId": "Q2015908",
+    "rorId": null,
+    "founded": 1949,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Ostkreuzschule",
+    "wikidataId": "Q2035743",
+    "rorId": null,
+    "founded": 2005,
+    "gndId": "1059525755",
+    "country": "DE"
+  },
+  {
+    "name": "Polizeiakademie Niedersachsen",
+    "wikidataId": "Q2101676",
+    "rorId": null,
+    "founded": 2007,
+    "gndId": "1124484345",
+    "country": "DE"
+  },
+  {
+    "name": "Private Fernfachhochschule Sachsen",
+    "wikidataId": "Q2111090",
+    "rorId": null,
+    "founded": 2004,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "SRH Hochschule für Wirtschaft und Medien Calw",
+    "wikidataId": "Q2207713",
+    "rorId": "0572yc306",
+    "founded": 2001,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Stenden University Berlin",
+    "wikidataId": "Q2342693",
+    "rorId": null,
+    "founded": 2008,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Georg Agricola",
+    "wikidataId": "Q2399066",
+    "rorId": "033jd5r25",
+    "founded": 1816,
+    "gndId": "1101482451",
+    "country": "DE"
+  },
+  {
+    "name": "Theologische Hochschule Beuron",
+    "wikidataId": "Q2418952",
+    "rorId": null,
+    "founded": 1866,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Theologische Hochschule Ewersbach",
+    "wikidataId": "Q2418963",
+    "rorId": "05131dq54",
+    "founded": 1912,
+    "gndId": "2113764-X",
+    "country": "DE"
+  },
+  {
+    "name": "Theologische Hochschule Reutlingen",
+    "wikidataId": "Q2418970",
+    "rorId": "03xwwgw91",
+    "founded": 1877,
+    "gndId": "16047805-4",
+    "country": "DE"
+  },
+  {
+    "name": "Umwelt-Campus Birkenfeld",
+    "wikidataId": "Q2478851",
+    "rorId": null,
+    "founded": 1996,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Westfälische Hochschule Gelsenkirchen Bocholt Recklinghausen",
+    "wikidataId": "Q2565230",
+    "rorId": "04p7ekn23",
+    "founded": 1992,
+    "gndId": "1022953834",
+    "country": "DE"
+  },
+  {
+    "name": "Wildau Institute of Technology",
+    "wikidataId": "Q2570367",
+    "rorId": null,
+    "founded": 2005,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Alice Salomon Hochschule Berlin",
+    "wikidataId": "Q2646956",
+    "rorId": "04b404920",
+    "founded": 1971,
+    "gndId": "10199430-8",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Geisenheim",
+    "wikidataId": "Q2718928",
+    "rorId": "05myv7q56",
+    "founded": 2013,
+    "gndId": "1050967097",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Ravensburg-Weingarten",
+    "wikidataId": "Q2718933",
+    "rorId": "00s4rmz74",
+    "founded": 1964,
+    "gndId": "10140848-1",
+    "country": "DE"
+  },
+  {
+    "name": "SS-Junkerschule Bad Tölz",
+    "wikidataId": "Q3076964",
+    "rorId": null,
+    "founded": 1937,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "SRH Hochschule Berlin",
+    "wikidataId": "Q7392824",
+    "rorId": "01prjcc04",
+    "founded": 2002,
+    "gndId": "112676065X",
+    "country": "DE"
+  },
+  {
+    "name": "Bayerische Kriegsakademie",
+    "wikidataId": "Q7968367",
+    "rorId": null,
+    "founded": 1867,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "DPFA Hochschule Sachsen",
+    "wikidataId": "Q15804334",
+    "rorId": null,
+    "founded": 2012,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "GA Hochschule",
+    "wikidataId": "Q15811164",
+    "rorId": null,
+    "founded": 2014,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "HSD Hochschule Döpfer",
+    "wikidataId": "Q15818931",
+    "rorId": "04vpsen23",
+    "founded": 2013,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "IST-Hochschule für Management",
+    "wikidataId": "Q15819802",
+    "rorId": "03d0yjb51",
+    "founded": 2013,
+    "gndId": "1081113464",
+    "country": "DE"
+  },
+  {
+    "name": "Nordische Universität",
+    "wikidataId": "Q15837022",
+    "rorId": null,
+    "founded": 1985,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Leipzig",
+    "wikidataId": "Q15850244",
+    "rorId": null,
+    "founded": 1977,
+    "gndId": "2044889-2",
+    "country": "DE"
+  },
+  {
+    "name": "Praxis-Hochschule",
+    "wikidataId": "Q16855778",
+    "rorId": null,
+    "founded": 2014,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Akkon-Hochschule für Humanwissenschaften",
+    "wikidataId": "Q17122136",
+    "rorId": "03sft3r75",
+    "founded": 2009,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Friedrichs-Polytechnikum",
+    "wikidataId": "Q17123243",
+    "rorId": null,
+    "founded": 1891,
+    "gndId": "83119-0",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Berlin",
+    "wikidataId": "Q17403358",
+    "rorId": null,
+    "founded": 1879,
+    "gndId": "35259-7",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Heilbronn",
+    "wikidataId": "Q18287426",
+    "rorId": null,
+    "founded": 2014,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Lörrach",
+    "wikidataId": "Q19963141",
+    "rorId": null,
+    "founded": 1966,
+    "gndId": "26644-9",
+    "country": "DE"
+  },
+  {
+    "name": "Berlin International University of Applied Sciences",
+    "wikidataId": "Q21040611",
+    "rorId": "01vn94n11",
+    "founded": 2014,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für angewandte Pädagogik",
+    "wikidataId": "Q21040612",
+    "rorId": null,
+    "founded": 2013,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Polizei Rheinland-Pfalz",
+    "wikidataId": "Q21040613",
+    "rorId": "05gxhfq53",
+    "founded": 2015,
+    "gndId": "1079192212",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Dieburg",
+    "wikidataId": "Q21040671",
+    "rorId": null,
+    "founded": 1968,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Media Akademie – Hochschule Stuttgart",
+    "wikidataId": "Q21040685",
+    "rorId": null,
+    "founded": 2015,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "NBS Northern Business School - Hochschule für Management und Sicherheit",
+    "wikidataId": "Q24175530",
+    "rorId": "0114gzh18",
+    "founded": 2013,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Verwaltung in Niedersachsen",
+    "wikidataId": "Q53869248",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Zwickau",
+    "wikidataId": "Q60392152",
+    "rorId": null,
+    "founded": null,
+    "gndId": "2057574-9",
+    "country": "DE"
+  },
+  {
+    "name": "Polytechnikum Karlsruhe",
+    "wikidataId": "Q63252801",
+    "rorId": null,
+    "founded": null,
+    "gndId": "24242-1",
+    "country": "DE"
+  },
+  {
+    "name": "Berufsakademie Wilhelmshaven",
+    "wikidataId": "Q64355120",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Königlich-Sächsische Baugewerkenschule Leipzig",
+    "wikidataId": "Q71454495",
+    "rorId": null,
+    "founded": 1838,
+    "gndId": "16229717-8",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Kaiser-Wilhelm-Ring 23 in Amberg (D-3-61-000-343#4)",
+    "wikidataId": "Q98676149",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Kaiser-Wilhelm-Ring 23 in Amberg (D-3-61-000-343#3)",
+    "wikidataId": "Q98676164",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Kolping Hochschule",
+    "wikidataId": "Q108940696",
+    "rorId": "01bk2mc10",
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Bibliotheks- und Dokumentationswesen",
+    "wikidataId": "Q111012341",
+    "rorId": null,
+    "founded": 1981,
+    "gndId": "75532-1",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Karlsruhe",
+    "wikidataId": "Q114339958",
+    "rorId": null,
+    "founded": 1865,
+    "gndId": "36167-7",
+    "country": "DE"
+  },
+  {
+    "name": "INU – Innovative Hochschule für angewandte Wissenschaften",
+    "wikidataId": "Q117459349",
+    "rorId": null,
+    "founded": 2022,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Deutsche Fachschule für Blecharbeiter und Installateure",
+    "wikidataId": "Q131349392",
+    "rorId": null,
+    "founded": 1877,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Potsdam",
+    "wikidataId": "Q896706",
+    "rorId": "012m9bp23",
+    "founded": 1991,
+    "gndId": "5105272-6",
+    "country": "DE"
+  },
+  {
+    "name": "Brand Academy – Hochschule für Design und Kommunikation",
+    "wikidataId": "Q897742",
+    "rorId": "04pyhyx87",
+    "founded": 2010,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Angewandte Wissenschaften Hamburg",
+    "wikidataId": "Q913987",
+    "rorId": "00fkqwx76",
+    "founded": 1970,
+    "gndId": "10029922-2",
+    "country": "DE"
+  },
+  {
+    "name": "Jade Hochschule",
+    "wikidataId": "Q982400",
+    "rorId": "02vvvm705",
+    "founded": 2009,
+    "gndId": "16171510-2",
+    "country": "DE"
+  },
+  {
+    "name": "CBS International Business School",
+    "wikidataId": "Q1110267",
+    "rorId": "05w6fhk97",
+    "founded": 1993,
+    "gndId": "10361481-3",
+    "country": "DE"
+  },
+  {
+    "name": "Design akademie berlin, SRH Hochschule für Kommunikation und Design",
+    "wikidataId": "Q1200666",
+    "rorId": "03037cz33",
+    "founded": 2007,
+    "gndId": "16338261-X",
+    "country": "DE"
+  },
+  {
+    "name": "Deutsche Hochschule der Polizei",
+    "wikidataId": "Q1203113",
+    "rorId": "01h7vw195",
+    "founded": 2006,
+    "gndId": "10154163-6",
+    "country": "DE"
+  },
+  {
+    "name": "Steuerakademie Niedersachsen",
+    "wikidataId": "Q1238833",
+    "rorId": null,
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Rheinische Hochschule Köln",
+    "wikidataId": "Q1245583",
+    "rorId": "00txhpa83",
+    "founded": 1971,
+    "gndId": "219038-2",
+    "country": "DE"
+  },
+  {
+    "name": "EDU.CON Hochschule Berlin",
+    "wikidataId": "Q1249190",
+    "rorId": null,
+    "founded": 2008,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Finanzen Brandenburg",
+    "wikidataId": "Q1257534",
+    "rorId": "00jvbme10",
+    "founded": 1991,
+    "gndId": "1107589665",
+    "country": "DE"
+  },
+  {
+    "name": "EBC Hochschule",
+    "wikidataId": "Q1262310",
+    "rorId": "04w49ae90",
+    "founded": 2007,
+    "gndId": "1081019794",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg",
+    "wikidataId": "Q1262605",
+    "rorId": "02xdzy536",
+    "founded": 1974,
+    "gndId": "1090626126",
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Baden-Württemberg Mosbach",
+    "wikidataId": "Q1262616",
+    "rorId": null,
+    "founded": 1980,
+    "gndId": "16104151-6",
+    "country": "DE"
+  },
+  {
+    "name": "EBZ Business School",
+    "wikidataId": "Q1274007",
+    "rorId": "01v0c1y10",
+    "founded": 2008,
+    "gndId": "1095139975",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule des Heeres 1",
+    "wikidataId": "Q1291328",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Niederrhein",
+    "wikidataId": "Q1318081",
+    "rorId": "027b9qx26",
+    "founded": 1971,
+    "gndId": "10029477-7",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Dortmund",
+    "wikidataId": "Q1324675",
+    "rorId": "03dv91853",
+    "founded": 1971,
+    "gndId": "42492-4",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Fachhochschule Hannover",
+    "wikidataId": "Q1333919",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Ernst-Abbe-Hochschule Jena",
+    "wikidataId": "Q1356982",
+    "rorId": "01rfnc002",
+    "founded": 1991,
+    "gndId": "1024702359",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Finanzen Nordrhein-Westfalen",
+    "wikidataId": "Q1365807",
+    "rorId": "04tr4sk76",
+    "founded": 1976,
+    "gndId": "2087116-8",
+    "country": "DE"
+  },
+  {
+    "name": "Europäische Fachhochschule",
+    "wikidataId": "Q1377296",
+    "rorId": "00j9xkc07",
+    "founded": 2001,
+    "gndId": "10099224-9",
+    "country": "DE"
+  },
+  {
+    "name": "Europäische Fernhochschule Hamburg",
+    "wikidataId": "Q1377302",
+    "rorId": "0243j3z07",
+    "founded": 2003,
+    "gndId": "5566564-0",
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Fachhochschule für Sozialwesen Reutlingen",
+    "wikidataId": "Q1380174",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Evangelische Fachhochschule Ludwigshafen",
+    "wikidataId": "Q1380175",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "FH Aachen",
+    "wikidataId": "Q1388301",
+    "rorId": "04tqgg260",
+    "founded": 1971,
+    "gndId": "1023809117",
+    "country": "DE"
+  },
+  {
+    "name": "FH KUNST Arnstadt",
+    "wikidataId": "Q1388309",
+    "rorId": null,
+    "founded": 2008,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Bielefeld",
+    "wikidataId": "Q1391181",
+    "rorId": "00edvg943",
+    "founded": 1971,
+    "gndId": "2001011-4",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Brandenburg",
+    "wikidataId": "Q1391182",
+    "rorId": "04qj3gf68",
+    "founded": 1992,
+    "gndId": "1091069492",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Erfurt",
+    "wikidataId": "Q1391189",
+    "rorId": "01hkc4630",
+    "founded": 1991,
+    "gndId": "5296612-4",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Kaiserslautern",
+    "wikidataId": "Q1391198",
+    "rorId": "05dkqa017",
+    "founded": 1971,
+    "gndId": "1064666221",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Angewandte Wissenschaften Kiel",
+    "wikidataId": "Q1391201",
+    "rorId": "03q0ab227",
+    "founded": 1969,
+    "gndId": "64969-7",
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Lübeck",
+    "wikidataId": "Q1391202",
+    "rorId": "032xqbj11",
+    "founded": 1808,
+    "gndId": "1027296-3",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Nordostniedersachsen",
+    "wikidataId": "Q1391208",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Oldenburg/Ostfriesland/Wilhelmshaven",
+    "wikidataId": "Q1391210",
+    "rorId": "032n3b254",
+    "founded": 2000,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Schloss Hohenfels",
+    "wikidataId": "Q1391220",
+    "rorId": null,
+    "founded": 2004,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule Schmalkalden",
+    "wikidataId": "Q1391222",
+    "rorId": "02nq4wt82",
+    "founded": 1991,
+    "gndId": "2140660-1",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Schwäbisch Hall",
+    "wikidataId": "Q1391224",
+    "rorId": null,
+    "founded": 2000,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Suderburg",
+    "wikidataId": "Q1391230",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule der Luftwaffe",
+    "wikidataId": "Q1391244",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": "16142916-6",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule der Polizei des Landes Brandenburg",
+    "wikidataId": "Q1391247",
+    "rorId": "05k17x772",
+    "founded": 1998,
+    "gndId": "10158494-5",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule der Wirtschaft",
+    "wikidataId": "Q1391254",
+    "rorId": "046ns5110",
+    "founded": 1993,
+    "gndId": "10026668-X",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule des Heeres 2",
+    "wikidataId": "Q1391256",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule des Mittelstands",
+    "wikidataId": "Q1391258",
+    "rorId": "01f5b8367",
+    "founded": 2000,
+    "gndId": "10122937-9",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Bergbau Saar",
+    "wikidataId": "Q1391259",
+    "rorId": null,
+    "founded": null,
+    "gndId": "2004344-2",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Rechtspflege Nordrhein-Westfalen",
+    "wikidataId": "Q1391267",
+    "rorId": "02g11qe83",
+    "founded": 1976,
+    "gndId": "2134497-8",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Verwaltung und Rechtspflege Berlin",
+    "wikidataId": "Q1391276",
+    "rorId": null,
+    "founded": 1973,
+    "gndId": "2117874-4",
+    "country": "DE"
+  },
+  {
+    "name": "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau",
+    "wikidataId": "Q111020102",
+    "rorId": "01qrts582",
+    "founded": 2023,
+    "gndId": "1284226530",
+    "country": "DE"
+  },
+  {
+    "name": "Institute of Digital Sciences Austria",
+    "wikidataId": "Q115669377",
+    "rorId": "03jzk4720",
+    "founded": 2022,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Berufsakademie Breitenbrunn",
+    "wikidataId": "Q23782301",
+    "rorId": null,
+    "founded": 1991,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Duale Hochschule Gera-Eisenach",
+    "wikidataId": "Q27973252",
+    "rorId": "03t7jd518",
+    "founded": 2016,
+    "gndId": "1121216080",
+    "country": "DE"
+  },
+  {
+    "name": "Verwaltungsgebäude Löbauer Straße 1",
+    "wikidataId": "Q49375801",
+    "rorId": null,
+    "founded": 1954,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Nürnberg",
+    "wikidataId": "Q56187114",
+    "rorId": "02sv65x64",
+    "founded": 2021,
+    "gndId": "1137073594",
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Studienakademie Leipzig",
+    "wikidataId": "Q65952781",
+    "rorId": null,
+    "founded": 1993,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Staatliche Studienakademie Riesa",
+    "wikidataId": "Q96623670",
+    "rorId": null,
+    "founded": 1992,
+    "gndId": "16099351-9",
+    "country": "DE"
+  },
+  {
+    "name": "Bundesanstalt für Materialforschung und -prüfung (BAM)",
+    "wikidataId": "Q126956265",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Internationale Studien- und Berufsakademie",
+    "wikidataId": "Q122956298",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Private Berufsakademie Fulda",
+    "wikidataId": "Q123010841",
+    "rorId": null,
+    "founded": 2010,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Constructor University",
+    "wikidataId": "Q132853201",
+    "rorId": "02yrs2n53",
+    "founded": 2022,
+    "gndId": "1281632465",
+    "country": "DE"
+  },
+  {
+    "name": "AKAD University",
+    "wikidataId": "Q30263681",
+    "rorId": "02a8wk986",
+    "founded": 1959,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "ESM - Ecole de Management et de Communication",
+    "wikidataId": "Q98037226",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Muthesius Kunsthochschule",
+    "wikidataId": "Q1305888",
+    "rorId": "000tpgs13",
+    "founded": 2005,
+    "gndId": "10099991-8",
+    "country": "DE"
+  },
+  {
+    "name": "Militärakademie „Friedrich Engels“",
+    "wikidataId": "Q1934862",
+    "rorId": null,
+    "founded": 1959,
+    "gndId": "2019741-X",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für das Öffentliche Bibliothekswesen Bonn",
+    "wikidataId": "Q138315394",
+    "rorId": null,
+    "founded": 1921,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Akademie der Wissenschaften und der Literatur Mainz",
+    "wikidataId": "Q414163",
+    "rorId": "01kdxra28",
+    "founded": 1949,
+    "gndId": "35487-9",
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule Wallis",
+    "wikidataId": "Q1001137",
+    "rorId": "040gs8e06",
+    "founded": 1996,
+    "gndId": "16056813-4",
+    "country": "CH"
+  },
+  {
+    "name": "Hochschule für Polizei und öffentliche Verwaltung Nordrhein-Westfalen",
+    "wikidataId": "Q1391293",
+    "rorId": "02dsdsv34",
+    "founded": 1976,
+    "gndId": "1204402469",
+    "country": "DE"
+  },
+  {
+    "name": "Haute École Pédagogique BEJUNE",
+    "wikidataId": "Q1591389",
+    "rorId": "015pmkr43",
+    "founded": 2001,
+    "gndId": "1902894-5",
+    "country": "CH"
+  },
+  {
+    "name": "Katholische Hochschule für Soziale Arbeit",
+    "wikidataId": "Q1736345",
+    "rorId": null,
+    "founded": null,
+    "gndId": "5105159-X",
+    "country": "DE"
+  },
+  {
+    "name": "SRH Hochschule Hamm",
+    "wikidataId": "Q1757937",
+    "rorId": "01k6xby62",
+    "founded": 2005,
+    "gndId": "107496828X",
+    "country": "DE"
+  },
+  {
+    "name": "MSH Medical School Hamburg – Fachhochschule für Gesundheit und Medizin",
+    "wikidataId": "Q1881867",
+    "rorId": "006thab72",
+    "founded": 2009,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Mathias Hochschule Rheine",
+    "wikidataId": "Q1908482",
+    "rorId": null,
+    "founded": 2009,
+    "gndId": "1076323723",
+    "country": "DE"
+  },
+  {
+    "name": "SRH University of Applied Sciences Heidelberg",
+    "wikidataId": "Q136490501",
+    "rorId": null,
+    "founded": 2024,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Seminar Schloss Bogenhofen",
+    "wikidataId": "Q2269169",
+    "rorId": null,
+    "founded": 1949,
+    "gndId": "16032713-1",
+    "country": "AT"
+  },
+  {
+    "name": "Theologische Fakultät Fulda",
+    "wikidataId": "Q2418934",
+    "rorId": "04eejsy70",
+    "founded": 1805,
+    "gndId": "2076252-5",
+    "country": "DE"
+  },
+  {
+    "name": "Kirchliche Hochschule Wuppertal",
+    "wikidataId": "Q42556163",
+    "rorId": null,
+    "founded": 1935,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Bischöfliches Lyzeum Eichstätt",
+    "wikidataId": "Q85337527",
+    "rorId": null,
+    "founded": 1843,
+    "gndId": "1087481-1",
+    "country": "DE"
+  },
+  {
+    "name": "Clementine-von-Wallmenich-Hochschule",
+    "wikidataId": "Q1391296",
+    "rorId": null,
+    "founded": 2003,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "International University in Germany",
+    "wikidataId": "Q1408542",
+    "rorId": "000jzpp78",
+    "founded": 1998,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fliedner Fachhochschule Düsseldorf",
+    "wikidataId": "Q1428381",
+    "rorId": "036f7qt17",
+    "founded": 2001,
+    "gndId": "1041833873",
+    "country": "DE"
+  },
+  {
+    "name": "Reinhold-Würth-Hochschule",
+    "wikidataId": "Q1431158",
+    "rorId": null,
+    "founded": 1988,
+    "gndId": "10133181-2",
+    "country": "DE"
+  },
+  {
+    "name": "Rheinische Fachhochschule Neuss für Internationale Wirtschaft",
+    "wikidataId": "Q1447117",
+    "rorId": "037y17y07",
+    "founded": 2009,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "KMM Hamburg – Institut für Kultur- und Medienmanagement",
+    "wikidataId": "Q1718821",
+    "rorId": null,
+    "founded": 2000,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "University of Management and Communication",
+    "wikidataId": "Q1728041",
+    "rorId": null,
+    "founded": 2005,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Katholische Fachhochschule Norddeutschland",
+    "wikidataId": "Q1736333",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": "2041250-2",
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für Öffentliche Verwaltung Hamburg",
+    "wikidataId": "Q1391286",
+    "rorId": null,
+    "founded": 1978,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule für öffentliche Verwaltung, Polizei und Rechtspflege",
+    "wikidataId": "Q1391288",
+    "rorId": "040dxjz28",
+    "founded": 1991,
+    "gndId": "16006966-X",
+    "country": "DE"
+  },
+  {
+    "name": "Marineakademie und -schule",
+    "wikidataId": "Q280471",
+    "rorId": null,
+    "founded": 1866,
+    "gndId": "10015313-6",
+    "country": "DE"
+  },
+  {
+    "name": "Frintaneum",
+    "wikidataId": "Q447216",
+    "rorId": null,
+    "founded": 1816,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Herzogliches Georgianum",
+    "wikidataId": "Q533069",
+    "rorId": null,
+    "founded": 1494,
+    "gndId": "1038985-4",
+    "country": "DE"
+  },
+  {
+    "name": "International Seminary of Saint Pius X",
+    "wikidataId": "Q608936",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Canisianum",
+    "wikidataId": "Q686153",
+    "rorId": null,
+    "founded": 1910,
+    "gndId": "1047873133",
+    "country": "AT"
+  },
+  {
+    "name": "Stift Heiligenkreuz",
+    "wikidataId": "Q697221",
+    "rorId": null,
+    "founded": 1101,
+    "gndId": "80820-9",
+    "country": "AT"
+  },
+  {
+    "name": "Marineakademie Fiume",
+    "wikidataId": "Q833084",
+    "rorId": null,
+    "founded": 1866,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Bischöfliches Seminar (Melk)",
+    "wikidataId": "Q866260",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Burgenländisches Priesterseminar",
+    "wikidataId": "Q1014867",
+    "rorId": null,
+    "founded": 1933,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Collegium Albertinum",
+    "wikidataId": "Q1109165",
+    "rorId": null,
+    "founded": 1892,
+    "gndId": "2038738-6",
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Borromaeum (Freiburg im Breisgau)",
+    "wikidataId": "Q1109185",
+    "rorId": null,
+    "founded": 1827,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Borromaeum Münster",
+    "wikidataId": "Q1109187",
+    "rorId": null,
+    "founded": null,
+    "gndId": "5163649-9",
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Leoninum",
+    "wikidataId": "Q1109235",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Liborianum",
+    "wikidataId": "Q1109239",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Ludgerianum",
+    "wikidataId": "Q1109249",
+    "rorId": null,
+    "founded": null,
+    "gndId": "5161544-7",
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Orientale",
+    "wikidataId": "Q1109275",
+    "rorId": null,
+    "founded": 1998,
+    "gndId": "1239746-5",
+    "country": "DE"
+  },
+  {
+    "name": "Collegium St. Hieronymi",
+    "wikidataId": "Q1109286",
+    "rorId": null,
+    "founded": 1549,
+    "gndId": "1301439-0",
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Willibaldinum",
+    "wikidataId": "Q1109299",
+    "rorId": null,
+    "founded": null,
+    "gndId": "4735329-6",
+    "country": "DE"
+  },
+  {
+    "name": "Schifffahrtmedizinisches Institut der Marine",
+    "wikidataId": "Q1231469",
+    "rorId": "0171m6n33",
+    "founded": 1961,
+    "gndId": "813086-3",
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Köln",
+    "wikidataId": "Q1257371",
+    "rorId": null,
+    "founded": null,
+    "gndId": "2095994-1",
+    "country": "DE"
+  },
+  {
+    "name": "Marineausbildungsregiment",
+    "wikidataId": "Q1308495",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Einsatzausbildungszentrum Schadensabwehr Marine",
+    "wikidataId": "Q1308706",
+    "rorId": null,
+    "founded": 1959,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Hildesheim",
+    "wikidataId": "Q1353911",
+    "rorId": null,
+    "founded": 1834,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Augsburg",
+    "wikidataId": "Q1408967",
+    "rorId": null,
+    "founded": 1970,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Bischöfliches Priesterseminar Trier",
+    "wikidataId": "Q1420079",
+    "rorId": null,
+    "founded": null,
+    "gndId": "2035638-9",
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Mainz",
+    "wikidataId": "Q1437749",
+    "rorId": null,
+    "founded": 1568,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Passau",
+    "wikidataId": "Q1458855",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Bamberg",
+    "wikidataId": "Q1470442",
+    "rorId": null,
+    "founded": null,
+    "gndId": "2056987-7",
+    "country": "DE"
+  },
+  {
+    "name": "Marineoperationsschule",
+    "wikidataId": "Q1484686",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": "10010718-7",
+    "country": "DE"
+  },
+  {
+    "name": "Logistikschule der Bundeswehr",
+    "wikidataId": "Q1542279",
+    "rorId": null,
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "K.u.k. Kriegsschule",
+    "wikidataId": "Q1621721",
+    "rorId": null,
+    "founded": 1852,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Ausbildungszentrum Infanterie",
+    "wikidataId": "Q1662314",
+    "rorId": null,
+    "founded": 1958,
+    "gndId": "10144797-8",
+    "country": "DE"
+  },
+  {
+    "name": "Internationales Priesterseminar Herz Jesu",
+    "wikidataId": "Q1667803",
+    "rorId": null,
+    "founded": 1978,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Internationales Priesterseminar St. Petrus",
+    "wikidataId": "Q1667805",
+    "rorId": null,
+    "founded": 1988,
+    "gndId": "5198086-1",
+    "country": "DE"
+  },
+  {
+    "name": "Theologische Fakultät Trier",
+    "wikidataId": "Q1714370",
+    "rorId": "056jxaa57",
+    "founded": 1950,
+    "gndId": "11370-0",
+    "country": "DE"
+  },
+  {
+    "name": "Katholisch-Theologische Fakultät Tübingen",
+    "wikidataId": "Q1736311",
+    "rorId": null,
+    "founded": 1817,
+    "gndId": "2024647-X",
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Essen",
+    "wikidataId": "Q1766996",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Kommando Marineführungssysteme",
+    "wikidataId": "Q1780039",
+    "rorId": null,
+    "founded": 1967,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Kommando der Schulschiffe",
+    "wikidataId": "Q1780065",
+    "rorId": null,
+    "founded": 1961,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Marineversorgungsschule",
+    "wikidataId": "Q1800083",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": "2073444-X",
+    "country": "DE"
+  },
+  {
+    "name": "Leokonvikt",
+    "wikidataId": "Q1818836",
+    "rorId": null,
+    "founded": 1895,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Marinefliegerlehrgruppe",
+    "wikidataId": "Q1898393",
+    "rorId": null,
+    "founded": 1963,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Marinetechnikschule",
+    "wikidataId": "Q1898500",
+    "rorId": null,
+    "founded": 1996,
+    "gndId": "10188634-2",
+    "country": "DE"
+  },
+  {
+    "name": "Marineunteroffizierschule",
+    "wikidataId": "Q1898504",
+    "rorId": null,
+    "founded": 1938,
+    "gndId": "1153070243",
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Aachen",
+    "wikidataId": "Q2109602",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Erfurt",
+    "wikidataId": "Q2109604",
+    "rorId": null,
+    "founded": 1952,
+    "gndId": "2047743-0",
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Fulda",
+    "wikidataId": "Q2109605",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Leopoldinum",
+    "wikidataId": "Q2109607",
+    "rorId": null,
+    "founded": 1976,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Priesterseminar Limburg",
+    "wikidataId": "Q2109610",
+    "rorId": null,
+    "founded": 1829,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar München",
+    "wikidataId": "Q2109612",
+    "rorId": null,
+    "founded": 1983,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Osnabrück",
+    "wikidataId": "Q2109614",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Regensburg",
+    "wikidataId": "Q2109616",
+    "rorId": null,
+    "founded": 1653,
+    "gndId": "2031388-3",
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Rottenburg",
+    "wikidataId": "Q2109618",
+    "rorId": null,
+    "founded": 1817,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Speyer",
+    "wikidataId": "Q2109619",
+    "rorId": null,
+    "founded": 1827,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar Würzburg",
+    "wikidataId": "Q2109625",
+    "rorId": null,
+    "founded": 1716,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Priesterseminar St. Petrus (Berlin)",
+    "wikidataId": "Q2109629",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Schloss Arenberg",
+    "wikidataId": "Q2240079",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Schulgeschwader",
+    "wikidataId": "Q2251214",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Schulgeschwader Ostsee",
+    "wikidataId": "Q2251216",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Seetaktische Lehrgruppe",
+    "wikidataId": "Q2265687",
+    "rorId": null,
+    "founded": 1960,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Studienhaus St. Lambert",
+    "wikidataId": "Q2358540",
+    "rorId": null,
+    "founded": 1972,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Wiener Priesterseminar",
+    "wikidataId": "Q2569068",
+    "rorId": null,
+    "founded": 1758,
+    "gndId": "403660-8",
+    "country": "AT"
+  },
+  {
+    "name": "Wilhelmsstift",
+    "wikidataId": "Q2576313",
+    "rorId": null,
+    "founded": 1817,
+    "gndId": "2079059-4",
+    "country": "DE"
+  },
+  {
+    "name": "Kolleg Santa Maria, Pollegio",
+    "wikidataId": "Q3682935",
+    "rorId": null,
+    "founded": 1622,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Catholic Theological Faculty in Würzburg",
+    "wikidataId": "Q12793550",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Kardinal-Schulte-Haus",
+    "wikidataId": "Q15056949",
+    "rorId": null,
+    "founded": 1924,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Marineschule Stralsund",
+    "wikidataId": "Q15833975",
+    "rorId": null,
+    "founded": 1990,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Ausbildungszentrum Uboote",
+    "wikidataId": "Q16054484",
+    "rorId": null,
+    "founded": 1959,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Offiziershochschule der Grenztruppen der DDR „Rosa Luxemburg“",
+    "wikidataId": "Q16320530",
+    "rorId": null,
+    "founded": 1951,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Technische Marineschule",
+    "wikidataId": "Q19309860",
+    "rorId": null,
+    "founded": 1911,
+    "gndId": "5232683-4",
+    "country": "DE"
+  },
+  {
+    "name": "Katholisch-Theologischen Fakultät München",
+    "wikidataId": "Q19934225",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Einsatz- und Ausbildungsverband",
+    "wikidataId": "Q20850916",
+    "rorId": null,
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Marinefernmeldeschule",
+    "wikidataId": "Q25857870",
+    "rorId": null,
+    "founded": 1956,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Marinewaffenschule",
+    "wikidataId": "Q26877525",
+    "rorId": null,
+    "founded": 1974,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Ehem. Jesuitenkollegium",
+    "wikidataId": "Q37987141",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Jesuitenkolleg Graz",
+    "wikidataId": "Q50424363",
+    "rorId": null,
+    "founded": 1573,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Institut biblique de Genève",
+    "wikidataId": "Q56300625",
+    "rorId": null,
+    "founded": 1928,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Offiziershochschule für ausländische Militärkader „Otto Winzer“",
+    "wikidataId": "Q59149149",
+    "rorId": null,
+    "founded": 1981,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Rheinische Friedrich-Wilhelms Universität Bonn Katholisch-Theologische Fakultät",
+    "wikidataId": "Q101248149",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Johannes Gutenberg Universitat Mainz Katholisch-Theologische Fakultät",
+    "wikidataId": "Q101266434",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Julius-Maximilians-Universität Würzburg Katholisch-Theologische Fakultät",
+    "wikidataId": "Q101268667",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Ruhr-Universitat Bochum Katholisch-Theologische Fakultät",
+    "wikidataId": "Q101383726",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Westfälische Wilhelms Universität Münster Katholisch-Theologische Fakultät",
+    "wikidataId": "Q101394266",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Augsburg Katholisch-Theologische Fakultät",
+    "wikidataId": "Q101833262",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Erfurt Katholisch-Theologische Fakultät",
+    "wikidataId": "Q101834029",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fakultät für Katholische Theologie Regensburg",
+    "wikidataId": "Q104891415",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Erzbischöfliches Knabenseminar Freising",
+    "wikidataId": "Q107510635",
+    "rorId": null,
+    "founded": 1826,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Innsbruck. Katholisch-Theologische Fakultät",
+    "wikidataId": "Q107548477",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Katholisch-Theologische Fakultät der Universität Wien",
+    "wikidataId": "Q1736314",
+    "rorId": null,
+    "founded": 1384,
+    "gndId": "1012738-0",
+    "country": "AT"
+  },
+  {
+    "name": "Theologische Fakultät Lugano",
+    "wikidataId": "Q2418942",
+    "rorId": "02k3baz05",
+    "founded": 1992,
+    "gndId": "5207254-X",
+    "country": "CH"
+  },
+  {
+    "name": "Katholisch-Theologische Fakultät der Universität Erfurt",
+    "wikidataId": "Q115917307",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Caesareum Societatis Jesu Collegium Viennense",
+    "wikidataId": "Q116710545",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Zürcher Hochschule der Künste",
+    "wikidataId": "Q222450",
+    "rorId": "05r0ap620",
+    "founded": 2007,
+    "gndId": "10178615-3",
+    "country": "CH"
+  },
+  {
+    "name": "Bénédict-Schulen",
+    "wikidataId": "Q258286",
+    "rorId": null,
+    "founded": 1928,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "International Institute for Management Development",
+    "wikidataId": "Q667972",
+    "rorId": "04mv5gg87",
+    "founded": 1990,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Università della Svizzera italiana",
+    "wikidataId": "Q689617",
+    "rorId": "03c4atk17",
+    "founded": 1996,
+    "gndId": "2178299-4",
+    "country": "CH"
+  },
+  {
+    "name": "Hochschulinstitut für internationale Studien und Entwicklung",
+    "wikidataId": "Q691686",
+    "rorId": "007ygn379",
+    "founded": 2007,
+    "gndId": "10367259-X",
+    "country": "CH"
+  },
+  {
+    "name": "Fachhochschule Nordwestschweiz",
+    "wikidataId": "Q693069",
+    "rorId": "04mq2g308",
+    "founded": 2006,
+    "gndId": "10134350-4",
+    "country": "CH"
+  },
+  {
+    "name": "Biozentrum der Universität Basel",
+    "wikidataId": "Q864916",
+    "rorId": null,
+    "founded": 1971,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Glion Institute of Higher Education",
+    "wikidataId": "Q949406",
+    "rorId": "057gs9r51",
+    "founded": 1962,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Geneva School of Diplomacy and International Relations",
+    "wikidataId": "Q1250291",
+    "rorId": null,
+    "founded": 2003,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "International Institute in Geneva",
+    "wikidataId": "Q1304512",
+    "rorId": "05dg8sq97",
+    "founded": 1997,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Oeschger Centre for Climate Change Research",
+    "wikidataId": "Q1513240",
+    "rorId": "0329s8h62",
+    "founded": 2007,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Sacred Heart University Luxembourg",
+    "wikidataId": "Q1528530",
+    "rorId": "04abjgr86",
+    "founded": 1991,
+    "gndId": null,
+    "country": "LU"
+  },
+  {
+    "name": "Fachhochschule Graubünden",
+    "wikidataId": "Q1622220",
+    "rorId": "032ymzc07",
+    "founded": 1963,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Staatsunabhängige Theologische Hochschule Basel",
+    "wikidataId": "Q2325341",
+    "rorId": "01pycny91",
+    "founded": 1970,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Webster Geneva Campus",
+    "wikidataId": "Q2553607",
+    "rorId": "0533m8c72",
+    "founded": 1978,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Geneva Business School",
+    "wikidataId": "Q2605456",
+    "rorId": null,
+    "founded": 2001,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Zürcher Hochschule für Angewandte Wissenschaften",
+    "wikidataId": "Q2605554",
+    "rorId": "05pmsvm27",
+    "founded": 1986,
+    "gndId": "10194235-7",
+    "country": "CH"
+  },
+  {
+    "name": "Haute école de musique de Genève",
+    "wikidataId": "Q3128596",
+    "rorId": "022j63c41",
+    "founded": 1835,
+    "gndId": "1032281774",
+    "country": "CH"
+  },
+  {
+    "name": "Fachhochschule Westschweiz Wallis",
+    "wikidataId": "Q3128597",
+    "rorId": "03r5zec51",
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Miami University Dolibois European Center",
+    "wikidataId": "Q3247727",
+    "rorId": "0269ne204",
+    "founded": 1968,
+    "gndId": null,
+    "country": "LU"
+  },
+  {
+    "name": "LRG University of Applied Sciences",
+    "wikidataId": "Q4475849",
+    "rorId": null,
+    "founded": 2008,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "American College of Switzerland",
+    "wikidataId": "Q4743480",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Centre Européen de Calcul Atomique et Moléculaire",
+    "wikidataId": "Q5062345",
+    "rorId": null,
+    "founded": 1969,
+    "gndId": "601365-X",
+    "country": "CH"
+  },
+  {
+    "name": "Human systems engineering",
+    "wikidataId": "Q5938602",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Landegg International University",
+    "wikidataId": "Q6484381",
+    "rorId": null,
+    "founded": 1992,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Leman University Geneva",
+    "wikidataId": "Q6521004",
+    "rorId": "05b2prn24",
+    "founded": 1960,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Les Roches International School of Management",
+    "wikidataId": "Q6529933",
+    "rorId": "008tr1381",
+    "founded": 1954,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Russian and Eurasian Security Network",
+    "wikidataId": "Q7382169",
+    "rorId": null,
+    "founded": 2005,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "École Hôtelière de Genève",
+    "wikidataId": "Q11074282",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Institute of Technology",
+    "wikidataId": "Q16366441",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "LU"
+  },
+  {
+    "name": "Institut universitaire international Luxembourg",
+    "wikidataId": "Q27961796",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "LU"
+  },
+  {
+    "name": "Freie Universität Berlin, E-Medien",
+    "wikidataId": "Q130548543",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "CIU Korntal",
+    "wikidataId": "Q133304514",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "European Open University",
+    "wikidataId": "Q135930158",
+    "rorId": null,
+    "founded": 2000,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Institut für gerichtliche Medizin",
+    "wikidataId": "Q138714919",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Leipzig - Didaktik der Physik",
+    "wikidataId": "Q138715134",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Q122335127",
+    "wikidataId": "Q122335127",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Salzburg",
+    "wikidataId": "Q27265",
+    "rorId": "05gs8cd61",
+    "founded": 1622,
+    "gndId": "36184-7",
+    "country": "AT"
+  },
+  {
+    "name": "Universität Wien",
+    "wikidataId": "Q165980",
+    "rorId": "03prydq77",
+    "founded": 1365,
+    "gndId": "2024703-5",
+    "country": "AT"
+  },
+  {
+    "name": "Private Hanseuniversität",
+    "wikidataId": "Q251214",
+    "rorId": "013kf9t32",
+    "founded": 2007,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Dillingen",
+    "wikidataId": "Q266255",
+    "rorId": null,
+    "founded": 1551,
+    "gndId": "4193115-4",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Helmstedt",
+    "wikidataId": "Q314466",
+    "rorId": null,
+    "founded": 1576,
+    "gndId": "2051813-4",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Ingolstadt",
+    "wikidataId": "Q462039",
+    "rorId": null,
+    "founded": 1472,
+    "gndId": "2024222-0",
+    "country": "DE"
+  },
+  {
+    "name": "Universität für Weiterbildung Krems",
+    "wikidataId": "Q508048",
+    "rorId": "03ef4a036",
+    "founded": 1995,
+    "gndId": "2163090-2",
+    "country": "AT"
+  },
+  {
+    "name": "Baltische Universität",
+    "wikidataId": "Q565742",
+    "rorId": null,
+    "founded": 1946,
+    "gndId": "505830-2",
+    "country": "DE"
+  },
+  {
+    "name": "Hochschule für Gestaltung Ulm",
+    "wikidataId": "Q591905",
+    "rorId": null,
+    "founded": 1953,
+    "gndId": "2012079-5",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Graz",
+    "wikidataId": "Q622683",
+    "rorId": "01faaaf77",
+    "founded": 1585,
+    "gndId": "36157-4",
+    "country": "AT"
+  },
+  {
+    "name": "Collegium Pazmanianum",
+    "wikidataId": "Q639417",
+    "rorId": null,
+    "founded": 1623,
+    "gndId": "4733779-5",
+    "country": "AT"
+  },
+  {
+    "name": "Kartause Mariathron, Gaming",
+    "wikidataId": "Q668023",
+    "rorId": null,
+    "founded": null,
+    "gndId": "3011144-4",
+    "country": "AT"
+  },
+  {
+    "name": "Montanuniversität Leoben",
+    "wikidataId": "Q674568",
+    "rorId": "02fhfw393",
+    "founded": 1840,
+    "gndId": "55749-3",
+    "country": "AT"
+  },
+  {
+    "name": "Medizinische Universität Innsbruck",
+    "wikidataId": "Q686772",
+    "rorId": "03pt86f80",
+    "founded": 2004,
+    "gndId": "10088709-0",
+    "country": "AT"
+  },
+  {
+    "name": "Universität Klagenfurt",
+    "wikidataId": "Q690639",
+    "rorId": "05q9m0937",
+    "founded": 1970,
+    "gndId": "2141933-4",
+    "country": "AT"
+  },
+  {
+    "name": "Bergakademie Berlin",
+    "wikidataId": "Q819312",
+    "rorId": null,
+    "founded": 1770,
+    "gndId": "30502-9",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Mozarteum Salzburg",
+    "wikidataId": "Q871369",
+    "rorId": "00tfmqe91",
+    "founded": 1841,
+    "gndId": "5299663-3",
+    "country": "AT"
+  },
+  {
+    "name": "Medizinische Universität Graz",
+    "wikidataId": "Q872543",
+    "rorId": "02n0bts35",
+    "founded": 2004,
+    "gndId": "10064445-4",
+    "country": "AT"
+  },
+  {
+    "name": "Universität für Musik und darstellende Kunst Graz",
+    "wikidataId": "Q875147",
+    "rorId": "0541v4g57",
+    "founded": 1816,
+    "gndId": "4100452-8",
+    "country": "AT"
+  },
+  {
+    "name": "European Peace University",
+    "wikidataId": "Q875466",
+    "rorId": "021m4bd11",
+    "founded": 1988,
+    "gndId": "16337203-2",
+    "country": "AT"
+  },
+  {
+    "name": "Musik und Kunst Privatuniversität der Stadt Wien",
+    "wikidataId": "Q876640",
+    "rorId": "03y1x4f32",
+    "founded": 1938,
+    "gndId": "1241222460",
+    "country": "AT"
+  },
+  {
+    "name": "Veterinärmedizinische Universität Wien",
+    "wikidataId": "Q877421",
+    "rorId": "01w6qp003",
+    "founded": 1765,
+    "gndId": "1038106-5",
+    "country": "AT"
+  },
+  {
+    "name": "Universität Altdorf",
+    "wikidataId": "Q880228",
+    "rorId": null,
+    "founded": 1578,
+    "gndId": "2113335-9",
+    "country": "DE"
+  },
+  {
+    "name": "Universität Fulda",
+    "wikidataId": "Q895948",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Danube Private University",
+    "wikidataId": "Q1165104",
+    "rorId": "054ebrh70",
+    "founded": 2009,
+    "gndId": "1102204307",
+    "country": "AT"
+  },
+  {
+    "name": "New Design University",
+    "wikidataId": "Q1448536",
+    "rorId": "022jmgp84",
+    "founded": 2004,
+    "gndId": "10124326-1",
+    "country": "AT"
+  },
+  {
+    "name": "Universität für künstlerische und industrielle Gestaltung Linz",
+    "wikidataId": "Q1516259",
+    "rorId": "02as55378",
+    "founded": 1947,
+    "gndId": "5299666-9",
+    "country": "AT"
+  },
+  {
+    "name": "Hamburger Universität für Wirtschaft und Politik",
+    "wikidataId": "Q1573181",
+    "rorId": null,
+    "founded": 1948,
+    "gndId": "10032988-3",
+    "country": "DE"
+  },
+  {
+    "name": "Privatuniversität Schloss Seeburg",
+    "wikidataId": "Q1624003",
+    "rorId": "01pmm8272",
+    "founded": 2007,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "IMADEC Executive Education GmbH",
+    "wikidataId": "Q1654084",
+    "rorId": "04gndk045",
+    "founded": 1991,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Technische Hochschule Leuna-Merseburg",
+    "wikidataId": "Q1659467",
+    "rorId": null,
+    "founded": null,
+    "gndId": "26373-4",
+    "country": "DE"
+  },
+  {
+    "name": "Friedrichs-Universität Bützow",
+    "wikidataId": "Q1671056",
+    "rorId": null,
+    "founded": 1760,
+    "gndId": "5025548-4",
+    "country": "DE"
+  },
+  {
+    "name": "Kölner Werkschulen",
+    "wikidataId": "Q1795883",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "UMIT - Private Universität für Gesundheitswissenschaften, Medizinische Informatik und Technik",
+    "wikidataId": "Q2111097",
+    "rorId": "02d0kps43",
+    "founded": 2001,
+    "gndId": "16013454-7",
+    "country": "AT"
+  },
+  {
+    "name": "Universitas Studii Coloniensis",
+    "wikidataId": "Q2495768",
+    "rorId": null,
+    "founded": 1388,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Rinteln",
+    "wikidataId": "Q2496139",
+    "rorId": null,
+    "founded": 1619,
+    "gndId": "5059776-0",
+    "country": "DE"
+  },
+  {
+    "name": "Universitätszentrum Rottenmann",
+    "wikidataId": "Q2496451",
+    "rorId": null,
+    "founded": 2000,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "César Ritz Colleges",
+    "wikidataId": "Q5065463",
+    "rorId": "03pzk6650",
+    "founded": 1982,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "ETH Zurich Faculty of Architecture",
+    "wikidataId": "Q5324466",
+    "rorId": null,
+    "founded": 1854,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "EU Business School",
+    "wikidataId": "Q5413406",
+    "rorId": "04facnr46",
+    "founded": 1973,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Graduate School for Computing in Medicine and Life Sciences",
+    "wikidataId": "Q5592027",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Otto Stern School for Integrated Doctoral Education",
+    "wikidataId": "Q7109839",
+    "rorId": null,
+    "founded": 2006,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Swiss Hotel Schools Association",
+    "wikidataId": "Q7658877",
+    "rorId": null,
+    "founded": 1986,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "International School of Business Management",
+    "wikidataId": "Q12185337",
+    "rorId": null,
+    "founded": 2005,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Alma Mater Europaea",
+    "wikidataId": "Q14594755",
+    "rorId": "028a67802",
+    "founded": 2010,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Fachhochschule Nordwestschweiz Hochschule für Soziale Arbeit",
+    "wikidataId": "Q15815730",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Karls-Universität Aschaffenburg",
+    "wikidataId": "Q15823101",
+    "rorId": null,
+    "founded": 1808,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Collegium Carolinum",
+    "wikidataId": "Q16061290",
+    "rorId": null,
+    "founded": 1849,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Benedict Schools",
+    "wikidataId": "Q16251206",
+    "rorId": null,
+    "founded": 1928,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Karl Landsteiner Privatuniversität für Gesundheitswissenschaften",
+    "wikidataId": "Q16511227",
+    "rorId": "04t79ze18",
+    "founded": 2013,
+    "gndId": "1251388825",
+    "country": "AT"
+  },
+  {
+    "name": "Q16634053",
+    "wikidataId": "Q16634053",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "American University in Switzerland",
+    "wikidataId": "Q16826177",
+    "rorId": "052tgfs08",
+    "founded": 1991,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Swiss Association for Private Schools and Universities",
+    "wikidataId": "Q17002861",
+    "rorId": "0027zt973",
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Basel School of Business",
+    "wikidataId": "Q17005112",
+    "rorId": null,
+    "founded": 2012,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Campus Lausanne",
+    "wikidataId": "Q17064145",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Geneva Institute for Democracy and Development",
+    "wikidataId": "Q17076683",
+    "rorId": null,
+    "founded": 2004,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "UBIS University",
+    "wikidataId": "Q18355681",
+    "rorId": null,
+    "founded": 2006,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Politecnico degli Studi Internazionali",
+    "wikidataId": "Q18389231",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Q20479676",
+    "wikidataId": "Q20479676",
+    "rorId": null,
+    "founded": 1994,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "ETH Department of Biosystems Science and Engineering",
+    "wikidataId": "Q22444273",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Sciences II",
+    "wikidataId": "Q22548875",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Swiss UMEF University",
+    "wikidataId": "Q28224938",
+    "rorId": "032aw4s87",
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Universität Karlsruhe",
+    "wikidataId": "Q29426438",
+    "rorId": null,
+    "founded": 1865,
+    "gndId": "2024334-0",
+    "country": "DE"
+  },
+  {
+    "name": "Dahlem Centre of Plant Sciences",
+    "wikidataId": "Q31943212",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Augsburg",
+    "wikidataId": "Q32000608",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Fachhochschule Frankfurt",
+    "wikidataId": "Q32000610",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Pädagogische Hochschule der Universität",
+    "wikidataId": "Q41313704",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Sigmund Freud Privatuniversität Berlin",
+    "wikidataId": "Q48756211",
+    "rorId": "02ynn6218",
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Technische Hochschule Linz",
+    "wikidataId": "Q55824852",
+    "rorId": null,
+    "founded": 1943,
+    "gndId": null,
+    "country": "AT"
+  },
+  {
+    "name": "Tierärztliche Hochschule Berlin",
+    "wikidataId": "Q62032954",
+    "rorId": null,
+    "founded": 1887,
+    "gndId": "507767-9",
+    "country": "DE"
+  },
+  {
+    "name": "UNRRA University of Munich",
+    "wikidataId": "Q65093904",
+    "rorId": null,
+    "founded": 1946,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Universität Graz Rechtswissenschaftliche Fakultät",
+    "wikidataId": "Q71147627",
+    "rorId": null,
+    "founded": 1778,
+    "gndId": "2055897-1",
+    "country": "AT"
+  },
+  {
+    "name": "Philipps-Universität Marburg Centrum für Nah- und Mittelost-Studien",
+    "wikidataId": "Q101380972",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Technische Universität Berlin Institut für Technische Akustik",
+    "wikidataId": "Q101385266",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Schaffhausen Institute of Technology",
+    "wikidataId": "Q107223245",
+    "rorId": "02f3v7194",
+    "founded": 2019,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Berlin School of Business and Innovation",
+    "wikidataId": "Q107440148",
+    "rorId": "00jkcvh93",
+    "founded": 2018,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Lucerne School of Computer Science and Information Technology",
+    "wikidataId": "Q109534200",
+    "rorId": null,
+    "founded": null,
+    "gndId": null,
+    "country": "CH"
+  },
+  {
+    "name": "Universität Koblenz",
+    "wikidataId": "Q113633597",
+    "rorId": "0433e6t24",
+    "founded": 2023,
+    "gndId": null,
+    "country": "DE"
+  },
+  {
+    "name": "Q115939830",
+    "wikidataId": "Q115939830",
+    "rorId": null,
+    "founded": 1432,
+    "gndId": null,
+    "country": "CH"
+  }
+]

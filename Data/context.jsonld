@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "schema": "https://schema.org/",
+    "wd": "http://www.wikidata.org/entity/",
+    "tadirah": "https://vocabs.dariah.eu/tadirah/",
+    "ror": "https://ror.org/",
+    "gnd": "https://d-nb.info/gnd/",
+    "geonames": "https://sws.geonames.org/",
+    "dh": "http://www.wikidata.org/entity/Q5157565",
+
+    "Institution": "schema:ResearchOrganization",
+    "name": "schema:name",
+    "city": "schema:addressLocality",
+    "country": "schema:addressCountry",
+    "coordinates": {
+      "@id": "schema:geo",
+      "@type": "schema:GeoCoordinates"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "disciplines": "schema:knowsAbout",
+    "methods": "schema:usesMethod",
+    "totalPositions": "schema:numberOfEmployees",
+    "earliestYear": "schema:foundingDate",
+
+    "wikidataId": {
+      "@id": "schema:sameAs",
+      "@type": "@id"
+    },
+    "rorId": {
+      "@id": "schema:identifier",
+      "@type": "@id"
+    },
+    "gndId": {
+      "@id": "schema:identifier"
+    },
+
+    "tadirahUri": {
+      "@id": "tadirah:",
+      "@type": "@id"
+    },
+    "category": "schema:category",
+
+    "tadirahProfile": {
+      "@id": "schema:additionalProperty",
+      "@type": "schema:PropertyValue"
+    },
+
+    "founded": "schema:foundingDate",
+    "dhPublicationCount": "schema:interactionCount",
+    "zenodoRecordCount": "schema:interactionCount",
+    "dblpPublicationCount": "schema:interactionCount",
+
+    "clarinCentre": {
+      "@id": "schema:memberOf",
+      "@type": "schema:Organization"
+    },
+    "dhCourses": {
+      "@id": "schema:hasOfferCatalog",
+      "@container": "@set"
+    },
+
+    "positions": {
+      "@id": "schema:employee",
+      "@container": "@set"
+    },
+    "level": "schema:jobTitle",
+    "status": "schema:employmentType",
+    "temporary": "schema:workHours"
+  }
+}

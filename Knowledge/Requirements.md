@@ -84,20 +84,22 @@ Dieses Beispiel steht stellvertretend für den generischen Use Case: **Die Entwi
 
 | User Story | Priorität | Status | Abhängigkeit |
 |------------|-----------|--------|-------------|
-| US-1 Thematische Exploration | Hoch | ✅ Vollständig | — |
-| US-4 Institutionsprofil | Hoch | ✅ Vollständig | — |
-| US-2 Zeitliche Entwicklung | Hoch | ✅ Vollständig (Slider + Stacked Area + Play/Pause) | — |
-| US-5 Landschafts-Überblick | Mittel | ✅ Vollständig (Overview-HUD + Barchart + Heatmap) | — |
+| US-1 Thematische Exploration | Hoch | ✅ Vollständig (Karte-View + TaDiRAH-Filter) | — |
+| US-4 Institutionsprofil | Hoch | ✅ Vollständig (7 Datenquellen, TaDiRAH-Profil) | — |
+| US-2 Zeitliche Entwicklung | Hoch | ✅ Vollständig (Explorer: Timeline + Stacked Area) | — |
+| US-5 Landschafts-Überblick | Mittel | ✅ Vollständig (Übersicht-View + Barchart + Heatmap) | — |
 | US-3 Kooperationspartner | Mittel | Teilweise (Heatmap zeigt Disziplin-Überlappungen) | Konstellations-View |
-| US-6 Entwicklungsgeschichte | Mittel | ✅ Vollständig (Narrative Mode + Timeline + Area Chart) | — |
-| US-7 Geführter Einstieg | Hoch | ✅ Vollständig (Narrative Scrollytelling, 7 Stationen) | — |
+| US-6 Entwicklungsgeschichte | Mittel | ✅ Vollständig (Explorer: Timeline + Area Chart) | — |
+| US-7 Geführter Einstieg | Hoch | ❌ Entfernt/Deferred (Narrative Scrollytelling in Iteration 6 entfernt — Übersicht-View als vereinfachter Ersatz) | — |
 
-## Iteration 4: Neue Interaktions-Modi
+## Iteration 6: Views statt Modes
 
-Die Map-as-Canvas-Architektur (Iteration 4) führt drei Modi ein:
-- **Narrative** adressiert US-7 (geführter Einstieg) und US-6 (Entwicklungsgeschichte)
-- **Explore** adressiert US-1 (thematische Exploration) und US-3 (Kooperationspartner)
-- **Overview** adressiert US-5 (Landschafts-Überblick)
+Die 3-View-Architektur (Iteration 6) ersetzt die 3-Modi-Architektur aus Iteration 4:
+- **Übersicht** adressiert US-5 (Landschafts-Überblick) — Startseite mit Kernzahlen
+- **Karte** adressiert US-1 (thematische Exploration), US-3 (Kooperationspartner), US-4 (Institutionsprofil) — TaDiRAH-farbkodierte Marker
+- **Explorer** adressiert US-2 (zeitliche Entwicklung) und US-6 (Entwicklungsgeschichte) — Timeline, Institutionen, Disziplinen Charts
+
+> **Hinweis**: US-7 (Geführter Einstieg via Narrative Scrollytelling) wurde in Iteration 6 entfernt. Die Übersicht-View bietet einen vereinfachten Einstieg, aber kein Scrollytelling. Ein möglicher Wiederaufbau als "Guided Tour" ist für spätere Iterationen denkbar.
 
 ## Related
 

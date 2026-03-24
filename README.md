@@ -19,26 +19,31 @@ No individual names are shown — the focus is on **institutional profiles**.
 
 ## Features
 
-### Three Interaction Modes (Map-as-Canvas)
-The map is always the canvas — three modes change what floats above it:
+### Three Views (Map-as-Canvas)
+The map is always the canvas. Three views provide different perspectives:
 
-- **≡ Narrative Mode**: Scroll-driven storytelling through 7 stations (Köln, Berlin, Wien...) with fly-to animations and mini-visualizations
-- **◎ Explore Mode**: Free exploration with floating, draggable D3.js chart panels, collapsible filter sidebar, and stats bar
-- **⊞ Overview Mode**: HUD dashboard with animated counters, country distribution bars, discipline chart, and mini timeline
+- **Übersicht**: Start page with animated stats, key figures, and entry point into the landscape
+- **Karte**: Interactive map with TaDiRAH-colored markers, filters, and institution detail panel
+- **Explorer**: D3.js chart panels — Timeline, Institutionen, Disziplinen
 
 ### Interactive Map
-- MapLibre GL JS with dark academic aesthetic
+- MapLibre GL JS with light academic aesthetic (warm off-white background)
+- **TaDiRAH semantic color coding**: 8 research activity categories mapped to marker colors
 - Filter by **discipline**, **method**, **country**, and **time period** (2008–2026)
 - **Free-text search** across institutions, cities, and topics
-- Institution profile panel (420px) with stats, disciplines, methods, Wikidata/ROR links
-- Marker color: Indigo (filled) / Amber (open positions) — colorblind-safe
+- Institution profile panel with stats, disciplines, methods, Wikidata/ROR links
 
 ### D3.js Visualizations
 - **Stacked Area Chart**: DH landscape growth since 2008 (by discipline or country)
 - **Horizontal Barchart**: Institutions ranked by position count, color-coded by discipline
-- **Discipline Heatmap**: Institutions × Disciplines matrix with crosshair hover
+- **Discipline Heatmap**: Institutions x Disciplines matrix with crosshair hover
 - **Coordinated filtering**: All views update simultaneously
 - Click any chart element to fly to the institution on the map
+
+### Data Enrichment
+- 7 data sources integrated with automatic matching
+- TaDiRAH research profiles per institution
+- Zenodo publication records, CLARIN centre status, DH course listings
 
 ## Data Sources
 
@@ -46,9 +51,11 @@ The map is always the canvas — three modes change what floats above it:
 |--------|---------|--------|
 | [Patrick Sahle's DH Professorship List](https://dhd-blog.org/?p=11018) | 150 DH professorships in DACH (2008–2026) | Integrated |
 | [OpenAlex](https://openalex.org/) | DH publication counts per institution | Integrated |
-| [CLARIN Centre Registry](https://centres.clarin.eu) | DH infrastructure centers | Planned |
-| [DH Course Registry](https://dhcr.clarin-dariah.eu/) | DH study programs | Planned |
-| [Wikidata](https://www.wikidata.org/) | Institutional identifiers, LOD linking | Planned |
+| [Wikidata](https://www.wikidata.org/) | 806 DACH universities, 51/52 matched — institutional identifiers, LOD linking | Integrated |
+| [Zenodo](https://zenodo.org/) | 2112 DHd community records, 50/52 matched — conference publications | Integrated |
+| [CLARIN Centre Registry](https://centres.clarin.eu) | 23 centres, 5/52 matched — DH infrastructure | Integrated |
+| [DH Course Registry](https://dhcr.clarin-dariah.eu/) | 196 courses, 24/52 matched — DH study programs | Integrated |
+| [DBLP](https://dblp.org/) | 500 DH records — publication metadata | Integrated |
 
 ## Promptotyping
 
@@ -66,9 +73,9 @@ Read more: [Knowledge/Promptotyping.md](Knowledge/Promptotyping.md)
 - **MapLibre GL JS** via CDN — WebGL vector map rendering
 - **D3.js v7** via CDN — Stacked Area Chart, Barchart, Heatmap
 - **Vanilla JavaScript** — no frameworks, no build step
-- **CartoDB Dark Matter** tiles
+- **CartoDB Light (Positron)** tiles — warm, neutral basemap
 - **GitHub Pages** — zero-config deployment
-- Planned: **JSON-LD** for Linked Open Data
+- **JSON-LD** context for Linked Open Data (`Data/context.jsonld`)
 
 ## Data Model
 
@@ -81,13 +88,19 @@ Each institution is represented as:
   "country": "AT",
   "coordinates": [15.45, 47.08],
   "totalPositions": 5,
+  "founded": 1585,
   "disciplines": ["Digital Humanities", "Digital Edition", "Digital Archaeology"],
   "methods": ["TEI/XML", "Linked Data", "Data Modeling"],
-  "earliestYear": 2015
+  "earliestYear": 2015,
+  "tadirahProfile": { "Creation": 3, "Enrichment": 2 },
+  "gndId": "...",
+  "zenodoRecordCount": 12,
+  "clarinCentre": true,
+  "dhCourses": [...]
 }
 ```
 
-Planned: JSON-LD export with [Schema.org](https://schema.org/), [Wikidata](https://www.wikidata.org/), [TaDiRAH](https://vocabs.dariah.eu/tadirah/), and [ROR](https://ror.org/) identifiers.
+JSON-LD context available at `Data/context.jsonld` using [Schema.org](https://schema.org/), [Wikidata](https://www.wikidata.org/), [TaDiRAH](https://vocabs.dariah.eu/tadirah/), and [ROR](https://ror.org/) identifiers.
 
 ## Contributing
 
@@ -111,4 +124,4 @@ Feedback, corrections, and additions are welcome:
 
 - [Patrick Sahle](https://dhd-blog.org/?p=11018) for the DH professorship list
 - [DHd-Verband](https://digitalhumanities.de/) — Digital Humanities im deutschsprachigen Raum
-- Built with [MapLibre GL JS](https://maplibre.org/) and [CartoDB](https://carto.com/) basemaps
+- Built with [MapLibre GL JS](https://maplibre.org/) and [CartoDB Positron](https://carto.com/) basemaps

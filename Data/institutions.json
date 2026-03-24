@@ -22,27 +22,33 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Data Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Digital Edition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing",
+        "category": "Creation"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "TEI/XML",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding",
+        "category": "Enrichment"
       }
     ],
     "positions": [
@@ -144,7 +150,109 @@
     "wikidataId": "Q202442",
     "rorId": "https://ror.org/00rcxh774",
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {
+      "Creation": 3,
+      "Analysis": 2,
+      "Enrichment": 1
+    },
+    "founded": 1388,
+    "gndId": "2024231-1",
+    "zenodoRecordCount": 129,
+    "dhCourses": [
+      {
+        "name": "Informationsverarbeitung",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://phil-fak.uni-koeln.de/ba_informationsverarbeitung.html"
+      },
+      {
+        "name": "Informationsverarbeitung",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://phil-fak.uni-koeln.de/4644.html"
+      },
+      {
+        "name": "Medienwissenschaft (bzw. Medieninformatik als Teilfach)",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://phil-fak.uni-koeln.de/ba_mewi.html"
+      },
+      {
+        "name": "Medienwissenschaft (bzw. Medieninformatik als Teilfach)",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://phil-fak.uni-koeln.de/4650.html"
+      },
+      {
+        "name": "IT-Zertifikat",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.hki.uni-koeln.de/ITZert"
+      },
+      {
+        "name": "3D / VR Systeme",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.hki.uni-koeln.de/"
+      },
+      {
+        "name": "Repräsentation von Daten und Information - ein praktischer Einstieg in die Datenvisualisierung mit JavaScript",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.hki.uni-koeln.de/"
+      },
+      {
+        "name": "Medieninformatik im Verbund mit Medienkulturwissenschaften",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://dh.phil-fak.uni-koeln.de/"
+      },
+      {
+        "name": "Medieninformatik im Verbund mit Medienkulturwissenschaften",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://dh.phil-fak.uni-koeln.de/"
+      },
+      {
+        "name": "IT-Zertifikat der Phil. Fak.",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://dh.phil-fak.uni-koeln.de/it-zertifikat-der-philosophischen-fakultaet"
+      },
+      {
+        "name": "Mittelalterstudien mit möglicher Schwerpunktdisziplin Digital Humanities (1 Fach/ 2 Fach)",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://idsl1.phil-fak.uni-koeln.de/studium/masterstudiengaenge/master-mittelalterstudien"
+      },
+      {
+        "name": "Informationsverarbeitung (2 Fach)",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://dh.phil-fak.uni-koeln.de/"
+      },
+      {
+        "name": "Informationsverarbeitung (1 Fach)",
+        "institution": "Universität zu Köln",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://dh.phil-fak.uni-koeln.de/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "tu-darmstadt",
@@ -168,43 +276,53 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Annotation",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/annotating"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/annotating",
+        "category": "Enrichment"
       },
       {
         "label": "Corpus Linguistics",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Data Science",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Digital Edition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing",
+        "category": "Creation"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Stylometry",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics",
+        "category": "Analysis"
       },
       {
         "label": "TEI/XML",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding",
+        "category": "Enrichment"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -309,10 +427,49 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q284992",
     "rorId": "https://ror.org/05n911h24",
     "dhPublicationCount": 100,
-    "url": "https://www.tu-darmstadt.de"
+    "url": "https://www.tu-darmstadt.de",
+    "tadirahProfile": {
+      "Creation": 2,
+      "Enrichment": 2,
+      "Analysis": 6
+    },
+    "founded": 1971,
+    "gndId": "2010013-9",
+    "zenodoRecordCount": 34,
+    "dhCourses": [
+      {
+        "name": "Joint Bachelor of Arts - combined course, incl. Digital Philology",
+        "institution": "Technische Universität Darmstadt",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.linglit.tu-darmstadt.de/studiumlinglit/studiengaenge/jba_digiphil.de.jsp"
+      },
+      {
+        "name": "Linguistic and Literary Computing",
+        "institution": "Technische Universität Darmstadt",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.linglit.tu-darmstadt.de/studiumlinglit/studiengaenge/llc.de.jsp"
+      },
+      {
+        "name": "Internet- und Web-basierte Systeme",
+        "institution": "Technische Universität Darmstadt",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.informatik.tu-darmstadt.de/de/studierende/studiengaenge/masterstudiengaenge/spezialisierte-masterstudiengaenge/internet-und-web-basierte-systeme/"
+      },
+      {
+        "name": "Bachelor of Arts Digital Philology",
+        "institution": "Technische Universität Darmstadt",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.linglit.tu-darmstadt.de/studiumlinglit/studiengaenge/digiphil.de.jsp"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-w-rzburg",
@@ -336,19 +493,23 @@
     "methods": [
       {
         "label": "Data Visualization",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       },
       {
         "label": "Digital Edition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing",
+        "category": "Creation"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -430,10 +591,84 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q161976",
     "rorId": "https://ror.org/00fbnyb24",
     "dhPublicationCount": 77,
-    "url": "http://www.uni-wuerzburg.de/en/ueber/university/"
+    "url": "http://www.uni-wuerzburg.de/en/ueber/university/",
+    "tadirahProfile": {
+      "Dissemination": 1,
+      "Creation": 1,
+      "Analysis": 2
+    },
+    "founded": 1402,
+    "gndId": "36189-6",
+    "zenodoRecordCount": 131,
+    "dhCourses": [
+      {
+        "name": "Digital Humanities",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-wuerzburg.de/fuer/studierende/angebot/faecher/digihum"
+      },
+      {
+        "name": "Digital Humanities",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-wuerzburg.de/fuer/studierende/angebot/faecher/digihum"
+      },
+      {
+        "name": "Digital Humanities (60 ECTS)",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-wuerzburg.de/?id=87781"
+      },
+      {
+        "name": "Digital Humanities (75 ECTS)",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-wuerzburg.de/?id=87781"
+      },
+      {
+        "name": "Digital Humanities (120 ECTS)",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-wuerzburg.de/?id=87781"
+      },
+      {
+        "name": "Digital Humanities (45 ECTS)",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-wuerzburg.de/?id=87781"
+      },
+      {
+        "name": "Digital Humanities (120 ECTS)",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-wuerzburg.de/?id=87781"
+      },
+      {
+        "name": "MSc Computational Humanities",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://go.uniwue.de/ch-master"
+      },
+      {
+        "name": "BA Digital Humanities",
+        "institution": "Julius-Maximilians-Universität Würzburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://go.uniwue.de/dh"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "fau-erlangen-n-rnberg",
@@ -458,35 +693,43 @@
     "methods": [
       {
         "label": "Computer Vision",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Corpus Linguistics",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "HCI",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment",
+        "category": "Meta"
       },
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Spatial Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -576,10 +819,18 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q56187114",
     "rorId": "https://ror.org/00f7hpc57",
     "dhPublicationCount": 48,
-    "url": "https://www.fau.de/"
+    "url": "https://www.fau.de/",
+    "tadirahProfile": {
+      "Analysis": 7,
+      "Meta": 1
+    },
+    "founded": 2021,
+    "gndId": "1137073594",
+    "zenodoRecordCount": 14,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-paderborn",
@@ -603,23 +854,28 @@
     "methods": [
       {
         "label": "Data Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Digital Edition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing",
+        "category": "Creation"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "TEI/XML",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding",
+        "category": "Enrichment"
       },
       {
         "label": "Virtual Reality",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       }
     ],
     "positions": [
@@ -710,7 +966,26 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q679134",
     "rorId": "https://ror.org/058kzsd48",
     "dhPublicationCount": 41,
-    "url": "http://www.uni-paderborn.de/en/"
+    "url": "http://www.uni-paderborn.de/en/",
+    "tadirahProfile": {
+      "Creation": 2,
+      "Analysis": 1,
+      "Enrichment": 1,
+      "Dissemination": 1
+    },
+    "founded": 1972,
+    "gndId": "64857-7",
+    "zenodoRecordCount": 47,
+    "dhCourses": [
+      {
+        "name": "Edirom Summer School",
+        "institution": "Paderborn University",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://ess.uni-paderborn.de/index.html#"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-graz",
@@ -734,31 +1009,38 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Corpus Linguistics",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Data Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Linked Data",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking",
+        "category": "Enrichment"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "TEI/XML",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding",
+        "category": "Enrichment"
       }
     ],
     "positions": [
@@ -839,7 +1121,46 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q622683",
     "rorId": "https://ror.org/01faaaf77",
     "dhPublicationCount": 70,
-    "url": "https://www.uni-graz.at/en/"
+    "url": "https://www.uni-graz.at/en/",
+    "tadirahProfile": {
+      "Creation": 2,
+      "Analysis": 3,
+      "Enrichment": 2
+    },
+    "founded": 1811,
+    "gndId": "2042894-7",
+    "zenodoRecordCount": 115,
+    "dhCourses": [
+      {
+        "name": "Informationsmodellierung in den Geisteswissenschaften (Information Modelling in the Humanities)",
+        "institution": "Universität Graz",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://digital-humanities.uni-graz.at/en/study-service/module-and-certificate/"
+      },
+      {
+        "name": "Masterstudium \"Digitale Geisteswissenschaften\" (Master Programme \"Digital Humanities\")",
+        "institution": "Universität Graz",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://digital-humanities.uni-graz.at/en/study-service/master-of-arts-in-digital-humanities/"
+      },
+      {
+        "name": "Doktoratsstudium \"Digitale Geisteswissenschaften\" (Doctoral programme \"Digital Humanities\")",
+        "institution": "Universität Graz",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://www.uni-graz.at/en/study/doctoral-programmes/doctoral-programme-of-philosophy/"
+      },
+      {
+        "name": "Fakultätsweites Basismodul: Digital Humanities (Faculty-wide core module: Digital Humanities)",
+        "institution": "Universität Graz",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://online.uni-graz.at/kfu_online/pl/ui/$ctx/wbLv.wbShowLVDetail?pStpSpNr=893520"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-bamberg",
@@ -863,27 +1184,33 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Data Visualization",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Network Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -959,7 +1286,46 @@
     "wikidataId": "Q707272",
     "rorId": "https://ror.org/01c1w6d29",
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {
+      "Creation": 1,
+      "Dissemination": 1,
+      "Analysis": 4
+    },
+    "founded": 1647,
+    "gndId": "2056127-1",
+    "zenodoRecordCount": 21,
+    "dhCourses": [
+      {
+        "name": "Angewandte Informatik (Medien - Kultur  - Interaktion)",
+        "institution": "Otto-Friedrich-Universität Bamberg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-bamberg.de/ba-ai/"
+      },
+      {
+        "name": "Angewandte Informatik",
+        "institution": "Otto-Friedrich-Universität Bamberg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-bamberg.de/ma-ai/"
+      },
+      {
+        "name": "Computing in the Humanities",
+        "institution": "Otto-Friedrich-Universität Bamberg",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-bamberg.de/ma-cith/"
+      },
+      {
+        "name": "Digital Technologies in Heritage Conservation",
+        "institution": "Otto-Friedrich-Universität Bamberg",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-bamberg.de/en/iadk/heritage-conservation-studies/digital-technologies-in-heritage-conservation/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-trier",
@@ -984,27 +1350,33 @@
     "methods": [
       {
         "label": "Knowledge Graphs",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking",
+        "category": "Enrichment"
       },
       {
         "label": "Linked Data",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking",
+        "category": "Enrichment"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Stylometry",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1082,7 +1454,45 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q702486",
     "rorId": "https://ror.org/02778hg05",
     "dhPublicationCount": 78,
-    "url": "https://www.uni-trier.de/"
+    "url": "https://www.uni-trier.de/",
+    "tadirahProfile": {
+      "Enrichment": 2,
+      "Analysis": 4
+    },
+    "founded": 1473,
+    "gndId": "26331-X",
+    "zenodoRecordCount": 87,
+    "dhCourses": [
+      {
+        "name": "Digital Humanities (deprecated)",
+        "institution": "Universität Trier",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-trier.de/index.php?id=68009"
+      },
+      {
+        "name": "Natural Language Processing",
+        "institution": "Universität Trier",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-trier.de/index.php?id=1175"
+      },
+      {
+        "name": "Language, Technology and Media (STeM)",
+        "institution": "Universität Trier",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-ii/faecher/computerlinguistik-und-digital-humanities/studium/studienangebot/sprache-technologie-medien-bachelor"
+      },
+      {
+        "name": "Digital Humanities",
+        "institution": "Universität Trier",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-ii/faecher/computerlinguistik-und-digital-humanities/studium/studienangebot/digital-humanities-master"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-stuttgart",
@@ -1104,19 +1514,23 @@
     "methods": [
       {
         "label": "Computer Vision",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1177,7 +1591,30 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q122453",
     "rorId": "https://ror.org/04vnq7t77",
     "dhPublicationCount": 69,
-    "url": "http://www.uni-stuttgart.de/home/index.en.html"
+    "url": "http://www.uni-stuttgart.de/home/index.en.html",
+    "tadirahProfile": {
+      "Analysis": 4
+    },
+    "founded": 1832,
+    "gndId": "10122879-X",
+    "zenodoRecordCount": 94,
+    "dhCourses": [
+      {
+        "name": "Digital Humanities",
+        "institution": "Universität Stuttgart",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://uni-stuttgart.de/dh"
+      },
+      {
+        "name": "M.A. Digital Humanities",
+        "institution": "Universität Stuttgart",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-stuttgart.de/studium/studienangebot/Digital-Humanities-M.A./"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-heidelberg",
@@ -1201,23 +1638,28 @@
     "methods": [
       {
         "label": "Digital Edition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing",
+        "category": "Creation"
       },
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Scientific Computing",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1279,7 +1721,31 @@
     "wikidataId": "Q151510",
     "rorId": "https://ror.org/038t36y30",
     "dhPublicationCount": 37,
-    "url": "https://www.uni-heidelberg.de"
+    "url": "https://www.uni-heidelberg.de",
+    "tadirahProfile": {
+      "Creation": 1,
+      "Analysis": 4
+    },
+    "founded": 1386,
+    "gndId": "2024349-2",
+    "zenodoRecordCount": 41,
+    "dhCourses": [
+      {
+        "name": "Summer School of Computational Humanities",
+        "institution": "Universität Heidelberg",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://hch19.cl.uni-heidelberg.de"
+      },
+      {
+        "name": "Continuing Education Program 'Digital Humanities'",
+        "institution": "Universität Heidelberg",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-heidelberg.de/en/research/research-profile/fields-of-focus/field-of-focus-iii/research-activities/forum-digital-humanities/continuing-education-program-digital-humanities"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-wien",
@@ -1302,19 +1768,23 @@
     "methods": [
       {
         "label": "Digital Edition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing",
+        "category": "Creation"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Stemmatology",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "TEI/XML",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding",
+        "category": "Enrichment"
       }
     ],
     "positions": [
@@ -1374,10 +1844,77 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q689400",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {
+      "Creation": 1,
+      "Analysis": 2,
+      "Enrichment": 1
+    },
+    "founded": 1815,
+    "gndId": "55426-1",
+    "zenodoRecordCount": 65,
+    "dhCourses": [
+      {
+        "name": "VO Introduction to Digital Humanities",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://ufind.univie.ac.at/en/course.html?lv=070016&semester=2018W"
+      },
+      {
+        "name": "LK Introduction to Digital Humanities",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://ufind.univie.ac.at/en/course.html?lv=070263&semester=2018W"
+      },
+      {
+        "name": "Introduction in Bioarcheology",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://ufind.univie.ac.at/"
+      },
+      {
+        "name": "Funerary Archaeology in Austria",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://ufind.univie.ac.at/de/course.html?lv=300063&semester=2022W"
+      },
+      {
+        "name": "Methodenkurs - Digitale Annotation im geschichtswissenschaftlichen Kontext: Methoden, Techniken, Standards und Tools",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://ufind.univie.ac.at/en/course.html?lv=070266&semester=2025S"
+      },
+      {
+        "name": "Methodenkurs - Digitale Methoden und bewährte Werkzeuge für die Geschichtswissenschaften",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://ufind.univie.ac.at/de/course.html?lv=070266&semester=2024S"
+      },
+      {
+        "name": "Digital Humanities",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://studieren.univie.ac.at/en/degree-programmes/master-programmes/digital-humanities-master/"
+      },
+      {
+        "name": "AI and Interdisciplinary Research (2026S) Basics, Potential and Limitations",
+        "institution": "Universität Wien",
+        "country": "AT",
+        "type_name": null,
+        "url": "https://ufind.univie.ac.at/en/course.html?lv=300407"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-leipzig",
@@ -1399,27 +1936,33 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Data Visualization",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       },
       {
         "label": "Digital Edition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing",
+        "category": "Creation"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1480,10 +2023,62 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q154804",
     "rorId": "https://ror.org/03s7gtk40",
     "dhPublicationCount": 121,
-    "url": "https://www.uni-leipzig.de/en/"
+    "url": "https://www.uni-leipzig.de/en/",
+    "tadirahProfile": {
+      "Creation": 2,
+      "Dissemination": 1,
+      "Analysis": 3
+    },
+    "founded": 1409,
+    "gndId": "2024343-1",
+    "zenodoRecordCount": 122,
+    "clarinCentre": {
+      "name": "SAW Leipzig",
+      "country_code": "DE",
+      "website": "https://repo.data.saw-leipzig.de/",
+      "centre_type": "B"
+    },
+    "dhCourses": [
+      {
+        "name": "Sunoikisis Digital Classics",
+        "institution": "Universität Leipzig",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://sunoikisisdc.github.io"
+      },
+      {
+        "name": "Introduction to Digital Philology",
+        "institution": "Universität Leipzig",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://studium.fmi.uni-leipzig.de/studiengaenge/digital-humanities/"
+      },
+      {
+        "name": "Culture & Technology - The European Summer University in Digital Humanities",
+        "institution": "Universität Leipzig",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://esu-ct.conference.ubbcluj.ro/"
+      },
+      {
+        "name": "Digital Humanities B.Sc.",
+        "institution": "Universität Leipzig",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-leipzig.de/studium/vor-dem-studium/studienangebot/studiengang/course/show/digital-humanities-b-sc"
+      },
+      {
+        "name": "Digital Humanities M.Sc.",
+        "institution": "Universität Leipzig",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-leipzig.de/studium/vor-dem-studium/studienangebot/studiengang/course/show/digital-humanities-m-sc"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "lmu-m-nchen",
@@ -1507,31 +2102,38 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Stylometry",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       },
       {
         "label": "Virtual Reality",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       }
     ],
     "positions": [
@@ -1595,7 +2197,16 @@
     "wikidataId": "Q156598",
     "rorId": "https://ror.org/05591te55",
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {
+      "Creation": 1,
+      "Analysis": 5,
+      "Dissemination": 1
+    },
+    "founded": 1868,
+    "gndId": "36241-4",
+    "zenodoRecordCount": 16,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-bielefeld",
@@ -1617,11 +2228,13 @@
     "methods": [
       {
         "label": "Corpus Linguistics",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1680,7 +2293,44 @@
     "wikidataId": "Q1631816",
     "rorId": "https://ror.org/02hpadn98",
     "dhPublicationCount": 59,
-    "url": "https://www.uni-bielefeld.de"
+    "url": "https://www.uni-bielefeld.de",
+    "tadirahProfile": {
+      "Analysis": 2
+    },
+    "founded": 1969,
+    "gndId": "2024177-X",
+    "zenodoRecordCount": 45,
+    "dhCourses": [
+      {
+        "name": "Texttechnologie und Computerlinguistik (Nebenfach)",
+        "institution": "Universität Bielefeld",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://ekvv.uni-bielefeld.de/sinfo/publ/bachelor/texttechnologie;jsessionid=53EC3E73BE27CFAA999214EC80E1EA56.publ_ekvvb"
+      },
+      {
+        "name": "Linguistik: Kommunikation, Kognition und Sprachtechnologie",
+        "institution": "Universität Bielefeld",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-bielefeld.de/lili/studium/faecher/linguistik/master-ab-ws-10-11/index.htm"
+      },
+      {
+        "name": "Interdisziplinäre Medienwissenschaft",
+        "institution": "Universität Bielefeld",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-bielefeld.de/medienwissenschaft/"
+      },
+      {
+        "name": "Literarische Wertung zwischen Lessing und Lovelybooks. Digitale Perspektiven",
+        "institution": "Universität Bielefeld",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://ekvv.uni-bielefeld.de/kvv_publ/publ/Lehrende_Veranstaltungen.jsp?personId=262987169"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-halle-wittenberg",
@@ -1700,7 +2350,8 @@
     "methods": [
       {
         "label": "Computer Vision",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1740,10 +2391,17 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q32120",
     "rorId": "https://ror.org/05gqaka33",
     "dhPublicationCount": 23,
-    "url": "http://www.uni-halle.de/?lang=en"
+    "url": "http://www.uni-halle.de/?lang=en",
+    "tadirahProfile": {
+      "Analysis": 1
+    },
+    "founded": 1933,
+    "gndId": "2024276-1",
+    "zenodoRecordCount": 37,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-marburg",
@@ -1765,11 +2423,13 @@
     "methods": [
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Network Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1814,7 +2474,23 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q155354",
     "rorId": "https://ror.org/01rdrb571",
     "dhPublicationCount": 31,
-    "url": "https://www.uni-marburg.de/"
+    "url": "https://www.uni-marburg.de/",
+    "tadirahProfile": {
+      "Analysis": 2
+    },
+    "founded": 1527,
+    "gndId": "2001630-X",
+    "zenodoRecordCount": 37,
+    "dhCourses": [
+      {
+        "name": "Cultural Data Studies",
+        "institution": "Philipps-Universität Marburg",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-marburg.de/de/mcdci/studium/ma-cds"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-augsburg",
@@ -1835,23 +2511,28 @@
     "methods": [
       {
         "label": "Data Visualization",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       },
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Linked Data",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking",
+        "category": "Enrichment"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1902,7 +2583,16 @@
     "wikidataId": "Q500699",
     "rorId": "https://ror.org/03p14d497",
     "dhPublicationCount": 20,
-    "url": "https://www.uni-augsburg.de"
+    "url": "https://www.uni-augsburg.de",
+    "tadirahProfile": {
+      "Dissemination": 1,
+      "Analysis": 3,
+      "Enrichment": 1
+    },
+    "founded": 1970,
+    "gndId": "7871-2",
+    "zenodoRecordCount": 4,
+    "dblpPublicationCount": 500
   },
   {
     "id": "freie-universit-t-berlin",
@@ -1924,23 +2614,28 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Computer Vision",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Network Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -1992,7 +2687,72 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q152087",
     "rorId": "https://ror.org/01hcx6992",
     "dhPublicationCount": 145,
-    "url": "https://www.hu-berlin.de/?set_language=en&cl=en"
+    "url": "https://www.hu-berlin.de/?set_language=en&cl=en",
+    "tadirahProfile": {
+      "Creation": 1,
+      "Analysis": 4
+    },
+    "founded": 1946,
+    "gndId": "2114678-0",
+    "zenodoRecordCount": 67,
+    "clarinCentre": {
+      "name": "Oral-History.Digital at Freie Universität Berlin",
+      "country_code": "DE",
+      "website": "https://www.oral-history.digital/en/",
+      "centre_type": "C"
+    },
+    "dhCourses": [
+      {
+        "name": "\"Die ich rief, die Geister\" Zur konstruktiven Kritik der datenintensiven Literaturwissenschaft",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/622154"
+      },
+      {
+        "name": "Digital Humanities Now",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/en/lv/625309"
+      },
+      {
+        "name": "Höhenkämme und Archive. Eine angewandte Einführung in das literaturwissenschaftliche \"Distant Reading\"",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/622781"
+      },
+      {
+        "name": "Emotionsanalyse in der Digitalen Literaturwissenschaft",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/622800"
+      },
+      {
+        "name": "Trends in den datengetriebenen Geisteswissenschaften",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/626813"
+      },
+      {
+        "name": "Introduction to the Digital Humanities",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/943722"
+      },
+      {
+        "name": "Digital Stylometry",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/952529"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-g-ttingen",
@@ -2014,19 +2774,23 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2073,10 +2837,54 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q152838",
     "rorId": "https://ror.org/01y9bpm73",
     "dhPublicationCount": 60,
-    "url": "http://www.uni-goettingen.de/en/1.html"
+    "url": "http://www.uni-goettingen.de/en/1.html",
+    "tadirahProfile": {
+      "Creation": 1,
+      "Analysis": 3
+    },
+    "founded": 1734,
+    "gndId": "2024315-7",
+    "zenodoRecordCount": 116,
+    "clarinCentre": {
+      "name": "Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen",
+      "country_code": "DE",
+      "website": "http://www.gwdg.de/",
+      "centre_type": "E"
+    },
+    "dhCourses": [
+      {
+        "name": "Specialisation in Digital Humanities within the MSc in Applied Computer Science",
+        "institution": "Georg-August-Universität Göttingen",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.gcdh.de/en/teaching/studying-dh/dh-ai-msc/"
+      },
+      {
+        "name": "Specialisation in Digital Humanities in the Applied Computer Science M.Sc.",
+        "institution": "Georg-August-Universität Göttingen",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.gcdh.de/en/teaching/studying-dh/"
+      },
+      {
+        "name": "MA Digital Humanities",
+        "institution": "Georg-August-Universität Göttingen",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-goettingen.de/en/652252.html"
+      },
+      {
+        "name": "Digital Humanities (B.A.)",
+        "institution": "Georg-August-Universität Göttingen",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-goettingen.de/de/636392.html"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-hildesheim",
@@ -2098,7 +2906,8 @@
     "methods": [
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2130,10 +2939,17 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q1562772",
     "rorId": "https://ror.org/02f9det96",
     "dhPublicationCount": 16,
-    "url": "https://www.uni-hildesheim.de"
+    "url": "https://www.uni-hildesheim.de",
+    "tadirahProfile": {
+      "Analysis": 1
+    },
+    "founded": 1971,
+    "gndId": "16050511-2",
+    "zenodoRecordCount": 10,
+    "dblpPublicationCount": 500
   },
   {
     "id": "ruhr-universit-t-bochum",
@@ -2183,7 +2999,12 @@
     "wikidataId": "Q309948",
     "rorId": "https://ror.org/04tsk2644",
     "dhPublicationCount": 35,
-    "url": "https://www.ruhr-uni-bochum.de"
+    "url": "https://www.ruhr-uni-bochum.de",
+    "tadirahProfile": {},
+    "founded": 1962,
+    "gndId": "7409-3",
+    "zenodoRecordCount": 33,
+    "dblpPublicationCount": 500
   },
   {
     "id": "thm-gie-en",
@@ -2204,11 +3025,13 @@
     "methods": [
       {
         "label": "Data Science",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Digital Methods",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment",
+        "category": "Meta"
       }
     ],
     "positions": [
@@ -2243,7 +3066,13 @@
     "wikidataId": null,
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {
+      "Analysis": 1,
+      "Meta": 1
+    },
+    "zenodoRecordCount": 1,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-basel",
@@ -2264,19 +3093,23 @@
     "methods": [
       {
         "label": "AI",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Linked Data",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking",
+        "category": "Enrichment"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2313,7 +3146,73 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q372608",
     "rorId": "https://ror.org/02s6k3f65",
     "dhPublicationCount": 60,
-    "url": "https://www.unibas.ch"
+    "url": "https://www.unibas.ch",
+    "tadirahProfile": {
+      "Analysis": 3,
+      "Enrichment": 1
+    },
+    "founded": 1460,
+    "gndId": "36146-X",
+    "zenodoRecordCount": 18,
+    "dhCourses": [
+      {
+        "name": "Internettechnologien I: Grundlagen des Internets",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "http://vorlesungsverzeichnis.unibas.ch/index.cfm?action=1&LID=177810&ID=177810&act_int=0&PeID=2014004&&DID=177810&ML"
+      },
+      {
+        "name": "Computergrafik mit WebGL",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "http://vorlesungsverzeichnis.unibas.ch/index.cfm?action=1&LID=178648&ID=178648&act_int=0&PeID=2014004&&DID=178648&ML"
+      },
+      {
+        "name": "Fotografie",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://dhlab.philhist.unibas.ch/en/home/"
+      },
+      {
+        "name": "A Practical introduction to \"Digital Humanities\"",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://vorlesungsverzeichnis.unibas.ch/de/semester-planung?id=212999"
+      },
+      {
+        "name": "Textanalyse mit R",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "http://dhlab.unibas.ch"
+      },
+      {
+        "name": "Konzeption und Analyse eines Korpus zur Klassischen Moderne. Eine Einführung",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://vorlesungsverzeichnis.unibas.ch/de/recherche?id=230611"
+      },
+      {
+        "name": "Digital Humanities",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://philhist.unibas.ch/en/studium/studienangebote/master/digital-humanities-master/"
+      },
+      {
+        "name": "Digital Humanities",
+        "institution": "Universität Basel",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://dhlab.philhist.unibas.ch/en/phd/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "hochschule-mainz-adw-mainz",
@@ -2333,15 +3232,18 @@
     "methods": [
       {
         "label": "Digital Methods",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment",
+        "category": "Meta"
       },
       {
         "label": "Linked Data",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking",
+        "category": "Enrichment"
       },
       {
         "label": "Web Development",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/publishing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/publishing",
+        "category": "Dissemination"
       }
     ],
     "positions": [
@@ -2373,10 +3275,19 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q459724",
     "rorId": "https://ror.org/023b0x485",
     "dhPublicationCount": 37,
-    "url": "https://www.uni-mainz.de"
+    "url": "https://www.uni-mainz.de",
+    "tadirahProfile": {
+      "Meta": 1,
+      "Enrichment": 1,
+      "Dissemination": 1
+    },
+    "founded": 1971,
+    "gndId": "1063654211",
+    "zenodoRecordCount": 1,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-passau",
@@ -2397,11 +3308,13 @@
     "methods": [
       {
         "label": "Corpus Linguistics",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2434,7 +3347,30 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q704468",
     "rorId": "https://ror.org/05ydjnb78",
     "dhPublicationCount": 23,
-    "url": "http://www.uni-passau.de/en/"
+    "url": "http://www.uni-passau.de/en/",
+    "tadirahProfile": {
+      "Analysis": 2
+    },
+    "founded": 1973,
+    "gndId": "13388-7",
+    "zenodoRecordCount": 29,
+    "dhCourses": [
+      {
+        "name": "Zertifikat \"Digital Humanities\"",
+        "institution": "Universität Passau",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.phil.uni-passau.de/die-fakultaet/lehrstuehle-professuren/rehbein/studium-dh/zertifikat-dh.html"
+      },
+      {
+        "name": "Historical Sciences (core subject: Digital History)",
+        "institution": "Universität Passau",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.phil.uni-passau.de/dh/studium-und-lehre/digital-history/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "tu-chemnitz",
@@ -2455,7 +3391,8 @@
     "methods": [
       {
         "label": "Corpus Linguistics",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2487,7 +3424,13 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q159630",
     "rorId": "https://ror.org/00a208s56",
     "dhPublicationCount": 14,
-    "url": "https://www.tu-chemnitz.de/index.html.en"
+    "url": "https://www.tu-chemnitz.de/index.html.en",
+    "tadirahProfile": {
+      "Analysis": 1
+    },
+    "founded": 1836,
+    "gndId": "5018951-7",
+    "dblpPublicationCount": 500
   },
   {
     "id": "fh-potsdam",
@@ -2508,7 +3451,8 @@
     "methods": [
       {
         "label": "Digitization",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/capturing"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/capturing",
+        "category": "Capture"
       }
     ],
     "positions": [
@@ -2541,7 +3485,30 @@
     "wikidataId": "Q524989",
     "rorId": "https://ror.org/03bnmw459",
     "dhPublicationCount": 55,
-    "url": "https://www.uni-potsdam.de/en/"
+    "url": "https://www.uni-potsdam.de/en/",
+    "tadirahProfile": {
+      "Capture": 1
+    },
+    "founded": 1991,
+    "gndId": "2120681-8",
+    "zenodoRecordCount": 17,
+    "dhCourses": [
+      {
+        "name": "Computerlinguistik",
+        "institution": "Universität Potsdam",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://uni-potsdam.de/studienmglk1/faecher/computerlinguistik.html"
+      },
+      {
+        "name": "Linguistics in Context: Acquisition - Communication - Multilingualism",
+        "institution": "Universität Potsdam",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-potsdam.de/de/linguistik-im-kontext/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-bern",
@@ -2562,19 +3529,23 @@
     "methods": [
       {
         "label": "Handwriting Recognition",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/transcription"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/transcription",
+        "category": "Capture"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "Stemmatology",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "TEI/XML",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding",
+        "category": "Enrichment"
       }
     ],
     "positions": [
@@ -2608,10 +3579,133 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q659080",
     "rorId": "https://ror.org/02k7v4d05",
     "dhPublicationCount": 56,
-    "url": "https://www.unibe.ch"
+    "url": "https://www.unibe.ch",
+    "tadirahProfile": {
+      "Capture": 1,
+      "Analysis": 2,
+      "Enrichment": 1
+    },
+    "founded": 1834,
+    "gndId": "2023768-6",
+    "zenodoRecordCount": 22,
+    "dhCourses": [
+      {
+        "name": "Introduction to Digital Data and Digital Editions ",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "http://www.dh.unibe.ch/teaching/courses/index_eng.html"
+      },
+      {
+        "name": "Vergehen der Vergangenheit: Digitalisierung, Aufbereitung und Auswertung der Berner Turmbücher aus historischer, sprachwissenschaftlicher und digitaler Perspektive",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/vergehen_der_vergangenheit/index_ger.html"
+      },
+      {
+        "name": "Ringvorlesung: Einblicke in die Digital Humanities",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/ringvorlesung_einblicke_in_die_digital_humanities/index_ger.html"
+      },
+      {
+        "name": "Wo bleiben meine Daten? Vom nachhaltigen Umgang mit digitalen Daten am Beispiel des Jugendsprache-Bern-Korpus",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/hs_21__wo_bleiben_meine_daten/index_ger.html"
+      },
+      {
+        "name": "Hexen und Diebe: Devianz in der Frühen Neuzeit",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/hs_21_hexen_und_diebe_devianz_in_der_fruehen_neuzeit/index_ger.html"
+      },
+      {
+        "name": "Ringvorlesung: Einblicke in die Digital Humanities",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/aktuelle_lehrveranstaltungen/index_ger.html"
+      },
+      {
+        "name": "Digital Humanities (Minor 30 ECTS)",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/studienprogramme/index_ger.html"
+      },
+      {
+        "name": "Digital Humanities Major",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/index_ger.html"
+      },
+      {
+        "name": "Workflows in Digital History: Evaluating and annotating extensive text corpora",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/aktuell/index_ger.html"
+      },
+      {
+        "name": "Digital philology. Producing and using digital scholarly editions",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/aktuell/index_ger.html"
+      },
+      {
+        "name": "From data to knowledge: introduction to data analysis using Linked Open Data (LOD)",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/aktuell/index_ger.html"
+      },
+      {
+        "name": "[PROJM] Data Management III: Planning research data management",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/aktuell/index_ger.html"
+      },
+      {
+        "name": "[PPP] Data Management I: Active Research Data Management",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/aktuell/index_ger.html"
+      },
+      {
+        "name": "[PPP] Data Management II: Publishing Data",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/aktuell/index_ger.html"
+      },
+      {
+        "name": "[PPP] Publishing and Re-using Images: Introduction to the International Image Interoperability Framework (IIIF)",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.dh.unibe.ch/studium/lehrveranstaltungen/aktuell/index_ger.html"
+      },
+      {
+        "name": "Digital Humanities (Master 90 ECTS)",
+        "institution": "Universität Bern",
+        "country": "CH",
+        "type_name": null,
+        "url": "https://www.philhist.unibe.ch/studies/study_programs/master_s_in_digital_humanities/index_eng.html"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-jena",
@@ -2632,19 +3726,23 @@
     "methods": [
       {
         "label": "Computer Vision",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Image Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Machine Learning",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning",
+        "category": "Analysis"
       },
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2681,7 +3779,14 @@
     "wikidataId": "Q154561",
     "rorId": "https://ror.org/05qpz1x62",
     "dhPublicationCount": 27,
-    "url": "https://www.uni-jena.de/en"
+    "url": "https://www.uni-jena.de/en",
+    "tadirahProfile": {
+      "Analysis": 4
+    },
+    "founded": 1558,
+    "gndId": "36164-1",
+    "zenodoRecordCount": 37,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-frankfurt",
@@ -2702,11 +3807,13 @@
     "methods": [
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2739,10 +3846,17 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q50662",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {
+      "Analysis": 2
+    },
+    "founded": 1914,
+    "gndId": "35074-6",
+    "zenodoRecordCount": 45,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-freiburg",
@@ -2773,10 +3887,15 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q36188",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {},
+    "founded": 1889,
+    "gndId": "2024211-6",
+    "zenodoRecordCount": 10,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-f-r-weiterbildung-krems",
@@ -2809,10 +3928,15 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q508048",
     "rorId": "https://ror.org/03ef4a036",
     "dhPublicationCount": 10,
-    "url": "https://www.donau-uni.ac.at"
+    "url": "https://www.donau-uni.ac.at",
+    "tadirahProfile": {},
+    "founded": 1995,
+    "gndId": "2163090-2",
+    "zenodoRecordCount": 18,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-z-rich",
@@ -2845,10 +3969,15 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q11942",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {},
+    "founded": 1855,
+    "gndId": "2023928-2",
+    "zenodoRecordCount": 24,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-des-saarlandes",
@@ -2868,7 +3997,8 @@
     "methods": [
       {
         "label": "Digital Methods",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment",
+        "category": "Meta"
       }
     ],
     "positions": [
@@ -2886,10 +4016,53 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q700758",
     "rorId": "https://ror.org/01jdpyv68",
     "dhPublicationCount": 22,
-    "url": "http://www.uni-saarland.de/en/home.html"
+    "url": "http://www.uni-saarland.de/en/home.html",
+    "tadirahProfile": {
+      "Meta": 1
+    },
+    "founded": 1948,
+    "gndId": "2024427-7",
+    "zenodoRecordCount": 10,
+    "clarinCentre": {
+      "name": "Universität des Saarlandes",
+      "country_code": "DE",
+      "website": "http://fedora.clarin-d.uni-saarland.de/",
+      "centre_type": "B"
+    },
+    "dhCourses": [
+      {
+        "name": "Educational Technology",
+        "institution": "Universität des Saarlandes",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://www.uni-saarland.de/campus/studium/studienangebot/az/edutech.html; http://edutech.uni-saarland.de/"
+      },
+      {
+        "name": "Educational Technology (deprecated)",
+        "institution": "Universität des Saarlandes",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://edutech.uni-saarland.de/1"
+      },
+      {
+        "name": "M.Sc. European Masters Program Language and Communication Technologies",
+        "institution": "Universität des Saarlandes",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-saarland.de/studium/angebot/master/lct.html"
+      },
+      {
+        "name": "European Masters Program Language and Communication Technologies",
+        "institution": "Universität des Saarlandes",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://lct-master.org/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "fh-erfurt",
@@ -2925,7 +4098,12 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q702524",
     "rorId": "https://ror.org/03606hw36",
     "dhPublicationCount": 18,
-    "url": "https://www.uni-erfurt.de/index.php?id=1&L=1"
+    "url": "https://www.uni-erfurt.de/index.php?id=1&L=1",
+    "tadirahProfile": {},
+    "founded": 1994,
+    "gndId": "5198149-X",
+    "zenodoRecordCount": 2,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-regensburg",
@@ -2959,7 +4137,12 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q574571",
     "rorId": "https://ror.org/01eezs655",
     "dhPublicationCount": 23,
-    "url": "https://www.uni-regensburg.de"
+    "url": "https://www.uni-regensburg.de",
+    "tadirahProfile": {},
+    "founded": 1962,
+    "gndId": "1012048-8",
+    "zenodoRecordCount": 50,
+    "dblpPublicationCount": 500
   },
   {
     "id": "hochschule-augsburg",
@@ -2979,7 +4162,8 @@
     "methods": [
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -2997,10 +4181,17 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q616905",
     "rorId": "https://ror.org/03p14d497",
     "dhPublicationCount": 20,
-    "url": "https://www.uni-augsburg.de"
+    "url": "https://www.uni-augsburg.de",
+    "tadirahProfile": {
+      "Analysis": 1
+    },
+    "founded": 1970,
+    "gndId": "7871-2",
+    "zenodoRecordCount": 4,
+    "dblpPublicationCount": 500
   },
   {
     "id": "fernuniversit-t-in-hagen",
@@ -3020,7 +4211,8 @@
     "methods": [
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -3038,10 +4230,26 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q687017",
     "rorId": "https://ror.org/04tkkr536",
     "dhPublicationCount": 15,
-    "url": "https://www.fernuni-hagen.de"
+    "url": "https://www.fernuni-hagen.de",
+    "tadirahProfile": {
+      "Analysis": 1
+    },
+    "founded": 1974,
+    "gndId": "19455-4",
+    "zenodoRecordCount": 4,
+    "dhCourses": [
+      {
+        "name": "Digital Humanities",
+        "institution": "FernUniversität in Hagen",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fernuni-hagen.de/KSW/portale/bakw/studium/ws-202526/modul-25003/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-vechta",
@@ -3072,10 +4280,66 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q2496174",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {},
+    "founded": 1830,
+    "gndId": "16179905-X",
+    "zenodoRecordCount": 5,
+    "dhCourses": [
+      {
+        "name": "kwb17.1 Grundkentnisse in digitalen Methoden und Tools",
+        "institution": "University of Vechta",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-vechta.de/fileadmin/user_upload/Zentrale_Studienberatung_Career_Service/01_DC_Studienprogramme/BACS_Faecher/BACS_Kulturwissenschaften/Studienbeginn_ab_WiSe_2023_24/BACS_Kulturwissenschaften_Modulbeschreibungen_240305.pdf"
+      },
+      {
+        "name": "kwb17.2 Anwendung digitaler Tools für die Kulturwissenschaften",
+        "institution": "University of Vechta",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-vechta.de/fileadmin/user_upload/Zentrale_Studienberatung_Career_Service/01_DC_Studienprogramme/BACS_Faecher/BACS_Kulturwissenschaften/Studienbeginn_ab_WiSe_2023_24/BACS_Kulturwissenschaften_Modulbeschreibungen_240305.pdf"
+      },
+      {
+        "name": "kwb18.1 Methoden der digitalen Kulturwissenschaften",
+        "institution": "University of Vechta",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-vechta.de/fileadmin/user_upload/Zentrale_Studienberatung_Career_Service/01_DC_Studienprogramme/BACS_Faecher/BACS_Kulturwissenschaften/Studienbeginn_ab_WiSe_2023_24/BACS_Kulturwissenschaften_Modulbeschreibungen_240305.pdf"
+      },
+      {
+        "name": "kwb18.2 Anwendung digitaler Methoden auf kulturwissenschaftliche Themenfelder",
+        "institution": "University of Vechta",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-vechta.de/fileadmin/user_upload/Zentrale_Studienberatung_Career_Service/01_DC_Studienprogramme/BACS_Faecher/BACS_Kulturwissenschaften/Studienbeginn_ab_WiSe_2023_24/BACS_Kulturwissenschaften_Modulbeschreibungen_240305.pdf"
+      },
+      {
+        "name": "kwm11.2 Methoden digitaler Kulturwissenschaften",
+        "institution": "University of Vechta",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-vechta.de/fileadmin/user_upload/Zentrale_Studienberatung_Career_Service/01_DC_Studienprogramme/MA_Kulturwissenschaften/Studienbeginn_WiSe_23_24/MAKW_Modulbeschreibungen_20230905.pdf"
+      },
+      {
+        "name": "kwm18.1 Vertiefung: Methoden der digitalen Kulturwissenschaften",
+        "institution": "University of Vechta",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-vechta.de/fileadmin/user_upload/Zentrale_Studienberatung_Career_Service/01_DC_Studienprogramme/MA_Kulturwissenschaften/Studienbeginn_WiSe_23_24/MAKW_Modulbeschreibungen_20230905.pdf"
+      },
+      {
+        "name": "kwm18.2 Digitale kulturelle Archive",
+        "institution": "University of Vechta",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-vechta.de/fileadmin/user_upload/Zentrale_Studienberatung_Career_Service/01_DC_Studienprogramme/MA_Kulturwissenschaften/Studienbeginn_WiSe_23_24/MAKW_Modulbeschreibungen_20230905.pdf"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-oldenburg",
@@ -3108,10 +4372,13 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q122577742",
     "rorId": "https://ror.org/033n9gh91",
     "dhPublicationCount": 15,
-    "url": "https://uol.de"
+    "url": "https://uol.de",
+    "tadirahProfile": {},
+    "zenodoRecordCount": 8,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-klagenfurt",
@@ -3132,7 +4399,8 @@
     "methods": [
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -3151,10 +4419,17 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q690639",
     "rorId": "https://ror.org/05q9m0937",
     "dhPublicationCount": 7,
-    "url": "https://www.aau.at"
+    "url": "https://www.aau.at",
+    "tadirahProfile": {
+      "Analysis": 1
+    },
+    "founded": 1970,
+    "gndId": "2141933-4",
+    "zenodoRecordCount": 3,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-magdeburg",
@@ -3187,10 +4462,15 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q1916554",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {},
+    "founded": 1954,
+    "gndId": "2019522-9",
+    "zenodoRecordCount": 2,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-rostock",
@@ -3224,7 +4504,12 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q159895",
     "rorId": "https://ror.org/03zdwsf69",
     "dhPublicationCount": 20,
-    "url": "http://www.uni-rostock.de/en/"
+    "url": "http://www.uni-rostock.de/en/",
+    "tadirahProfile": {},
+    "founded": 1419,
+    "gndId": "38329-6",
+    "zenodoRecordCount": 26,
+    "dblpPublicationCount": 500
   },
   {
     "id": "humboldt-universit-t-zu-berlin",
@@ -3244,15 +4529,18 @@
     "methods": [
       {
         "label": "Data Visualization",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       },
       {
         "label": "Digital Source Criticism",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Interpretation"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -3275,7 +4563,16 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q152087",
     "rorId": "https://ror.org/01hcx6992",
     "dhPublicationCount": 145,
-    "url": "https://www.hu-berlin.de/?set_language=en&cl=en"
+    "url": "https://www.hu-berlin.de/?set_language=en&cl=en",
+    "tadirahProfile": {
+      "Dissemination": 1,
+      "Interpretation": 1,
+      "Analysis": 1
+    },
+    "founded": 1946,
+    "gndId": "2114678-0",
+    "zenodoRecordCount": 78,
+    "dblpPublicationCount": 500
   },
   {
     "id": "technische-universit-t-berlin",
@@ -3296,11 +4593,13 @@
     "methods": [
       {
         "label": "Data Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "Linked Data",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking",
+        "category": "Enrichment"
       }
     ],
     "positions": [
@@ -3323,7 +4622,86 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q152087",
     "rorId": "https://ror.org/01hcx6992",
     "dhPublicationCount": 145,
-    "url": "https://www.hu-berlin.de/?set_language=en&cl=en"
+    "url": "https://www.hu-berlin.de/?set_language=en&cl=en",
+    "tadirahProfile": {
+      "Creation": 1,
+      "Enrichment": 1
+    },
+    "founded": 1946,
+    "gndId": "2114678-0",
+    "zenodoRecordCount": 299,
+    "clarinCentre": {
+      "name": "Berlin-Brandenburg Academy of Sciences and Humanities",
+      "country_code": "DE",
+      "website": "http://www.bbaw.de/",
+      "centre_type": "B"
+    },
+    "dhCourses": [
+      {
+        "name": "Digitale Methoden in den Altertumswissenschaften - Digital Classicist Seminar",
+        "institution": "Berlin-Brandenburgische Akademie der Wissenschaften",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://digiclass.bbaw.de/seminar.html"
+      },
+      {
+        "name": "Digitale Edition von Briefen und Manuskripten: Transkription, Annotation, Vernetzung am Beispiel der Sammlung „Daniel Sanders“",
+        "institution": "Humbold Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://agnes.hu-berlin.de/lupo/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=139750"
+      },
+      {
+        "name": "\"Die ich rief, die Geister\" Zur konstruktiven Kritik der datenintensiven Literaturwissenschaft",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/622154"
+      },
+      {
+        "name": "Digital Humanities Now",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/en/lv/625309"
+      },
+      {
+        "name": "Höhenkämme und Archive. Eine angewandte Einführung in das literaturwissenschaftliche \"Distant Reading\"",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/622781"
+      },
+      {
+        "name": "Emotionsanalyse in der Digitalen Literaturwissenschaft",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/622800"
+      },
+      {
+        "name": "Trends in den datengetriebenen Geisteswissenschaften",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/626813"
+      },
+      {
+        "name": "Introduction to the Digital Humanities",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/943722"
+      },
+      {
+        "name": "Digital Stylometry",
+        "institution": "Freie Universität Berlin",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.fu-berlin.de/vv/de/lv/952529"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "th-k-ln",
@@ -3356,10 +4734,14 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q54166",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {},
+    "founded": 1971,
+    "gndId": "63951-5",
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-kiel",
@@ -3379,11 +4761,13 @@
     "methods": [
       {
         "label": "3D Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "GIS",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -3402,10 +4786,18 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q156737",
     "rorId": "https://ror.org/04v76ef78",
     "dhPublicationCount": 23,
-    "url": "https://www.uni-kiel.de"
+    "url": "https://www.uni-kiel.de",
+    "tadirahProfile": {
+      "Creation": 1,
+      "Analysis": 1
+    },
+    "founded": 1665,
+    "gndId": "2024175-6",
+    "zenodoRecordCount": 17,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-potsdam",
@@ -3425,7 +4817,8 @@
     "methods": [
       {
         "label": "NLP",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -3446,7 +4839,30 @@
     "wikidataId": "Q153006",
     "rorId": "https://ror.org/03bnmw459",
     "dhPublicationCount": 55,
-    "url": "https://www.uni-potsdam.de/en/"
+    "url": "https://www.uni-potsdam.de/en/",
+    "tadirahProfile": {
+      "Analysis": 1
+    },
+    "founded": 1991,
+    "gndId": "2120681-8",
+    "zenodoRecordCount": 109,
+    "dhCourses": [
+      {
+        "name": "Computerlinguistik",
+        "institution": "Universität Potsdam",
+        "country": "DE",
+        "type_name": null,
+        "url": "http://uni-potsdam.de/studienmglk1/faecher/computerlinguistik.html"
+      },
+      {
+        "name": "Linguistics in Context: Acquisition - Communication - Multilingualism",
+        "institution": "Universität Potsdam",
+        "country": "DE",
+        "type_name": null,
+        "url": "https://www.uni-potsdam.de/de/linguistik-im-kontext/"
+      }
+    ],
+    "dblpPublicationCount": 500
   },
   {
     "id": "bergische-universit-t-wuppertal",
@@ -3467,11 +4883,13 @@
     "methods": [
       {
         "label": "Data Modeling",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling",
+        "category": "Creation"
       },
       {
         "label": "TEI/XML",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding",
+        "category": "Enrichment"
       }
     ],
     "positions": [
@@ -3494,7 +4912,15 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q447953",
     "rorId": "https://ror.org/00613ak93",
     "dhPublicationCount": 35,
-    "url": "https://www.uni-wuppertal.de"
+    "url": "https://www.uni-wuppertal.de",
+    "tadirahProfile": {
+      "Creation": 1,
+      "Enrichment": 1
+    },
+    "founded": 1972,
+    "gndId": "64944-2",
+    "zenodoRecordCount": 23,
+    "dblpPublicationCount": 500
   },
   {
     "id": "rwth-aachen",
@@ -3515,11 +4941,13 @@
     "methods": [
       {
         "label": "Data Science",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis",
+        "category": "Analysis"
       },
       {
         "label": "Network Analysis",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -3542,7 +4970,14 @@
     "wikidataId": "https://www.wikidata.org/wiki/Q273263",
     "rorId": "https://ror.org/04xfq0f34",
     "dhPublicationCount": 19,
-    "url": "http://www.rwth-aachen.de/cms/~a/root/lidx/1/"
+    "url": "http://www.rwth-aachen.de/cms/~a/root/lidx/1/",
+    "tadirahProfile": {
+      "Analysis": 2
+    },
+    "founded": 1870,
+    "gndId": "36225-6",
+    "zenodoRecordCount": 6,
+    "dblpPublicationCount": 500
   },
   {
     "id": "university-of-luxembourg",
@@ -3573,10 +5008,14 @@
         "methods": []
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q1528530",
     "rorId": null,
     "dhPublicationCount": 0,
-    "url": null
+    "url": null,
+    "tadirahProfile": {},
+    "founded": 1991,
+    "zenodoRecordCount": 8,
+    "dblpPublicationCount": 500
   },
   {
     "id": "universit-t-m-nster",
@@ -3596,11 +5035,13 @@
     "methods": [
       {
         "label": "Data Visualization",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization",
+        "category": "Dissemination"
       },
       {
         "label": "Text Mining",
-        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining",
+        "category": "Analysis"
       }
     ],
     "positions": [
@@ -3619,9 +5060,17 @@
         ]
       }
     ],
-    "wikidataId": null,
+    "wikidataId": "Q168426",
     "rorId": "https://ror.org/00pd74e08",
     "dhPublicationCount": 32,
-    "url": "https://www.uni-muenster.de"
+    "url": "https://www.uni-muenster.de",
+    "tadirahProfile": {
+      "Dissemination": 1,
+      "Analysis": 1
+    },
+    "founded": 1780,
+    "gndId": "1194191657",
+    "zenodoRecordCount": 44,
+    "dblpPublicationCount": 500
   }
 ]

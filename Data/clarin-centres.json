@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Austrian Centre for Digital Humanities - A Resource Centre for the HumanitiEs",
+    "country_code": "AT",
+    "website": "https://arche.acdh.oeaw.ac.at/",
+    "centre_type": "B"
+  },
+  {
+    "name": "Academy of Sciences and Humanities in Hamburg",
+    "country_code": "DE",
+    "website": "https://www.awhamburg.de/",
+    "centre_type": "C"
+  },
+  {
+    "name": "Bayerisches Archiv für Sprachsignale",
+    "country_code": "DE",
+    "website": "http://hdl.handle.net/11858/00-1779-0000-000C-DAAF-B",
+    "centre_type": "B"
+  },
+  {
+    "name": "Berlin-Brandenburg Academy of Sciences and Humanities",
+    "country_code": "DE",
+    "website": "http://www.bbaw.de/",
+    "centre_type": "B"
+  },
+  {
+    "name": "Centre for the Digital Foundation of Research in the Humanities, Social, and Educational Sciences",
+    "country_code": "DE",
+    "website": "https://www.cedifor.de",
+    "centre_type": "C"
+  },
+  {
+    "name": "CLARIN Knowledge Centre for Applied Comparative Discourse Analysis",
+    "country_code": "CH",
+    "website": "https://clarin-applied.zhaw.ch/",
+    "centre_type": "K"
+  },
+  {
+    "name": "CLARIN Switzerland (LaRS)",
+    "country_code": "CH",
+    "website": "https://clarin-ch.ch/start",
+    "centre_type": "B"
+  },
+  {
+    "name": "CLARIN Switzerland (LiRI)",
+    "country_code": "CH",
+    "website": "https://clarin-ch.ch/start",
+    "centre_type": "B"
+  },
+  {
+    "name": "Department of Digital Humanities",
+    "country_code": "AT",
+    "website": "http://digital-humanities.uni-graz.at",
+    "centre_type": "B"
+  },
+  {
+    "name": "Eberhard Karls Universität Tübingen",
+    "country_code": "DE",
+    "website": "https://uni-tuebingen.de/en/133894",
+    "centre_type": "B"
+  },
+  {
+    "name": "Endangered Languages Archive",
+    "country_code": "DE",
+    "website": "https://www.elararchive.org/",
+    "centre_type": "C"
+  },
+  {
+    "name": "Leibniz Institute for Educational Media | Georg Eckert Institute",
+    "country_code": "DE",
+    "website": "https://www.gei.de/",
+    "centre_type": "C"
+  },
+  {
+    "name": "Gesellschaft für wissenschaftliche Datenverarbeitung Göttingen",
+    "country_code": "DE",
+    "website": "http://www.gwdg.de/",
+    "centre_type": "E"
+  },
+  {
+    "name": "CLARIN K-Centre on German in Austria",
+    "country_code": "AT",
+    "website": "https://k-centre-germanat.acdh.oeaw.ac.at/",
+    "centre_type": "K"
+  },
+  {
+    "name": "Hamburger Zentrum für Sprachkorpora",
+    "country_code": "DE",
+    "website": "https://www.slm.uni-hamburg.de/hzsk.html",
+    "centre_type": "C"
+  },
+  {
+    "name": "Leibniz-Institut für Deutsche Sprache",
+    "country_code": "DE",
+    "website": "http://www.ids-mannheim.de/",
+    "centre_type": "C"
+  },
+  {
+    "name": "Institut für Maschinelle Sprachverarbeitung",
+    "country_code": "DE",
+    "website": "http://www.ims.uni-stuttgart.de/",
+    "centre_type": "C"
+  },
+  {
+    "name": "Language Archive Cologne",
+    "country_code": "DE",
+    "website": "https://lac.uni-koeln.de",
+    "centre_type": "C"
+  },
+  {
+    "name": "Oral-History.Digital at Freie Universität Berlin",
+    "country_code": "DE",
+    "website": "https://www.oral-history.digital/en/",
+    "centre_type": "C"
+  },
+  {
+    "name": "Phonogrammarchiv / Austrian Academy of Sciences - CLARIN K-Centre",
+    "country_code": "AT",
+    "website": "https://www.oeaw.ac.at/en/phonogrammarchiv/certificates-and-awards",
+    "centre_type": "K"
+  },
+  {
+    "name": "SAW Leipzig",
+    "country_code": "DE",
+    "website": "https://repo.data.saw-leipzig.de/",
+    "centre_type": "B"
+  },
+  {
+    "name": "CLARIN Knowledge Centre for Terminology Resources and Translation Corpora (TRTC)",
+    "country_code": "AT",
+    "website": "https://trtc.univie.ac.at",
+    "centre_type": "K"
+  },
+  {
+    "name": "Universität des Saarlandes",
+    "country_code": "DE",
+    "website": "http://fedora.clarin-d.uni-saarland.de/",
+    "centre_type": "B"
+  }
+]

@@ -110,3 +110,24 @@ Die Aufspaltung von einer 675-Zeilen index.html in 5 Dateien (index.html + style
 
 ### Beobachtung 21: Design-Feedback als Forschungsfrage
 Das User-Feedback "zu dunkel, zu monoton — DHd ist bunt, innovativ, offen" zeigt, dass Farbgestaltung in DH-Tools nicht nur ästhetisch, sondern **identitätsstiftend** ist. Die Frage "Welches Farbschema repräsentiert die DHd-Community?" ist eine Forschungsfrage, keine Design-Entscheidung. Das öffnet die Tür zu semantischer Farbkodierung (Disziplin→Farbe→Identität).
+
+---
+
+## Iteration 5+6 — Reflexion
+
+### Beobachtung 22: Light vs. Dark als Research-Tool-Designentscheidung
+Der Wechsel von Dark Mode zu Light Mode war keine ästhetische Präferenz, sondern eine **epistemologische Entscheidung**. Dark Mode mit Glassmorphismus signalisiert "Dashboard", "Monitoring", "Tech-Demo". Light Mode mit Card Shadows signalisiert "Forschungsressource", "Nachschlagewerk", "wissenschaftliches Werkzeug". Die Designsprache kommuniziert den Anspruch des Tools — und beeinflusst, wie Nutzende damit interagieren. Erkenntnis: **Visuelle Sprache ist nicht neutral — sie rahmt die Nutzungssituation.**
+
+### Beobachtung 23: User-Feedback treibt Architektur-Pivots (3 Modes → 3 Views)
+Das Feedback "zu monoton, zu komplex" führte nicht zu kosmetischen Anpassungen, sondern zu einem **Architektur-Pivot**: Narrative Mode (Scrollytelling) wurde komplett entfernt, die 3-Modi-Architektur durch 3 Views ersetzt (Übersicht/Karte/Explorer). Bemerkenswert: Die Entscheidung, was entfernt wird, war produktiver als die Entscheidung, was hinzugefügt wird. Promptotyping ermöglicht "Rapid Removal" — weil die Baukosten gering sind, sind auch die Abbaukosten gering. Man muss nicht an teuer erstellten Features festhalten. **"Kill your darlings" ist im Promptotyping billig.**
+
+### Beobachtung 24: Data-Enrichment-Velocity (5 Quellen in einer Session)
+In einer einzigen Promptotyping-Session wurden 5 neue Datenquellen integriert: Wikidata (806 Universitäten), Zenodo (2112 Records), CLARIN (23 Zentren), DHCR (196 Kurse), DBLP (500 Records). Die Match-Raten sind bemerkenswert: Wikidata 98%, Zenodo 96%, DHCR 46%, CLARIN 10%. Diese Geschwindigkeit wäre ohne AI-gestützte Script-Generierung nicht möglich. Erkenntnis: **Promptotyping beschleunigt nicht nur UI-Entwicklung, sondern auch Dateninfrastruktur.** Die Grenze ist nicht die Implementierung, sondern die Datenqualitätsprüfung.
+
+### Beobachtung 25: TaDiRAH als semantisches Rückgrat — Vokabular-getriebenes Farbsystem
+Die Entscheidung, TaDiRAH-Kategorien als Grundlage für das Farbsystem zu verwenden, transformiert das Interface von einer generischen Visualisierung zu einem **domänenspezifischen Forschungswerkzeug**. Jede Farbe hat jetzt eine Bedeutung im DH-Diskurs (Capture, Creation, Enrichment, Analysis, Interpretation, Storage, Dissemination, Meta). Das ist ein Beispiel für "Vocabulary-Driven Design": ein kontrolliertes Vokabular bestimmt nicht nur die Datenstruktur, sondern auch die visuelle Kodierung. Erkenntnis: **Domänenvokabulare sind nicht nur Metadaten-Standards — sie können die gesamte Designsprache eines Tools strukturieren.**
+
+### Offene Fragen nach Iteration 6
+- Wie misst man, ob die TaDiRAH-Farbkodierung für Nutzende intuitiv ist? (Nutzerstudie?)
+- Ist die "Rapid Removal"-Eigenschaft von Promptotyping methodisch beschreibbar? (Kosten-Asymmetrie: billig bauen → billig entfernen)
+- Wie dokumentiert man die Qualität von Data-Enrichment-Pipelines, die in einer Session entstehen?

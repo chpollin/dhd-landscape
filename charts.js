@@ -11,27 +11,40 @@ const DHdCharts = (function() {
     let filtered = [], full = [];
 
     // --- Discipline Color Palette (from Design.md) ---
+    // TaDiRAH Semantic Colors
+    const TADIRAH_COLORS = {
+        'Capture': '#3498DB',
+        'Creation': '#9B59B6',
+        'Enrichment': '#27AE60',
+        'Analysis': '#E67E22',
+        'Interpretation': '#C0392B',
+        'Storage': '#34495E',
+        'Dissemination': '#16A085',
+        'Meta': '#95A5A6'
+    };
+
+    // Discipline colors mapped via typical TaDiRAH research activity
     const DISC_COLORS = {
-        'Digital Humanities': '#818cf8',
-        'Computational Linguistics': '#7EB8DA',
-        'Digital History': '#D4A574',
-        'Data Science': '#82C9A5',
-        'Computational Literary Studies': '#C490D1',
-        'Digital Archaeology': '#E8B86D',
-        'Digital Edition': '#F09B9B',
-        'Digital Culture': '#a78bfa',
-        'Media Studies': '#fbbf24',
-        'Library Science': '#6ee7b7',
-        'Information Science': '#90cdf4',
-        'Digital Lexicography': '#f6ad55',
-        'Machine Learning': '#fc8181',
-        'AI': '#b794f4',
-        'Digital Art History': '#feb2b2'
+        'Digital Humanities': '#3498DB',          // Capture — broad field, data-gathering focus
+        'Computational Linguistics': '#E67E22',   // Analysis — computational analysis of language
+        'Digital History': '#C0392B',             // Interpretation — historical interpretation
+        'Data Science': '#E67E22',                // Analysis — data analysis
+        'Computational Literary Studies': '#C0392B', // Interpretation — literary interpretation
+        'Digital Archaeology': '#3498DB',         // Capture — field data capture
+        'Digital Edition': '#9B59B6',             // Creation — creating scholarly editions
+        'Digital Culture': '#16A085',             // Dissemination — cultural dissemination
+        'Media Studies': '#16A085',               // Dissemination — media & communication
+        'Library Science': '#34495E',             // Storage — information organization
+        'Information Science': '#34495E',         // Storage — information management
+        'Digital Lexicography': '#27AE60',        // Enrichment — enriching lexical resources
+        'Machine Learning': '#E67E22',            // Analysis — computational analysis
+        'AI': '#E67E22',                          // Analysis — computational methods
+        'Digital Art History': '#C0392B'           // Interpretation — art historical interpretation
     };
     const fallbackColors = d3.scaleOrdinal(d3.schemeSet3);
     function discColor(d) { return DISC_COLORS[d] || fallbackColors(d); }
 
-    const COUNTRY_COLORS = { DE: '#818cf8', AT: '#6ee7b7', CH: '#fbbf24', LU: '#a78bfa' };
+    const COUNTRY_COLORS = { DE: '#3498DB', AT: '#27AE60', CH: '#E67E22', LU: '#9B59B6' };
 
     // --- Tooltip ---
     let tooltip;
@@ -165,7 +178,7 @@ const DHdCharts = (function() {
         // Hover vertical line + tooltip
         const hoverLine = svg.append('line')
             .attr('y1', 0).attr('y2', height)
-            .attr('stroke', 'rgba(255,255,255,0.15)').attr('stroke-width', 1)
+            .attr('stroke', 'rgba(0,0,0,0.1)').attr('stroke-width', 1)
             .style('display', 'none');
 
         const overlay = svg.append('rect')
@@ -186,7 +199,7 @@ const DHdCharts = (function() {
                     html += `<span style="color:${colorFn(c)}">●</span> ${c}: ${row[c]}<br>`;
                 }
             });
-            html += `<span style="color:#888">Total: ${total}</span>`;
+            html += `<span style="color:#999">Total: ${total}</span>`;
             showTooltip(html, event);
         });
         overlay.on('mouseleave', () => { hoverLine.style('display', 'none'); hideTooltip(); });
@@ -199,7 +212,7 @@ const DHdCharts = (function() {
         categories.forEach(c => {
             legend.append('span')
                 .html(`<span style="color:${colorFn(c)}">●</span> ${c}`)
-                .style('color', '#777');
+                .style('color', '#666666');
         });
     }
 
@@ -255,8 +268,8 @@ const DHdCharts = (function() {
                         d3.select(this).attr('opacity', 1);
                         let html = `<strong>${inst.name}</strong><br>`;
                         html += `${inst.city}, ${inst.country} · seit ${inst.earliestYear}<br>`;
-                        html += `<span style="color:#818cf8">${inst.totalPositions} Stellen</span>`;
-                        if (inst.openPositions) html += ` · <span style="color:#fbbf24">${inst.openPositions} offen</span>`;
+                        html += `<span style="color:#3498DB">${inst.totalPositions} Stellen</span>`;
+                        if (inst.openPositions) html += ` · <span style="color:#E67E22">${inst.openPositions} offen</span>`;
                         html += '<br>';
                         Object.entries(discCounts).sort((a,b) => b[1]-a[1]).forEach(([d, c]) => {
                             html += `<span style="color:${discColor(d)}">●</span> ${d}: ${c}<br>`;
@@ -285,7 +298,7 @@ const DHdCharts = (function() {
             .attr('y', d => yScale(d.id) + yScale.bandwidth() / 2)
             .attr('text-anchor', 'end')
             .attr('dominant-baseline', 'central')
-            .attr('fill', '#777')
+            .attr('fill', '#666666')
             .attr('font-size', '0.58rem')
             .attr('font-family', 'Inter, sans-serif')
             .style('cursor', 'pointer')
@@ -303,7 +316,7 @@ const DHdCharts = (function() {
             .attr('x', d => x(d.totalPositions) + 6)
             .attr('y', d => yScale(d.id) + yScale.bandwidth() / 2)
             .attr('dominant-baseline', 'central')
-            .attr('fill', '#555')
+            .attr('fill', '#666666')
             .attr('font-size', '0.55rem')
             .attr('font-family', 'Inter, sans-serif')
             .text(d => d.totalPositions);
@@ -374,7 +387,7 @@ const DHdCharts = (function() {
 
         const xScale = d3.scaleBand().domain(disciplines).range([0, width]).padding(0.08);
         const yScale = d3.scaleBand().domain(institutions.map(d => d.id)).range([0, height]).padding(0.08);
-        const colorScale = d3.scaleSequential(t => d3.interpolateRgb('#1a1a2e', '#6366f1')(t)).domain([0, maxVal || 1]);
+        const colorScale = d3.scaleSequential(t => d3.interpolateRgb('#F0EDE8', '#3498DB')(t)).domain([0, maxVal || 1]);
 
         // Cells
         svg.selectAll('.cell')
@@ -385,7 +398,7 @@ const DHdCharts = (function() {
             .attr('y', d => yScale(d.inst.id))
             .attr('width', xScale.bandwidth())
             .attr('height', yScale.bandwidth())
-            .attr('fill', d => d.val > 0 ? colorScale(d.val) : 'rgba(255,255,255,0.02)')
+            .attr('fill', d => d.val > 0 ? colorScale(d.val) : '#F8F6F3')
             .attr('rx', 2)
             .style('cursor', d => d.val > 0 ? 'pointer' : 'default')
             .on('mouseenter', function(event, d) {
@@ -489,7 +502,7 @@ const DHdCharts = (function() {
             container.appendChild(body);
         }
         initTooltip();
-        console.log('%c[Charts]%c Initialized', 'color:#f472b6;font-weight:bold', 'color:inherit');
+        console.log('%c[Charts]%c Initialized', 'color:#3498DB;font-weight:bold', 'color:inherit');
     }
 
     function show(viewName, filteredData, fullData) {
@@ -565,5 +578,5 @@ const DHdCharts = (function() {
         container = origContainer;
     }
 
-    return { init, show, hide, update, renderTo, DISC_COLORS, COUNTRY_COLORS, discColor };
+    return { init, show, hide, update, renderTo, DISC_COLORS, COUNTRY_COLORS, TADIRAH_COLORS, discColor };
 })();

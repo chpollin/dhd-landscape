@@ -4,260 +4,213 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DHd Landscape</title>
-  <link rel="icon" href="data:,">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+
+  <!-- MapLibre GL JS -->
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css">
   <script src="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+  <!-- D3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- App Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-mode="narrative">
+<body>
 
-  <!-- THE MAP: always 100vh, position fixed -->
-  <div id="map"></div>
+  <!-- Navigation -->
+  <nav id="app-nav">
+    <span class="nav-brand"><b>DHd</b> Landscape</span>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-view="overview">Übersicht</button>
+      <button class="nav-tab" data-view="map">Karte</button>
+      <button class="nav-tab" data-view="explorer">Explorer</button>
+    </div>
+    <input id="search-input" type="text" placeholder="Institution, Disziplin, Methode...">
+  </nav>
 
-  <!-- SHARED CHROME -->
-  <div id="chrome">
-    <!-- Top left: Brand + Mode Switcher -->
-    <div id="chrome-top-left">
-      <span class="brand"><b>DHd</b> <span>Landscape</span></span>
-      <div id="mode-switcher">
-        <button class="mode-btn active" data-mode="narrative" title="Narrative">&#x2261; Story</button>
-        <button class="mode-btn" data-mode="explore" title="Explore">&#x25CE; Explore</button>
-        <button class="mode-btn" data-mode="overview" title="Overview">&#x229E; Overview</button>
+  <!-- View 1: Übersicht (scrollable start page) -->
+  <div id="view-overview" class="view-container">
+    <div class="overview-content">
+      <header class="overview-header">
+        <h1>DH-Forschungslandschaft DACH</h1>
+        <p>Interaktive Analyse der Digital-Humanities-Professuren an Universitäten in Deutschland, Österreich und der Schweiz.</p>
+      </header>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <span class="stat-number" id="ov-inst">52</span>
+          <span class="stat-label">Institutionen</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="ov-pos">130</span>
+          <span class="stat-label">Professuren</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="ov-disc">31</span>
+          <span class="stat-label">Disziplinen</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="ov-meth">29</span>
+          <span class="stat-label">Methoden</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="ov-zenodo">2112</span>
+          <span class="stat-label">Zenodo-Records</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="ov-courses">196</span>
+          <span class="stat-label">DH-Kurse</span>
+        </div>
       </div>
+
+      <section class="overview-section">
+        <h2>TaDiRAH-Methodenprofil</h2>
+        <p class="section-desc">Verteilung der Forschungsaktivitäten nach der Taxonomy of Digital Research Activities in the Humanities.</p>
+        <div id="ov-tadirah-chart"></div>
+      </section>
+
+      <section class="overview-section">
+        <h2>Disziplinen</h2>
+        <p class="section-desc">Häufigkeit der 31 Disziplinen über alle 52 Institutionen.</p>
+        <div id="ov-disciplines-chart"></div>
+      </section>
+
+      <section class="overview-section">
+        <h2>Zeitliche Entwicklung</h2>
+        <p class="section-desc">Kumulative Verteilung der DH-Professuren 2008–2026.</p>
+        <div id="ov-timeline-chart"></div>
+      </section>
+
+      <section class="overview-section">
+        <h2>Länderverteilung</h2>
+        <div id="ov-countries-chart"></div>
+      </section>
+
+      <section class="overview-section">
+        <h2>Datenquellen</h2>
+        <div class="datasource-grid">
+          <div class="datasource-card">
+            <span class="ds-name">Sahle 2026</span>
+            <span class="ds-count">130 Professuren</span>
+          </div>
+          <div class="datasource-card">
+            <span class="ds-name">OpenAlex</span>
+            <span class="ds-count">DH-Publikationen</span>
+          </div>
+          <div class="datasource-card">
+            <span class="ds-name">Zenodo</span>
+            <span class="ds-count">2112 DHd-Records</span>
+          </div>
+          <div class="datasource-card">
+            <span class="ds-name">CLARIN</span>
+            <span class="ds-count">23 Zentren</span>
+          </div>
+          <div class="datasource-card">
+            <span class="ds-name">DH Course Registry</span>
+            <span class="ds-count">196 Kurse</span>
+          </div>
+          <div class="datasource-card">
+            <span class="ds-name">Wikidata</span>
+            <span class="ds-count">51 Institutionen</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="overview-footer">
+        <p>Daten: <a href="https://dhd-blog.org/?p=11018">Patrick Sahle (DHd-Blog)</a> · <a href="https://openalex.org/">OpenAlex</a> · <a href="https://zenodo.org/">Zenodo</a> · <a href="https://github.com/chpollin/dhd-landscape">GitHub</a></p>
+        <p>Methode: Promptotyping · Lizenz: CC BY 4.0 (Daten), MIT (Code)</p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- View 2: Karte -->
+  <div id="view-map" class="view-container" hidden>
+    <div id="map-container"></div>
+
+    <!-- Filter sidebar -->
+    <div id="filter-sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">Filter</span>
+        <button class="sidebar-close" id="sidebar-close">&times;</button>
+      </div>
+      <input class="sidebar-search" type="text" placeholder="Suche..." id="sidebar-search">
+      <div id="filter-groups"></div>
+      <div class="filter-group" style="padding: 0 1rem;">
+        <div class="filter-group-title">Zeitraum</div>
+        <div class="sidebar-timeline">
+          <input type="range" id="timeline-slider" min="2008" max="2026" value="2008" step="1">
+          <span class="timeline-label" id="tl-value">alle</span>
+        </div>
+      </div>
+      <button class="filter-reset-btn" id="reset-all">Filter zurücksetzen</button>
     </div>
 
-    <!-- Top right: Search -->
-    <div id="chrome-top-right">
-      <input id="search-input" type="text" placeholder="Suche...">
-    </div>
+    <!-- Filter toggle button -->
+    <button id="filter-toggle" class="map-btn" title="Filter">&#9776;</button>
 
-    <!-- Legend (bottom right) -->
-    <div id="map-legend" class="glass">
-      <div><span class="legend-dot" style="background:#818cf8"></span> Stellen besetzt</div>
-      <div><span class="legend-dot" style="background:#fbbf24"></span> Offene Stellen</div>
+    <!-- Map legend -->
+    <div id="map-legend">
+      <div class="legend-title">TaDiRAH-Kategorie</div>
+      <div class="legend-items" id="legend-items"></div>
       <div class="legend-sizes">
         <span class="legend-size-dot" style="width:8px;height:8px"></span>
         <span class="legend-size-dot" style="width:14px;height:14px"></span>
         <span class="legend-size-dot" style="width:22px;height:22px"></span>
-        <span style="color:var(--text-tertiary)">1 — 3 — 7 Stellen</span>
+        <span>1 — 3 — 7 Professuren</span>
       </div>
     </div>
 
-    <!-- Detail Panel (shared, slides from right) -->
+    <!-- Status bar -->
+    <div id="status-bar">
+      <span id="stats-text"></span>
+      <span class="status-links">
+        <a href="https://dhd-blog.org/?p=11018" target="_blank">Sahle 2026</a> ·
+        <a href="https://github.com/chpollin/dhd-landscape" target="_blank">GitHub</a>
+      </span>
+    </div>
+
+    <!-- Detail panel -->
     <div id="detail-panel">
-      <button class="panel-close" onclick="App.closePanel()">&times;</button>
+      <button class="panel-close" id="panel-close">&times;</button>
       <h2 class="panel-name" id="p-name"></h2>
       <div class="panel-location" id="p-loc"></div>
       <div class="panel-stats" id="p-stats"></div>
-      <div class="panel-section-title">Forschungsbereiche</div>
+      <div class="panel-section-title">TaDiRAH-Profil</div>
+      <div id="p-tadirah"></div>
+      <div class="panel-section-title">Disziplinen</div>
       <div class="panel-tags" id="p-disc"></div>
       <div class="panel-section-title">Methoden</div>
       <div class="panel-tags" id="p-meth"></div>
+      <div class="panel-section-title" id="p-courses-title" style="display:none">DH-Studiengänge</div>
+      <div id="p-courses"></div>
+      <div class="panel-section-title" id="p-clarin-title" style="display:none">CLARIN</div>
+      <div id="p-clarin"></div>
       <div class="panel-section-title">Professuren</div>
-      <div class="panel-positions" id="p-positions"></div>
+      <div id="p-positions"></div>
       <div class="panel-links" id="p-links"></div>
     </div>
   </div>
 
-  <!-- MODE 1: NARRATIVE (Scrollytelling) -->
-  <div id="mode-narrative" class="mode-layer active">
-    <div id="narrative-scroll">
-      <!-- Station 1: Intro -->
-      <div class="station active" data-station="intro">
-        <div class="station-content glass">
-          <h2>Die DH-Landschaft im deutschsprachigen Raum</h2>
-          <p class="stat-highlight">52 Institutionen · 130 Professuren · 15 Disziplinen</p>
-          <p>Eine Reise durch die Zentren und Lehrstühle der Digital Humanities in Deutschland, Österreich und der Schweiz.</p>
-          <div class="station-viz" id="viz-intro"></div>
-        </div>
-      </div>
-
-      <!-- Station 2: Pioneers -->
-      <div class="station" data-station="pioneers">
-        <div class="station-content glass">
-          <h2>Die Pioniere (2008–2012)</h2>
-          <p>Bereits 2008 starteten Würzburg und die Freie Universität Berlin mit den ersten DH-Professuren. Bern und Luxemburg kamen als erste außerhalb Deutschlands dazu.</p>
-          <div class="station-viz" id="viz-pioneers"></div>
-        </div>
-      </div>
-
-      <!-- Station 3: Köln -->
-      <div class="station" data-station="koeln">
-        <div class="station-content glass">
-          <h2>Deutschlands größtes DH-Zentrum</h2>
-          <p>Die Universität zu Köln vereint 7 Stellen — von Digital Archaeology über Computational Linguistics bis zur Digital Edition. Seit 2013 gewachsen zum vielfältigsten DH-Standort.</p>
-          <div class="station-viz" id="viz-koeln"></div>
-        </div>
-      </div>
-
-      <!-- Station 4: Berlin -->
-      <div class="station" data-station="berlin">
-        <div class="station-content glass">
-          <h2>Drei Universitäten, drei Profile</h2>
-          <p>Berlin zeigt, wie sich DH ausdifferenziert: Die FU (Computational Literary Studies + Archäologie seit 2008), die HU (Digital History seit 2018), die TU (Digital Art History). Jede mit eigenem Schwerpunkt.</p>
-          <div class="station-viz" id="viz-berlin"></div>
-        </div>
-      </div>
-
-      <!-- Station 5: Austria -->
-      <div class="station" data-station="austria">
-        <div class="station-content glass">
-          <h2>Graz und Wien</h2>
-          <p>Österreichs DH-Landschaft: 4 Institutionen mit 11 Stellen. Die Universität Graz mit 5 Positionen seit 2015 ist einer der größten DH-Standorte im gesamten DACH-Raum.</p>
-          <div class="station-viz" id="viz-austria"></div>
-        </div>
-      </div>
-
-      <!-- Station 6: Timeline -->
-      <div class="station" data-station="timeline">
-        <div class="station-content glass">
-          <h2>18 Jahre Wachstum</h2>
-          <p>Von 5 Institutionen 2008 zu 52 im Jahr 2026 — ein enormes Wachstum in weniger als zwei Jahrzehnten.</p>
-          <div class="station-viz" id="viz-timeline"></div>
-        </div>
-      </div>
-
-      <!-- Station 7: Explore CTA -->
-      <div class="station" data-station="explore-cta">
-        <div class="station-content glass">
-          <h2>Jetzt bist du dran</h2>
-          <p>Entdecke die DH-Landschaft selbst. Filtere nach Disziplinen, Methoden und Ländern. Erkunde Institutionsprofile und finde Kooperationspartner.</p>
-          <button class="narrative-cta" onclick="ModeController.switch('explore')">Zur Exploration →</button>
-        </div>
-      </div>
+  <!-- View 3: Explorer -->
+  <div id="view-explorer" class="view-container" hidden>
+    <div class="explorer-nav">
+      <button class="explorer-tab active" data-chart="timeline">Zeitverlauf</button>
+      <button class="explorer-tab" data-chart="institutions">Institutionen</button>
+      <button class="explorer-tab" data-chart="disciplines">Disziplinen</button>
     </div>
-
-    <div class="scroll-hint">↓ Scrollen</div>
-  </div>
-
-  <!-- MODE 2: EXPLORE (Floating Panels) -->
-  <div id="mode-explore" class="mode-layer" hidden>
-    <!-- Panel toggles (left strip) -->
-    <div id="panel-toggles">
-      <button class="toggle-btn glass" data-panel="filter" title="Filter">&#9776;</button>
-      <button class="toggle-btn glass" data-panel="timeline" title="Timeline">&#9202;</button>
-      <button class="toggle-btn glass" data-panel="barchart" title="Institutionen">&#9646;</button>
-      <button class="toggle-btn glass" data-panel="heatmap" title="Disziplinen">&#9638;</button>
-    </div>
-
-    <!-- Filter Sidebar -->
-    <div id="filter-sidebar">
-      <div class="sidebar-header">
-        <span class="sidebar-title">Filter</span>
-        <button class="sidebar-close" onclick="ExploreMode.toggleSidebar()">&times;</button>
-      </div>
-      <input class="sidebar-search" type="text" placeholder="Suche..." id="sidebar-search">
-      <div id="filter-groups"></div>
-      <div class="filter-group">
-        <div class="filter-group-title">Zeitraum</div>
-        <div class="sidebar-timeline">
-          <button class="timeline-play" id="tl-play" title="Play/Pause">&#9654;</button>
-          <input type="range" id="timeline-slider" min="2008" max="2026" value="2008" step="1">
-          <span class="sidebar-timeline-label" id="tl-value">alle</span>
-        </div>
-      </div>
-      <button class="filter-reset-btn" id="reset-all">Alle Filter zurücksetzen</button>
-    </div>
-
-    <!-- Active Filter Indicator -->
-    <div id="filter-indicator">
-      <span style="color:var(--text-tertiary)">Filter:</span>
-      <span id="filter-tags"></span>
-      <button class="filter-indicator-reset" id="indicator-reset">× zurücksetzen</button>
-    </div>
-
-    <!-- Floating Chart Panels -->
-    <div class="float-panel glass" id="panel-timeline" data-dock="bottom-left" hidden>
-      <div class="float-panel-header">
-        <span class="float-panel-title">Zeitliche Entwicklung</span>
-        <div class="float-panel-controls">
-          <div class="float-panel-toggles">
-            <button class="chart-toggle active" data-toggle="discipline">Disziplin</button>
-            <button class="chart-toggle" data-toggle="country">Land</button>
-          </div>
-          <button class="fp-btn" onclick="ExploreMode.closePanel('timeline')">&times;</button>
-        </div>
-      </div>
-      <div class="float-panel-body" id="chart-timeline"></div>
-    </div>
-
-    <div class="float-panel glass" id="panel-barchart" data-dock="bottom-left" hidden>
-      <div class="float-panel-header">
-        <span class="float-panel-title">Institutionen nach Stellen</span>
-        <div class="float-panel-controls">
-          <button class="fp-btn" onclick="ExploreMode.closePanel('barchart')">&times;</button>
-        </div>
-      </div>
-      <div class="float-panel-body" id="chart-barchart"></div>
-    </div>
-
-    <div class="float-panel glass" id="panel-heatmap" data-dock="bottom-left" hidden>
-      <div class="float-panel-header">
-        <span class="float-panel-title">Disziplinen × Institutionen</span>
-        <div class="float-panel-controls">
-          <div class="float-panel-toggles">
-            <button class="chart-toggle active" data-toggle="frequency">Häufigkeit</button>
-            <button class="chart-toggle" data-toggle="alpha">A–Z</button>
-          </div>
-          <button class="fp-btn" onclick="ExploreMode.closePanel('heatmap')">&times;</button>
-        </div>
-      </div>
-      <div class="float-panel-body" id="chart-heatmap"></div>
-    </div>
-
-    <!-- Stats Bar -->
-    <div id="stats-bar">
-      <span id="stats-text"></span>
-      <span>
-        <a href="https://dhd-blog.org/?p=11018" target="_blank">Sahle 2026</a> ·
-        <a href="https://openalex.org/" target="_blank">OpenAlex</a> ·
-        <a href="https://github.com/chpollin/dhd-landscape" target="_blank">GitHub</a>
-      </span>
+    <div class="explorer-content">
+      <div id="explorer-chart"></div>
     </div>
   </div>
 
-  <!-- MODE 3: OVERVIEW (HUD Dashboard) -->
-  <div id="mode-overview" class="mode-layer" hidden>
-    <div id="hud-stats" class="hud-widget glass">
-      <div class="hud-stat">
-        <span class="hud-number" data-target="52">0</span>
-        <span class="hud-label">Institutionen</span>
-      </div>
-      <div class="hud-stat">
-        <span class="hud-number" data-target="130">0</span>
-        <span class="hud-label">Professuren</span>
-      </div>
-      <div class="hud-stat">
-        <span class="hud-number" data-target="39">0</span>
-        <span class="hud-label">Standorte</span>
-      </div>
-      <div class="hud-stat">
-        <span class="hud-number" data-target="1906">0</span>
-        <span class="hud-label">DH-Publikationen</span>
-      </div>
-    </div>
-
-    <div id="hud-countries" class="hud-widget glass">
-      <div class="hud-widget-title">Länder</div>
-      <div id="hud-country-bars"></div>
-    </div>
-
-    <div id="hud-disciplines" class="hud-widget glass">
-      <div class="hud-widget-title">Top-Disziplinen</div>
-      <div id="hud-disc-chart"></div>
-    </div>
-
-    <div id="hud-timeline-mini" class="hud-widget glass">
-      <div id="hud-area-chart"></div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
+  <!-- App Scripts -->
   <script src="charts.js"></script>
   <script src="app.js"></script>
-  <script src="modes.js"></script>
+  <script src="views.js"></script>
 </body>
 </html>

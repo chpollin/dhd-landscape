@@ -5,174 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DHd Landscape</title>
     <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css">
     <script src="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0a0f; color: #e0e0e0; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: #0a0a0f; color: #e0e0e0; }
         #map { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
         /* Header */
         #header {
             position: absolute; top: 0; left: 0; right: 0; z-index: 10;
-            padding: 20px 30px 10px;
+            padding: 16px 24px 8px;
             background: linear-gradient(180deg, rgba(10,10,15,0.95) 0%, rgba(10,10,15,0) 100%);
-            pointer-events: none;
+            pointer-events: none; display: flex; align-items: baseline; gap: 16px;
         }
-        #header h1 { font-size: 1.5rem; font-weight: 300; letter-spacing: 0.08em; color: #fff; }
-        #header h1 span { font-weight: 600; }
-        #header p { font-size: 0.8rem; color: #666; margin-top: 2px; }
+        #header h1 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.4rem; font-weight: 400; color: #fff; pointer-events: auto;
+        }
+        #header h1 b { font-weight: 600; }
+        #header p { font-size: 0.72rem; color: #555; }
 
         /* Search */
-        #search-box { position: absolute; top: 18px; right: 70px; z-index: 10; }
+        #search-box { position: absolute; top: 14px; right: 60px; z-index: 10; }
         #search-input {
-            padding: 6px 14px; border-radius: 18px;
-            border: 1px solid rgba(255,255,255,0.1);
+            padding: 5px 14px; border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.08);
             background: rgba(10,10,15,0.85); color: #ccc;
-            font-size: 0.78rem; width: 240px;
+            font-family: 'Inter', sans-serif; font-size: 0.72rem; width: 200px;
             backdrop-filter: blur(12px); outline: none;
+            transition: border-color 0.2s, width 0.3s;
         }
-        #search-input::placeholder { color: #444; }
-        #search-input:focus { border-color: rgba(99,102,241,0.5); }
+        #search-input::placeholder { color: #3a3a3a; }
+        #search-input:focus { border-color: rgba(99,102,241,0.4); width: 260px; }
 
-        /* Filter section */
-        #filter-section {
-            position: absolute; top: 70px; left: 24px; right: 24px; z-index: 10;
-            display: flex; flex-direction: column; gap: 5px;
-        }
-        .filter-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-        .filter-label {
-            font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em;
-            color: #444; min-width: 65px;
+        /* Filter bar — single compact row */
+        #filter-bar {
+            position: absolute; top: 50px; left: 16px; right: 16px; z-index: 10;
+            display: flex; gap: 4px; flex-wrap: wrap; align-items: center;
         }
         .f {
-            padding: 3px 10px; border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.08);
-            background: rgba(10,10,15,0.6); color: #777;
-            font-size: 0.68rem; cursor: pointer;
-            backdrop-filter: blur(8px);
+            padding: 3px 9px; border-radius: 11px;
+            border: 1px solid rgba(255,255,255,0.06);
+            background: rgba(10,10,15,0.5); color: #666;
+            font-size: 0.64rem; cursor: pointer;
             transition: all 0.15s ease;
         }
-        .f:hover { border-color: rgba(255,255,255,0.25); color: #bbb; }
-        .f.on { background: rgba(99,102,241,0.2); border-color: rgba(99,102,241,0.4); color: #c7d2fe; }
-        .f.on-g { background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.35); color: #a7f3d0; }
-        .f .n { font-size: 0.58rem; color: #555; margin-left: 2px; }
+        .f:hover { border-color: rgba(255,255,255,0.2); color: #aaa; }
+        .f.on { background: rgba(99,102,241,0.2); border-color: rgba(99,102,241,0.35); color: #c7d2fe; }
+        .f.on-g { background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.3); color: #a7f3d0; }
+        .f.on-a { background: rgba(245,158,11,0.15); border-color: rgba(245,158,11,0.3); color: #fcd34d; }
+        .f .n { font-size: 0.55rem; color: #444; margin-left: 2px; }
+        .f-sep { width: 1px; height: 16px; background: rgba(255,255,255,0.06); margin: 0 2px; }
+        #reset-btn {
+            padding: 3px 9px; border-radius: 11px;
+            border: 1px solid rgba(239,68,68,0.2); background: rgba(239,68,68,0.08);
+            color: #f87171; font-size: 0.64rem; cursor: pointer;
+            display: none; transition: all 0.15s;
+        }
+        #reset-btn:hover { background: rgba(239,68,68,0.15); }
 
-        /* Info card */
-        #card {
-            position: absolute; bottom: 24px; left: 24px; z-index: 10;
-            width: 380px; max-height: 70vh; overflow-y: auto;
-            padding: 20px;
-            background: rgba(12,12,20,0.94); border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 14px; backdrop-filter: blur(24px);
-            display: none;
+        /* Detail panel — right side */
+        #panel {
+            position: absolute; top: 0; right: 0; bottom: 0; z-index: 20;
+            width: 340px; padding: 20px;
+            background: rgba(12,12,20,0.96); border-left: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(24px);
+            transform: translateX(100%); transition: transform 0.3s ease;
+            overflow-y: auto;
         }
-        #card .close {
-            position: absolute; top: 12px; right: 14px;
-            background: none; border: none; color: #444; font-size: 1.1rem; cursor: pointer;
+        #panel.open { transform: translateX(0); }
+        #panel .close {
+            position: absolute; top: 14px; right: 14px;
+            background: none; border: none; color: #444; font-size: 1rem; cursor: pointer;
         }
-        #card .close:hover { color: #999; }
-        #card h2 { font-size: 1rem; font-weight: 500; margin-bottom: 2px; color: #eee; }
-        #card .loc { font-size: 0.78rem; color: #666; margin-bottom: 12px; }
-        #card .stat-row {
-            display: flex; gap: 16px; margin-bottom: 14px;
+        #panel .close:hover { color: #999; }
+        #panel h2 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.05rem; font-weight: 600; margin-bottom: 2px; color: #eee;
         }
-        #card .stat {
-            text-align: center;
+        #panel .loc { font-size: 0.75rem; color: #666; margin-bottom: 14px; }
+        #panel .stat-row { display: flex; gap: 12px; margin-bottom: 16px; }
+        #panel .stat { text-align: center; flex: 1; }
+        #panel .stat .num { font-size: 1.5rem; font-weight: 600; color: #818cf8; line-height: 1; }
+        #panel .stat .lbl { font-size: 0.55rem; color: #555; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+        #panel .section-title {
+            font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.1em;
+            color: #444; margin: 12px 0 6px; font-weight: 500;
         }
-        #card .stat .num { font-size: 1.4rem; font-weight: 600; color: #818cf8; }
-        #card .stat .lbl { font-size: 0.6rem; color: #555; text-transform: uppercase; letter-spacing: 0.05em; }
-        #card .section-title {
-            font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em;
-            color: #444; margin: 10px 0 6px;
+        #panel .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+        #panel .tag {
+            padding: 2px 8px; border-radius: 10px; font-size: 0.64rem;
+            background: rgba(99,102,241,0.1); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.18);
         }
-        #card .tags { display: flex; flex-wrap: wrap; gap: 4px; }
-        #card .tag {
-            padding: 2px 8px; border-radius: 10px; font-size: 0.66rem;
-            background: rgba(99,102,241,0.12); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.2);
+        #panel .tag.m {
+            background: rgba(16,185,129,0.08); color: #6ee7b7; border-color: rgba(16,185,129,0.18);
         }
-        #card .tag.m {
-            background: rgba(16,185,129,0.1); color: #6ee7b7; border-color: rgba(16,185,129,0.2);
+        #panel .positions { margin-top: 8px; }
+        #panel .pos {
+            padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.03);
+            font-size: 0.72rem; color: #888;
         }
-        #card .positions { margin-top: 12px; }
-        #card .pos {
-            padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
-            font-size: 0.75rem; color: #888;
+        #panel .pos:last-child { border-bottom: none; }
+        #panel .pos .pos-name { color: #bbb; }
+        #panel .pos .pos-meta { font-size: 0.62rem; color: #555; }
+        #panel .pos .open-badge {
+            display: inline-block; padding: 1px 5px; border-radius: 6px;
+            background: rgba(245,158,11,0.12); color: #fbbf24;
+            font-size: 0.58rem; margin-left: 3px;
         }
-        #card .pos:last-child { border-bottom: none; }
-        #card .pos .pos-name { color: #bbb; }
-        #card .pos .pos-meta { font-size: 0.65rem; color: #555; }
-        #card .pos .open-badge {
-            display: inline-block; padding: 1px 6px; border-radius: 8px;
-            background: rgba(245,158,11,0.15); color: #fbbf24;
-            font-size: 0.6rem; margin-left: 4px;
+        #panel .links { margin-top: 14px; display: flex; gap: 8px; }
+        #panel .links a {
+            font-size: 0.68rem; color: #818cf8; text-decoration: none;
+            padding: 3px 10px; border: 1px solid rgba(99,102,241,0.2); border-radius: 10px;
+        }
+        #panel .links a:hover { background: rgba(99,102,241,0.1); }
+
+        /* Legend */
+        #legend {
+            position: absolute; bottom: 80px; right: 16px; z-index: 10;
+            background: rgba(12,12,20,0.85); border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 10px; padding: 10px 14px; backdrop-filter: blur(8px);
+            font-size: 0.62rem; color: #555; line-height: 1.8;
+        }
+        #legend .dot {
+            display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+            margin-right: 4px; vertical-align: middle;
+        }
+        #legend .size-row { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+        #legend .size-dot {
+            border-radius: 50%; background: rgba(99,102,241,0.4); border: 1px solid #818cf8;
         }
 
         /* Stats */
         #stats {
             position: absolute; bottom: 16px; right: 16px; z-index: 10;
-            font-size: 0.65rem; color: #333; text-align: right; line-height: 1.6;
+            font-size: 0.62rem; color: #3a3a3a; text-align: right; line-height: 1.6;
         }
         #stats a { color: #444; text-decoration: none; }
-        #stats a:hover { color: #777; }
+        #stats a:hover { color: #888; }
 
         /* Timeline */
         #timeline {
-            position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);
+            position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%);
             z-index: 10; display: flex; align-items: center; gap: 8px;
-            background: rgba(10,10,15,0.7); padding: 6px 14px; border-radius: 20px;
-            backdrop-filter: blur(8px);
+            background: rgba(10,10,15,0.75); padding: 5px 14px; border-radius: 16px;
+            backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.04);
         }
-        #timeline-label { font-size: 0.65rem; color: #444; }
-        #timeline-slider { width: 180px; accent-color: #6366f1; }
-        #timeline-value { font-size: 0.7rem; color: #888; min-width: 65px; }
+        #timeline-label { font-size: 0.6rem; color: #444; }
+        #timeline-slider { width: 160px; accent-color: #6366f1; height: 3px; }
+        #timeline-value { font-size: 0.65rem; color: #888; min-width: 55px; }
     </style>
 </head>
 <body>
 
 <div id="header">
-    <h1><span>DHd</span> Landscape</h1>
-    <p>Digital Humanities in the German-Speaking World — Institutions &amp; Research Areas</p>
+    <h1><b>DHd</b> Landscape</h1>
+    <p>Digital Humanities in the German-Speaking World</p>
 </div>
 
 <div id="search-box">
-    <input id="search-input" type="text" placeholder="Search institution, city, topic...">
+    <input id="search-input" type="text" placeholder="Search...">
 </div>
 
-<div id="filter-section">
-    <div class="filter-group">
-        <span class="filter-label">Discipline</span>
-        <div id="disc-filters"></div>
-    </div>
-    <div class="filter-group">
-        <span class="filter-label">Method</span>
-        <div id="meth-filters"></div>
-    </div>
-    <div class="filter-group">
-        <span class="filter-label">Country</span>
-        <div id="country-filters"></div>
-    </div>
-</div>
+<div id="filter-bar"></div>
 
 <div id="map"></div>
 
-<div id="card">
-    <button class="close" onclick="closeCard()">&times;</button>
-    <h2 id="c-name"></h2>
-    <div class="loc" id="c-loc"></div>
-    <div class="stat-row" id="c-stats"></div>
+<div id="panel">
+    <button class="close" onclick="closePanel()">&times;</button>
+    <h2 id="p-name"></h2>
+    <div class="loc" id="p-loc"></div>
+    <div class="stat-row" id="p-stats"></div>
     <div class="section-title">Research Areas</div>
-    <div class="tags" id="c-disc"></div>
+    <div class="tags" id="p-disc"></div>
     <div class="section-title">Methods</div>
-    <div class="tags" id="c-meth"></div>
+    <div class="tags" id="p-meth"></div>
     <div class="section-title">Positions</div>
-    <div class="positions" id="c-positions"></div>
+    <div class="positions" id="p-positions"></div>
+    <div class="links" id="p-links"></div>
+</div>
+
+<div id="legend">
+    <div><span class="dot" style="background:#6366f1"></span> All positions filled</div>
+    <div><span class="dot" style="background:#a78bfa"></span> Has open positions</div>
+    <div class="size-row">
+        <span class="size-dot" style="width:8px;height:8px"></span>
+        <span class="size-dot" style="width:14px;height:14px"></span>
+        <span class="size-dot" style="width:22px;height:22px"></span>
+        <span style="color:#555">1 — 3 — 7 positions</span>
+    </div>
 </div>
 
 <div id="timeline">
-    <span id="timeline-label">Active since</span>
+    <span id="timeline-label">Since</span>
     <input type="range" id="timeline-slider" min="2008" max="2026" value="2008" step="1">
-    <span id="timeline-value">all years</span>
+    <span id="timeline-value">all</span>
 </div>
 
 <div id="stats"></div>
@@ -184,17 +214,16 @@
     const res = await fetch('Data/institutions.json');
     const data = await res.json();
 
-    // Helper: get method label (handles both string and {label, tadirahUri} format)
     function mLabel(m) { return typeof m === 'object' ? m.label : m; }
 
     const withWikidata = data.filter(d => d.wikidataId).length;
     const withRor = data.filter(d => d.rorId).length;
     const withPubs = data.filter(d => d.dhPublicationCount > 0).length;
     const totalPubs = data.reduce((s, d) => s + (d.dhPublicationCount || 0), 0);
-    console.log(`%c[Data]%c ${data.length} institutions loaded | ${withWikidata} Wikidata | ${withRor} ROR | ${withPubs} with pubs (${totalPubs} total)`,
+    console.log(`%c[Data]%c ${data.length} institutions | ${withWikidata} Wikidata | ${withRor} ROR | ${withPubs} with pubs (${totalPubs} total)`,
         'color:#6ee7b7;font-weight:bold', 'color:inherit');
 
-    // Counts for filters
+    // Build filter counts
     const discCount = {}, methCount = {}, countryCount = {};
     data.forEach(d => {
         d.disciplines.forEach(x => { discCount[x] = (discCount[x] || 0) + 1; });
@@ -202,49 +231,65 @@
         countryCount[d.country] = (countryCount[d.country] || 0) + 1;
     });
 
-    const topDisc = Object.entries(discCount).filter(([,c]) => c >= 2).sort((a,b) => b[1]-a[1]);
-    const topMeth = Object.entries(methCount).filter(([,c]) => c >= 2).sort((a,b) => b[1]-a[1]);
+    const topDisc = Object.entries(discCount).filter(([,c]) => c >= 3).sort((a,b) => b[1]-a[1]).slice(0, 8);
+    const topMeth = Object.entries(methCount).filter(([,c]) => c >= 4).sort((a,b) => b[1]-a[1]).slice(0, 8);
     const countries = Object.entries(countryCount).sort((a,b) => b[1]-a[1]);
-    const countryLabels = { DE: 'Germany', AT: 'Austria', CH: 'Switzerland', LU: 'Luxembourg' };
+    const countryLabels = { DE: 'DE', AT: 'AT', CH: 'CH', LU: 'LU' };
 
-    // Filter state
+    // Build compact filter bar
     const active = { disc: new Set(), meth: new Set(), country: new Set() };
+    const bar = document.getElementById('filter-bar');
 
-    function makeFilters(items, containerId, filterSet, cls) {
-        const wrap = document.getElementById(containerId);
+    function addFilters(items, filterSet, cls) {
         items.forEach(([name, count]) => {
             const btn = document.createElement('button');
             btn.className = 'f';
-            const label = containerId === 'country-filters' ? (countryLabels[name] || name) : name;
+            const label = countryLabels[name] || name;
             btn.innerHTML = `${label}<span class="n">${count}</span>`;
             btn.onclick = () => {
-                if (filterSet.has(name)) { filterSet.delete(name); btn.classList.remove('on', 'on-g'); }
+                if (filterSet.has(name)) { filterSet.delete(name); btn.classList.remove('on', 'on-g', 'on-a'); }
                 else { filterSet.add(name); btn.classList.add(cls); }
                 applyFilters();
             };
-            wrap.appendChild(btn);
+            bar.appendChild(btn);
         });
     }
 
-    makeFilters(topDisc, 'disc-filters', active.disc, 'on');
-    makeFilters(topMeth, 'meth-filters', active.meth, 'on-g');
-    makeFilters(countries, 'country-filters', active.country, 'on');
+    addFilters(topDisc, active.disc, 'on');
+    bar.appendChild(Object.assign(document.createElement('span'), { className: 'f-sep' }));
+    addFilters(topMeth, active.meth, 'on-g');
+    bar.appendChild(Object.assign(document.createElement('span'), { className: 'f-sep' }));
+    addFilters(countries, active.country, 'on-a');
+
+    // Reset button
+    const resetBtn = document.createElement('button');
+    resetBtn.id = 'reset-btn';
+    resetBtn.textContent = 'Reset';
+    resetBtn.onclick = () => {
+        active.disc.clear(); active.meth.clear(); active.country.clear();
+        document.getElementById('search-input').value = '';
+        searchTerm = '';
+        document.getElementById('timeline-slider').value = 2008;
+        yearMin = 2008;
+        document.getElementById('timeline-value').textContent = 'all';
+        bar.querySelectorAll('.f').forEach(b => b.classList.remove('on', 'on-g', 'on-a'));
+        applyFilters();
+    };
+    bar.appendChild(resetBtn);
 
     // GeoJSON
     function toGeoJSON(items) {
         return {
             type: 'FeatureCollection',
-            features: items.map(d => ({
+            features: items.map((d, i) => ({
                 type: 'Feature',
+                id: i,
                 geometry: { type: 'Point', coordinates: d.coordinates },
                 properties: {
-                    id: d.id,
-                    name: d.name,
-                    city: d.city,
-                    country: d.country,
-                    totalPositions: d.totalPositions,
-                    openPositions: d.openPositions,
-                    earliestYear: d.earliestYear,
+                    id: d.id, name: d.name, city: d.city, country: d.country,
+                    totalPositions: d.totalPositions, openPositions: d.openPositions,
+                    earliestYear: d.earliestYear, dhPublicationCount: d.dhPublicationCount || 0,
+                    wikidataId: d.wikidataId || '', rorId: d.rorId || '', url: d.url || '',
                     disciplines: JSON.stringify(d.disciplines),
                     methods: JSON.stringify(d.methods),
                     positions: JSON.stringify(d.positions)
@@ -253,24 +298,24 @@
         };
     }
 
-    // Map
+    // Map with fly-to intro
     const map = new maplibregl.Map({
         container: 'map',
         style: {
             version: 8,
             sources: {
-                'carto-tiles': {
+                'carto': {
                     type: 'raster',
                     tiles: ['https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png'],
                     tileSize: 256,
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
                 }
             },
-            layers: [{ id: 'carto-tiles', type: 'raster', source: 'carto-tiles' }],
+            layers: [{ id: 'carto', type: 'raster', source: 'carto' }],
             glyphs: 'https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=get_your_own_OpIi9ZULNHzrESv6T2vL'
         },
         center: [10.5, 50.0],
-        zoom: 5.5,
+        zoom: 3.5,
         maxBounds: [[-5, 43], [25, 57]]
     });
 
@@ -280,101 +325,87 @@
 
     map.on('load', () => {
         console.log('%c[Map]%c Loaded. Adding layers...', 'color:#fbbf24;font-weight:bold', 'color:inherit');
-        map.addSource('institutions', {
-            type: 'geojson',
-            data: toGeoJSON(data)
-        });
+
+        // Fly-to DACH region
+        map.flyTo({ center: [10.5, 50.0], zoom: 5.5, duration: 2000, curve: 1.5 });
+
+        map.addSource('institutions', { type: 'geojson', data: toGeoJSON(data) });
 
         // Glow
         map.addLayer({
-            id: 'inst-glow',
-            type: 'circle',
-            source: 'institutions',
+            id: 'inst-glow', type: 'circle', source: 'institutions',
             paint: {
                 'circle-radius': ['interpolate', ['linear'], ['get', 'totalPositions'], 1, 14, 3, 22, 7, 35],
-                'circle-color': '#6366f1',
-                'circle-opacity': 0.08,
-                'circle-blur': 1
+                'circle-color': '#6366f1', 'circle-opacity': 0.06, 'circle-blur': 1
             }
         });
 
-        // Main circles — size by position count
+        // Main circles
         map.addLayer({
-            id: 'inst-circles',
-            type: 'circle',
-            source: 'institutions',
+            id: 'inst-circles', type: 'circle', source: 'institutions',
             paint: {
-                'circle-radius': ['interpolate', ['linear'], ['get', 'totalPositions'], 1, 5, 3, 8, 5, 11, 7, 14],
-                'circle-color': [
-                    'case',
-                    ['>', ['get', 'openPositions'], 0],
-                    '#a78bfa',  // has open positions — lighter purple
-                    '#6366f1'   // all filled
+                'circle-radius': ['interpolate', ['linear'], ['get', 'totalPositions'], 1, 5, 3, 9, 5, 12, 7, 15],
+                'circle-color': ['case', ['>', ['get', 'openPositions'], 0], '#a78bfa', '#6366f1'],
+                'circle-stroke-width': ['case', ['boolean', ['feature-state', 'hover'], false], 2.5, 1.5],
+                'circle-stroke-color': ['case',
+                    ['boolean', ['feature-state', 'hover'], false], '#e0e7ff',
+                    ['>', ['get', 'openPositions'], 0], '#c4b5fd', '#818cf8'
                 ],
-                'circle-stroke-width': [
-                    'case',
-                    ['>', ['get', 'openPositions'], 0], 2, 1.5
-                ],
-                'circle-stroke-color': [
-                    'case',
-                    ['>', ['get', 'openPositions'], 0],
-                    '#c4b5fd',
-                    '#818cf8'
-                ],
-                'circle-opacity': 0.85
+                'circle-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 1, 0.85]
             }
         });
 
-        // Position count label inside circle
+        // Count labels
         map.addLayer({
-            id: 'inst-count',
-            type: 'symbol',
-            source: 'institutions',
+            id: 'inst-count', type: 'symbol', source: 'institutions',
             filter: ['>=', ['get', 'totalPositions'], 3],
             layout: {
                 'text-field': ['to-string', ['get', 'totalPositions']],
                 'text-font': ['Open Sans Regular'],
-                'text-size': 10,
-                'text-allow-overlap': true
+                'text-size': 10, 'text-allow-overlap': true
             },
-            paint: {
-                'text-color': '#fff',
-                'text-halo-color': 'rgba(0,0,0,0.3)',
-                'text-halo-width': 1
-            }
+            paint: { 'text-color': '#fff', 'text-halo-color': 'rgba(0,0,0,0.4)', 'text-halo-width': 1 }
         });
 
-        // City labels
+        // City labels at zoom
         map.addLayer({
-            id: 'inst-labels',
-            type: 'symbol',
-            source: 'institutions',
-            minzoom: 6,
+            id: 'inst-labels', type: 'symbol', source: 'institutions',
+            minzoom: 6.5,
             layout: {
                 'text-field': ['get', 'city'],
                 'text-font': ['Open Sans Regular'],
-                'text-size': 10,
-                'text-offset': [0, 1.8],
-                'text-anchor': 'top'
+                'text-size': 10, 'text-offset': [0, 1.8], 'text-anchor': 'top'
             },
-            paint: {
-                'text-color': '#666',
-                'text-halo-color': 'rgba(10,10,15,0.9)',
-                'text-halo-width': 2
-            }
+            paint: { 'text-color': '#555', 'text-halo-color': 'rgba(10,10,15,0.9)', 'text-halo-width': 2 }
         });
 
         updateStats();
 
-        // Interactions
+        // Hover effect
+        let hoveredId = null;
+        map.on('mousemove', 'inst-circles', (e) => {
+            if (hoveredId !== null) map.setFeatureState({ source: 'institutions', id: hoveredId }, { hover: false });
+            hoveredId = e.features[0].id;
+            map.setFeatureState({ source: 'institutions', id: hoveredId }, { hover: true });
+            map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'inst-circles', () => {
+            if (hoveredId !== null) map.setFeatureState({ source: 'institutions', id: hoveredId }, { hover: false });
+            hoveredId = null;
+            map.getCanvas().style.cursor = '';
+        });
+
+        // Click
         map.on('click', 'inst-circles', (e) => {
-            const p = e.features[0].properties;
-            showCard(p);
+            showPanel(e.features[0].properties);
             map.flyTo({ center: e.lngLat, zoom: Math.max(map.getZoom(), 7), duration: 600 });
         });
 
-        map.on('mouseenter', 'inst-circles', () => map.getCanvas().style.cursor = 'pointer');
-        map.on('mouseleave', 'inst-circles', () => map.getCanvas().style.cursor = '');
+        // Click elsewhere closes panel
+        map.on('click', (e) => {
+            const features = map.queryRenderedFeatures(e.point, { layers: ['inst-circles'] });
+            if (features.length === 0) closePanel();
+        });
     });
 
     // Filters
@@ -390,8 +421,7 @@
         if (searchTerm) {
             const t = searchTerm.toLowerCase();
             filtered = filtered.filter(d =>
-                d.name.toLowerCase().includes(t) ||
-                d.city.toLowerCase().includes(t) ||
+                d.name.toLowerCase().includes(t) || d.city.toLowerCase().includes(t) ||
                 d.disciplines.some(x => x.toLowerCase().includes(t)) ||
                 d.methods.some(x => mLabel(x).toLowerCase().includes(t))
             );
@@ -400,15 +430,17 @@
         currentFiltered = filtered;
         map.getSource('institutions').setData(toGeoJSON(filtered));
         updateStats();
-        closeCard();
 
-        const activeF = [];
-        if (active.disc.size) activeF.push(`disc:[${[...active.disc].join(',')}]`);
-        if (active.meth.size) activeF.push(`meth:[${[...active.meth].join(',')}]`);
-        if (active.country.size) activeF.push(`country:[${[...active.country].join(',')}]`);
-        if (yearMin > 2008) activeF.push(`since:${yearMin}`);
-        if (searchTerm) activeF.push(`search:"${searchTerm}"`);
-        console.log(`%c[Filter]%c ${filtered.length}/${data.length} institutions` + (activeF.length ? ` | ${activeF.join(' ')}` : ' | no filters'),
+        const hasFilters = active.disc.size || active.meth.size || active.country.size || searchTerm || yearMin > 2008;
+        document.getElementById('reset-btn').style.display = hasFilters ? 'inline-block' : 'none';
+
+        const af = [];
+        if (active.disc.size) af.push(`disc:[${[...active.disc].join(',')}]`);
+        if (active.meth.size) af.push(`meth:[${[...active.meth].join(',')}]`);
+        if (active.country.size) af.push(`country:[${[...active.country].join(',')}]`);
+        if (yearMin > 2008) af.push(`since:${yearMin}`);
+        if (searchTerm) af.push(`q:"${searchTerm}"`);
+        console.log(`%c[Filter]%c ${filtered.length}/${data.length}` + (af.length ? ` | ${af.join(' ')}` : ''),
             'color:#c4b5fd;font-weight:bold', 'color:inherit');
 
         if (filtered.length > 0 && filtered.length < data.length) {
@@ -420,64 +452,73 @@
         }
     }
 
-    document.getElementById('search-input').addEventListener('input', e => {
-        searchTerm = e.target.value;
-        applyFilters();
-    });
+    document.getElementById('search-input').addEventListener('input', e => { searchTerm = e.target.value; applyFilters(); });
 
     const slider = document.getElementById('timeline-slider');
     slider.addEventListener('input', () => {
         yearMin = parseInt(slider.value);
-        document.getElementById('timeline-value').textContent = yearMin === 2008 ? 'all years' : `since ${yearMin}`;
+        document.getElementById('timeline-value').textContent = yearMin === 2008 ? 'all' : yearMin;
         applyFilters();
     });
 
-    // Card
-    function showCard(p) {
-        const card = document.getElementById('card');
-        document.getElementById('c-name').textContent = p.name;
-        document.getElementById('c-loc').textContent = `${p.city}, ${p.country} · DH since ${p.earliestYear}`;
+    // Panel
+    function showPanel(p) {
+        const panel = document.getElementById('panel');
+        document.getElementById('p-name').textContent = p.name;
+        document.getElementById('p-loc').textContent = `${p.city}, ${p.country} · DH since ${p.earliestYear}`;
 
-        document.getElementById('c-stats').innerHTML = `
+        const pubs = p.dhPublicationCount || 0;
+        document.getElementById('p-stats').innerHTML = `
             <div class="stat"><div class="num">${p.totalPositions}</div><div class="lbl">Positions</div></div>
             <div class="stat"><div class="num" style="color:#fbbf24">${p.openPositions}</div><div class="lbl">Open</div></div>
-            <div class="stat"><div class="num" style="color:#6ee7b7">${parse(p.disciplines).length}</div><div class="lbl">Disciplines</div></div>
-            <div class="stat"><div class="num" style="color:#93c5fd">${parse(p.methods).length}</div><div class="lbl">Methods</div></div>
+            <div class="stat"><div class="num" style="color:#6ee7b7">${pubs}</div><div class="lbl">DH Pubs</div></div>
         `;
 
-        document.getElementById('c-disc').innerHTML = parse(p.disciplines).map(d =>
+        document.getElementById('p-disc').innerHTML = parse(p.disciplines).map(d =>
             `<span class="tag">${d}</span>`
         ).join('');
 
-        document.getElementById('c-meth').innerHTML = parse(p.methods).map(m => {
+        document.getElementById('p-meth').innerHTML = parse(p.methods).map(m => {
             const label = typeof m === 'object' ? m.label : m;
             return `<span class="tag m">${label}</span>`;
         }).join('');
 
         const positions = parse(p.positions);
-        document.getElementById('c-positions').innerHTML = positions.map(pos =>
+        document.getElementById('p-positions').innerHTML = positions.map(pos =>
             `<div class="pos">
                 <span class="pos-name">${pos.name}</span>
                 ${pos.status === 'open' ? '<span class="open-badge">open</span>' : ''}
-                <div class="pos-meta">${pos.year} · ${pos.level}${pos.temporary ? ' · temporary' : ''}</div>
+                <div class="pos-meta">${pos.year} · ${pos.level}${pos.temporary ? ' · temp.' : ''}</div>
             </div>`
         ).join('');
 
-        card.style.display = 'block';
+        // Links
+        const links = [];
+        if (p.url) links.push(`<a href="${p.url}" target="_blank">Website</a>`);
+        if (p.wikidataId) {
+            const qid = p.wikidataId.includes('Q') ? p.wikidataId.split('/').pop() : p.wikidataId;
+            links.push(`<a href="https://www.wikidata.org/wiki/${qid}" target="_blank">Wikidata</a>`);
+        }
+        if (p.rorId) links.push(`<a href="${p.rorId}" target="_blank">ROR</a>`);
+        document.getElementById('p-links').innerHTML = links.join('');
+
+        panel.classList.add('open');
     }
 
     function parse(v) { return typeof v === 'string' ? JSON.parse(v) : v; }
 
-    window.closeCard = function() {
-        document.getElementById('card').style.display = 'none';
+    window.closePanel = function() {
+        document.getElementById('panel').classList.remove('open');
     };
 
     function updateStats() {
         const total = currentFiltered.reduce((s, d) => s + d.totalPositions, 0);
+        const pubs = currentFiltered.reduce((s, d) => s + (d.dhPublicationCount || 0), 0);
         const cities = new Set(currentFiltered.map(d => d.city)).size;
         document.getElementById('stats').innerHTML =
-            `${currentFiltered.length} institutions · ${total} positions · ${cities} cities<br>` +
-            `<a href="https://dhd-blog.org/?p=11018" target="_blank">Data: Sahle (2026)</a> · ` +
+            `${currentFiltered.length} institutions · ${total} positions · ${pubs} publications · ${cities} cities<br>` +
+            `<a href="https://dhd-blog.org/?p=11018" target="_blank">Sahle 2026</a> · ` +
+            `<a href="https://openalex.org/" target="_blank">OpenAlex</a> · ` +
             `<a href="https://github.com/chpollin/dhd-landscape" target="_blank">GitHub</a>`;
     }
 })();

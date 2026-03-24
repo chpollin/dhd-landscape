@@ -1,54 +1,68 @@
 # DHd Landscape
 
-An interactive map of the Digital Humanities research landscape in the German-speaking world (DACH). Explore centers, professorships, and research areas.
+An interactive map of the Digital Humanities research landscape in the German-speaking world (DACH). Explore institutions, professorships, and research areas.
 
 - **Repository**: https://github.com/chpollin/dhd-landscape
 - **GitHub Pages**: https://chpollin.github.io/dhd-landscape
+- **Data Source**: Patrick Sahle's DH professorship list (https://dhd-blog.org/?p=11018)
 
-## Project Goals
+## Current State
 
-1. Map DH centers and professorships in the DACH region (Germany, Austria, Switzerland)
-2. Provide filterable, interactive visualization by discipline, method, and institution type
-3. Make the research landscape explorable and transparent
+- **52 institutions** aggregated from 130 DH professorships (2008–2026)
+- Interactive MapLibre GL JS map with discipline/method/country filters, timeline, search
+- Knowledge vault with 5 documents aligned with Obsidian Research Vault conventions
+- No individual person names shown — institution-level profiles only
 
 ## Promptotyping
 
-This repository follows the **Promptotyping method** — it serves as both the product and a documented example of the methodology. The repo structure reflects the Promptotyping workflow:
+This repository serves dual purpose:
+1. **Product**: Interactive DH landscape visualization
+2. **Case Study**: Documented example of the Promptotyping method
 
-- `Knowledge/` — Obsidian-style research vault (Design.md, Data.md, Research.md)
-- `Data/` — Collected and processed datasets (JSON/CSV)
-- `Feedback/` — Feedback scripts and verification notes
-- `Journal.md` — Project journal documenting decisions and progress
+### Repo Structure
+- `Knowledge/` — Promptotyping Vault (Obsidian-compatible)
+  - `Data.md` — Data sources, data model, processing pipeline
+  - `Design.md` — Visual concepts, interaction design, theory
+  - `Research.md` — Research questions, LOD model, related work
+  - `Requirements.md` — User stories and use cases
+  - `Promptotyping.md` — Method description (meta-level)
+- `Data/` — Datasets (JSON, scripts)
+  - `dh-professorships.json` — Raw Sahle data (130 entries)
+  - `institutions.json` — Aggregated profiles (52 institutions)
+  - `build-institutions.js` — Aggregation script
+- `Feedback/` — Verification cycles
+- `Journal.md` — Project journal (content/decisions)
+- `Journal-Promptotyping.md` — Promptotyping journal (method reflection)
 
-Promptotyping-Interfaces are the web-based visualizations derived from the data, verifiable against the source material.
+### External Knowledge
+- Obsidian Research Vault: `C:\Users\Chrisi\Documents\obsidian`
+- Relevant areas: Digital Humanities/, Applied Generative AI/, Research Data and Open Science/
 
 ## Tech Stack
 
 - **No frameworks** — Vanilla JS, static HTML/CSS
-- **Map**: MapLibre GL JS (via CDN)
-- **Tiles**: Free vector tiles
-- **Deployment**: GitHub Pages (zero build step)
-- Everything runs from a single folder — no npm, no build tools
-
-## Data Sources
-
-- Patrick Sahle's DH professorship list
-- DHd-Verband membership / conference data
-- Institutional websites of DH centers
-- Publication databases (OpenAlex, BASE)
+- **Map**: MapLibre GL JS via CDN
+- **Charts**: D3.js via CDN (planned)
+- **Tiles**: CartoDB Dark Matter (`basemaps.cartocdn.com/dark_all`)
+- **Fonts**: Noto Sans via `fonts.openmaptiles.org`
+- **Deployment**: GitHub Pages from main branch (zero build step)
 
 ## Data Model
 
-Each entry represents a DH center or professorship with:
-- Name, institution, city, coordinates
-- Type (center / professorship)
-- Disciplines (Digital History, Computational Literary Studies, etc.)
-- Methods (NLP, Network Analysis, GIS, Linked Data, etc.)
-- URL, contact info
+Each institution has:
+- `name`, `city`, `country`, `coordinates` [lng, lat]
+- `totalPositions`, `openPositions`, `earliestYear`
+- `disciplines[]` — Digital Humanities, Digital History, Computational Literary Studies, etc.
+- `methods[]` — NLP, TEI/XML, GIS, Linked Data, etc.
+- `positions[]` — Individual professorships (name, year, level, status)
+
+Planned: JSON-LD with Schema.org + Wikidata + TaDiRAH + ROR identifiers.
 
 ## Conventions
 
-- All data files in `Data/` as JSON
-- Coordinates in [lng, lat] format (GeoJSON standard)
-- German and English mixed: UI in English, content bilingual where needed
+- Data files in `Data/` as JSON
+- Coordinates in [lng, lat] (GeoJSON/WGS 84)
+- Knowledge documents have YAML frontmatter (type, created, tags, status)
+- Knowledge documents use `[[wikilinks]]` to Obsidian vault concepts
 - Commit messages in English
+- No person names in public-facing data

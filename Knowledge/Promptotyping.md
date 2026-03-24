@@ -9,11 +9,11 @@ status: draft
 
 > Abgleich mit [[Promptotyping]] im Obsidian Research Vault (Applied Generative AI/Promptotyping.md)
 
-## Kernprinzip
-
-**"Documents as Source of Truth, Code as Disposable Artifact."**
+## Definition
 
 Promptotyping ist eine iterative Context-Engineering-Arbeitstechnik, die Prompt Engineering mit nutzerzentriertem Design verbindet, um Forschungsartefakte (Interfaces, Tools, Workflows) kollaborativ mit Frontier-LLMs zu entwickeln.
+
+Das Kernprinzip ist noch in Arbeit und wird durch die Praxis weiter geschärft.
 
 ## Vier Phasen
 

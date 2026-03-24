@@ -1,104 +1,61 @@
-# Promptotyping Journal
+---
+type: knowledge
+created: 2026-03-24
+tags: [project-journal, dhd-landscape]
+status: draft
+---
 
-This journal documents both the development of the DHd Landscape project and the Promptotyping process itself — how AI-assisted prompting, iteration, and verification shape the research output.
+# Project Journal — DHd Landscape
+
+Inhaltliche Entwicklung des Projekts: Entscheidungen, Fortschritt, Daten, Visualisierungen.
 
 ---
 
-## 2026-03-24 — Session 1: Ideation & First Prototype
+## 2026-03-24 — Projektstart
 
-### Promptotyping Context
-- **Setting**: Conversation between researcher and Claude (Opus 4.6) in Claude Code
-- **Knowledge sources used**: Researcher's domain knowledge (DH community, key figures, institutions), Obsidian Research Vault (curated second brain with stable cross-project knowledge)
-- **Method**: Conversational ideation → structured planning → immediate prototyping
+### Ideation
+- Idee: Interaktive Karte der DH-Forschungslandschaft im DACH-Raum
+- Scope: DH-Zentren und Professuren, filterbar nach Disziplin, Methode, Typ
+- Zielgruppe: DHd-Community, Forschende, Studierende, Fördergeber
 
-### Phase: Ideation
-- **Prompt intent**: "I want to study DH labs in the DACH region and create an information visualization"
-- **AI contribution**: Structured the idea into scope, data sources, tech options, and phases. Proposed MapLibre GL JS over Leaflet for aesthetic/animation capabilities.
-- **Human decision**: Vanilla JS, no frameworks, no npm — must be deployable to GitHub Pages without build steps. Named the project "DHd Landscape" (targeting the DHd community directly).
+### Tech-Entscheidungen
+- MapLibre GL JS via CDN (WebGL, Vektor-Rendering)
+- Vanilla JS, kein Framework, kein npm — GitHub Pages deployable
+- CartoDB Dark Tiles als Basemap
+- Daten als JSON in `Data/`
 
-### Phase: Project Setup (Promptotyping Structure)
-- **Prompt intent**: "Create the project structure following the Promptotyping method"
-- **Repo structure created**:
-  - `Knowledge/` — Obsidian-style research vault (Design.md, Data.md, Research.md)
-  - `Data/` — Datasets
-  - `Feedback/` — For verification cycles
-  - `Journal.md` — This file (dual-purpose: project + method documentation)
-  - `CLAUDE.md` — AI context file
-- **Methodological note**: Two knowledge layers identified:
-  1. **Promptotyping Vault** (in-repo) — project-specific knowledge
-  2. **Obsidian Research Vault** (external) — curated, stable, cross-project knowledge base (UI patterns, technologies, domain knowledge). Higher reliability than web search because human-curated.
+### Datenerhebung: Sahle-Liste
+- Quelle: Patrick Sahles DH-Professuren-Liste (https://dhd-blog.org/?p=11018)
+- 150 Einträge extrahiert, ~130 verwendbar, auf 52 Institutionen aggregiert
+- Disziplinen und Methoden AI-klassifiziert aus Denominationen — **Verifikation nötig**
 
-### Phase: First Promptotyping-Interface
-- **Prompt intent**: "Build the prototype"
-- **Output**: `index.html` — a fully functional MapLibre GL JS map with:
-  - 5 sample DH locations (Graz, Berlin, Wuppertal, Trier, Basel)
-  - Dark academic aesthetic (desaturated OSM tiles, glow effects)
-  - Filter buttons by type (center/professorship) and discipline
-  - Click-to-inspect info cards with disciplines, methods, people
-  - Fly-to animations on filter and click
-- **Verification**: Researcher opened in browser, confirmed "schaut schon sehr gut aus" (looks very good)
-- **Data model established**: JSON with id, name, institution, city, country, coordinates, type, disciplines, methods, url, people, description
+### Design-Entscheidung: Keine Personennamen
+- Karte zeigt Institutionsprofile, nicht Einzelpersonen
+- Begründung: Ethik + bessere Antwort auf die Kernfrage "Wo wird was beforscht?"
+- Einheit der Analyse: Institution mit DH-Profil (Disziplinen, Methoden, Positionsanzahl)
 
----
+### Karten-Fixes
+- OSM Tiles → CartoDB Dark (CORS-Problem)
+- demotiles.maplibre.org Fonts → fonts.openmaptiles.org / Noto Sans
 
-## 2026-03-24 — Session 1 (continued): Data Collection & Interface Evolution
+### Knowledge-Vault & Obsidian-Abgleich
+- Knowledge-Dokumente mit Obsidian Research Vault abgeglichen
+- YAML Frontmatter und [[wikilinks]] nach Obsidian-Konventionen
+- Neue Dokumente: Requirements.md (User Stories), Promptotyping.md
+- Theoretische Grundlagen integriert: Shneiderman, Munzner, Scholar-Centered Design, TaDiRAH
 
-### Phase: Data Acquisition
-- **Prompt intent**: "Collect Sahle's list and build the dataset"
-- **Process**:
-  1. AI searched for Patrick Sahle's DH professorship list (tried multiple URLs)
-  2. Found active source at https://dhd-blog.org/?p=11018
-  3. WebFetch extracted all 150 entries with metadata (year, city, level, denomination, person, status)
-  4. AI geocoded all ~45 unique cities with coordinates
-  5. AI enriched entries with discipline and method classifications based on denomination titles
-- **Output**: `Data/dh-professorships.json` — ~120 entries with full metadata (some merged/unfilled entries excluded)
-- **Data quality note**: Discipline/method classifications are AI-inferred from denomination titles and known context. These need human verification in feedback cycles.
+### Use Case definiert: Digitale Editionen
+- Leit-Szenario: Wie haben sich digitale Editionen im DACH-Raum entwickelt?
+- 6 User Stories formuliert (US-1 bis US-6)
+- IDE als konkretes Beispiel für generischen Use Case
 
-### Phase: Second Promptotyping-Interface (Major Iteration)
-- **Prompt intent**: "Continue — plan and execute"
-- **Output**: Completely reworked `index.html`:
-  - **Clustering**: MapLibre GL JS native clustering for dense areas (Köln, Berlin, Erlangen etc.)
-  - **Multi-filter**: Discipline filters, method filters, country filters (DE/AT/CH/LU) — all with counts
-  - **Timeline slider**: Filter by year range (2008–2026), shows growth of DH professorships
-  - **Search**: Free-text search across person, city, institution, denomination
-  - **Visual encoding**: Filled positions (purple) vs. open positions (amber), temporary positions with reduced opacity
-  - **Cluster drill-down**: Click cluster → list of entries at that location
-  - **Stats footer**: Live counts, legend, source attribution
-- **Key design decisions**:
-  - Filters use OR logic within a group (show all matching any selected discipline)
-  - Cluster expands on click until zoom > 11, then shows list
-  - Dark academic aesthetic preserved and refined
+### Datenquellen-Recherche
+- 10 Quellen identifiziert und priorisiert
+- OpenAlex API als Top-Neuentdeckung (77 DE-Institutionen)
+- JSON-LD Modell designed: Schema.org + Wikidata + TaDiRAH + ROR
 
-### Promptotyping Observations
-- The transition from 5 sample points to ~120 real entries required fundamental UI changes (clustering, search, timeline)
-- AI classification of disciplines/methods from denomination titles is a useful but imperfect heuristic — creates a testable hypothesis for the researcher to verify
-- The data acquisition step (web fetch → structured JSON) demonstrates how Promptotyping bridges manual and automated data collection
-
----
-
-## 2026-03-24 — Session 1 (cont.): Anonymization & Institution-Level Aggregation
-
-### Phase: Design Decision — No Individual Names
-- **Prompt intent**: "I don't want to name individual persons — how can we represent this elegantly?"
-- **Human reasoning**: The map should show the landscape, not expose individuals. Use cases are: "Who researches Semantic Web?" → show institutions, not persons. "Where is DH taught?" → show institutional profiles.
-- **AI contribution**: Proposed aggregation from individual professorships to institution-level profiles.
-- **Output**:
-  - `Data/build-institutions.js` — aggregation script (130 professorships → 52 institutions)
-  - `Data/institutions.json` — institution profiles with discipline/method mix, position counts
-  - Reworked `index.html`: marker size by position count, institution profile cards, no person names
-
-### Phase: Map Tiles Fix
-- Switched from OSM raster tiles (CORS issues locally) to CartoDB Dark tiles (`basemaps.cartocdn.com/dark_all`)
-- Fixed font glyphs: switched from broken `demotiles.maplibre.org` to `fonts.openmaptiles.org` with Noto Sans
-
-### Promptotyping Observations
-- The anonymization decision changed the fundamental unit of analysis (person → institution)
-- This is a good example of how Promptotyping surfaces design decisions through conversation — the researcher's ethical intuition ("I don't want to expose individuals") led to a better data model
-- Three perspectives emerged: Research (topics), Teaching (curricula), Networking (find collaborators by topic)
-
-### Ideas for Next Iteration
-1. Linked Open Data: represent data as JSON-LD, link to Wikidata entities
-2. Wikidata as additional data source for institutions
-3. Sync Knowledge vault with Obsidian Research Vault for verification
-4. Add DH centers (not just professorships)
-5. Deploy to GitHub Pages
+### Stand Ende Session 1
+- 52 Institutionen auf interaktiver Karte
+- Filter: Disziplinen, Methoden, Länder, Timeline
+- Knowledge-Vault: 5 Dokumente (Data, Design, Research, Requirements, Promptotyping)
+- Repo: https://github.com/chpollin/dhd-landscape

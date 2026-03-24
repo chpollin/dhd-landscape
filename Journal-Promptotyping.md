@@ -43,3 +43,25 @@ Ein einzelnes Journal für Projekt und Methode vermischt zwei Zielgruppen: Wer d
 - Was ist das Kernprinzip von Promptotyping? ("Documents as Source of Truth" wurde verworfen — was tritt an seine Stelle?)
 - Wie systematisch sollten Verification Milestones definiert werden?
 - Wie dokumentiert man die Rolle des Obsidian Vaults als "zweites Hirn" methodisch sauber?
+
+---
+
+## Abschluss Iteration 1 — Reflexion
+
+### Was diese Iteration gezeigt hat
+
+**Promptotyping-Iterationen** haben eine natürliche Struktur:
+1. Daten sammeln → Modellieren → Visualisieren → **Verifizieren** → Lernen
+2. Das Lernen fließt zurück in die Knowledge-Dokumente
+3. Die nächste Iteration baut auf den Erkenntnissen auf
+
+Die erste Iteration hat ein funktionierendes Promptotyping-Interface erzeugt (Karte mit 52 Institutionen). Durch die Verifikation (Screenshot + kritische Bewertung) sind 9 konkrete Verbesserungspunkte identifiziert worden. Diese fließen als Input in Iteration 2.
+
+### Beobachtung 8: Iteration als Erkenntnisquelle
+Man muss das Interface sehen um zu wissen, was nicht funktioniert. Abstrakte Planung hätte die 9 Probleme nicht aufgedeckt — erst die materielle Konfrontation mit dem Artefakt macht sie sichtbar. Das ist der Kern von Promptotyping: **schnell materialisieren, dann kritisch bewerten**.
+
+### Beobachtung 9: Technische Hürden als Zeitfresser
+Drei Glyph-Server-Wechsel (demotiles → openmaptiles → openfreemap → MapTiler) haben unnötig Zeit gekostet. Erkenntnis: Bei externen Abhängigkeiten sofort testen, nicht mehrfach wechseln. MapTiler mit API-Key ist die robuste Lösung.
+
+### Beobachtung 10: Daten-Enrichment als Promptotyping-Stärke
+Die OpenAlex-Integration (282 Institutionen, Wikidata/ROR-IDs automatisch) zeigt wie Promptotyping Datenerhebung beschleunigt: ein Script geschrieben, sofort ausgeführt, 40/52 Matches. Ohne Promptotyping wäre das manuelle Recherche über Tage.

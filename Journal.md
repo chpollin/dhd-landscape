@@ -54,8 +54,42 @@ Inhaltliche Entwicklung des Projekts: Entscheidungen, Fortschritt, Daten, Visual
 - OpenAlex API als Top-Neuentdeckung (77 DE-Institutionen)
 - JSON-LD Modell designed: Schema.org + Wikidata + TaDiRAH + ROR
 
-### Stand Ende Session 1
-- 52 Institutionen auf interaktiver Karte
-- Filter: Disziplinen, Methoden, Länder, Timeline
+### OpenAlex-Integration
+- 282 DH-Institutionen via OpenAlex API geholt (Topic T12377)
+- 40/52 Sahle-Institutionen mit OpenAlex gematched
+- Angereichert: ROR-IDs (40), Wikidata-IDs (17), DH-Publikationszahlen (1906 total)
+- TaDiRAH-Mapping: 30 Methoden auf DARIAH-Vokabular-URIs gemappt
+
+### Karten-Fixes (fortlaufend)
+- Glyph-Server: demotiles → openmaptiles → openfreemap → **MapTiler** (final funktionierend)
+- Font: Noto Sans → Americana → **Open Sans Regular**
+- Konsolen-Logging hinzugefügt (Data-Stats, Map-Load, Filter-State)
+
+---
+
+## Abschluss Promptotyping-Iteration 1
+
+### Was funktioniert
+- 52 Institutionen auf Karte mit Filtern (Disziplin, Methode, Land, Timeline, Suche)
+- Institutions-Profile mit Positionslisten (ohne Personennamen)
+- Marker-Größe nach Positionsanzahl
+- Konsolen-Logging für Debugging
+- GitHub Pages live: https://chpollin.github.io/dhd-landscape/
+
+### Was nicht gut funktioniert (Erkenntnisse für Iteration 2)
+1. Filter-Bereich nimmt zu viel Platz ein — drückt Karte nach unten
+2. Keine visuelle Hierarchie bei Filtern (Discipline/Method/Country sehen gleich aus)
+3. Punkte alle gleiche Farbe — keine Differenzierung nach Typ oder Status
+4. Zahlen in kleinen Kreisen schwer lesbar
+5. Stats und Timeline visuell zu schwach
+6. Kein Hover-Effekt, kein Fly-To beim Laden
+7. Keine Legende, kein "Reset Filters"
+8. OpenAlex-Publikationszahlen nicht sichtbar im UI
+9. Keine Aggregations-Views (Charts, Timelines) — nur Karte
+
+### Stand
+- 52 Institutionen, 130 Professuren, 282 OpenAlex-Einträge
 - Knowledge-Vault: 5 Dokumente (Data, Design, Research, Requirements, Promptotyping)
+- 2 Journale (Projekt + Promptotyping)
 - Repo: https://github.com/chpollin/dhd-landscape
+- Live: https://chpollin.github.io/dhd-landscape/

@@ -20,12 +20,30 @@
       "Digital Humanities"
     ],
     "methods": [
-      "3D Modeling",
-      "Data Modeling",
-      "Digital Edition",
-      "GIS",
-      "NLP",
-      "TEI/XML"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Data Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Digital Edition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "TEI/XML",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+      }
     ],
     "positions": [
       {
@@ -122,7 +140,11 @@
           "3D Modeling"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "tu-darmstadt",
@@ -145,16 +167,46 @@
       "Digital Humanities"
     ],
     "methods": [
-      "3D Modeling",
-      "Annotation",
-      "Corpus Linguistics",
-      "Data Science",
-      "Digital Edition",
-      "GIS",
-      "NLP",
-      "Stylometry",
-      "TEI/XML",
-      "Text Mining"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Annotation",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/annotating"
+      },
+      {
+        "label": "Corpus Linguistics",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Data Science",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Digital Edition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Stylometry",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics"
+      },
+      {
+        "label": "TEI/XML",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -258,7 +310,11 @@
           "Digital Edition"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/05n911h24",
+    "dhPublicationCount": 100,
+    "url": "https://www.tu-darmstadt.de"
   },
   {
     "id": "universit-t-w-rzburg",
@@ -280,10 +336,22 @@
       "Digital Musicology"
     ],
     "methods": [
-      "Data Visualization",
-      "Digital Edition",
-      "Machine Learning",
-      "Text Mining"
+      {
+        "label": "Data Visualization",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      },
+      {
+        "label": "Digital Edition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -363,7 +431,11 @@
           "Machine Learning"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/00fbnyb24",
+    "dhPublicationCount": 77,
+    "url": "http://www.uni-wuerzburg.de/en/ueber/university/"
   },
   {
     "id": "fau-erlangen-n-rnberg",
@@ -386,14 +458,38 @@
       "Spatial Humanities"
     ],
     "methods": [
-      "Computer Vision",
-      "Corpus Linguistics",
-      "GIS",
-      "HCI",
-      "Image Analysis",
-      "NLP",
-      "Spatial Analysis",
-      "Text Mining"
+      {
+        "label": "Computer Vision",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Corpus Linguistics",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "HCI",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+      },
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Spatial Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -481,7 +577,11 @@
           "Image Analysis"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/00f7hpc57",
+    "dhPublicationCount": 48,
+    "url": "https://www.fau.de/"
   },
   {
     "id": "universit-t-paderborn",
@@ -503,11 +603,26 @@
       "Media Studies"
     ],
     "methods": [
-      "Data Modeling",
-      "Digital Edition",
-      "NLP",
-      "TEI/XML",
-      "Virtual Reality"
+      {
+        "label": "Data Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Digital Edition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "TEI/XML",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+      },
+      {
+        "label": "Virtual Reality",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      }
     ],
     "positions": [
       {
@@ -593,7 +708,11 @@
           "TEI/XML"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q679134",
+    "rorId": "https://ror.org/058kzsd48",
+    "dhPublicationCount": 41,
+    "url": "http://www.uni-paderborn.de/en/"
   },
   {
     "id": "universit-t-graz",
@@ -615,13 +734,34 @@
       "Museum Studies"
     ],
     "methods": [
-      "3D Modeling",
-      "Corpus Linguistics",
-      "Data Modeling",
-      "GIS",
-      "Linked Data",
-      "NLP",
-      "TEI/XML"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Corpus Linguistics",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Data Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "Linked Data",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "TEI/XML",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+      }
     ],
     "positions": [
       {
@@ -697,7 +837,11 @@
           "Data Modeling"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q622683",
+    "rorId": "https://ror.org/01faaaf77",
+    "dhPublicationCount": 70,
+    "url": "https://www.uni-graz.at/en/"
   },
   {
     "id": "universit-t-bamberg",
@@ -719,12 +863,30 @@
       "Digital History"
     ],
     "methods": [
-      "3D Modeling",
-      "Data Visualization",
-      "GIS",
-      "Machine Learning",
-      "NLP",
-      "Network Analysis"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Data Visualization",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Network Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+      }
     ],
     "positions": [
       {
@@ -795,7 +957,11 @@
           "GIS"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-trier",
@@ -818,12 +984,30 @@
       "Digital Lexicography"
     ],
     "methods": [
-      "Knowledge Graphs",
-      "Linked Data",
-      "Machine Learning",
-      "NLP",
-      "Stylometry",
-      "Text Mining"
+      {
+        "label": "Knowledge Graphs",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+      },
+      {
+        "label": "Linked Data",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Stylometry",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -896,7 +1080,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q702486",
+    "rorId": "https://ror.org/02778hg05",
+    "dhPublicationCount": 78,
+    "url": "https://www.uni-trier.de/"
   },
   {
     "id": "universit-t-stuttgart",
@@ -916,10 +1104,22 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Computer Vision",
-      "Machine Learning",
-      "NLP",
-      "Text Mining"
+      {
+        "label": "Computer Vision",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -975,7 +1175,11 @@
           "Text Mining"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q122453",
+    "rorId": "https://ror.org/04vnq7t77",
+    "dhPublicationCount": 69,
+    "url": "http://www.uni-stuttgart.de/home/index.en.html"
   },
   {
     "id": "universit-t-heidelberg",
@@ -997,11 +1201,26 @@
       "Papyrology"
     ],
     "methods": [
-      "Digital Edition",
-      "Image Analysis",
-      "Machine Learning",
-      "NLP",
-      "Scientific Computing"
+      {
+        "label": "Digital Edition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+      },
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Scientific Computing",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      }
     ],
     "positions": [
       {
@@ -1058,7 +1277,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": "Q151510",
+    "rorId": "https://ror.org/038t36y30",
+    "dhPublicationCount": 37,
+    "url": "https://www.uni-heidelberg.de"
   },
   {
     "id": "universit-t-wien",
@@ -1079,10 +1302,22 @@
       "Medieval Studies"
     ],
     "methods": [
-      "Digital Edition",
-      "NLP",
-      "Stemmatology",
-      "TEI/XML"
+      {
+        "label": "Digital Edition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Stemmatology",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "TEI/XML",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+      }
     ],
     "positions": [
       {
@@ -1140,7 +1375,11 @@
           "Stemmatology"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-leipzig",
@@ -1160,12 +1399,30 @@
       "Digital Humanities"
     ],
     "methods": [
-      "3D Modeling",
-      "Data Visualization",
-      "Digital Edition",
-      "GIS",
-      "NLP",
-      "Text Mining"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Data Visualization",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      },
+      {
+        "label": "Digital Edition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/editing"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -1224,7 +1481,11 @@
           "Digital Edition"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/03s7gtk40",
+    "dhPublicationCount": 121,
+    "url": "https://www.uni-leipzig.de/en/"
   },
   {
     "id": "lmu-m-nchen",
@@ -1246,13 +1507,34 @@
       "Digital Cultural Heritage"
     ],
     "methods": [
-      "3D Modeling",
-      "Image Analysis",
-      "Machine Learning",
-      "NLP",
-      "Stylometry",
-      "Text Mining",
-      "Virtual Reality"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Stylometry",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/stylistics"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      },
+      {
+        "label": "Virtual Reality",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      }
     ],
     "positions": [
       {
@@ -1311,7 +1593,11 @@
           "Image Analysis"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-bielefeld",
@@ -1331,8 +1617,14 @@
       "Medieval Studies"
     ],
     "methods": [
-      "Corpus Linguistics",
-      "NLP"
+      {
+        "label": "Corpus Linguistics",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -1386,7 +1678,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/02hpadn98",
+    "dhPublicationCount": 59,
+    "url": "https://www.uni-bielefeld.de"
   },
   {
     "id": "universit-t-halle-wittenberg",
@@ -1404,7 +1700,10 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Computer Vision"
+      {
+        "label": "Computer Vision",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      }
     ],
     "positions": [
       {
@@ -1442,7 +1741,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/05gqaka33",
+    "dhPublicationCount": 23,
+    "url": "http://www.uni-halle.de/?lang=en"
   },
   {
     "id": "universit-t-marburg",
@@ -1462,8 +1765,14 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Image Analysis",
-      "Network Analysis"
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Network Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+      }
     ],
     "positions": [
       {
@@ -1503,7 +1812,11 @@
           "Image Analysis"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q155354",
+    "rorId": "https://ror.org/01rdrb571",
+    "dhPublicationCount": 31,
+    "url": "https://www.uni-marburg.de/"
   },
   {
     "id": "universit-t-augsburg",
@@ -1522,11 +1835,26 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Data Visualization",
-      "Image Analysis",
-      "Linked Data",
-      "Machine Learning",
-      "NLP"
+      {
+        "label": "Data Visualization",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      },
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Linked Data",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -1572,7 +1900,11 @@
           "Linked Data"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/03p14d497",
+    "dhPublicationCount": 20,
+    "url": "https://www.uni-augsburg.de"
   },
   {
     "id": "freie-universit-t-berlin",
@@ -1592,11 +1924,26 @@
       "Digital Humanities"
     ],
     "methods": [
-      "3D Modeling",
-      "Computer Vision",
-      "GIS",
-      "Network Analysis",
-      "Text Mining"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Computer Vision",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      },
+      {
+        "label": "Network Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -1643,7 +1990,11 @@
           "3D Modeling"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q152087",
+    "rorId": "https://ror.org/01hcx6992",
+    "dhPublicationCount": 145,
+    "url": "https://www.hu-berlin.de/?set_language=en&cl=en"
   },
   {
     "id": "universit-t-g-ttingen",
@@ -1663,10 +2014,22 @@
       "Digital Humanities"
     ],
     "methods": [
-      "3D Modeling",
-      "Image Analysis",
-      "NLP",
-      "Text Mining"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -1711,7 +2074,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/01y9bpm73",
+    "dhPublicationCount": 60,
+    "url": "http://www.uni-goettingen.de/en/1.html"
   },
   {
     "id": "universit-t-hildesheim",
@@ -1731,7 +2098,10 @@
       "Information Science"
     ],
     "methods": [
-      "NLP"
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -1761,7 +2131,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/02f9det96",
+    "dhPublicationCount": 16,
+    "url": "https://www.uni-hildesheim.de"
   },
   {
     "id": "ruhr-universit-t-bochum",
@@ -1807,7 +2181,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/04tsk2644",
+    "dhPublicationCount": 35,
+    "url": "https://www.ruhr-uni-bochum.de"
   },
   {
     "id": "thm-gie-en",
@@ -1826,8 +2204,14 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Data Science",
-      "Digital Methods"
+      {
+        "label": "Data Science",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Digital Methods",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+      }
     ],
     "positions": [
       {
@@ -1857,7 +2241,11 @@
           "Digital Methods"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-basel",
@@ -1876,10 +2264,22 @@
       "Digital Humanities"
     ],
     "methods": [
-      "AI",
-      "Image Analysis",
-      "Linked Data",
-      "Machine Learning"
+      {
+        "label": "AI",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Linked Data",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      }
     ],
     "positions": [
       {
@@ -1911,7 +2311,11 @@
           "Linked Data"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q372608",
+    "rorId": "https://ror.org/02s6k3f65",
+    "dhPublicationCount": 60,
+    "url": "https://www.unibas.ch"
   },
   {
     "id": "hochschule-mainz-adw-mainz",
@@ -1929,9 +2333,18 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Digital Methods",
-      "Linked Data",
-      "Web Development"
+      {
+        "label": "Digital Methods",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+      },
+      {
+        "label": "Linked Data",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+      },
+      {
+        "label": "Web Development",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/publishing"
+      }
     ],
     "positions": [
       {
@@ -1961,7 +2374,11 @@
           "Web Development"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/023b0x485",
+    "dhPublicationCount": 37,
+    "url": "https://www.uni-mainz.de"
   },
   {
     "id": "universit-t-passau",
@@ -1980,8 +2397,14 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Corpus Linguistics",
-      "NLP"
+      {
+        "label": "Corpus Linguistics",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -2009,7 +2432,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q704468",
+    "rorId": "https://ror.org/05ydjnb78",
+    "dhPublicationCount": 23,
+    "url": "http://www.uni-passau.de/en/"
   },
   {
     "id": "tu-chemnitz",
@@ -2028,7 +2455,10 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Corpus Linguistics"
+      {
+        "label": "Corpus Linguistics",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      }
     ],
     "positions": [
       {
@@ -2055,7 +2485,11 @@
           "Corpus Linguistics"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q159630",
+    "rorId": "https://ror.org/00a208s56",
+    "dhPublicationCount": 14,
+    "url": "https://www.tu-chemnitz.de/index.html.en"
   },
   {
     "id": "fh-potsdam",
@@ -2074,7 +2508,10 @@
       "Information Science"
     ],
     "methods": [
-      "Digitization"
+      {
+        "label": "Digitization",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/capturing"
+      }
     ],
     "positions": [
       {
@@ -2102,7 +2539,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/03bnmw459",
+    "dhPublicationCount": 55,
+    "url": "https://www.uni-potsdam.de/en/"
   },
   {
     "id": "universit-t-bern",
@@ -2121,10 +2562,22 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Handwriting Recognition",
-      "Machine Learning",
-      "Stemmatology",
-      "TEI/XML"
+      {
+        "label": "Handwriting Recognition",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/transcription"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "Stemmatology",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "TEI/XML",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+      }
     ],
     "positions": [
       {
@@ -2156,7 +2609,11 @@
           "Stemmatology"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/02k7v4d05",
+    "dhPublicationCount": 56,
+    "url": "https://www.unibe.ch"
   },
   {
     "id": "universit-t-jena",
@@ -2175,10 +2632,22 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Computer Vision",
-      "Image Analysis",
-      "Machine Learning",
-      "NLP"
+      {
+        "label": "Computer Vision",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Image Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Machine Learning",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/machineLearning"
+      },
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -2210,7 +2679,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/05qpz1x62",
+    "dhPublicationCount": 27,
+    "url": "https://www.uni-jena.de/en"
   },
   {
     "id": "universit-t-frankfurt",
@@ -2229,8 +2702,14 @@
       "Digital Humanities"
     ],
     "methods": [
-      "NLP",
-      "Text Mining"
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -2261,7 +2740,11 @@
           "Text Mining"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-freiburg",
@@ -2291,7 +2774,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-f-r-weiterbildung-krems",
@@ -2323,7 +2810,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/03ef4a036",
+    "dhPublicationCount": 10,
+    "url": "https://www.donau-uni.ac.at"
   },
   {
     "id": "universit-t-z-rich",
@@ -2355,7 +2846,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-des-saarlandes",
@@ -2373,7 +2868,10 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Digital Methods"
+      {
+        "label": "Digital Methods",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/methodsDevelopment"
+      }
     ],
     "positions": [
       {
@@ -2389,7 +2887,11 @@
           "Digital Methods"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/01jdpyv68",
+    "dhPublicationCount": 22,
+    "url": "http://www.uni-saarland.de/en/home.html"
   },
   {
     "id": "fh-erfurt",
@@ -2421,7 +2923,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q702524",
+    "rorId": "https://ror.org/03606hw36",
+    "dhPublicationCount": 18,
+    "url": "https://www.uni-erfurt.de/index.php?id=1&L=1"
   },
   {
     "id": "universit-t-regensburg",
@@ -2451,7 +2957,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q574571",
+    "rorId": "https://ror.org/01eezs655",
+    "dhPublicationCount": 23,
+    "url": "https://www.uni-regensburg.de"
   },
   {
     "id": "hochschule-augsburg",
@@ -2469,7 +2979,10 @@
       "Computational Linguistics"
     ],
     "methods": [
-      "NLP"
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -2485,7 +2998,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/03p14d497",
+    "dhPublicationCount": 20,
+    "url": "https://www.uni-augsburg.de"
   },
   {
     "id": "fernuniversit-t-in-hagen",
@@ -2503,7 +3020,10 @@
       "Computational Linguistics"
     ],
     "methods": [
-      "NLP"
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -2519,7 +3039,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/04tkkr536",
+    "dhPublicationCount": 15,
+    "url": "https://www.fernuni-hagen.de"
   },
   {
     "id": "universit-t-vechta",
@@ -2549,7 +3073,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-oldenburg",
@@ -2581,7 +3109,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/033n9gh91",
+    "dhPublicationCount": 15,
+    "url": "https://uol.de"
   },
   {
     "id": "universit-t-klagenfurt",
@@ -2600,7 +3132,10 @@
       "Digital Humanities"
     ],
     "methods": [
-      "NLP"
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -2617,7 +3152,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/05q9m0937",
+    "dhPublicationCount": 7,
+    "url": "https://www.aau.at"
   },
   {
     "id": "universit-t-magdeburg",
@@ -2649,7 +3188,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-rostock",
@@ -2679,7 +3222,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q159895",
+    "rorId": "https://ror.org/03zdwsf69",
+    "dhPublicationCount": 20,
+    "url": "http://www.uni-rostock.de/en/"
   },
   {
     "id": "humboldt-universit-t-zu-berlin",
@@ -2697,9 +3244,18 @@
       "Digital History"
     ],
     "methods": [
-      "Data Visualization",
-      "Digital Source Criticism",
-      "Text Mining"
+      {
+        "label": "Data Visualization",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      },
+      {
+        "label": "Digital Source Criticism",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -2717,7 +3273,11 @@
           "Digital Source Criticism"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q152087",
+    "rorId": "https://ror.org/01hcx6992",
+    "dhPublicationCount": 145,
+    "url": "https://www.hu-berlin.de/?set_language=en&cl=en"
   },
   {
     "id": "technische-universit-t-berlin",
@@ -2736,8 +3296,14 @@
       "Provenance Research"
     ],
     "methods": [
-      "Data Modeling",
-      "Linked Data"
+      {
+        "label": "Data Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "Linked Data",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/linking"
+      }
     ],
     "positions": [
       {
@@ -2755,7 +3321,11 @@
           "Data Modeling"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q152087",
+    "rorId": "https://ror.org/01hcx6992",
+    "dhPublicationCount": 145,
+    "url": "https://www.hu-berlin.de/?set_language=en&cl=en"
   },
   {
     "id": "th-k-ln",
@@ -2787,7 +3357,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-kiel",
@@ -2805,8 +3379,14 @@
       "Digital Archaeology"
     ],
     "methods": [
-      "3D Modeling",
-      "GIS"
+      {
+        "label": "3D Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "GIS",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/spatialAnalysis"
+      }
     ],
     "positions": [
       {
@@ -2823,7 +3403,11 @@
           "3D Modeling"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/04v76ef78",
+    "dhPublicationCount": 23,
+    "url": "https://www.uni-kiel.de"
   },
   {
     "id": "universit-t-potsdam",
@@ -2841,7 +3425,10 @@
       "Computational Linguistics"
     ],
     "methods": [
-      "NLP"
+      {
+        "label": "NLP",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/nlp"
+      }
     ],
     "positions": [
       {
@@ -2857,7 +3444,11 @@
           "NLP"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/03bnmw459",
+    "dhPublicationCount": 55,
+    "url": "https://www.uni-potsdam.de/en/"
   },
   {
     "id": "bergische-universit-t-wuppertal",
@@ -2876,8 +3467,14 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Data Modeling",
-      "TEI/XML"
+      {
+        "label": "Data Modeling",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/modeling"
+      },
+      {
+        "label": "TEI/XML",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/encoding"
+      }
     ],
     "positions": [
       {
@@ -2895,7 +3492,11 @@
           "Data Modeling"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q447953",
+    "rorId": "https://ror.org/00613ak93",
+    "dhPublicationCount": 35,
+    "url": "https://www.uni-wuppertal.de"
   },
   {
     "id": "rwth-aachen",
@@ -2914,8 +3515,14 @@
       "Digital Humanities"
     ],
     "methods": [
-      "Data Science",
-      "Network Analysis"
+      {
+        "label": "Data Science",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/contentAnalysis"
+      },
+      {
+        "label": "Network Analysis",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/networkAnalysis"
+      }
     ],
     "positions": [
       {
@@ -2933,7 +3540,11 @@
           "Data Science"
         ]
       }
-    ]
+    ],
+    "wikidataId": "https://www.wikidata.org/wiki/Q273263",
+    "rorId": "https://ror.org/04xfq0f34",
+    "dhPublicationCount": 19,
+    "url": "http://www.rwth-aachen.de/cms/~a/root/lidx/1/"
   },
   {
     "id": "university-of-luxembourg",
@@ -2963,7 +3574,11 @@
         ],
         "methods": []
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": null,
+    "dhPublicationCount": 0,
+    "url": null
   },
   {
     "id": "universit-t-m-nster",
@@ -2981,8 +3596,14 @@
       "Digital History"
     ],
     "methods": [
-      "Data Visualization",
-      "Text Mining"
+      {
+        "label": "Data Visualization",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/visualization"
+      },
+      {
+        "label": "Text Mining",
+        "tadirahUri": "https://vocabs.dariah.eu/tadirah/textMining"
+      }
     ],
     "positions": [
       {
@@ -2999,6 +3620,10 @@
           "Data Visualization"
         ]
       }
-    ]
+    ],
+    "wikidataId": null,
+    "rorId": "https://ror.org/00pd74e08",
+    "dhPublicationCount": 32,
+    "url": "https://www.uni-muenster.de"
   }
 ]

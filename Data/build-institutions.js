@@ -132,17 +132,83 @@ const institutions = Object.values(groups).map(g => ({
     earliestYear: g.earliestYear,
     disciplines: [...g.disciplines].sort(),
     methods: [...g.methods].sort(),
-    positions: g.positions.sort((a, b) => b.year - a.year)
+    positions: g.positions.sort((a, b) => b.year - a.year),
+    // Placeholder fields for enrichment
+    wikidataId: null,
+    rorId: null,
+    dhPublicationCount: 0,
+    url: null
 })).sort((a, b) => b.totalPositions - a.totalPositions);
 
+// --- Enrich with OpenAlex data ---
+const openalexPath = path.join(__dirname, 'openalex-institutions.json');
+if (fs.existsSync(openalexPath)) {
+    const openalex = JSON.parse(fs.readFileSync(openalexPath, 'utf8'));
+    console.log(`\nEnriching with OpenAlex data (${openalex.length} entries)...`);
+
+    // Build name-matching index (fuzzy: lowercase, remove common prefixes)
+    function normalize(name) {
+        return name.toLowerCase()
+            .replace(/universit[äa]t\s+/g, 'uni ')
+            .replace(/university of\s+/g, 'uni ')
+            .replace(/-/g, ' ')
+            .trim();
+    }
+
+    // City-based matching as primary strategy
+    let matched = 0;
+    for (const inst of institutions) {
+        // Try exact city + country match first
+        const candidates = openalex.filter(o =>
+            o.country === inst.country &&
+            o.city && inst.city &&
+            o.city.toLowerCase() === inst.city.toLowerCase()
+        );
+
+        // Pick the one with highest publication count (likely the main university)
+        let best = null;
+        if (candidates.length === 1) {
+            best = candidates[0];
+        } else if (candidates.length > 1) {
+            // Try name matching among city candidates
+            const normInst = normalize(inst.name);
+            best = candidates.find(c => normalize(c.name).includes(normInst.split(' ')[1] || ''));
+            if (!best) best = candidates.sort((a, b) => b.dh_publication_count - a.dh_publication_count)[0];
+        }
+
+        if (best) {
+            inst.wikidataId = best.wikidata_id;
+            inst.rorId = best.ror_id;
+            inst.dhPublicationCount = best.dh_publication_count;
+            inst.url = best.homepage_url;
+            matched++;
+        }
+    }
+    console.log(`  Matched ${matched}/${institutions.length} institutions with OpenAlex data.`);
+}
+
+// --- Load TaDiRAH mapping ---
+const tadirahPath = path.join(__dirname, 'tadirah-mapping.json');
+if (fs.existsSync(tadirahPath)) {
+    const tadirah = JSON.parse(fs.readFileSync(tadirahPath, 'utf8'));
+    console.log(`\nApplying TaDiRAH mappings...`);
+    for (const inst of institutions) {
+        inst.methods = inst.methods.map(m => {
+            const mapping = tadirah[m];
+            return mapping ? { label: m, tadirahUri: mapping } : { label: m, tadirahUri: null };
+        });
+    }
+}
+
+// --- Write output ---
 fs.writeFileSync(
     path.join(__dirname, 'institutions.json'),
     JSON.stringify(institutions, null, 2),
     'utf8'
 );
 
-console.log(`Aggregated ${raw.length} professorships into ${institutions.length} institutions.`);
+console.log(`\nAggregated ${raw.length} professorships into ${institutions.length} institutions.`);
 console.log(`Top 10:`);
 institutions.slice(0, 10).forEach(i =>
-    console.log(`  ${i.name}: ${i.totalPositions} positions (${i.disciplines.length} disciplines, ${i.methods.length} methods)`)
+    console.log(`  ${i.name}: ${i.totalPositions} positions, ${i.dhPublicationCount} pubs, wikidata: ${i.wikidataId || '-'}, ror: ${i.rorId ? 'yes' : '-'}`)
 );

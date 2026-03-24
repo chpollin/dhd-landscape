@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DHd Landscape</title>
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css">
     <script src="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.js"></script>
     <style>
@@ -181,11 +182,14 @@
     const res = await fetch('Data/institutions.json');
     const data = await res.json();
 
+    // Helper: get method label (handles both string and {label, tadirahUri} format)
+    function mLabel(m) { return typeof m === 'object' ? m.label : m; }
+
     // Counts for filters
     const discCount = {}, methCount = {}, countryCount = {};
     data.forEach(d => {
         d.disciplines.forEach(x => { discCount[x] = (discCount[x] || 0) + 1; });
-        d.methods.forEach(x => { methCount[x] = (methCount[x] || 0) + 1; });
+        d.methods.forEach(x => { methCount[mLabel(x)] = (methCount[mLabel(x)] || 0) + 1; });
         countryCount[d.country] = (countryCount[d.country] || 0) + 1;
     });
 
@@ -254,7 +258,7 @@
                 }
             },
             layers: [{ id: 'carto-tiles', type: 'raster', source: 'carto-tiles' }],
-            glyphs: 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf'
+            glyphs: 'https://glyphs.openfreemap.org/{fontstack}/{range}.pbf'
         },
         center: [10.5, 50.0],
         zoom: 5.5,
@@ -319,7 +323,7 @@
             filter: ['>=', ['get', 'totalPositions'], 3],
             layout: {
                 'text-field': ['to-string', ['get', 'totalPositions']],
-                'text-font': ['Noto Sans Regular'],
+                'text-font': ['Americana-Regular'],
                 'text-size': 10,
                 'text-allow-overlap': true
             },
@@ -338,7 +342,7 @@
             minzoom: 6,
             layout: {
                 'text-field': ['get', 'city'],
-                'text-font': ['Noto Sans Regular'],
+                'text-font': ['Americana-Regular'],
                 'text-size': 10,
                 'text-offset': [0, 1.8],
                 'text-anchor': 'top'
@@ -371,7 +375,7 @@
         let filtered = data;
         if (yearMin > 2008) filtered = filtered.filter(d => d.earliestYear <= yearMin);
         if (active.disc.size > 0) filtered = filtered.filter(d => d.disciplines.some(x => active.disc.has(x)));
-        if (active.meth.size > 0) filtered = filtered.filter(d => d.methods.some(x => active.meth.has(x)));
+        if (active.meth.size > 0) filtered = filtered.filter(d => d.methods.some(x => active.meth.has(mLabel(x))));
         if (active.country.size > 0) filtered = filtered.filter(d => active.country.has(d.country));
         if (searchTerm) {
             const t = searchTerm.toLowerCase();
@@ -379,7 +383,7 @@
                 d.name.toLowerCase().includes(t) ||
                 d.city.toLowerCase().includes(t) ||
                 d.disciplines.some(x => x.toLowerCase().includes(t)) ||
-                d.methods.some(x => x.toLowerCase().includes(t))
+                d.methods.some(x => mLabel(x).toLowerCase().includes(t))
             );
         }
 
@@ -426,9 +430,10 @@
             `<span class="tag">${d}</span>`
         ).join('');
 
-        document.getElementById('c-meth').innerHTML = parse(p.methods).map(m =>
-            `<span class="tag m">${m}</span>`
-        ).join('');
+        document.getElementById('c-meth').innerHTML = parse(p.methods).map(m => {
+            const label = typeof m === 'object' ? m.label : m;
+            return `<span class="tag m">${label}</span>`;
+        }).join('');
 
         const positions = parse(p.positions);
         document.getElementById('c-positions').innerHTML = positions.map(pos =>

@@ -1,0 +1,4232 @@
+[
+  {
+    "openalex_id": "https://openalex.org/I39343248",
+    "name": "Humboldt-Universität zu Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "coordinates": [
+      13.410530090332031,
+      52.52436828613281
+    ],
+    "ror_id": "https://ror.org/01hcx6992",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q152087",
+    "type": "education",
+    "dh_publication_count": 145,
+    "homepage_url": "https://www.hu-berlin.de/?set_language=en&cl=en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I159176309",
+    "name": "Universität Hamburg",
+    "country": "DE",
+    "city": "Hamburg",
+    "coordinates": [
+      9.99302,
+      53.55073
+    ],
+    "ror_id": "https://ror.org/00g30e956",
+    "wikidata_id": "Q156725",
+    "type": "education",
+    "dh_publication_count": 128,
+    "homepage_url": "http://www.uni-hamburg.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I926574661",
+    "name": "Leipzig University",
+    "country": "DE",
+    "city": "Leipzig",
+    "coordinates": [
+      12.37129,
+      51.33962
+    ],
+    "ror_id": "https://ror.org/03s7gtk40",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 121,
+    "homepage_url": "https://www.uni-leipzig.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I180923762",
+    "name": "University of Cologne",
+    "country": "DE",
+    "city": "Cologne",
+    "coordinates": [
+      6.95,
+      50.93333
+    ],
+    "ror_id": "https://ror.org/00rcxh774",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 117,
+    "homepage_url": "http://www.portal.uni-koeln.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I149899117",
+    "name": "Max Planck Society",
+    "country": "DE",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/01hhn8329",
+    "wikidata_id": null,
+    "type": "nonprofit",
+    "dh_publication_count": 112,
+    "homepage_url": "http://www.mpg.de/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I31512782",
+    "name": "Technische Universität Darmstadt",
+    "country": "DE",
+    "city": "Darmstadt",
+    "coordinates": [
+      8.65027,
+      49.87167
+    ],
+    "ror_id": "https://ror.org/05n911h24",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 100,
+    "homepage_url": "https://www.tu-darmstadt.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I129774422",
+    "name": "University of Vienna",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/03prydq77",
+    "wikidata_id": "Q165980",
+    "type": "education",
+    "dh_publication_count": 90,
+    "homepage_url": "https://www.univie.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I8204097",
+    "name": "Ludwig-Maximilians-Universität München",
+    "country": "DE",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/05591te55",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 89,
+    "homepage_url": "https://www.lmu.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I138211613",
+    "name": "Austrian Academy of Sciences",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/03anc3s24",
+    "wikidata_id": "Q299015",
+    "type": "government",
+    "dh_publication_count": 88,
+    "homepage_url": "https://www.oeaw.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I75951250",
+    "name": "Freie Universität Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "coordinates": [
+      13.41053,
+      52.52437
+    ],
+    "ror_id": "https://ror.org/046ak2485",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 86,
+    "homepage_url": "https://www.fu-berlin.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210142348",
+    "name": "Max Planck Institute for the History of Science",
+    "country": "DE",
+    "city": "Berlin",
+    "coordinates": [
+      13.277533531188965,
+      52.446163177490234
+    ],
+    "ror_id": "https://ror.org/0492sjc74",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 84,
+    "homepage_url": "https://www.mpiwg-berlin.mpg.de/en/index.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I23277345",
+    "name": "Berlin-Brandenburg Academy of Sciences and Humanities",
+    "country": "DE",
+    "city": "Berlin",
+    "coordinates": [
+      13.410530090332031,
+      52.52436828613281
+    ],
+    "ror_id": "https://ror.org/05jgq9443",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q219989",
+    "type": "education",
+    "dh_publication_count": 80,
+    "homepage_url": "https://www.bbaw.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I89864525",
+    "name": "Universität Trier",
+    "country": "DE",
+    "city": "Trier",
+    "coordinates": [
+      6.639349937438965,
+      49.75564956665039
+    ],
+    "ror_id": "https://ror.org/02778hg05",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q702486",
+    "type": "education",
+    "dh_publication_count": 78,
+    "homepage_url": "https://www.uni-trier.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I25974101",
+    "name": "University of Würzburg",
+    "country": "DE",
+    "city": "Würzburg",
+    "coordinates": [
+      9.95121,
+      49.79391
+    ],
+    "ror_id": "https://ror.org/00fbnyb24",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 77,
+    "homepage_url": "http://www.uni-wuerzburg.de/en/ueber/university/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210159301",
+    "name": "Swiss Institute of Comparative Law",
+    "country": "CH",
+    "city": "Lausanne",
+    "coordinates": [
+      6.632820129394531,
+      46.51599884033203
+    ],
+    "ror_id": "https://ror.org/05ee96150",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 74,
+    "homepage_url": "http://www.isdc.ch/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I15766117",
+    "name": "University of Graz",
+    "country": "AT",
+    "city": "Graz",
+    "coordinates": [
+      15.449999809265137,
+      47.06666946411133
+    ],
+    "ror_id": "https://ror.org/01faaaf77",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q622683",
+    "type": "education",
+    "dh_publication_count": 70,
+    "homepage_url": "https://www.uni-graz.at/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I100066346",
+    "name": "University of Stuttgart",
+    "country": "DE",
+    "city": "Stuttgart",
+    "coordinates": [
+      9.177020072937012,
+      48.782318115234375
+    ],
+    "ror_id": "https://ror.org/04vnq7t77",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q122453",
+    "type": "education",
+    "dh_publication_count": 69,
+    "homepage_url": "http://www.uni-stuttgart.de/home/index.en.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I97565354",
+    "name": "University of Lausanne",
+    "country": "CH",
+    "city": "Lausanne",
+    "coordinates": [
+      6.63282,
+      46.516
+    ],
+    "ror_id": "https://ror.org/019whta54",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 68,
+    "homepage_url": "https://www.unil.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I74656192",
+    "name": "University of Göttingen",
+    "country": "DE",
+    "city": "Göttingen",
+    "coordinates": [
+      9.93228,
+      51.53443
+    ],
+    "ror_id": "https://ror.org/01y9bpm73",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 60,
+    "homepage_url": "http://www.uni-goettingen.de/en/1.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1850255",
+    "name": "University of Basel",
+    "country": "CH",
+    "city": "Basel",
+    "coordinates": [
+      7.573269844055176,
+      47.55839157104492
+    ],
+    "ror_id": "https://ror.org/02s6k3f65",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q372608",
+    "type": "education",
+    "dh_publication_count": 60,
+    "homepage_url": "https://www.unibas.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I202697423",
+    "name": "University of Zurich",
+    "country": "CH",
+    "city": "Zurich",
+    "coordinates": [
+      8.55,
+      47.36667
+    ],
+    "ror_id": "https://ror.org/02crff812",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 60,
+    "homepage_url": "https://uzh.ch/de.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I20121455",
+    "name": "Bielefeld University",
+    "country": "DE",
+    "city": "Bielefeld",
+    "coordinates": [
+      8.53333,
+      52.03333
+    ],
+    "ror_id": "https://ror.org/02hpadn98",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 59,
+    "homepage_url": "https://www.uni-bielefeld.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2802918869",
+    "name": "Berlin State Library",
+    "country": "DE",
+    "city": "Berlin",
+    "coordinates": [
+      13.410530090332031,
+      52.52436828613281
+    ],
+    "ror_id": "https://ror.org/02ysgg478",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q170109",
+    "type": "archive",
+    "dh_publication_count": 57,
+    "homepage_url": "https://staatsbibliothek-berlin.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I190249584",
+    "name": "Universität Innsbruck",
+    "country": "AT",
+    "city": "Innsbruck",
+    "coordinates": [
+      11.39454,
+      47.26266
+    ],
+    "ror_id": "https://ror.org/054pv6659",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 56,
+    "homepage_url": "https://www.uibk.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I118564535",
+    "name": "University of Bern",
+    "country": "CH",
+    "city": "Bern",
+    "coordinates": [
+      7.44744,
+      46.94809
+    ],
+    "ror_id": "https://ror.org/02k7v4d05",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 56,
+    "homepage_url": "https://www.unibe.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I114090438",
+    "name": "Goethe University Frankfurt",
+    "country": "DE",
+    "city": "Frankfurt am Main",
+    "coordinates": [
+      8.68417,
+      50.11552
+    ],
+    "ror_id": "https://ror.org/04cvxnb49",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 55,
+    "homepage_url": "https://www.uni-frankfurt.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I176453806",
+    "name": "University of Potsdam",
+    "country": "DE",
+    "city": "Potsdam",
+    "coordinates": [
+      13.06566,
+      52.39886
+    ],
+    "ror_id": "https://ror.org/03bnmw459",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 55,
+    "homepage_url": "https://www.uni-potsdam.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I114457229",
+    "name": "University of Geneva",
+    "country": "CH",
+    "city": "Geneva",
+    "coordinates": [
+      6.14569,
+      46.20222
+    ],
+    "ror_id": "https://ror.org/01swzsf04",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 51,
+    "homepage_url": "https://www.unige.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I181369854",
+    "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+    "country": "DE",
+    "city": "Erlangen",
+    "coordinates": [
+      11.00783,
+      49.59099
+    ],
+    "ror_id": "https://ror.org/00f7hpc57",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 48,
+    "homepage_url": "https://www.fau.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2800768169",
+    "name": "Academy of Sciences and Literature",
+    "country": "DE",
+    "city": "Mainz",
+    "coordinates": [
+      8.27114200592041,
+      49.9765739440918
+    ],
+    "ror_id": "https://ror.org/01kdxra28",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q414163",
+    "type": "education",
+    "dh_publication_count": 48,
+    "homepage_url": "http://www.adwmainz.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I8087733",
+    "name": "University of Tübingen",
+    "country": "DE",
+    "city": "Tübingen",
+    "coordinates": [
+      9.052220344543457,
+      48.52265930175781
+    ],
+    "ror_id": "https://ror.org/03a1kwz48",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q153978",
+    "type": "education",
+    "dh_publication_count": 46,
+    "homepage_url": "https://www.uni-tuebingen.de/en/university.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I161046081",
+    "name": "University of Freiburg",
+    "country": "DE",
+    "city": "Freiburg im Breisgau",
+    "coordinates": [
+      7.852220058441162,
+      47.99589920043945
+    ],
+    "ror_id": "https://ror.org/0245cg223",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q153987",
+    "type": "education",
+    "dh_publication_count": 44,
+    "homepage_url": "https://www.uni-freiburg.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I5124864",
+    "name": "École Polytechnique Fédérale de Lausanne",
+    "country": "CH",
+    "city": "Lausanne",
+    "coordinates": [
+      6.63282,
+      46.516
+    ],
+    "ror_id": "https://ror.org/02s376052",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 43,
+    "homepage_url": "http://www.epfl.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I206945453",
+    "name": "Paderborn University",
+    "country": "DE",
+    "city": "Paderborn",
+    "coordinates": [
+      8.754389762878418,
+      51.719051361083984
+    ],
+    "ror_id": "https://ror.org/058kzsd48",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q679134",
+    "type": "education",
+    "dh_publication_count": 41,
+    "homepage_url": "http://www.uni-paderborn.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210144607",
+    "name": "Thüringer Universitäts- und Landesbibliothek",
+    "country": "DE",
+    "city": "Jena",
+    "coordinates": [
+      11.589900016784668,
+      50.92877960205078
+    ],
+    "ror_id": "https://ror.org/0493yt138",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 41,
+    "homepage_url": "https://www.thulb.uni-jena.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2800451222",
+    "name": "Herzog August Library",
+    "country": "DE",
+    "city": "Wolfenbüttel",
+    "coordinates": [
+      10.540949821472168,
+      52.16442108154297
+    ],
+    "ror_id": "https://ror.org/02y5mkh60",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q663820",
+    "type": "archive",
+    "dh_publication_count": 40,
+    "homepage_url": "https://www.hab.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2802635041",
+    "name": "Technische Informationsbibliothek (TIB)",
+    "country": "DE",
+    "city": "Hanover",
+    "coordinates": [
+      9.73322,
+      52.37052
+    ],
+    "ror_id": "https://ror.org/04aj4c181",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 39,
+    "homepage_url": "https://www.tib.eu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I145847075",
+    "name": "TU Wien",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/04d836q62",
+    "wikidata_id": "Q689400",
+    "type": "education",
+    "dh_publication_count": 38,
+    "homepage_url": "https://www.tuwien.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I197323543",
+    "name": "Johannes Gutenberg University Mainz",
+    "country": "DE",
+    "city": "Mainz",
+    "coordinates": [
+      8.2791,
+      49.98419
+    ],
+    "ror_id": "https://ror.org/023b0x485",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 37,
+    "homepage_url": "https://www.uni-mainz.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I223822909",
+    "name": "Heidelberg University",
+    "country": "DE",
+    "city": "Heidelberg",
+    "coordinates": [
+      8.69079,
+      49.40768
+    ],
+    "ror_id": "https://ror.org/038t36y30",
+    "wikidata_id": "Q151510",
+    "type": "education",
+    "dh_publication_count": 37,
+    "homepage_url": "https://www.uni-heidelberg.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I167360494",
+    "name": "University of Wuppertal",
+    "country": "DE",
+    "city": "Wuppertal",
+    "coordinates": [
+      7.148159980773926,
+      51.25627136230469
+    ],
+    "ror_id": "https://ror.org/00613ak93",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q447953",
+    "type": "education",
+    "dh_publication_count": 35,
+    "homepage_url": "https://www.uni-wuppertal.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2800638415",
+    "name": "University of Applied Sciences Potsdam",
+    "country": "DE",
+    "city": "Potsdam",
+    "coordinates": [
+      13.06566047668457,
+      52.398860931396484
+    ],
+    "ror_id": "https://ror.org/012m9bp23",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q896706",
+    "type": "education",
+    "dh_publication_count": 35,
+    "homepage_url": "https://www.fh-potsdam.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I904495901",
+    "name": "Ruhr University Bochum",
+    "country": "DE",
+    "city": "Bochum",
+    "coordinates": [
+      7.21648,
+      51.48165
+    ],
+    "ror_id": "https://ror.org/04tsk2644",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 35,
+    "homepage_url": "https://www.ruhr-uni-bochum.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4577782",
+    "name": "Technische Universität Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "coordinates": [
+      13.41053,
+      52.52437
+    ],
+    "ror_id": "https://ror.org/03v4gjf40",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 34,
+    "homepage_url": "https://www.tu.berlin"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4387154063",
+    "name": "Niedersächsische Staats-und Universitätsbibliothek Göttingen",
+    "country": "DE",
+    "city": "Göttingen",
+    "coordinates": [
+      9.93228,
+      51.53443
+    ],
+    "ror_id": "https://ror.org/05745n787",
+    "wikidata_id": "Q564783",
+    "type": "archive",
+    "dh_publication_count": 33,
+    "homepage_url": "https://www.sub.uni-goettingen.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I22465464",
+    "name": "University of Münster",
+    "country": "DE",
+    "city": "Münster",
+    "coordinates": [
+      7.62571,
+      51.96236
+    ],
+    "ror_id": "https://ror.org/00pd74e08",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 32,
+    "homepage_url": "https://www.uni-muenster.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2802135426",
+    "name": "Leibniz Institute of European History",
+    "country": "DE",
+    "city": "Mainz",
+    "coordinates": [
+      8.27910041809082,
+      49.98419189453125
+    ],
+    "ror_id": "https://ror.org/059dyrr28",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q327772",
+    "type": "facility",
+    "dh_publication_count": 32,
+    "homepage_url": "http://www.ieg-mainz.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210099471",
+    "name": "Leibniz Institute for the German Language",
+    "country": "DE",
+    "city": "Mannheim",
+    "coordinates": [
+      8.472235679626465,
+      49.48796844482422
+    ],
+    "ror_id": "https://ror.org/00hvwkt50",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 32,
+    "homepage_url": "http://www1.ids-mannheim.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210138660",
+    "name": "Bavarian State Library",
+    "country": "DE",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/031h71w90",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 32,
+    "homepage_url": "https://www.bsb-muenchen.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I102335020",
+    "name": "Karlsruhe Institute of Technology",
+    "country": "DE",
+    "city": "Karlsruhe",
+    "coordinates": [
+      8.40444,
+      49.00937
+    ],
+    "ror_id": "https://ror.org/04t3en479",
+    "wikidata_id": "Q309988",
+    "type": "education",
+    "dh_publication_count": 31,
+    "homepage_url": "https://www.kit.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I161103922",
+    "name": "Philipps University of Marburg",
+    "country": "DE",
+    "city": "Marburg",
+    "coordinates": [
+      8.770689964294434,
+      50.80904006958008
+    ],
+    "ror_id": "https://ror.org/01rdrb571",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q155354",
+    "type": "education",
+    "dh_publication_count": 31,
+    "homepage_url": "https://www.uni-marburg.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I206895457",
+    "name": "University of Siegen",
+    "country": "DE",
+    "city": "Siegen",
+    "coordinates": [
+      8.024310111999512,
+      50.87480926513672
+    ],
+    "ror_id": "https://ror.org/02azyry73",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q504723",
+    "type": "education",
+    "dh_publication_count": 31,
+    "homepage_url": "https://www.uni-siegen.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I12708293",
+    "name": "SIB Swiss Institute of Bioinformatics",
+    "country": "CH",
+    "city": "Lausanne",
+    "coordinates": [
+      6.63282,
+      46.516
+    ],
+    "ror_id": "https://ror.org/002n09z45",
+    "wikidata_id": null,
+    "type": "nonprofit",
+    "dh_publication_count": 31,
+    "homepage_url": "https://www.sib.swiss"
+  },
+  {
+    "openalex_id": "https://openalex.org/I135140700",
+    "name": "University of Bonn",
+    "country": "DE",
+    "city": "Bonn",
+    "coordinates": [
+      7.09549,
+      50.73438
+    ],
+    "ror_id": "https://ror.org/041nas322",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 30,
+    "homepage_url": "https://www.uni-bonn.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210113839",
+    "name": "Literaturarchiv",
+    "country": "DE",
+    "city": "Sulzbach-Rosenberg",
+    "coordinates": [
+      11.74092960357666,
+      49.50465774536133
+    ],
+    "ror_id": "https://ror.org/01d5ccc15",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 30,
+    "homepage_url": "http://www.literaturarchiv.de/start.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210117615",
+    "name": "Austrian Centre for Digital Humanities",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/028bsh698",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 30,
+    "homepage_url": "https://www.oeaw.ac.at/acdh/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I33256026",
+    "name": "German Research Centre for Artificial Intelligence",
+    "country": "DE",
+    "city": "Kaiserslautern",
+    "coordinates": [
+      7.771609783172607,
+      49.44300079345703
+    ],
+    "ror_id": "https://ror.org/01ayc5b57",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q896469",
+    "type": "funder",
+    "dh_publication_count": 29,
+    "homepage_url": "https://www.dfki.de/web"
+  },
+  {
+    "openalex_id": "https://openalex.org/I76198965",
+    "name": "Friedrich Schiller University Jena",
+    "country": "DE",
+    "city": "Jena",
+    "coordinates": [
+      11.5899,
+      50.92878
+    ],
+    "ror_id": "https://ror.org/05qpz1x62",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 27,
+    "homepage_url": "https://www.uni-jena.de/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210110517",
+    "name": "Deutsche Nationalbibliothek",
+    "country": "DE",
+    "city": "Frankfurt am Main",
+    "coordinates": [
+      8.649599075317383,
+      50.11936569213867
+    ],
+    "ror_id": "https://ror.org/01n7gem85",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 26,
+    "homepage_url": "http://www.dnb.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I182212641",
+    "name": "University of Salzburg",
+    "country": "AT",
+    "city": "Salzburg",
+    "coordinates": [
+      13.043990135192871,
+      47.79941177368164
+    ],
+    "ror_id": "https://ror.org/05gs8cd61",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q27265",
+    "type": "education",
+    "dh_publication_count": 26,
+    "homepage_url": "https://www.plus.ac.at/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I180437899",
+    "name": "University of Bremen",
+    "country": "DE",
+    "city": "Bremen",
+    "coordinates": [
+      8.80717,
+      53.07582
+    ],
+    "ror_id": "https://ror.org/04ers2y35",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 25,
+    "homepage_url": "https://www.uni-bremen.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I189712700",
+    "name": "University of Konstanz",
+    "country": "DE",
+    "city": "Konstanz",
+    "coordinates": [
+      9.175820350646973,
+      47.66033172607422
+    ],
+    "ror_id": "https://ror.org/0546hnb39",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q835440",
+    "type": "education",
+    "dh_publication_count": 25,
+    "homepage_url": "https://www.uni-konstanz.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I121934306",
+    "name": "Tufts University",
+    "country": "DE",
+    "city": "Medford",
+    "coordinates": [
+      -71.10616,
+      42.41843
+    ],
+    "ror_id": "https://ror.org/05wvpxv85",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 24,
+    "homepage_url": "https://www.tufts.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I200332995",
+    "name": "TU Dortmund University",
+    "country": "DE",
+    "city": "Dortmund",
+    "coordinates": [
+      7.466000080108643,
+      51.51493835449219
+    ],
+    "ror_id": "https://ror.org/01k97gp34",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q685557",
+    "type": "education",
+    "dh_publication_count": 24,
+    "homepage_url": "https://www.tu-dortmund.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2800971497",
+    "name": "Klassik Stiftung Weimar",
+    "country": "DE",
+    "city": "Weimar",
+    "coordinates": [
+      11.32903,
+      50.9803
+    ],
+    "ror_id": "https://ror.org/02ad32n85",
+    "wikidata_id": null,
+    "type": "other",
+    "dh_publication_count": 24,
+    "homepage_url": "https://www.klassik-stiftung.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I186354981",
+    "name": "University of Passau",
+    "country": "DE",
+    "city": "Passau",
+    "coordinates": [
+      13.431220054626465,
+      48.56650161743164
+    ],
+    "ror_id": "https://ror.org/05ydjnb78",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q704468",
+    "type": "education",
+    "dh_publication_count": 23,
+    "homepage_url": "http://www.uni-passau.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I32021983",
+    "name": "Christian-Albrechts-Universität zu Kiel",
+    "country": "DE",
+    "city": "Kiel",
+    "coordinates": [
+      10.13489,
+      54.32133
+    ],
+    "ror_id": "https://ror.org/04v76ef78",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 23,
+    "homepage_url": "https://www.uni-kiel.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I60668342",
+    "name": "University of Regensburg",
+    "country": "DE",
+    "city": "Regensburg",
+    "coordinates": [
+      12.10161018371582,
+      49.01512908935547
+    ],
+    "ror_id": "https://ror.org/01eezs655",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q574571",
+    "type": "education",
+    "dh_publication_count": 23,
+    "homepage_url": "https://www.uni-regensburg.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I68956291",
+    "name": "Martin Luther University Halle-Wittenberg",
+    "country": "DE",
+    "city": "Halle",
+    "coordinates": [
+      11.97947,
+      51.48158
+    ],
+    "ror_id": "https://ror.org/05gqaka33",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 23,
+    "homepage_url": "http://www.uni-halle.de/?lang=en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I884043246",
+    "name": "Hamburg University of Technology",
+    "country": "DE",
+    "city": "Hamburg",
+    "coordinates": [
+      9.99302,
+      53.55073
+    ],
+    "ror_id": "https://ror.org/04bs1pb34",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 23,
+    "homepage_url": "https://www.tuhh.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I35440088",
+    "name": "ETH Zurich",
+    "country": "CH",
+    "city": "Zurich",
+    "coordinates": [
+      8.55,
+      47.36667
+    ],
+    "ror_id": "https://ror.org/05a28rw58",
+    "wikidata_id": "Q11942",
+    "type": "education",
+    "dh_publication_count": 23,
+    "homepage_url": "https://ethz.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I51441396",
+    "name": "Bauhaus-Universität Weimar",
+    "country": "DE",
+    "city": "Weimar",
+    "coordinates": [
+      11.32903003692627,
+      50.98030090332031
+    ],
+    "ror_id": "https://ror.org/033bb5z47",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q573975",
+    "type": "education",
+    "dh_publication_count": 22,
+    "homepage_url": "https://www.uni-weimar.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I91712215",
+    "name": "Saarland University",
+    "country": "DE",
+    "city": "Saarbrücken",
+    "coordinates": [
+      7.00982,
+      49.23262
+    ],
+    "ror_id": "https://ror.org/01jdpyv68",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 22,
+    "homepage_url": "http://www.uni-saarland.de/en/home.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I129774422",
+    "name": "University of Vienna",
+    "country": "DE",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/03prydq77",
+    "wikidata_id": "Q165980",
+    "type": "education",
+    "dh_publication_count": 21,
+    "homepage_url": "https://www.univie.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I147765834",
+    "name": "Leipzig University of Applied Sciences",
+    "country": "DE",
+    "city": "Leipzig",
+    "coordinates": [
+      12.37129020690918,
+      51.33961868286133
+    ],
+    "ror_id": "https://ror.org/03xgcq477",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q1622216",
+    "type": "education",
+    "dh_publication_count": 21,
+    "homepage_url": "https://www.htwk-leipzig.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I177802217",
+    "name": "University of Mannheim",
+    "country": "DE",
+    "city": "Mannheim",
+    "coordinates": [
+      8.462201118469238,
+      49.483924865722656
+    ],
+    "ror_id": "https://ror.org/031bsb921",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q317070",
+    "type": "education",
+    "dh_publication_count": 21,
+    "homepage_url": "https://www.uni-mannheim.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210101898",
+    "name": "GESIS - Leibniz-Institute for the Social Sciences",
+    "country": "DE",
+    "city": "Mannheim",
+    "coordinates": [
+      8.466939926147461,
+      49.48910140991211
+    ],
+    "ror_id": "https://ror.org/018afyw53",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 21,
+    "homepage_url": "https://www.gesis.org"
+  },
+  {
+    "openalex_id": "https://openalex.org/I62916508",
+    "name": "Technical University of Munich",
+    "country": "DE",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/02kkvpp62",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 21,
+    "homepage_url": "https://www.tum.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2802781690",
+    "name": "Austrian National Library",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/03dscga50",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 21,
+    "homepage_url": "https://www.onb.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210119657",
+    "name": "Semantic Designs (United States)",
+    "country": "CH",
+    "city": "Austin",
+    "coordinates": [
+      -97.77733612060547,
+      30.445785522460938
+    ],
+    "ror_id": "https://ror.org/025rxfw41",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 21,
+    "homepage_url": "http://www.semdesigns.com/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I138211613",
+    "name": "Austrian Academy of Sciences",
+    "country": "DE",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/03anc3s24",
+    "wikidata_id": "Q299015",
+    "type": "government",
+    "dh_publication_count": 20,
+    "homepage_url": "https://www.oeaw.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I179225836",
+    "name": "University of Augsburg",
+    "country": "DE",
+    "city": "Augsburg",
+    "coordinates": [
+      10.89851,
+      48.37154
+    ],
+    "ror_id": "https://ror.org/03p14d497",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 20,
+    "homepage_url": "https://www.uni-augsburg.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I183935753",
+    "name": "King's College London",
+    "country": "DE",
+    "city": "London",
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
+    "ror_id": "https://ror.org/0220mzb33",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 20,
+    "homepage_url": "http://www.kcl.ac.uk/index.aspx"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2800024560",
+    "name": "ZBW – Leibniz-Informationszentrum Wirtschaft",
+    "country": "DE",
+    "city": "Kiel",
+    "coordinates": [
+      10.134889602661133,
+      54.32133102416992
+    ],
+    "ror_id": "https://ror.org/03a96gc12",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q317179",
+    "type": "facility",
+    "dh_publication_count": 20,
+    "homepage_url": "https://www.zbw.eu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I44260953",
+    "name": "Heinrich Heine University Düsseldorf",
+    "country": "DE",
+    "city": "Düsseldorf",
+    "coordinates": [
+      6.776159763336182,
+      51.22172164916992
+    ],
+    "ror_id": "https://ror.org/024z2rq82",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q317032",
+    "type": "education",
+    "dh_publication_count": 20,
+    "homepage_url": "http://www.uni-duesseldorf.de/home/en/home.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4665924",
+    "name": "University of Rostock",
+    "country": "DE",
+    "city": "Rostock",
+    "coordinates": [
+      12.14048957824707,
+      54.08869934082031
+    ],
+    "ror_id": "https://ror.org/03zdwsf69",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q159895",
+    "type": "education",
+    "dh_publication_count": 20,
+    "homepage_url": "http://www.uni-rostock.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I62318514",
+    "name": "University of Duisburg-Essen",
+    "country": "DE",
+    "city": "Essen",
+    "coordinates": [
+      7.012279987335205,
+      51.45656967163086
+    ],
+    "ror_id": "https://ror.org/04mz5ra38",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q696757",
+    "type": "education",
+    "dh_publication_count": 20,
+    "homepage_url": "https://www.uni-due.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210107033",
+    "name": "Leibniz Institute for Educational Media | Georg Eckert Institute",
+    "country": "DE",
+    "city": "Braunschweig",
+    "coordinates": [
+      10.526729583740234,
+      52.26594161987305
+    ],
+    "ror_id": "https://ror.org/01hnv8x68",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 19,
+    "homepage_url": "http://www.gei.de/en/home.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I887968799",
+    "name": "RWTH Aachen University",
+    "country": "DE",
+    "city": "Aachen",
+    "coordinates": [
+      6.0834197998046875,
+      50.776641845703125
+    ],
+    "ror_id": "https://ror.org/04xfq0f34",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q273263",
+    "type": "education",
+    "dh_publication_count": 19,
+    "homepage_url": "http://www.rwth-aachen.de/cms/~a/root/lidx/1/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I94509681",
+    "name": "Technische Universität Braunschweig",
+    "country": "DE",
+    "city": "Braunschweig",
+    "coordinates": [
+      10.52673,
+      52.26594
+    ],
+    "ror_id": "https://ror.org/010nsgg66",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 19,
+    "homepage_url": "https://www.tu-braunschweig.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I154338468",
+    "name": "University of Fribourg",
+    "country": "CH",
+    "city": "Fribourg",
+    "coordinates": [
+      7.15128,
+      46.80237
+    ],
+    "ror_id": "https://ror.org/022fs9h90",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 19,
+    "homepage_url": "https://www.unifr.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I20431382",
+    "name": "University of Erfurt",
+    "country": "DE",
+    "city": "Erfurt",
+    "coordinates": [
+      11.032830238342285,
+      50.97869873046875
+    ],
+    "ror_id": "https://ror.org/03606hw36",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q702524",
+    "type": "education",
+    "dh_publication_count": 18,
+    "homepage_url": "https://www.uni-erfurt.de/index.php?id=1&L=1"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210138330",
+    "name": "Institut für Medien- und Kommunikationspolitik",
+    "country": "DE",
+    "city": "Berlin",
+    "coordinates": [
+      13.327583312988281,
+      52.50214385986328
+    ],
+    "ror_id": "https://ror.org/040b3ts84",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 18,
+    "homepage_url": "http://medienpolitik.eu/cms/index.php?idcat=54"
+  },
+  {
+    "openalex_id": "https://openalex.org/I78650965",
+    "name": "Technische Universität Dresden",
+    "country": "DE",
+    "city": "Dresden",
+    "coordinates": [
+      13.73832,
+      51.05089
+    ],
+    "ror_id": "https://ror.org/042aqky30",
+    "wikidata_id": "Q158158",
+    "type": "education",
+    "dh_publication_count": 17,
+    "homepage_url": "https://tu-dresden.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I155765044",
+    "name": "University of Hildesheim",
+    "country": "DE",
+    "city": "Hildesheim",
+    "coordinates": [
+      9.95112,
+      52.15077
+    ],
+    "ror_id": "https://ror.org/02f9det96",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 16,
+    "homepage_url": "https://www.uni-hildesheim.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I158675288",
+    "name": "FIZ Karlsruhe – Leibniz Institute for Information Infrastructure",
+    "country": "DE",
+    "city": "Eggenstein-Leopoldshafen",
+    "coordinates": [
+      8.428256034851074,
+      49.09181213378906
+    ],
+    "ror_id": "https://ror.org/0387prb75",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q1388737",
+    "type": "nonprofit",
+    "dh_publication_count": 16,
+    "homepage_url": "https://www.fiz-karlsruhe.de/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I193619901",
+    "name": "Constructor University",
+    "country": "DE",
+    "city": "Bremen",
+    "coordinates": [
+      8.80717,
+      53.07582
+    ],
+    "ror_id": "https://ror.org/02yrs2n53",
+    "wikidata_id": "Q132853201",
+    "type": "education",
+    "dh_publication_count": 16,
+    "homepage_url": "https://constructor.university"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210100316",
+    "name": "École Nationale des Chartes",
+    "country": "DE",
+    "city": "Paris",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "ror_id": "https://ror.org/013xvg556",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 16,
+    "homepage_url": "http://www.enc-sorbonne.fr/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210114638",
+    "name": "Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland",
+    "country": "DE",
+    "city": "Bonn",
+    "coordinates": [
+      7.09549,
+      50.73438
+    ],
+    "ror_id": "https://ror.org/02esxtn62",
+    "wikidata_id": "Q1913589",
+    "type": "government",
+    "dh_publication_count": 16,
+    "homepage_url": "http://www.maxweberstiftung.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210149878",
+    "name": "Verbundzentrale des GBV",
+    "country": "DE",
+    "city": "Göttingen",
+    "coordinates": [
+      9.935877799987793,
+      51.539920806884766
+    ],
+    "ror_id": "https://ror.org/048vdhs48",
+    "wikidata_id": null,
+    "type": "other",
+    "dh_publication_count": 16,
+    "homepage_url": "https://www.gbv.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4092182",
+    "name": "Graz University of Technology",
+    "country": "AT",
+    "city": "Graz",
+    "coordinates": [
+      15.44197,
+      47.06733
+    ],
+    "ror_id": "https://ror.org/00d7xrm67",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 16,
+    "homepage_url": "https://www.tugraz.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I57825437",
+    "name": "University of Neuchâtel",
+    "country": "CH",
+    "city": "Neuchâtel",
+    "coordinates": [
+      6.931000232696533,
+      46.991790771484375
+    ],
+    "ror_id": "https://ror.org/00vasag41",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q541548",
+    "type": "education",
+    "dh_publication_count": 16,
+    "homepage_url": "https://unine.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I114112103",
+    "name": "Leibniz University Hannover",
+    "country": "DE",
+    "city": "Hanover",
+    "coordinates": [
+      9.73322,
+      52.37052
+    ],
+    "ror_id": "https://ror.org/0304hq317",
+    "wikidata_id": "Q678982",
+    "type": "education",
+    "dh_publication_count": 15,
+    "homepage_url": "https://www.uni-hannover.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I120691247",
+    "name": "FernUniversität in Hagen",
+    "country": "DE",
+    "city": "Hagen",
+    "coordinates": [
+      7.47168,
+      51.36081
+    ],
+    "ror_id": "https://ror.org/04tkkr536",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 15,
+    "homepage_url": "https://www.fernuni-hagen.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I129877168",
+    "name": "Carl von Ossietzky Universität Oldenburg",
+    "country": "DE",
+    "city": "Oldenburg",
+    "coordinates": [
+      8.21467,
+      53.14118
+    ],
+    "ror_id": "https://ror.org/033n9gh91",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 15,
+    "homepage_url": "https://uol.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I15766117",
+    "name": "University of Graz",
+    "country": "DE",
+    "city": "Graz",
+    "coordinates": [
+      15.449999809265137,
+      47.06666946411133
+    ],
+    "ror_id": "https://ror.org/01faaaf77",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q622683",
+    "type": "education",
+    "dh_publication_count": 15,
+    "homepage_url": "https://www.uni-graz.at/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I3132420320",
+    "name": "SLUB Dresden",
+    "country": "DE",
+    "city": "Dresden",
+    "coordinates": [
+      13.738320350646973,
+      51.0508918762207
+    ],
+    "ror_id": "https://ror.org/03wf51b65",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q323270",
+    "type": "archive",
+    "dh_publication_count": 15,
+    "homepage_url": "https://www.slub-dresden.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I3178478377",
+    "name": "LEIZA - Leibniz-Zentrum für Archäologie",
+    "country": "DE",
+    "city": "Mainz",
+    "coordinates": [
+      8.27910041809082,
+      49.98419189453125
+    ],
+    "ror_id": "https://ror.org/0483qx226",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q878029",
+    "type": "archive",
+    "dh_publication_count": 15,
+    "homepage_url": "https://www.leiza.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210091733",
+    "name": "Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen",
+    "country": "DE",
+    "city": "Göttingen",
+    "coordinates": [
+      9.908997535705566,
+      51.54225540161133
+    ],
+    "ror_id": "https://ror.org/00cd95c65",
+    "wikidata_id": null,
+    "type": "other",
+    "dh_publication_count": 15,
+    "homepage_url": "https://www.gwdg.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210101183",
+    "name": "State and University Library",
+    "country": "DE",
+    "city": "Aarhus",
+    "coordinates": [
+      10.199259757995605,
+      56.17029571533203
+    ],
+    "ror_id": "https://ror.org/019ryn279",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 15,
+    "homepage_url": "http://en.statsbiblioteket.dk/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210161060",
+    "name": "Max Planck Institute for the Science of Human History",
+    "country": "DE",
+    "city": "Jena",
+    "coordinates": [
+      11.589900016784668,
+      50.92877960205078
+    ],
+    "ror_id": "https://ror.org/05mjrzy91",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 15,
+    "homepage_url": "http://www.shh.mpg.de/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I57201433",
+    "name": "Università della Svizzera italiana",
+    "country": "CH",
+    "city": "Lugano",
+    "coordinates": [
+      8.960040092468262,
+      46.01007843017578
+    ],
+    "ror_id": "https://ror.org/03c4atk17",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q689617",
+    "type": "education",
+    "dh_publication_count": 15,
+    "homepage_url": "https://www.usi.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I102322142",
+    "name": "Rutgers, The State University of New Jersey",
+    "country": "DE",
+    "city": "New Brunswick",
+    "coordinates": [
+      -74.45182,
+      40.48622
+    ],
+    "ror_id": "https://ror.org/05vt9qd57",
+    "wikidata_id": "Q499451",
+    "type": "education",
+    "dh_publication_count": 14,
+    "homepage_url": "http://www.rutgers.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I107257983",
+    "name": "Darmstadt University of Applied Sciences",
+    "country": "DE",
+    "city": "Darmstadt",
+    "coordinates": [
+      8.650270462036133,
+      49.87166976928711
+    ],
+    "ror_id": "https://ror.org/047wbd030",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q284992",
+    "type": "education",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.h-da.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I118501908",
+    "name": "National Research University Higher School of Economics",
+    "country": "DE",
+    "city": "Moscow",
+    "coordinates": [
+      37.63307189941406,
+      55.761287689208984
+    ],
+    "ror_id": "https://ror.org/055f7t516",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q1959511",
+    "type": "education",
+    "dh_publication_count": 14,
+    "homepage_url": "http://www.hse.ru/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I200763008",
+    "name": "Justus-Liebig-Universität Gießen",
+    "country": "DE",
+    "city": "Giessen",
+    "coordinates": [
+      8.67554,
+      50.58727
+    ],
+    "ror_id": "https://ror.org/033eqas34",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.uni-giessen.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2610724",
+    "name": "Chemnitz University of Technology",
+    "country": "DE",
+    "city": "Chemnitz",
+    "coordinates": [
+      12.929220199584961,
+      50.83570098876953
+    ],
+    "ror_id": "https://ror.org/00a208s56",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q159630",
+    "type": "education",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.tu-chemnitz.de/index.html.en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2800742272",
+    "name": "Folkwang University of the Arts",
+    "country": "DE",
+    "city": "Essen",
+    "coordinates": [
+      7.01228,
+      51.45657
+    ],
+    "ror_id": "https://ror.org/03gf02c22",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.folkwang-uni.de/home"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210088280",
+    "name": "Max Planck Digital Library",
+    "country": "DE",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/0061msm67",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.mpdl.mpg.de/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210089003",
+    "name": "Max Planck Institute for Psycholinguistics",
+    "country": "DE",
+    "city": "Nijmegen",
+    "coordinates": [
+      5.85278,
+      51.8425
+    ],
+    "ror_id": "https://ror.org/00671me87",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.mpi.nl"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210101368",
+    "name": "Staats- und Universitätsbibliothek Hamburg",
+    "country": "DE",
+    "city": "Hamburg",
+    "coordinates": [
+      9.985154151916504,
+      53.56489944458008
+    ],
+    "ror_id": "https://ror.org/00pwcvj19",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.sub.uni-hamburg.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I102248843",
+    "name": "Vienna University of Economics and Business",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/03yn8s215",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 14,
+    "homepage_url": "https://www.wu.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1294671590",
+    "name": "Centre National de la Recherche Scientifique",
+    "country": "DE",
+    "city": "Paris",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "ror_id": "https://ror.org/02feahw73",
+    "wikidata_id": "Q280413",
+    "type": "government",
+    "dh_publication_count": 13,
+    "homepage_url": "https://www.cnrs.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210120342",
+    "name": "Universitätsklinikum Krems",
+    "country": "AT",
+    "city": "Krems",
+    "coordinates": [
+      15.61415,
+      48.40921
+    ],
+    "ror_id": "https://ror.org/02r2nns16",
+    "wikidata_id": null,
+    "type": "healthcare",
+    "dh_publication_count": 12,
+    "homepage_url": "https://krems.lknoe.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I173085932",
+    "name": "University of Music and Performing Arts Vienna",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/000ymgt65",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 11,
+    "homepage_url": "https://www.mdw.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I132976966",
+    "name": "Universität für Weiterbildung Krems",
+    "country": "AT",
+    "city": "Krems",
+    "coordinates": [
+      15.61415,
+      48.40921
+    ],
+    "ror_id": "https://ror.org/03ef4a036",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 10,
+    "homepage_url": "https://www.donau-uni.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210100316",
+    "name": "École Nationale des Chartes",
+    "country": "CH",
+    "city": "Paris",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "ror_id": "https://ror.org/013xvg556",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 10,
+    "homepage_url": "http://www.enc-sorbonne.fr/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210100386",
+    "name": "University of Applied Sciences for Media Communication and Business",
+    "country": "CH",
+    "city": "Berlin",
+    "coordinates": [
+      13.384786605834961,
+      52.53886032104492
+    ],
+    "ror_id": "https://ror.org/00jbwpt44",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 10,
+    "homepage_url": "http://www.hmkw.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210132798",
+    "name": "Diagram (Netherlands)",
+    "country": "CH",
+    "city": "Zwolle",
+    "coordinates": [
+      6.121074199676514,
+      52.514404296875
+    ],
+    "ror_id": "https://ror.org/03rhyyh86",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 10,
+    "homepage_url": "https://www.diagram-zwolle.nl/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210164613",
+    "name": "National Assembly",
+    "country": "CH",
+    "city": "Seoul",
+    "coordinates": [
+      126.9784,
+      37.566
+    ],
+    "ror_id": "https://ror.org/05v6gdb70",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 10,
+    "homepage_url": "https://nas.na.go.kr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I67311998",
+    "name": "European Organization for Nuclear Research",
+    "country": "CH",
+    "city": "Geneva",
+    "coordinates": [
+      6.14569,
+      46.20222
+    ],
+    "ror_id": "https://ror.org/01ggx4157",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 10,
+    "homepage_url": "https://home.web.cern.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I176453806",
+    "name": "University of Potsdam",
+    "country": "AT",
+    "city": "Potsdam",
+    "coordinates": [
+      13.06566,
+      52.39886
+    ],
+    "ror_id": "https://ror.org/03bnmw459",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 9,
+    "homepage_url": "https://www.uni-potsdam.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210088449",
+    "name": "HES-SO Genève",
+    "country": "CH",
+    "city": "Geneva",
+    "coordinates": [
+      6.145689964294434,
+      46.20222091674805
+    ],
+    "ror_id": "https://ror.org/007gfwn20",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 9,
+    "homepage_url": "https://www.hesge.ch/geneve/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210142464",
+    "name": "FORCE Technology (Norway)",
+    "country": "CH",
+    "city": "Trondheim",
+    "coordinates": [
+      10.400955200195312,
+      63.39266586303711
+    ],
+    "ror_id": "https://ror.org/04rccsv84",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 9,
+    "homepage_url": "http://forcetechnology.com/no"
+  },
+  {
+    "openalex_id": "https://openalex.org/I205274468",
+    "name": "Trinity College Dublin",
+    "country": "AT",
+    "city": "Dublin",
+    "coordinates": [
+      -6.248889923095703,
+      53.33306121826172
+    ],
+    "ror_id": "https://ror.org/02tyrky19",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q258464",
+    "type": "education",
+    "dh_publication_count": 8,
+    "homepage_url": "https://www.tcd.ie/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210088621",
+    "name": "Know Center Research GmbH (Austria)",
+    "country": "AT",
+    "city": "Graz",
+    "coordinates": [
+      15.449999809265137,
+      47.06666946411133
+    ],
+    "ror_id": "https://ror.org/004zhad81",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 8,
+    "homepage_url": "https://www.know-center.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I75951250",
+    "name": "Freie Universität Berlin",
+    "country": "AT",
+    "city": "Berlin",
+    "coordinates": [
+      13.41053,
+      52.52437
+    ],
+    "ror_id": "https://ror.org/046ak2485",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 8,
+    "homepage_url": "https://www.fu-berlin.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I130692619",
+    "name": "Bern University of Applied Sciences",
+    "country": "CH",
+    "city": "Bern",
+    "coordinates": [
+      7.447440147399902,
+      46.948089599609375
+    ],
+    "ror_id": "https://ror.org/02bnkt322",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q466455",
+    "type": "education",
+    "dh_publication_count": 8,
+    "homepage_url": "https://www.bfh.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I121883995",
+    "name": "Johannes Kepler University of Linz",
+    "country": "AT",
+    "city": "Linz",
+    "coordinates": [
+      14.28611,
+      48.30639
+    ],
+    "ror_id": "https://ror.org/052r2xn60",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.jku.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I180923762",
+    "name": "University of Cologne",
+    "country": "AT",
+    "city": "Cologne",
+    "coordinates": [
+      6.95,
+      50.93333
+    ],
+    "ror_id": "https://ror.org/00rcxh774",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 7,
+    "homepage_url": "http://www.portal.uni-koeln.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210089509",
+    "name": "Institute for Urban and Regional Research",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.378402709960938,
+      48.20842361450195
+    ],
+    "ror_id": "https://ror.org/009tscw31",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.oeaw.ac.at/isr/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210166741",
+    "name": "University of Klagenfurt",
+    "country": "AT",
+    "city": "Klagenfurt",
+    "coordinates": [
+      14.30528,
+      46.62472
+    ],
+    "ror_id": "https://ror.org/05q9m0937",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.aau.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I89864525",
+    "name": "Universität Trier",
+    "country": "AT",
+    "city": "Trier",
+    "coordinates": [
+      6.639349937438965,
+      49.75564956665039
+    ],
+    "ror_id": "https://ror.org/02778hg05",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q702486",
+    "type": "education",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.uni-trier.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1294671590",
+    "name": "Centre National de la Recherche Scientifique",
+    "country": "CH",
+    "city": "Paris",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "ror_id": "https://ror.org/02feahw73",
+    "wikidata_id": "Q280413",
+    "type": "government",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.cnrs.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1310439424",
+    "name": "Accenture (Switzerland)",
+    "country": "CH",
+    "city": "Zurich",
+    "coordinates": [
+      8.541092872619629,
+      47.36879348754883
+    ],
+    "ror_id": "https://ror.org/041r3e346",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q338825",
+    "type": "company",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.accenture.com/ch-en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I178450904",
+    "name": "Universidad Nacional de Educación a Distancia",
+    "country": "CH",
+    "city": "Madrid",
+    "coordinates": [
+      -3.70256,
+      40.4165
+    ],
+    "ror_id": "https://ror.org/02msb5n36",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.uned.es"
+  },
+  {
+    "openalex_id": "https://openalex.org/I40120149",
+    "name": "University of Oxford",
+    "country": "CH",
+    "city": "Oxford",
+    "coordinates": [
+      -1.25596,
+      51.75222
+    ],
+    "ror_id": "https://ror.org/052gg0110",
+    "wikidata_id": "Q34433",
+    "type": "education",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.ox.ac.uk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I75951250",
+    "name": "Freie Universität Berlin",
+    "country": "CH",
+    "city": "Berlin",
+    "coordinates": [
+      13.41053,
+      52.52437
+    ],
+    "ror_id": "https://ror.org/046ak2485",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 7,
+    "homepage_url": "https://www.fu-berlin.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I118501908",
+    "name": "National Research University Higher School of Economics",
+    "country": "AT",
+    "city": "Moscow",
+    "coordinates": [
+      37.63307189941406,
+      55.761287689208984
+    ],
+    "ror_id": "https://ror.org/055f7t516",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q1959511",
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "http://www.hse.ru/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1326498283",
+    "name": "Institut national de recherche en sciences et technologies du numérique",
+    "country": "AT",
+    "city": "Le Chesnay-Rocquencourt",
+    "coordinates": [
+      2.1311,
+      48.8205
+    ],
+    "ror_id": "https://ror.org/02kvxyf05",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 6,
+    "homepage_url": "https://inria.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I133731052",
+    "name": "University of Helsinki",
+    "country": "AT",
+    "city": "Helsinki",
+    "coordinates": [
+      24.93545,
+      60.16952
+    ],
+    "ror_id": "https://ror.org/040af2s02",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "https://www.helsinki.fi/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I25485817",
+    "name": "University of Applied Sciences St Pölten",
+    "country": "AT",
+    "city": "St. Pölten",
+    "coordinates": [
+      15.63725,
+      48.20762
+    ],
+    "ror_id": "https://ror.org/039a2re55",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "https://www.ustp.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I31512782",
+    "name": "Technische Universität Darmstadt",
+    "country": "AT",
+    "city": "Darmstadt",
+    "coordinates": [
+      8.65027,
+      49.87167
+    ],
+    "ror_id": "https://ror.org/05n911h24",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "https://www.tu-darmstadt.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I317320687",
+    "name": "University of Music and Performing Arts Graz",
+    "country": "AT",
+    "city": "Graz",
+    "coordinates": [
+      15.449999809265137,
+      47.06666946411133
+    ],
+    "ror_id": "https://ror.org/0541v4g57",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q875147",
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "https://www.kug.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I40120149",
+    "name": "University of Oxford",
+    "country": "AT",
+    "city": "Oxford",
+    "coordinates": [
+      -1.25596,
+      51.75222
+    ],
+    "ror_id": "https://ror.org/052gg0110",
+    "wikidata_id": "Q34433",
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "https://www.ox.ac.uk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210113839",
+    "name": "Literaturarchiv",
+    "country": "AT",
+    "city": "Sulzbach-Rosenberg",
+    "coordinates": [
+      11.74092960357666,
+      49.50465774536133
+    ],
+    "ror_id": "https://ror.org/01d5ccc15",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 6,
+    "homepage_url": "http://www.literaturarchiv.de/start.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210097059",
+    "name": "Pan Asia Technical Automotive Center (China)",
+    "country": "CH",
+    "city": "Pudong",
+    "coordinates": [
+      121.541259765625,
+      31.229013442993164
+    ],
+    "ror_id": "https://ror.org/00zv9r340",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 6,
+    "homepage_url": "http://www.patac.com.cn/EN/index.html?v=1002"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210111868",
+    "name": "Zurich University of Teacher Education",
+    "country": "CH",
+    "city": "Zurich",
+    "coordinates": [
+      8.55,
+      47.36667
+    ],
+    "ror_id": "https://ror.org/01awgk221",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "https://phzh.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210128676",
+    "name": "Human Computer Interaction (Switzerland)",
+    "country": "CH",
+    "city": "Zurich",
+    "coordinates": [
+      8.518168449401855,
+      47.38969039916992
+    ],
+    "ror_id": "https://ror.org/036dv6j71",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 6,
+    "homepage_url": "http://www.hci.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I98677209",
+    "name": "University of Edinburgh",
+    "country": "CH",
+    "city": "Edinburgh",
+    "coordinates": [
+      -3.19648,
+      55.95206
+    ],
+    "ror_id": "https://ror.org/01nrxwf90",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 6,
+    "homepage_url": "https://www.ed.ac.uk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I13402291",
+    "name": "Joanneum Research",
+    "country": "AT",
+    "city": "Graz",
+    "coordinates": [
+      15.4548978805542,
+      47.07402038574219
+    ],
+    "ror_id": "https://ror.org/049bdss47",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q1690845",
+    "type": "facility",
+    "dh_publication_count": 5,
+    "homepage_url": "http://www.joanneum.at/en.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I318632792",
+    "name": "Mozarteum University of Salzburg",
+    "country": "AT",
+    "city": "Salzburg",
+    "coordinates": [
+      13.043990135192871,
+      47.79941177368164
+    ],
+    "ror_id": "https://ror.org/00tfmqe91",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q871369",
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "https://www.moz.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I39343248",
+    "name": "Humboldt-Universität zu Berlin",
+    "country": "AT",
+    "city": "Berlin",
+    "coordinates": [
+      13.410530090332031,
+      52.52436828613281
+    ],
+    "ror_id": "https://ror.org/01hcx6992",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q152087",
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "https://www.hu-berlin.de/?set_language=en&cl=en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I8204097",
+    "name": "Ludwig-Maximilians-Universität München",
+    "country": "AT",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/05591te55",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "https://www.lmu.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1326498283",
+    "name": "Institut national de recherche en sciences et technologies du numérique",
+    "country": "CH",
+    "city": "Le Chesnay-Rocquencourt",
+    "coordinates": [
+      2.1311,
+      48.8205
+    ],
+    "ror_id": "https://ror.org/02kvxyf05",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 5,
+    "homepage_url": "https://inria.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I185261750",
+    "name": "University of Toronto",
+    "country": "CH",
+    "city": "Toronto",
+    "coordinates": [
+      -79.39864,
+      43.70643
+    ],
+    "ror_id": "https://ror.org/03dbr7087",
+    "wikidata_id": "Q180865",
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "https://www.utoronto.ca"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210091432",
+    "name": "Institute for Communication and Leadership",
+    "country": "CH",
+    "city": "Lucerne",
+    "coordinates": [
+      8.308443069458008,
+      47.0489387512207
+    ],
+    "ror_id": "https://ror.org/001tn6x38",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "http://www.ikf.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210102894",
+    "name": "Clinique Saint Jean",
+    "country": "CH",
+    "city": "Brussels",
+    "coordinates": [
+      4.3604021072387695,
+      50.855228424072266
+    ],
+    "ror_id": "https://ror.org/01dd1x730",
+    "wikidata_id": null,
+    "type": "healthcare",
+    "dh_publication_count": 5,
+    "homepage_url": "https://www.clstjean.be/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210115363",
+    "name": "University of the Humanities",
+    "country": "CH",
+    "city": "Ulaanbaatar",
+    "coordinates": [
+      106.91881561279297,
+      47.921913146972656
+    ],
+    "ror_id": "https://ror.org/02a7zg443",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "http://humanities.mn/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210120439",
+    "name": "University of Applied Sciences of the Grisons",
+    "country": "CH",
+    "city": "Chur",
+    "coordinates": [
+      9.512918472290039,
+      46.85307312011719
+    ],
+    "ror_id": "https://ror.org/032ymzc07",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "https://www.fhgr.ch/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I74656192",
+    "name": "University of Göttingen",
+    "country": "CH",
+    "city": "Göttingen",
+    "coordinates": [
+      9.93228,
+      51.53443
+    ],
+    "ror_id": "https://ror.org/01y9bpm73",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 5,
+    "homepage_url": "http://www.uni-goettingen.de/en/1.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I100066346",
+    "name": "University of Stuttgart",
+    "country": "AT",
+    "city": "Stuttgart",
+    "coordinates": [
+      9.177020072937012,
+      48.782318115234375
+    ],
+    "ror_id": "https://ror.org/04vnq7t77",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q122453",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.uni-stuttgart.de/home/index.en.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I100930933",
+    "name": "University College Dublin",
+    "country": "AT",
+    "city": "Dublin",
+    "coordinates": [
+      -6.24889,
+      53.33306
+    ],
+    "ror_id": "https://ror.org/05m7pjf47",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.ucd.ie"
+  },
+  {
+    "openalex_id": "https://openalex.org/I132118926",
+    "name": "Austrian Institute of Technology",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/04knbh022",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.ait.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I161103922",
+    "name": "Philipps University of Marburg",
+    "country": "AT",
+    "city": "Marburg",
+    "coordinates": [
+      8.770689964294434,
+      50.80904006958008
+    ],
+    "ror_id": "https://ror.org/01rdrb571",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q155354",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.uni-marburg.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I184999862",
+    "name": "Universidad de Salamanca",
+    "country": "AT",
+    "city": "Salamanca",
+    "coordinates": [
+      -5.663879871368408,
+      40.96881866455078
+    ],
+    "ror_id": "https://ror.org/02f40zc51",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q308963",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.usal.es"
+  },
+  {
+    "openalex_id": "https://openalex.org/I198945027",
+    "name": "Central European University",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/02zx40v98",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.ceu.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I204136569",
+    "name": "The Open University",
+    "country": "AT",
+    "city": "Milton Keynes",
+    "coordinates": [
+      -0.7558299899101257,
+      52.04172134399414
+    ],
+    "ror_id": "https://ror.org/05mzfcs16",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q2413375",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.open.ac.uk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I21250087",
+    "name": "Charles University",
+    "country": "AT",
+    "city": "Prague",
+    "coordinates": [
+      14.42076,
+      50.08804
+    ],
+    "ror_id": "https://ror.org/024d6js02",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.cuni.cz"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210099593",
+    "name": "Computer Algorithms for Medicine",
+    "country": "AT",
+    "city": "Graz",
+    "coordinates": [
+      15.439555168151855,
+      47.04371643066406
+    ],
+    "ror_id": "https://ror.org/00zky6d38",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 4,
+    "homepage_url": "https://cafe-lab.org/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210110242",
+    "name": "Digital Science (United States)",
+    "country": "AT",
+    "city": "Cambridge",
+    "coordinates": [
+      -71.07798767089844,
+      42.36968994140625
+    ],
+    "ror_id": "https://ror.org/020h4b682",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.digital-science.com/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4387153398",
+    "name": "Digital Research Infrastructure for the Arts and Humanities",
+    "country": "AT",
+    "city": "Paris",
+    "coordinates": [
+      2.34879994392395,
+      48.85340881347656
+    ],
+    "ror_id": "https://ror.org/05n09v162",
+    "wikidata_id": null,
+    "type": "other",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.dariah.eu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I5075986",
+    "name": "Akademie der bildenden Künste Wien",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/029djt864",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.akbild.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I7882870",
+    "name": "University of Glasgow",
+    "country": "AT",
+    "city": "Glasgow",
+    "coordinates": [
+      -4.25763,
+      55.86515
+    ],
+    "ror_id": "https://ror.org/00vtgdb53",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.gla.ac.uk/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I102475099",
+    "name": "Supélec",
+    "country": "CH",
+    "city": "Gif-sur-Yvette",
+    "coordinates": [
+      2.1333301067352295,
+      48.68333053588867
+    ],
+    "ror_id": "https://ror.org/00n7gwn90",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q273493",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.supelec.fr/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I119439378",
+    "name": "University of Verona",
+    "country": "CH",
+    "city": "Verona",
+    "coordinates": [
+      10.993800163269043,
+      45.438541412353516
+    ],
+    "ror_id": "https://ror.org/039bp8j42",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q2531629",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.univr.it"
+  },
+  {
+    "openalex_id": "https://openalex.org/I15196421",
+    "name": "University of Applied Sciences and Arts of Southern Switzerland",
+    "country": "CH",
+    "city": "Manno",
+    "coordinates": [
+      8.91824,
+      46.02885
+    ],
+    "ror_id": "https://ror.org/05ep8g269",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.supsi.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I157286207",
+    "name": "National University of Ireland, Maynooth",
+    "country": "CH",
+    "city": "Maynooth",
+    "coordinates": [
+      -6.593609809875488,
+      53.3849983215332
+    ],
+    "ror_id": "https://ror.org/048nfjm95",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q2601879",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.maynoothuniversity.ie/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I159176309",
+    "name": "Universität Hamburg",
+    "country": "CH",
+    "city": "Hamburg",
+    "coordinates": [
+      9.99302,
+      53.55073
+    ],
+    "ror_id": "https://ror.org/00g30e956",
+    "wikidata_id": "Q156725",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.uni-hamburg.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I161941770",
+    "name": "University of Lucerne",
+    "country": "CH",
+    "city": "Lucerne",
+    "coordinates": [
+      8.306349754333496,
+      47.050479888916016
+    ],
+    "ror_id": "https://ror.org/00kgrkn83",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q673308",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.unilu.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I183935753",
+    "name": "King's College London",
+    "country": "CH",
+    "city": "London",
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
+    "ror_id": "https://ror.org/0220mzb33",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.kcl.ac.uk/index.aspx"
+  },
+  {
+    "openalex_id": "https://openalex.org/I186903577",
+    "name": "University of Luxembourg",
+    "country": "CH",
+    "city": "Luxembourg",
+    "coordinates": [
+      6.13268,
+      49.60982
+    ],
+    "ror_id": "https://ror.org/036x5ad56",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.uni.lu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I202963720",
+    "name": "University of St.Gallen",
+    "country": "CH",
+    "city": "Saint Gallen",
+    "coordinates": [
+      9.37477,
+      47.42391
+    ],
+    "ror_id": "https://ror.org/0561a3s31",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.unisg.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2800768169",
+    "name": "Academy of Sciences and Literature",
+    "country": "CH",
+    "city": "Mainz",
+    "coordinates": [
+      8.27114200592041,
+      49.9765739440918
+    ],
+    "ror_id": "https://ror.org/01kdxra28",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q414163",
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.adwmainz.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2972652528",
+    "name": "FHNW University of Applied Sciences and Arts",
+    "country": "CH",
+    "city": "Windisch",
+    "coordinates": [
+      8.218420028686523,
+      47.47898864746094
+    ],
+    "ror_id": "https://ror.org/04mq2g308",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.fhnw.ch/homepage"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210087821",
+    "name": "Swiss Academy of Humanities and Social Sciences",
+    "country": "CH",
+    "city": "Bern",
+    "coordinates": [
+      7.447440147399902,
+      46.948089599609375
+    ],
+    "ror_id": "https://ror.org/005381c03",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.sagw.ch/sagw.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210102264",
+    "name": "Shandong University of Political Science and Law",
+    "country": "CH",
+    "city": "Jinan",
+    "coordinates": [
+      117.08648681640625,
+      36.666664123535156
+    ],
+    "ror_id": "https://ror.org/01b2j5886",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "http://english.sdupsl.edu.cn/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210104685",
+    "name": "Fribourg Development Agency",
+    "country": "CH",
+    "city": "Fribourg",
+    "coordinates": [
+      7.152422904968262,
+      46.80008316040039
+    ],
+    "ror_id": "https://ror.org/01camvb92",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.promfr.ch/?page_id=24"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210140134",
+    "name": "Amt für Archäologie",
+    "country": "CH",
+    "city": "Frauenfeld",
+    "coordinates": [
+      8.897611618041992,
+      47.55350112915039
+    ],
+    "ror_id": "https://ror.org/0430mjq75",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 4,
+    "homepage_url": "https://archaeologie.tg.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I64152125",
+    "name": "Zurich University of the Arts",
+    "country": "CH",
+    "city": "Zurich",
+    "coordinates": [
+      8.55,
+      47.36667
+    ],
+    "ror_id": "https://ror.org/05r0ap620",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.zhdk.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I68947357",
+    "name": "Université de Strasbourg",
+    "country": "CH",
+    "city": "Strasbourg",
+    "coordinates": [
+      7.74553,
+      48.58392
+    ],
+    "ror_id": "https://ror.org/00pg6eq24",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 4,
+    "homepage_url": "https://www.unistra.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I99542240",
+    "name": "Polish Academy of Sciences",
+    "country": "CH",
+    "city": "Warsaw",
+    "coordinates": [
+      21.01178,
+      52.22977
+    ],
+    "ror_id": "https://ror.org/01dr6c206",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 4,
+    "homepage_url": "http://www.english.pan.pl/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I102134673",
+    "name": "Linköping University",
+    "country": "AT",
+    "city": "Linköping",
+    "coordinates": [
+      15.62157,
+      58.41086
+    ],
+    "ror_id": "https://ror.org/05ynxx418",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://liu.se/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I122991210",
+    "name": "Istituto di Scienza e Tecnologie dell'Informazione \"Alessandro Faedo\"",
+    "country": "AT",
+    "city": "Pisa",
+    "coordinates": [
+      10.4036,
+      43.70853
+    ],
+    "ror_id": "https://ror.org/05kacka20",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.isti.cnr.it"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1279955124",
+    "name": "Natural History Museum Vienna",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.37208,
+      48.20849
+    ],
+    "ror_id": "https://ror.org/01tv5y993",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.nhm-wien.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I129877168",
+    "name": "Carl von Ossietzky Universität Oldenburg",
+    "country": "AT",
+    "city": "Oldenburg",
+    "coordinates": [
+      8.21467,
+      53.14118
+    ],
+    "ror_id": "https://ror.org/033n9gh91",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://uol.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1317774081",
+    "name": "International Institute for Applied Systems Analysis",
+    "country": "AT",
+    "city": "Laxenburg",
+    "coordinates": [
+      16.35607,
+      48.06833
+    ],
+    "ror_id": "https://ror.org/02wfhk785",
+    "wikidata_id": null,
+    "type": "nonprofit",
+    "dh_publication_count": 3,
+    "homepage_url": "https://iiasa.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1322597698",
+    "name": "Royal Netherlands Academy of Arts and Sciences",
+    "country": "AT",
+    "city": "Amsterdam",
+    "coordinates": [
+      4.889689922332764,
+      52.37403106689453
+    ],
+    "ror_id": "https://ror.org/043c0p156",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q253439",
+    "type": "funder",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.knaw.nl/nl"
+  },
+  {
+    "openalex_id": "https://openalex.org/I177969490",
+    "name": "University of Southern Denmark",
+    "country": "AT",
+    "city": "Odense",
+    "coordinates": [
+      10.38831,
+      55.39594
+    ],
+    "ror_id": "https://ror.org/03yrrjy16",
+    "wikidata_id": "Q2166335",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.sdu.dk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I181369854",
+    "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+    "country": "AT",
+    "city": "Erlangen",
+    "coordinates": [
+      11.00783,
+      49.59099
+    ],
+    "ror_id": "https://ror.org/00f7hpc57",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.fau.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I197323543",
+    "name": "Johannes Gutenberg University Mainz",
+    "country": "AT",
+    "city": "Mainz",
+    "coordinates": [
+      8.2791,
+      49.98419
+    ],
+    "ror_id": "https://ror.org/023b0x485",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.uni-mainz.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I202276237",
+    "name": "Medical University of Graz",
+    "country": "AT",
+    "city": "Graz",
+    "coordinates": [
+      15.44197,
+      47.06733
+    ],
+    "ror_id": "https://ror.org/02n0bts35",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.medunigraz.at/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I23277345",
+    "name": "Berlin-Brandenburg Academy of Sciences and Humanities",
+    "country": "AT",
+    "city": "Berlin",
+    "coordinates": [
+      13.410530090332031,
+      52.52436828613281
+    ],
+    "ror_id": "https://ror.org/05jgq9443",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q219989",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.bbaw.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2799391115",
+    "name": "Deutsches Museum",
+    "country": "AT",
+    "city": "Munich",
+    "coordinates": [
+      11.57548999786377,
+      48.137428283691406
+    ],
+    "ror_id": "https://ror.org/00a7n7g54",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q131617",
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.deutsches-museum.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2802635041",
+    "name": "Technische Informationsbibliothek (TIB)",
+    "country": "AT",
+    "city": "Hanover",
+    "coordinates": [
+      9.73322,
+      52.37052
+    ],
+    "ror_id": "https://ror.org/04aj4c181",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.tib.eu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I3178478377",
+    "name": "LEIZA - Leibniz-Zentrum für Archäologie",
+    "country": "AT",
+    "city": "Mainz",
+    "coordinates": [
+      8.27910041809082,
+      49.98419189453125
+    ],
+    "ror_id": "https://ror.org/0483qx226",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q878029",
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.leiza.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I32597200",
+    "name": "Ghent University",
+    "country": "AT",
+    "city": "Ghent",
+    "coordinates": [
+      3.71667,
+      51.05
+    ],
+    "ror_id": "https://ror.org/00cv9y106",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.ugent.be"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210089348",
+    "name": "Data Archiving Networked Services (DANS)",
+    "country": "AT",
+    "city": "The Hague",
+    "coordinates": [
+      4.29861,
+      52.07667
+    ],
+    "ror_id": "https://ror.org/008pnp284",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://dans.knaw.nl/en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210108471",
+    "name": "Le Mans Université",
+    "country": "AT",
+    "city": "Le Mans",
+    "coordinates": [
+      0.20251,
+      48.0021
+    ],
+    "ror_id": "https://ror.org/01mtcc283",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.univ-lemans.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210114552",
+    "name": "Vienna City Library",
+    "country": "AT",
+    "city": "Vienna",
+    "coordinates": [
+      16.35779571533203,
+      48.21169662475586
+    ],
+    "ror_id": "https://ror.org/01xzsbk70",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.wienbibliothek.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210138660",
+    "name": "Bavarian State Library",
+    "country": "AT",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/031h71w90",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.bsb-muenchen.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210139483",
+    "name": "GREYC",
+    "country": "AT",
+    "city": "Caen",
+    "coordinates": [
+      -0.35912,
+      49.18585
+    ],
+    "ror_id": "https://ror.org/043749971",
+    "wikidata_id": "Q3117752",
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.greyc.fr/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210144607",
+    "name": "Thüringer Universitäts- und Landesbibliothek",
+    "country": "AT",
+    "city": "Jena",
+    "coordinates": [
+      11.589900016784668,
+      50.92877960205078
+    ],
+    "ror_id": "https://ror.org/0493yt138",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.thulb.uni-jena.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210156054",
+    "name": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
+    "country": "AT",
+    "city": "Marousi",
+    "coordinates": [
+      23.8,
+      38.05
+    ],
+    "ror_id": "https://ror.org/0576by029",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.athenarc.gr/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I43439940",
+    "name": "University of Southampton",
+    "country": "AT",
+    "city": "Southampton",
+    "coordinates": [
+      -1.40428,
+      50.90395
+    ],
+    "ror_id": "https://ror.org/01ryk1543",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.southampton.ac.uk/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4387152322",
+    "name": "Centre de Recherche en Éducation de Nantes",
+    "country": "AT",
+    "city": "Nantes",
+    "coordinates": [
+      -1.55336,
+      47.21725
+    ],
+    "ror_id": "https://ror.org/00b1crx81",
+    "wikidata_id": "Q51784552",
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "http://cren.univ-nantes.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4403928240",
+    "name": "Centre for Digital Humanities",
+    "country": "AT",
+    "city": "London",
+    "coordinates": [
+      -0.12574000656604767,
+      51.50852966308594
+    ],
+    "ror_id": "https://ror.org/02a0c6v45",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.aku.edu/ismc/research/Pages/cdh.aspx"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4654613",
+    "name": "University of Warsaw",
+    "country": "AT",
+    "city": "Warsaw",
+    "coordinates": [
+      21.01178,
+      52.22977
+    ],
+    "ror_id": "https://ror.org/039bjqg32",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://en.uw.edu.pl/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I5124864",
+    "name": "École Polytechnique Fédérale de Lausanne",
+    "country": "AT",
+    "city": "Lausanne",
+    "coordinates": [
+      6.63282,
+      46.516
+    ],
+    "ror_id": "https://ror.org/02s376052",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.epfl.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I56590836",
+    "name": "Monash University",
+    "country": "AT",
+    "city": "Melbourne",
+    "coordinates": [
+      144.96332,
+      -37.814
+    ],
+    "ror_id": "https://ror.org/02bfwt286",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.monash.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I78744979",
+    "name": "La Rochelle Université",
+    "country": "AT",
+    "city": "La Rochelle",
+    "coordinates": [
+      -1.15222,
+      46.16308
+    ],
+    "ror_id": "https://ror.org/04mv1z119",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.univ-larochelle.fr"
+  },
+  {
+    "openalex_id": "https://openalex.org/I79576946",
+    "name": "University of Pennsylvania",
+    "country": "AT",
+    "city": "Philadelphia",
+    "coordinates": [
+      -75.16362,
+      39.95238
+    ],
+    "ror_id": "https://ror.org/00b30xv10",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.upenn.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I86501945",
+    "name": "University of Delaware",
+    "country": "AT",
+    "city": "Newark",
+    "coordinates": [
+      -75.74966,
+      39.68372
+    ],
+    "ror_id": "https://ror.org/01sbq1a82",
+    "wikidata_id": "Q1068072",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.udel.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I87216513",
+    "name": "Michigan State University",
+    "country": "AT",
+    "city": "East Lansing",
+    "coordinates": [
+      -84.48387,
+      42.73698
+    ],
+    "ror_id": "https://ror.org/05hs6h993",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://msu.edu/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I8901234",
+    "name": "Foundation for Research and Technology Hellas",
+    "country": "AT",
+    "city": "Heraklion",
+    "coordinates": [
+      25.143409729003906,
+      35.3278694152832
+    ],
+    "ror_id": "https://ror.org/052rphn09",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.forth.gr/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I91136226",
+    "name": "University of Sheffield",
+    "country": "AT",
+    "city": "Sheffield",
+    "coordinates": [
+      -1.4659,
+      53.38297
+    ],
+    "ror_id": "https://ror.org/05krs5044",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.sheffield.ac.uk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I926574661",
+    "name": "Leipzig University",
+    "country": "AT",
+    "city": "Leipzig",
+    "coordinates": [
+      12.37129,
+      51.33962
+    ],
+    "ror_id": "https://ror.org/03s7gtk40",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.uni-leipzig.de/en/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I121797337",
+    "name": "Leiden University",
+    "country": "CH",
+    "city": "Leiden",
+    "coordinates": [
+      4.493060111999512,
+      52.158329010009766
+    ],
+    "ror_id": "https://ror.org/027bh9e22",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q156598",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.leiden.edu/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1317776637",
+    "name": "Universidade Federal do Acre",
+    "country": "CH",
+    "city": "Rio Branco",
+    "coordinates": [
+      -67.80999755859375,
+      -9.974720001220703
+    ],
+    "ror_id": "https://ror.org/05hag2y10",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.ufac.br/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I1343871089",
+    "name": "Los Alamos National Laboratory",
+    "country": "CH",
+    "city": "Los Alamos",
+    "coordinates": [
+      -106.30696868896484,
+      35.88808059692383
+    ],
+    "ror_id": "https://ror.org/01e41cf67",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q379848",
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "http://lanl.gov/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I149461666",
+    "name": "Ca' Foscari University of Venice",
+    "country": "CH",
+    "city": "Venice",
+    "coordinates": [
+      12.33265,
+      45.43713
+    ],
+    "ror_id": "https://ror.org/04yzxz566",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.unive.it"
+  },
+  {
+    "openalex_id": "https://openalex.org/I157725225",
+    "name": "University of Illinois Urbana-Champaign",
+    "country": "CH",
+    "city": "Urbana",
+    "coordinates": [
+      -88.20727,
+      40.11059
+    ],
+    "ror_id": "https://ror.org/047426m28",
+    "wikidata_id": "Q457281",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://illinois.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I159885104",
+    "name": "École Pratique des Hautes Études",
+    "country": "CH",
+    "city": "Paris",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "ror_id": "https://ror.org/046b3cj80",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.ephe.psl.eu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I173439891",
+    "name": "HES-SO University of Applied Sciences and Arts Western Switzerland",
+    "country": "CH",
+    "city": "Delémont",
+    "coordinates": [
+      7.34453,
+      47.36493
+    ],
+    "ror_id": "https://ror.org/01xkakk17",
+    "wikidata_id": "Q168003",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.hes-so.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I180923762",
+    "name": "University of Cologne",
+    "country": "CH",
+    "city": "Cologne",
+    "coordinates": [
+      6.95,
+      50.93333
+    ],
+    "ror_id": "https://ror.org/00rcxh774",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.portal.uni-koeln.de/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I182627622",
+    "name": "Université Sorbonne Nouvelle",
+    "country": "CH",
+    "city": "Paris",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "ror_id": "https://ror.org/03z6jp965",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.univ-paris3.fr/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I190249584",
+    "name": "Universität Innsbruck",
+    "country": "CH",
+    "city": "Innsbruck",
+    "coordinates": [
+      11.39454,
+      47.26266
+    ],
+    "ror_id": "https://ror.org/054pv6659",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.uibk.ac.at"
+  },
+  {
+    "openalex_id": "https://openalex.org/I193223587",
+    "name": "University of Trento",
+    "country": "CH",
+    "city": "Trento",
+    "coordinates": [
+      11.12108039855957,
+      46.06787109375
+    ],
+    "ror_id": "https://ror.org/05trd4x28",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q930528",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://unitn.it"
+  },
+  {
+    "openalex_id": "https://openalex.org/I197323543",
+    "name": "Johannes Gutenberg University Mainz",
+    "country": "CH",
+    "city": "Mainz",
+    "coordinates": [
+      8.2791,
+      49.98419
+    ],
+    "ror_id": "https://ror.org/023b0x485",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.uni-mainz.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I202391551",
+    "name": "Czech Academy of Sciences",
+    "country": "CH",
+    "city": "Prague",
+    "coordinates": [
+      14.42076,
+      50.08804
+    ],
+    "ror_id": "https://ror.org/053avzc18",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.avcr.cz/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I205274468",
+    "name": "Trinity College Dublin",
+    "country": "CH",
+    "city": "Dublin",
+    "coordinates": [
+      -6.248889923095703,
+      53.33306121826172
+    ],
+    "ror_id": "https://ror.org/02tyrky19",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q258464",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.tcd.ie/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I241749",
+    "name": "University of Cambridge",
+    "country": "CH",
+    "city": "Cambridge",
+    "coordinates": [
+      0.11667,
+      52.2
+    ],
+    "ror_id": "https://ror.org/013meh722",
+    "wikidata_id": "Q35794",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.cam.ac.uk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2614128279",
+    "name": "Dalle Molle Institute for Artificial Intelligence Research",
+    "country": "CH",
+    "city": "Lugano",
+    "coordinates": [
+      8.960040092468262,
+      46.01007843017578
+    ],
+    "ror_id": "https://ror.org/013355g38",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.idsia.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I27577105",
+    "name": "University College Cork",
+    "country": "CH",
+    "city": "Cork",
+    "coordinates": [
+      -8.470609664916992,
+      51.89796829223633
+    ],
+    "ror_id": "https://ror.org/03265fv13",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q1574185",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.ucc.ie"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2799276119",
+    "name": "Swiss National Library",
+    "country": "CH",
+    "city": "Bern",
+    "coordinates": [
+      7.447440147399902,
+      46.948089599609375
+    ],
+    "ror_id": "https://ror.org/0038t2c13",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q201787",
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.nb.admin.ch/snl/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2799848540",
+    "name": "Center for Open Science",
+    "country": "CH",
+    "city": "Charlottesville",
+    "coordinates": [
+      -78.47667694091797,
+      38.0293083190918
+    ],
+    "ror_id": "https://ror.org/05d5mza29",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q16972305",
+    "type": "nonprofit",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.cos.io"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2801103342",
+    "name": "European Broadcasting Union",
+    "country": "CH",
+    "city": "Geneva",
+    "coordinates": [
+      6.126354217529297,
+      46.2317008972168
+    ],
+    "ror_id": "https://ror.org/03qe3t289",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q166400",
+    "type": "other",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www3.ebu.ch/home"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2801677018",
+    "name": "Chamber of Deputies",
+    "country": "CH",
+    "city": "Rome",
+    "coordinates": [
+      12.47861099243164,
+      41.901390075683594
+    ],
+    "ror_id": "https://ror.org/02ds88v51",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q841424",
+    "type": "government",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.camera.it/leg17/1"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2801851002",
+    "name": "Harvard University Press",
+    "country": "CH",
+    "city": "Cambridge",
+    "coordinates": [
+      -71.12705993652344,
+      42.38301467895508
+    ],
+    "ror_id": "https://ror.org/006v7bf86",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q1587900",
+    "type": "other",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.hup.harvard.edu/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2801908541",
+    "name": "Huygens Institute for History and Culture of the Netherlands",
+    "country": "CH",
+    "city": "Amsterdam",
+    "coordinates": [
+      4.889689922332764,
+      52.37403106689453
+    ],
+    "ror_id": "https://ror.org/04x6kq749",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q2257204",
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.huygens.knaw.nl/?lang=en"
+  },
+  {
+    "openalex_id": "https://openalex.org/I2802488147",
+    "name": "School of Advanced Study",
+    "country": "CH",
+    "city": "London",
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
+    "ror_id": "https://ror.org/039594g80",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.sas.ac.uk/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210106586",
+    "name": "Haute École Pédagogique du Canton de Vaud",
+    "country": "CH",
+    "city": "Lausanne",
+    "coordinates": [
+      6.6215620040893555,
+      46.512882232666016
+    ],
+    "ror_id": "https://ror.org/01bvm0h13",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.hepl.ch/cms/accueil.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210110242",
+    "name": "Digital Science (United States)",
+    "country": "CH",
+    "city": "Cambridge",
+    "coordinates": [
+      -71.07798767089844,
+      42.36968994140625
+    ],
+    "ror_id": "https://ror.org/020h4b682",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.digital-science.com/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210116209",
+    "name": "The Ark",
+    "country": "CH",
+    "city": "Dublin",
+    "coordinates": [
+      -6.24889,
+      53.33306
+    ],
+    "ror_id": "https://ror.org/02dnv4714",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://ark.ie"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210116786",
+    "name": "RISM Digital Center",
+    "country": "CH",
+    "city": "Bern",
+    "coordinates": [
+      7.459097862243652,
+      46.95332717895508
+    ],
+    "ror_id": "https://ror.org/01kk1vy78",
+    "wikidata_id": null,
+    "type": "archive",
+    "dh_publication_count": 3,
+    "homepage_url": "https://rism.digital/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210121791",
+    "name": "Institute of Literary Research of the Polish Academy of Sciences",
+    "country": "CH",
+    "city": "Warsaw",
+    "coordinates": [
+      21.01178,
+      52.22977
+    ],
+    "ror_id": "https://ror.org/02q0p6x28",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://ibl.waw.pl"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210122214",
+    "name": "Research for Equity And Community Health Trust",
+    "country": "CH",
+    "city": "Lilongwe",
+    "coordinates": [
+      33.775169372558594,
+      -13.965917587280273
+    ],
+    "ror_id": "https://ror.org/01zvh5583",
+    "wikidata_id": null,
+    "type": "nonprofit",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.reachtrust.org/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210122261",
+    "name": "Swiss Data Science Center",
+    "country": "CH",
+    "city": "Zurich",
+    "coordinates": [
+      8.547945976257324,
+      47.37936782836914
+    ],
+    "ror_id": "https://ror.org/02hdt9m26",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://datascience.ch/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210128584",
+    "name": "The Alan Turing Institute",
+    "country": "CH",
+    "city": "London",
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
+    "ror_id": "https://ror.org/035dkdb55",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.turing.ac.uk"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210132549",
+    "name": "Mental Health Commission",
+    "country": "CH",
+    "city": "Dublin",
+    "coordinates": [
+      -6.24889,
+      53.33306
+    ],
+    "ror_id": "https://ror.org/03qcxsn76",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.mhcirl.ie/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210136150",
+    "name": "L3S Research Center",
+    "country": "CH",
+    "city": "Hanover",
+    "coordinates": [
+      9.733220100402832,
+      52.370521545410156
+    ],
+    "ror_id": "https://ror.org/039t4wk02",
+    "wikidata_id": null,
+    "type": "facility",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.l3s.de/de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210160530",
+    "name": "Swiss Academy of Sciences",
+    "country": "CH",
+    "city": "Bern",
+    "coordinates": [
+      7.447440147399902,
+      46.948089599609375
+    ],
+    "ror_id": "https://ror.org/05tensj89",
+    "wikidata_id": null,
+    "type": "other",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.naturalsciences.ch/?_ga=1.43343781.1874359181.1462174030"
+  },
+  {
+    "openalex_id": "https://openalex.org/I4210167018",
+    "name": "Interaction Design (United Kingdom)",
+    "country": "CH",
+    "city": "London",
+    "coordinates": [
+      -0.10426700115203857,
+      51.527366638183594
+    ],
+    "ror_id": "https://ror.org/03qfyes53",
+    "wikidata_id": null,
+    "type": "company",
+    "dh_publication_count": 3,
+    "homepage_url": null
+  },
+  {
+    "openalex_id": "https://openalex.org/I57206974",
+    "name": "New York University",
+    "country": "CH",
+    "city": "New York",
+    "coordinates": [
+      -74.00596618652344,
+      40.714271545410156
+    ],
+    "ror_id": "https://ror.org/0190ak572",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q49210",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.nyu.edu"
+  },
+  {
+    "openalex_id": "https://openalex.org/I59769168",
+    "name": "LaGrange College",
+    "country": "CH",
+    "city": "La Grange",
+    "coordinates": [
+      -85.04139709472656,
+      33.03971481323242
+    ],
+    "ror_id": "https://ror.org/04w4aze46",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q6460745",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.lagrange.edu/index.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I7882870",
+    "name": "University of Glasgow",
+    "country": "CH",
+    "city": "Glasgow",
+    "coordinates": [
+      -4.25763,
+      55.86515
+    ],
+    "ror_id": "https://ror.org/00vtgdb53",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "http://www.gla.ac.uk/"
+  },
+  {
+    "openalex_id": "https://openalex.org/I8087733",
+    "name": "University of Tübingen",
+    "country": "CH",
+    "city": "Tübingen",
+    "coordinates": [
+      9.052220344543457,
+      48.52265930175781
+    ],
+    "ror_id": "https://ror.org/03a1kwz48",
+    "wikidata_id": "https://www.wikidata.org/wiki/Q153978",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.uni-tuebingen.de/en/university.html"
+  },
+  {
+    "openalex_id": "https://openalex.org/I81007117",
+    "name": "Lucerne University of Applied Sciences and Arts",
+    "country": "CH",
+    "city": "Lucerne",
+    "coordinates": [
+      8.30635,
+      47.05048
+    ],
+    "ror_id": "https://ror.org/04nd0xd48",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.hslu.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I8204097",
+    "name": "Ludwig-Maximilians-Universität München",
+    "country": "CH",
+    "city": "Munich",
+    "coordinates": [
+      11.57549,
+      48.13743
+    ],
+    "ror_id": "https://ror.org/05591te55",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.lmu.de"
+  },
+  {
+    "openalex_id": "https://openalex.org/I87101506",
+    "name": "Swiss National Science Foundation",
+    "country": "CH",
+    "city": "Bern",
+    "coordinates": [
+      7.44744,
+      46.94809
+    ],
+    "ror_id": "https://ror.org/00yjd3n13",
+    "wikidata_id": null,
+    "type": "government",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.snf.ch"
+  },
+  {
+    "openalex_id": "https://openalex.org/I887064364",
+    "name": "University of Amsterdam",
+    "country": "CH",
+    "city": "Amsterdam",
+    "coordinates": [
+      4.88969,
+      52.37403
+    ],
+    "ror_id": "https://ror.org/04dkp9463",
+    "wikidata_id": "Q214341",
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.uva.nl"
+  },
+  {
+    "openalex_id": "https://openalex.org/I904495901",
+    "name": "Ruhr University Bochum",
+    "country": "CH",
+    "city": "Bochum",
+    "coordinates": [
+      7.21648,
+      51.48165
+    ],
+    "ror_id": "https://ror.org/04tsk2644",
+    "wikidata_id": null,
+    "type": "education",
+    "dh_publication_count": 3,
+    "homepage_url": "https://www.ruhr-uni-bochum.de"
+  }
+]

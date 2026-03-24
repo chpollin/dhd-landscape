@@ -1,0 +1,72 @@
+[
+  {
+    "id": "uni-graz-zim",
+    "name": "Zentrum für Informationsmodellierung (ZIM)",
+    "institution": "Universität Graz",
+    "city": "Graz",
+    "country": "AT",
+    "coordinates": [15.4500, 47.0769],
+    "type": "center",
+    "disciplines": ["Digital Humanities", "Digital Edition", "Digital History"],
+    "methods": ["TEI/XML", "Linked Data", "Semantic Web", "Data Modeling"],
+    "url": "https://informationsmodellierung.uni-graz.at/",
+    "people": ["Georg Vogeler", "Helmut Klug"],
+    "description": "Center for Information Modelling — Austrian Centre for Digital Humanities at University of Graz"
+  },
+  {
+    "id": "hu-berlin-dh",
+    "name": "Digital History",
+    "institution": "Humboldt-Universität zu Berlin",
+    "city": "Berlin",
+    "country": "DE",
+    "coordinates": [13.3933, 52.5186],
+    "type": "professorship",
+    "disciplines": ["Digital History", "Public History"],
+    "methods": ["Text Mining", "Data Visualization", "Digital Source Criticism"],
+    "url": "https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history",
+    "people": ["Torsten Hiltmann"],
+    "description": "Professorship for Digital History at Humboldt University Berlin"
+  },
+  {
+    "id": "uni-wuppertal-dh",
+    "name": "Digital Humanities",
+    "institution": "Bergische Universität Wuppertal",
+    "city": "Wuppertal",
+    "country": "DE",
+    "coordinates": [7.1498, 51.2456],
+    "type": "professorship",
+    "disciplines": ["Digital Humanities", "Digital History", "Digital Edition"],
+    "methods": ["TEI/XML", "Text Mining", "Data Modeling"],
+    "url": "https://www.digital-humanities.uni-wuppertal.de/",
+    "people": ["Patrick Sahle"],
+    "description": "Chair of Digital Humanities at Bergische Universität Wuppertal"
+  },
+  {
+    "id": "uni-trier-kompetenzzentrum",
+    "name": "Trier Center for Digital Humanities (TCDH)",
+    "institution": "Universität Trier",
+    "city": "Trier",
+    "country": "DE",
+    "coordinates": [6.6853, 49.7490],
+    "type": "center",
+    "disciplines": ["Digital Humanities", "Computational Literary Studies", "Digital Lexicography"],
+    "methods": ["Text Mining", "Stylometry", "Network Analysis", "Digital Edition"],
+    "url": "https://tcdh.uni-trier.de/",
+    "people": ["Christof Schöch"],
+    "description": "One of the oldest DH centers in Germany, strong in computational text analysis"
+  },
+  {
+    "id": "uni-basel-dhlab",
+    "name": "Digital Humanities Lab",
+    "institution": "Universität Basel",
+    "city": "Basel",
+    "country": "CH",
+    "coordinates": [7.5886, 47.5596],
+    "type": "center",
+    "disciplines": ["Digital Humanities", "Digital Art History", "Cultural Heritage"],
+    "methods": ["Image Analysis", "Machine Learning", "Linked Data", "3D Modeling"],
+    "url": "https://dhlab.unibas.ch/",
+    "people": ["Lukas Rosenthaler"],
+    "description": "DH Lab at University of Basel, focus on image-based research and cultural heritage"
+  }
+]

@@ -179,11 +179,20 @@
 
 <script>
 (async function() {
+    console.log('%c[DHd Landscape]%c Loading...', 'color:#818cf8;font-weight:bold', 'color:inherit');
+
     const res = await fetch('Data/institutions.json');
     const data = await res.json();
 
     // Helper: get method label (handles both string and {label, tadirahUri} format)
     function mLabel(m) { return typeof m === 'object' ? m.label : m; }
+
+    const withWikidata = data.filter(d => d.wikidataId).length;
+    const withRor = data.filter(d => d.rorId).length;
+    const withPubs = data.filter(d => d.dhPublicationCount > 0).length;
+    const totalPubs = data.reduce((s, d) => s + (d.dhPublicationCount || 0), 0);
+    console.log(`%c[Data]%c ${data.length} institutions loaded | ${withWikidata} Wikidata | ${withRor} ROR | ${withPubs} with pubs (${totalPubs} total)`,
+        'color:#6ee7b7;font-weight:bold', 'color:inherit');
 
     // Counts for filters
     const discCount = {}, methCount = {}, countryCount = {};
@@ -258,7 +267,7 @@
                 }
             },
             layers: [{ id: 'carto-tiles', type: 'raster', source: 'carto-tiles' }],
-            glyphs: 'https://glyphs.openfreemap.org/{fontstack}/{range}.pbf'
+            glyphs: 'https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=get_your_own_OpIi9ZULNHzrESv6T2vL'
         },
         center: [10.5, 50.0],
         zoom: 5.5,
@@ -270,6 +279,7 @@
     let currentFiltered = data;
 
     map.on('load', () => {
+        console.log('%c[Map]%c Loaded. Adding layers...', 'color:#fbbf24;font-weight:bold', 'color:inherit');
         map.addSource('institutions', {
             type: 'geojson',
             data: toGeoJSON(data)
@@ -323,7 +333,7 @@
             filter: ['>=', ['get', 'totalPositions'], 3],
             layout: {
                 'text-field': ['to-string', ['get', 'totalPositions']],
-                'text-font': ['Americana-Regular'],
+                'text-font': ['Open Sans Regular'],
                 'text-size': 10,
                 'text-allow-overlap': true
             },
@@ -342,7 +352,7 @@
             minzoom: 6,
             layout: {
                 'text-field': ['get', 'city'],
-                'text-font': ['Americana-Regular'],
+                'text-font': ['Open Sans Regular'],
                 'text-size': 10,
                 'text-offset': [0, 1.8],
                 'text-anchor': 'top'
@@ -391,6 +401,15 @@
         map.getSource('institutions').setData(toGeoJSON(filtered));
         updateStats();
         closeCard();
+
+        const activeF = [];
+        if (active.disc.size) activeF.push(`disc:[${[...active.disc].join(',')}]`);
+        if (active.meth.size) activeF.push(`meth:[${[...active.meth].join(',')}]`);
+        if (active.country.size) activeF.push(`country:[${[...active.country].join(',')}]`);
+        if (yearMin > 2008) activeF.push(`since:${yearMin}`);
+        if (searchTerm) activeF.push(`search:"${searchTerm}"`);
+        console.log(`%c[Filter]%c ${filtered.length}/${data.length} institutions` + (activeF.length ? ` | ${activeF.join(' ')}` : ' | no filters'),
+            'color:#c4b5fd;font-weight:bold', 'color:inherit');
 
         if (filtered.length > 0 && filtered.length < data.length) {
             const bounds = new maplibregl.LngLatBounds();

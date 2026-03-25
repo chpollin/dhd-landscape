@@ -1,0 +1,2110 @@
+[
+  {
+    "source": "Humboldt-Universität zu Berlin",
+    "target": "Technische Universität Berlin",
+    "weight": 78,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 7
+      },
+      {
+        "topic": "Annotation",
+        "count": 6
+      },
+      {
+        "topic": "Ontology",
+        "count": 4
+      },
+      {
+        "topic": "Corpus Linguistics",
+        "count": 3
+      },
+      {
+        "topic": "Named Entity Recognition",
+        "count": 3
+      },
+      {
+        "topic": "APIs",
+        "count": 3
+      },
+      {
+        "topic": "Visualization",
+        "count": 3
+      },
+      {
+        "topic": "Research Data Management",
+        "count": 3
+      },
+      {
+        "topic": "Machine Learning",
+        "count": 2
+      },
+      {
+        "topic": "Network Analysis",
+        "count": 2
+      },
+      {
+        "topic": "Digital Art History",
+        "count": 2
+      },
+      {
+        "topic": "Digital Cultural Heritage",
+        "count": 2
+      },
+      {
+        "topic": "Linked Data",
+        "count": 1
+      },
+      {
+        "topic": "Semantic Web",
+        "count": 1
+      },
+      {
+        "topic": "Computer Vision",
+        "count": 1
+      },
+      {
+        "topic": "Digital Archaeology",
+        "count": 1
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      },
+      {
+        "topic": "OCR/HTR",
+        "count": 1
+      },
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Freie Universität Berlin",
+    "weight": 67,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 5
+      },
+      {
+        "topic": "Generative AI",
+        "count": 3
+      },
+      {
+        "topic": "Digital History",
+        "count": 3
+      },
+      {
+        "topic": "Corpus Linguistics",
+        "count": 3
+      },
+      {
+        "topic": "Named Entity Recognition",
+        "count": 3
+      },
+      {
+        "topic": "Network Analysis",
+        "count": 2
+      },
+      {
+        "topic": "Annotation",
+        "count": 2
+      },
+      {
+        "topic": "Visualization",
+        "count": 2
+      },
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      },
+      {
+        "topic": "Digital Performance Studies",
+        "count": 1
+      },
+      {
+        "topic": "APIs",
+        "count": 1
+      },
+      {
+        "topic": "Linked Data",
+        "count": 1
+      },
+      {
+        "topic": "Open Science",
+        "count": 1
+      },
+      {
+        "topic": "Digital Archaeology",
+        "count": 1
+      },
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      },
+      {
+        "topic": "Digital Cultural Heritage",
+        "count": 1
+      },
+      {
+        "topic": "Digital Art History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Potsdam",
+    "weight": 31,
+    "sharedTopics": [
+      {
+        "topic": "APIs",
+        "count": 3
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 3
+      },
+      {
+        "topic": "Digital History",
+        "count": 2
+      },
+      {
+        "topic": "Corpus Linguistics",
+        "count": 2
+      },
+      {
+        "topic": "Network Analysis",
+        "count": 2
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      },
+      {
+        "topic": "Linked Data",
+        "count": 1
+      },
+      {
+        "topic": "Annotation",
+        "count": 1
+      },
+      {
+        "topic": "Open Science",
+        "count": 1
+      },
+      {
+        "topic": "Named Entity Recognition",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      },
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "FH Potsdam",
+    "weight": 17,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 3
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      },
+      {
+        "topic": "3D Modeling",
+        "count": 1
+      },
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      },
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Göttingen",
+    "weight": 16,
+    "sharedTopics": [
+      {
+        "topic": "Digital Performance Studies",
+        "count": 1
+      },
+      {
+        "topic": "Text Mining",
+        "count": 1
+      },
+      {
+        "topic": "Annotation",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      },
+      {
+        "topic": "Open Science",
+        "count": 1
+      },
+      {
+        "topic": "Digital Cultural Heritage",
+        "count": 1
+      },
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Freie Universität Berlin",
+    "target": "Universität Potsdam",
+    "weight": 13,
+    "sharedTopics": [
+      {
+        "topic": "Digital History",
+        "count": 2
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      },
+      {
+        "topic": "Linked Data",
+        "count": 1
+      },
+      {
+        "topic": "Annotation",
+        "count": 1
+      },
+      {
+        "topic": "Open Science",
+        "count": 1
+      },
+      {
+        "topic": "Named Entity Recognition",
+        "count": 1
+      },
+      {
+        "topic": "Corpus Linguistics",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Stuttgart",
+    "target": "Universität zu Köln",
+    "weight": 13,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Technische Universität Berlin",
+    "weight": 13,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 2
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Digital Art History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "Technische Universität Berlin",
+    "weight": 13,
+    "sharedTopics": [
+      {
+        "topic": "OCR/HTR",
+        "count": 3
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 2
+      },
+      {
+        "topic": "Machine Learning",
+        "count": 2
+      },
+      {
+        "topic": "Corpus Linguistics",
+        "count": 1
+      },
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Leipzig",
+    "weight": 13,
+    "sharedTopics": [
+      {
+        "topic": "Library & Archive Science",
+        "count": 2
+      },
+      {
+        "topic": "Digital Archaeology",
+        "count": 1
+      },
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Potsdam",
+    "weight": 13,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Münster",
+    "target": "Technische Universität Berlin",
+    "weight": 12,
+    "sharedTopics": [
+      {
+        "topic": "Annotation",
+        "count": 4
+      },
+      {
+        "topic": "Machine Learning",
+        "count": 2
+      },
+      {
+        "topic": "Ontology",
+        "count": 2
+      },
+      {
+        "topic": "Computer Vision",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Humboldt-Universität zu Berlin",
+    "target": "Freie Universität Berlin",
+    "weight": 11,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 3
+      },
+      {
+        "topic": "APIs",
+        "count": 1
+      },
+      {
+        "topic": "Network Analysis",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      },
+      {
+        "topic": "Digital Archaeology",
+        "count": 1
+      },
+      {
+        "topic": "Digital Cultural Heritage",
+        "count": 1
+      },
+      {
+        "topic": "Named Entity Recognition",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 11,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 3
+      },
+      {
+        "topic": "APIs",
+        "count": 2
+      },
+      {
+        "topic": "Network Analysis",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Ruhr-Universität Bochum",
+    "weight": 10,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Heidelberg",
+    "weight": 10,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 3
+      },
+      {
+        "topic": "Digital Art History",
+        "count": 1
+      },
+      {
+        "topic": "3D Modeling",
+        "count": 1
+      },
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Graz",
+    "weight": 10,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Wien",
+    "target": "Universität Graz",
+    "weight": 10,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Technische Universität Berlin",
+    "weight": 9,
+    "sharedTopics": [
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Universität Potsdam",
+    "weight": 9,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 2
+      },
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Münster",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 8,
+    "sharedTopics": [
+      {
+        "topic": "Annotation",
+        "count": 4
+      },
+      {
+        "topic": "Machine Learning",
+        "count": 2
+      },
+      {
+        "topic": "Ontology",
+        "count": 2
+      },
+      {
+        "topic": "Computer Vision",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Universität Marburg",
+    "weight": 8,
+    "sharedTopics": [
+      {
+        "topic": "APIs",
+        "count": 1
+      },
+      {
+        "topic": "Semantic Web",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Trier",
+    "weight": 8,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Graz",
+    "weight": 8,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Universität Göttingen",
+    "weight": 7,
+    "sharedTopics": []
+  },
+  {
+    "source": "Freie Universität Berlin",
+    "target": "Ruhr-Universität Bochum",
+    "weight": 7,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Regensburg",
+    "target": "Technische Universität Berlin",
+    "weight": 7,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 2
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Bielefeld",
+    "target": "Technische Universität Berlin",
+    "weight": 7,
+    "sharedTopics": [
+      {
+        "topic": "Digital History",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "Universität Stuttgart",
+    "weight": 7,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 5
+      },
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Halle-Wittenberg",
+    "target": "Technische Universität Berlin",
+    "weight": 7,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Marburg",
+    "target": "Technische Universität Berlin",
+    "weight": 7,
+    "sharedTopics": [
+      {
+        "topic": "Digital Art History",
+        "count": 2
+      },
+      {
+        "topic": "Ontology",
+        "count": 1
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Graz",
+    "weight": 7,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Würzburg",
+    "weight": 6,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 2
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Bielefeld",
+    "weight": 6,
+    "sharedTopics": []
+  },
+  {
+    "source": "FH Potsdam",
+    "target": "Technische Universität Berlin",
+    "weight": 6,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 3
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "Universität Göttingen",
+    "weight": 6,
+    "sharedTopics": [
+      {
+        "topic": "Annotation",
+        "count": 1
+      },
+      {
+        "topic": "Sentiment Analysis",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Rostock",
+    "weight": 6,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Halle-Wittenberg",
+    "target": "Universität Trier",
+    "weight": 6,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      },
+      {
+        "topic": "GIS",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Universität Graz",
+    "weight": 6,
+    "sharedTopics": [
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Universität Würzburg",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Crowdsourcing",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Graz",
+    "target": "Universität Regensburg",
+    "weight": 5,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Münster",
+    "target": "Universität Trier",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Semantic Web",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Frankfurt",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Digital Cultural Heritage",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Freie Universität Berlin",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Heidelberg",
+    "weight": 5,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Rostock",
+    "target": "Universität Graz",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Leipzig",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Crowdsourcing",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Göttingen",
+    "target": "Universität Leipzig",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Digital Philology",
+        "count": 1
+      },
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Stuttgart",
+    "target": "Technische Universität Berlin",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 2
+      },
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Bergische Universität Wuppertal",
+    "target": "Universität Graz",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Freie Universität Berlin",
+    "target": "Universität Halle-Wittenberg",
+    "weight": 5,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Marburg",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Digital Art History",
+        "count": 2
+      },
+      {
+        "topic": "Ontology",
+        "count": 1
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Marburg",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Digital Art History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Regensburg",
+    "target": "Universität Leipzig",
+    "weight": 5,
+    "sharedTopics": [
+      {
+        "topic": "Named Entity Recognition",
+        "count": 2
+      },
+      {
+        "topic": "Sentiment Analysis",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Göttingen",
+    "weight": 5,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Bergische Universität Wuppertal",
+    "weight": 4,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Augsburg",
+    "target": "Hochschule Augsburg",
+    "weight": 4,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Ruhr-Universität Bochum",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Semantic Web",
+        "count": 2
+      },
+      {
+        "topic": "Network Analysis",
+        "count": 1
+      },
+      {
+        "topic": "Corpus Linguistics",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Jena",
+    "target": "Universität Bielefeld",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Digital History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Regensburg",
+    "target": "Freie Universität Berlin",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Heidelberg",
+    "target": "Universität Bielefeld",
+    "weight": 4,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Marburg",
+    "target": "Universität Leipzig",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "APIs",
+        "count": 2
+      },
+      {
+        "topic": "Digital Philology",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Freie Universität Berlin",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 2
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Bielefeld",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Digital History",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Wien",
+    "target": "Technische Universität Berlin",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 2
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Universität Graz",
+    "weight": 4,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Universität Trier",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "APIs",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Paderborn",
+    "weight": 4,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Universität zu Köln",
+    "weight": 4,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Stuttgart",
+    "target": "Universität Heidelberg",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Annotation",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "Universität Trier",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Machine Learning",
+        "count": 2
+      },
+      {
+        "topic": "Named Entity Recognition",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Göttingen",
+    "target": "Universität Graz",
+    "weight": 4,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      },
+      {
+        "topic": "Digital Edition",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Münster",
+    "target": "Ruhr-Universität Bochum",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Semantic Web",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Bern",
+    "target": "Universität Zürich",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "OCR/HTR",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "FH Potsdam",
+    "target": "Freie Universität Berlin",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      },
+      {
+        "topic": "Digital History",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Göttingen",
+    "target": "Universität Halle-Wittenberg",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Zürich",
+    "target": "Universität Marburg",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "APIs",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Digital Art History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Passau",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Wien",
+    "target": "Universität Leipzig",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Würzburg",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Crowdsourcing",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Freie Universität Berlin",
+    "target": "Universität Münster",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Halle-Wittenberg",
+    "target": "Universität Leipzig",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "Freie Universität Berlin",
+    "target": "Universität Leipzig",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Digital Archaeology",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Universität Münster",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "Freie Universität Berlin",
+    "target": "Universität Göttingen",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Digital Performance Studies",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Münster",
+    "target": "Universität Göttingen",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Annotation",
+        "count": 1
+      },
+      {
+        "topic": "TEI/XML",
+        "count": 1
+      },
+      {
+        "topic": "Library & Archive Science",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Humboldt-Universität zu Berlin",
+    "target": "Universität Göttingen",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Graz",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Bielefeld",
+    "target": "Universität Basel",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Sentiment Analysis",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Basel",
+    "target": "Universität Trier",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Rostock",
+    "target": "Universität Paderborn",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "FH Potsdam",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "source": "Universität Regensburg",
+    "target": "Universität Würzburg",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Sentiment Analysis",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Universität Jena",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Heidelberg",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Digital Art History",
+        "count": 2
+      },
+      {
+        "topic": "Computer Vision",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Wien",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 2
+      },
+      {
+        "topic": "Named Entity Recognition",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "Universität Frankfurt",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Freie Universität Berlin",
+    "target": "Universität Frankfurt",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Machine Learning",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Digital Cultural Heritage",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Göttingen",
+    "target": "Universität Potsdam",
+    "weight": 3,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Stuttgart",
+    "target": "Universität Hildesheim",
+    "weight": 3,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "Bergische Universität Wuppertal",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Ruhr-Universität Bochum",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität für Weiterbildung Krems",
+    "target": "Universität Wien",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "3D Modeling",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Jena",
+    "target": "Universität Halle-Wittenberg",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Humboldt-Universität zu Berlin",
+    "target": "Universität Heidelberg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Digital Art History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Marburg",
+    "target": "Universität Klagenfurt",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Digital Philology",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Trier",
+    "target": "Universität Kiel",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Wien",
+    "target": "Universität Stuttgart",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Stuttgart",
+    "target": "Universität Regensburg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Göttingen",
+    "target": "Universität Wien",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Wien",
+    "target": "Bergische Universität Wuppertal",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Bielefeld",
+    "target": "Universität Würzburg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Rostock",
+    "target": "Universität Würzburg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      },
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Bern",
+    "target": "Universität Basel",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Ruhr-Universität Bochum",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Rostock",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Stuttgart",
+    "target": "Universität Göttingen",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Jena",
+    "target": "Universität Würzburg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Annotation",
+        "count": 1
+      },
+      {
+        "topic": "Digital Art History",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Würzburg",
+    "target": "LMU München",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Annotation",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Wien",
+    "target": "Universität Rostock",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Generative AI",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "TU Darmstadt",
+    "target": "Universität Potsdam",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Technische Universität Berlin",
+    "target": "Universität Zürich",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Bergische Universität Wuppertal",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 2
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Ruhr-Universität Bochum",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Corpus Linguistics",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Graz",
+    "target": "FH Potsdam",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "FH Potsdam",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "Universität Frankfurt",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Münster",
+    "target": "Universität Zürich",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Humboldt-Universität zu Berlin",
+    "target": "Universität Leipzig",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Digital Archaeology",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Basel",
+    "target": "Universität Halle-Wittenberg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Basel",
+    "target": "Universität zu Köln",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Halle-Wittenberg",
+    "target": "Universität zu Köln",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Frankfurt",
+    "target": "Universität Göttingen",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Bamberg",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität zu Köln",
+    "target": "Universität Bamberg",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Marburg",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Leipzig",
+    "target": "FH Erfurt",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Visualization",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "FAU Erlangen-Nürnberg",
+    "target": "Technische Universität Berlin",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Linked Data",
+        "count": 1
+      },
+      {
+        "topic": "Open Science",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "FH Potsdam",
+    "target": "Universität Wien",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Wien",
+    "target": "Humboldt-Universität zu Berlin",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Graz",
+    "target": "Freie Universität Berlin",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Zürich",
+    "target": "Universität Wien",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Zürich",
+    "target": "Universität Rostock",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "OCR/HTR",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Göttingen",
+    "target": "Universität Heidelberg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      },
+      {
+        "topic": "Computational Literary Studies",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Göttingen",
+    "target": "Universität Bamberg",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Bamberg",
+    "target": "Technische Universität Berlin",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Bamberg",
+    "target": "Universität Leipzig",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Research Data Management",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Potsdam",
+    "target": "Universität Regensburg",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Halle-Wittenberg",
+    "target": "Universität Potsdam",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Münster",
+    "target": "Universität zu Köln",
+    "weight": 2,
+    "sharedTopics": []
+  },
+  {
+    "source": "Universität Passau",
+    "target": "Universität Wien",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "Named Entity Recognition",
+        "count": 1
+      },
+      {
+        "topic": "Digital Cultural Heritage",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "source": "Universität Marburg",
+    "target": "TU Darmstadt",
+    "weight": 2,
+    "sharedTopics": [
+      {
+        "topic": "3D Modeling",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "source": "Universität Stuttgart",
+    "target": "Universität Potsdam",
+    "weight": 2,
+    "sharedTopics": []
+  }
+]

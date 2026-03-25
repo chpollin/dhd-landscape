@@ -34,32 +34,33 @@ Mehrere verknüpfte Visualisierungen, bei denen Interaktion in einer Ansicht all
 
 ## Visualisierungs-Konzepte
 
-### 1. Map-as-Canvas (Iteration 4–6: implementiert)
+### 1. Map-as-Canvas (Iteration 4–7: implementiert)
 Die Karte ist immer 100% Viewport — alles andere schwebt darüber. Drei Views:
-- **Übersicht**: Startseite mit animierten Stats, Kernzahlen, Einstiegspunkt
-- **Karte**: Interaktive Karte mit TaDiRAH-farbkodierten Markern, Filtern, Detail-Panel
-- **Explorer**: D3.js Chart-Panels — Timeline, Institutionen, Disziplinen
+- **Übersicht**: Stats, TaDiRAH-Bars, Disziplinen, Timeline, Länder, Zenodo-Topics, Datenquellen
+- **Karte**: Interaktive Karte mit TaDiRAH-farbkodierten Markern, Filtern, Detail-Panel (mit Zenodo-Topics + Kooperationspartner)
+- **Explorer**: 5 Chart-Sektionen (scrollbar, keine Tabs) — Zeitverlauf, Institutionen, Disziplinen, Forschungsthemen, Kooperationsnetzwerk
 
-View-Wechsel via `body[data-view]` + CSS Transitions. Shared: Map, Event-Bus, Filter, Detail-Panel.
+View-Wechsel via `ViewManager.switch()`. Shared: Map, Event-Bus, Filter, Detail-Panel.
 
-> **Iteration 6**: Narrative Mode (Scrollytelling) entfernt. Overview Mode → Übersicht (vereinfacht). Explore Mode → Karte + Explorer (aufgespalten).
-
-### 2. D3.js Charts (Iteration 3–6: implementiert)
-Drei Visualisierungen, im Explorer-View als Chart-Panels:
+### 2. D3.js Charts (Iteration 3–7: implementiert)
+Fünf Sektionen im Explorer-View (alle untereinander, scrollbar):
 - **Stacked Area Chart**: Kumulatives DH-Wachstum 2008–2026, Toggle Disziplin/Land
 - **Horizontaler Barchart**: Institutionen nach Stellenanzahl, Disziplin-Segmente
-- **Disziplin-Matrix**: Institutionen × Disziplinen Heatmap mit Crosshair-Hover
-- Coordinated Filtering: `applyFilters()` → Map + Charts gleichzeitig
-- `DHdCharts.renderTo()` für Multi-Container-Support (Explorer panels)
-- Offen: Methoden-Radar (niedrigere Priorität)
+- **Disziplin-Heatmap**: Institutionen × Disziplinen Matrix mit Crosshair-Hover
+- **Forschungsthemen**: Top-25 Zenodo-Topics als Horizontal-Bars
+- **Kooperationsnetzwerk**: Top-20 institutionelle Kollaborationen als Horizontal-Bars
+- Shared Helper: `renderHorizontalBars()` für D3 Bar-Charts in Übersicht + Explorer
+- `DHdCharts.renderTo()` für Timeline, Barchart, Heatmap
 
-### 3. Thematische Verbindungen (geplant, Tier 2)
-- **Konstellations-View**: Institutionen mit geteilten Themen verbunden durch Arcs
-- Nicht als klassische Netzwerkvisualisierung (schwierig lesbar), sondern als **thematische Nähe** auf der Karte
-- deck.gl ArcLayer für elegante Verbindungen
+### 3. Kooperationsnetzwerk (Iteration 7: implementiert)
+- **156 institutionelle Kooperationskanten** aus Zenodo-Ko-Autorschaften
+- Dargestellt als sortierte Liste in Explorer + Kooperationspartner im Detail-Panel
+- Stärkstes Cluster: Berlin (HU ↔ TU: 78, TU ↔ FU: 67)
+- Offen: Arc-Layer auf der Karte (deck.gl) für visuelle Verbindungen
 
-### 4. Daten-Interface (geplant)
-JSON-LD Browser, LOD-Export, SPARQL-artige Abfragen.
+### 4. Daten-Interface (teilweise implementiert)
+- ✅ JSON-LD Export: `Data/institutions-ld.jsonld` mit @context
+- Offen: LOD-Browser, SPARQL-artige Abfragen
 
 ## Design-Entscheidung: Karte vs. andere Ansichten
 

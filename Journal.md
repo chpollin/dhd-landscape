@@ -350,9 +350,84 @@ Zusammen mit Sahle und OpenAlex sind nun **7 Datenquellen** integriert.
 - Live: https://chpollin.github.io/dhd-landscape/
 
 ### Offene Punkte für Iteration 7
-1. Use Case "Digitale Editionen" als geführtes Szenario
-2. Konstellations-View (thematische Verbindungen)
-3. JSON-LD vollständiger Export (nicht nur Context)
+1. ~~Use Case "Digitale Editionen" als geführtes Szenario~~ → Zenodo-Topics zeigen "Digital Edition" empirisch
+2. ~~Konstellations-View (thematische Verbindungen)~~ → Ko-Autorschaftsnetzwerk implementiert ✅
+3. ~~JSON-LD vollständiger Export (nicht nur Context)~~ → build-lod.js erzeugt institutions-ld.jsonld ✅
 4. DBLP-Matching verfeinern
 5. Responsive Design / Mobile-Optimierung
 6. Accessibility-Audit (Screenreader, Keyboard-Navigation)
+
+---
+
+## Promptotyping-Iteration 7: Von Stellenkarte zu Forschungslandschaft
+
+### Zentrale Architektur-Entscheidung: LOD-First Pipeline
+
+Grundlegender Paradigmenwechsel: Statt Sahle-Professuren als alleinige Datengrundlage → **alle 7 Quellen gleichwertig** in einem LOD-Datensatz zusammengeführt. `build-lod.js` ersetzt `build-institutions.js`.
+
+Wichtige Erkenntnis: Die Sprache im Interface fokussierte zu stark auf "Professuren" — aber das Tool bildet DH-Forschung insgesamt ab. Professuren sind eine Datenquelle, nicht das Ganze. Terminologie durchgängig korrigiert: "Professuren" → "Stellen"/"Positionen".
+
+### Refactoring (Codequalität)
+
+Sauberes Refactoring der gesamten Codebasis:
+- `modes.js` gelöscht (1.448 Zeilen deprecated Code)
+- TaDiRAH-Farben konsolidiert (Single Source of Truth)
+- `renderHorizontalBars()` Helper extrahiert (3 Duplikate → 1 Funktion)
+- `App.showPanel()` in 10 fokussierte Sub-Funktionen aufgeteilt
+- Magic Numbers in `CONFIG` Objekt extrahiert
+- CSS-Duplikate bereinigt, Inline-Styles nach CSS verschoben
+- `charts.js renderTo()` Hack durch saubere Parameter-API ersetzt
+- ARIA-Labels auf interaktive Elemente
+- CSS-Klassen-Mismatches zwischen JS und CSS korrigiert (5 Stellen)
+
+### Zenodo-Themenprofile (Phase 1)
+
+**2.112 DHd-Konferenzbeiträge** werden jetzt inhaltlich ausgewertet:
+- 36 Topic-Patterns extrahieren Themen aus Titeln
+- 47/52 Institutionen haben Zenodo-Themenprofile
+- Top-Themen: Computational Literary Studies (135), NER (95), Annotation (85)
+
+### Ko-Autorschaftsnetzwerk (Phase 2)
+
+Aus den Zenodo-Affiliationen werden **institutionelle Kooperationen** abgeleitet:
+- 315 Kanten insgesamt, 156 mit ≥2 gemeinsamen Beiträgen
+- Stärkstes Cluster: Berlin (HU ↔ TU: 78, TU ↔ FU: 67)
+- Graz: 10 Papers mit TU Berlin + Wien, Themen GenAI + Computational Literary Studies
+
+### LOD-Datensatz (Phase 3)
+
+`build-lod.js` erzeugt 3 Outputs:
+- `institutions-ld.jsonld` — JSON-LD mit @context, @id, @type, sameAs (LOD-Export)
+- `institutions-ld.json` — Frontend-Datensatz
+- `institutions.json` — Backward-Kompatibilität
+
+Jede Institution hat jetzt:
+- Wikidata-URI als kanonischer `@id`
+- `sameAs`-Links zu ROR, GND
+- `zenodoTopics[]` — empirische Themenprofile
+- `zenodoYears{}` — Publikationsaktivität pro Jahr
+- `collaborators[]` — Ko-Autorschafts-Partner mit shared Topics
+
+### Explorer: Alle Charts auf einer Seite
+
+Tab-Navigation entfernt → 5 Sektionen untereinander (scrollbar):
+1. Zeitverlauf (Stacked Area)
+2. Institutionen (Horizontal Barchart)
+3. Disziplinen (Heatmap)
+4. Forschungsthemen (Zenodo Topics)
+5. Kooperationsnetzwerk (Top-20 Kollaborationen)
+
+### Stand nach Iteration 7
+- 52 Institutionen, 7 Datenquellen + LOD-Pipeline
+- 47 Zenodo-Themenprofile, 156 Kooperationskanten
+- 5 Explorer-Sektionen, Zenodo-Topics + Kooperationen im Detail-Panel
+- JSON-LD Export mit Wikidata-URIs
+- Forschungsplan: Knowledge/Research-Plan-Iteration7.md
+
+### Offene Punkte für Iteration 8
+1. Karten-Overlay: Kooperations-Arcs als MapLibre-Layer (deck.gl ArcLayer)
+2. Brushing: Klick auf Topic in Explorer → Karte filtert
+3. Zenodo-API erweitern: Keywords + Abstract-Volltext für bessere Themenextraktion
+4. DBLP-Matching über Autor-Affiliationen statt Venue-Matching
+5. Responsive Design / Mobile
+6. SPARQL-Endpoint oder LOD-Browser für JSON-LD

@@ -47,7 +47,7 @@ Iterative Entwicklung mit LLMs, validiert durch **Critical Expert-in-the-Loop**.
 |---|---|
 | README.md | CLAUDE.md |
 | DATA.md | Knowledge/Data.md |
-| REQUIREMENTS.md | (noch nicht angelegt) |
+| REQUIREMENTS.md | Knowledge/Requirements.md |
 | DESIGN.md | Knowledge/Design.md |
 | JOURNAL.md | Journal.md |
 | INSTRUCTIONS.md | (nicht nötig — direkte Umsetzung) |

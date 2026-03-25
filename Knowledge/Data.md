@@ -35,9 +35,11 @@ status: draft
 ### Prio 4: DHd Zenodo Communities ✅
 - `zenodo.org/communities/dhd` — Konferenzmaterialien (2014–2026)
 - **Abgerufen**: 2112 Records
-- **Matched**: 50/52 Institutionen (96%)
-- **Neue Felder**: `zenodoRecordCount`
-- **Status**: Integriert (Iteration 6)
+- **Matched**: 50/52 Institutionen (96%), **47 mit Themenprofile**
+- **Neue Felder**: `zenodoRecordCount`, `zenodoTopics[]`, `zenodoYears{}`, `collaborators[]`
+- **Topic-Extraktion**: 36 Regex-Patterns auf Titel → Forschungsthemen pro Institution
+- **Ko-Autorschaftsnetzwerk**: 156 institutionelle Kooperationskanten (≥2 shared Papers)
+- **Status**: Integriert (Iteration 6: Counts, Iteration 7: Topics + Netzwerk)
 
 ### Prio 5: CLARIN Centre Registry ✅
 - **URL**: https://centres.clarin.eu
@@ -76,46 +78,42 @@ status: draft
 
 ## Datenmodell
 
-### Aktuell: Institutionsprofile (JSON, nach Iteration 6)
+### Aktuell: LOD-Institutionsprofile (JSON-LD, nach Iteration 7)
 ```json
 {
-  "id": "uni-graz",
+  "@id": "http://www.wikidata.org/entity/Q622683",
+  "@type": "ResearchOrganization",
   "name": "Universität Graz",
   "city": "Graz",
   "country": "AT",
   "coordinates": [15.45, 47.08],
+  "sameAs": ["http://www.wikidata.org/entity/Q622683", "https://ror.org/01faaaf77", "https://d-nb.info/gnd/2042894-7"],
   "totalPositions": 5,
   "earliestYear": 2015,
   "founded": 1585,
   "disciplines": ["Digital Humanities", "Digital Edition"],
-  "methods": ["TEI/XML", "Linked Data"],
+  "methods": [{"label": "TEI/XML", "tadirahUri": "...", "tadirahCategory": "Enrichment"}],
   "positions": [...],
   "tadirahProfile": { "Creation": 3, "Enrichment": 2 },
-  "gndId": "...",
-  "zenodoRecordCount": 12,
-  "clarinCentre": true,
+  "zenodoTopics": [{"topic": "Digital Edition", "count": 8}, {"topic": "Generative AI", "count": 3}],
+  "zenodoYears": {"2014": 7, "2022": 17, "2026": 13},
+  "zenodoRecordCount": 115,
+  "collaborators": [{"institution": "TU Berlin", "sharedPapers": 10, "sharedTopics": [...]}],
+  "clarinCentre": {...},
   "dhCourses": [...]
 }
 ```
 
-> **Entfernt (Iteration 6)**: `openPositions` — besetzt/offen-Unterscheidung ist keine inhaltliche Dimension
+### JSON-LD Export (Iteration 7)
 
-### JSON-LD Context (Iteration 6: erstellt)
+Datei: `Data/institutions-ld.jsonld` (mit eingebettetem `@context`)
 
-Datei: `Data/context.jsonld`
-
-Dreischichtiges Vokabular:
-1. **Schema.org** — `ResearchOrganization`, `EducationalOrganization`, `knowsAbout`, `sameAs`
-2. **Wikidata** — Q-Items für Disziplinen (`wd:Q1026532` = Digital Humanities)
+Vokabular-Stack:
+1. **Schema.org** — `ResearchOrganization`, `knowsAbout`, `sameAs`, `colleague`, `keywords`
+2. **Wikidata** — Entity-URIs als kanonische `@id`
 3. **TaDiRAH** — DH-Methoden (`tadirah:encoding`, `tadirah:modeling`)
-4. **ROR** — Persistente IDs (`https://ror.org/01faaaf77`)
-5. **GND** — Normdaten-IDs (`https://d-nb.info/gnd/...`)
-6. **GeoNames** — Orts-URIs (`https://sws.geonames.org/2778067/` = Graz)
-
-### Reconciliation-Workflow (vgl. Obsidian: [[Linked Open Data]])
-- **OpenRefine** für Abgleich gegen GND, Wikidata, VIAF
-- Five-Star LOD als Qualitätsziel
-- `sameAs`-Links zu mindestens Wikidata + ROR pro Institution
+4. **ROR** — Persistente IDs als volle URIs
+5. **GND** — Normdaten-URIs
 
 ---
 
@@ -123,7 +121,7 @@ Dreischichtiges Vokabular:
 
 1. **Collect** — Quellen anzapfen (API, Scraping, manuell)
 2. **Model** — Strukturieren nach Datenmodell (JSON)
-3. **Aggregate** — Einzelpositionen → Institutionsprofile (`build-institutions.js`)
+3. **Aggregate** — Einzelpositionen → Institutionsprofile (`build-lod.js`)
 4. **Geocode** — Koordinaten (WGS 84, [lng, lat] — vgl. [[GeoJSON]] im Vault)
 5. **Reconcile** — Wikidata-IDs, ROR-IDs, GND via OpenRefine
 6. **Enrich** — TaDiRAH-Mappings für Methoden

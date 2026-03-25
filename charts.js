@@ -5,6 +5,12 @@
 const DHdCharts = (function() {
     'use strict';
 
+    // --- Constants ---
+    const YEAR_MIN = 2008;
+    const YEAR_MAX = 2026;
+    const YEAR_RANGE_END = 2027;  // exclusive end for d3.range()
+    const FLY_DURATION = 600;
+
     // --- State ---
     let container, fullData, mapRef, showPanelFn;
     let activeView = null;
@@ -65,8 +71,6 @@ const DHdCharts = (function() {
     }
     function hideTooltip() { tooltip.classList.remove('visible'); }
 
-    // --- Helper: mLabel ---
-    function mLabel(m) { return typeof m === 'object' ? m.label : m; }
 
     // =====================
     // TIMELINE — Stacked Area Chart
@@ -77,13 +81,13 @@ const DHdCharts = (function() {
         wrap.innerHTML = `<div style="padding:40px 20px;color:#555;text-align:center;font-size:0.75rem">${msg || 'Keine Institutionen entsprechen den Filtern.'}</div>`;
     }
 
-    function renderTimeline(filtered, full) {
-        const wrap = container.querySelector('.chart-body');
+    function renderTimeline(filtered, full, targetWrap) {
+        const wrap = targetWrap || container.querySelector('.chart-body');
         wrap.innerHTML = '';
 
         if (filtered.length === 0) { showEmpty(wrap); return; }
 
-        const years = d3.range(2008, 2027);
+        const years = d3.range(YEAR_MIN, YEAR_RANGE_END);
 
         // Collect all positions from filtered institutions
         const allPositions = [];
@@ -139,7 +143,7 @@ const DHdCharts = (function() {
             .attr('height', height + margin.top + margin.bottom)
             .append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-        const x = d3.scaleLinear().domain([2008, 2026]).range([0, width]);
+        const x = d3.scaleLinear().domain([YEAR_MIN, YEAR_MAX]).range([0, width]);
         const stack = d3.stack().keys(categories).order(d3.stackOrderDescending);
         const series = stack(yearData);
         const yMax = d3.max(series, s => d3.max(s, d => d[1])) || 1;
@@ -188,7 +192,7 @@ const DHdCharts = (function() {
         overlay.on('mousemove', function(event) {
             const [mx] = d3.pointer(event);
             const yr = Math.round(x.invert(mx));
-            if (yr < 2008 || yr > 2026) return;
+            if (yr < YEAR_MIN || yr > YEAR_MAX) return;
             hoverLine.attr('x1', x(yr)).attr('x2', x(yr)).style('display', null);
             const row = yearData.find(d => d.year === yr);
             if (!row) return;
@@ -219,8 +223,8 @@ const DHdCharts = (function() {
     // =====================
     // BARCHART — Institutions by Position Count
     // =====================
-    function renderBarchart(filtered, full) {
-        const wrap = container.querySelector('.chart-body');
+    function renderBarchart(filtered, full, targetWrap) {
+        const wrap = targetWrap || container.querySelector('.chart-body');
         wrap.innerHTML = '';
 
         if (filtered.length === 0) { showEmpty(wrap); return; }
@@ -282,7 +286,7 @@ const DHdCharts = (function() {
                         hideTooltip();
                     })
                     .on('click', () => {
-                        if (mapRef) mapRef.flyTo({ center: inst.coordinates, zoom: 8, duration: 600 });
+                        if (mapRef) mapRef.flyTo({ center: inst.coordinates, zoom: 8, duration: FLY_DURATION });
                         if (showPanelFn) showPanelFn(inst);
                     });
                 xOff += count;
@@ -304,7 +308,7 @@ const DHdCharts = (function() {
             .style('cursor', 'pointer')
             .text(d => d.name.length > 28 ? d.name.slice(0, 26) + '…' : d.name)
             .on('click', (event, d) => {
-                if (mapRef) mapRef.flyTo({ center: d.coordinates, zoom: 8, duration: 600 });
+                if (mapRef) mapRef.flyTo({ center: d.coordinates, zoom: 8, duration: FLY_DURATION });
                 if (showPanelFn) showPanelFn(d);
             });
 
@@ -331,8 +335,8 @@ const DHdCharts = (function() {
     // =====================
     let heatmapSort = 'frequency'; // or 'alpha'
 
-    function renderHeatmap(filtered, full) {
-        const wrap = container.querySelector('.chart-body');
+    function renderHeatmap(filtered, full, targetWrap) {
+        const wrap = targetWrap || container.querySelector('.chart-body');
         wrap.innerHTML = '';
 
         if (filtered.length === 0) { showEmpty(wrap); return; }
@@ -406,7 +410,7 @@ const DHdCharts = (function() {
                 svg.selectAll('.cell')
                     .attr('opacity', c => (c.inst.id === d.inst.id || c.disc === d.disc) ? 1 : 0.3);
                 if (d.val > 0) {
-                    showTooltip(`<strong>${d.inst.name}</strong><br><span style="color:${discColor(d.disc)}">${d.disc}</span>: ${d.val} position${d.val > 1 ? 'en' : ''}`, event);
+                    showTooltip(`<strong>${d.inst.name}</strong><br><span style="color:${discColor(d.disc)}">${d.disc}</span>: ${d.val} Stelle${d.val > 1 ? 'n' : ''}`, event);
                 } else {
                     showTooltip(`<strong>${d.inst.name}</strong><br>${d.disc}: —`, event);
                 }
@@ -418,7 +422,7 @@ const DHdCharts = (function() {
             })
             .on('click', (event, d) => {
                 if (d.val > 0 && showPanelFn) showPanelFn(d.inst);
-                if (d.val > 0 && mapRef) mapRef.flyTo({ center: d.inst.coordinates, zoom: 8, duration: 600 });
+                if (d.val > 0 && mapRef) mapRef.flyTo({ center: d.inst.coordinates, zoom: 8, duration: FLY_DURATION });
             });
 
         // Column labels (disciplines, rotated)
@@ -450,7 +454,7 @@ const DHdCharts = (function() {
             .style('cursor', 'pointer')
             .text(d => d.name.length > 26 ? d.name.slice(0, 24) + '…' : d.name)
             .on('click', (event, d) => {
-                if (mapRef) mapRef.flyTo({ center: d.coordinates, zoom: 8, duration: 600 });
+                if (mapRef) mapRef.flyTo({ center: d.coordinates, zoom: 8, duration: FLY_DURATION });
                 if (showPanelFn) showPanelFn(d);
             });
     }
@@ -502,7 +506,6 @@ const DHdCharts = (function() {
             container.appendChild(body);
         }
         initTooltip();
-        console.log('%c[Charts]%c Initialized', 'color:#3498DB;font-weight:bold', 'color:inherit');
     }
 
     function show(viewName, filteredData, fullData) {
@@ -557,25 +560,18 @@ const DHdCharts = (function() {
         }
     }
 
-    // Render a specific chart into any container element
+    // Render a specific chart into any container element (no global state mutation)
     function renderTo(chartType, containerEl, filteredData, fullData) {
-        const origContainer = container;
-        const origBody = container ? container.querySelector('.chart-body') : null;
-
-        // Temporarily point to the new container
+        initTooltip();
         containerEl.innerHTML = '';
-        const tempWrap = { querySelector: (sel) => sel === '.chart-body' ? containerEl : null };
-        container = tempWrap;
-        filtered = filteredData || filtered;
-        full = fullData || full;
+        const f = filteredData || filtered;
+        const fu = fullData || full;
 
         switch (chartType) {
-            case 'timeline': renderTimeline(filtered, full); break;
-            case 'universities': case 'barchart': renderBarchart(filtered, full); break;
-            case 'disciplines': case 'heatmap': renderHeatmap(filtered, full); break;
+            case 'timeline': renderTimeline(f, fu, containerEl); break;
+            case 'universities': case 'barchart': renderBarchart(f, fu, containerEl); break;
+            case 'disciplines': case 'heatmap': renderHeatmap(f, fu, containerEl); break;
         }
-
-        container = origContainer;
     }
 
     return { init, show, hide, update, renderTo, DISC_COLORS, COUNTRY_COLORS, TADIRAH_COLORS, discColor };

@@ -9,22 +9,37 @@
 const Events = {
   _h: {},
   on(e, fn) { (this._h[e] = this._h[e] || []).push(fn); },
+  off(e, fn) { if (this._h[e]) this._h[e] = this._h[e].filter(f => f !== fn); },
   emit(e, d) { (this._h[e] || []).forEach(fn => fn(d)); }
 };
 
 /* ------------------------------------------------
-   2. TaDiRAH Color Constants
+   2. Configuration Constants
    ------------------------------------------------ */
-const TADIRAH_COLORS = {
-  'Capture': '#3498DB',
-  'Creation': '#9B59B6',
-  'Enrichment': '#27AE60',
-  'Analysis': '#E67E22',
-  'Interpretation': '#C0392B',
-  'Storage': '#34495E',
-  'Dissemination': '#16A085',
-  'Meta': '#95A5A6'
+const CONFIG = {
+  YEAR_MIN: 2008,
+  YEAR_MAX: 2026,
+  YEAR_RANGE_END: 2027,        // exclusive end for d3.range()
+  MAP_CENTER: [10.5, 50.0],
+  MAP_ZOOM_INITIAL: 3.5,
+  MAP_ZOOM_TARGET: 5.5,
+  MAP_ZOOM_DETAIL: 7,
+  MAP_MAX_BOUNDS: [[-5, 43], [25, 57]],
+  FLY_DURATION: 600,
+  FLY_DURATION_LONG: 2000,
+  BOUNDS_PADDING: 60
 };
+
+/* ------------------------------------------------
+   3. TaDiRAH Color Constants (canonical source: DHdCharts)
+   ------------------------------------------------ */
+const TADIRAH_COLORS = DHdCharts.TADIRAH_COLORS;
+
+/** Build a MapLibre match expression for TaDiRAH-based circle colors */
+function tadirahMatchExpr() {
+  const entries = Object.entries(TADIRAH_COLORS).flatMap(([k, v]) => [k, v]);
+  return ['match', ['get', 'dominantTadirah'], ...entries, '#95A5A6'];
+}
 
 /* ------------------------------------------------
    3. TaDiRAH Helper
@@ -45,7 +60,7 @@ const App = {
   filtered: [],
   active: { disc: new Set(), meth: new Set(), country: new Set() },
   searchTerm: '',
-  yearMin: 2008,
+  yearMin: CONFIG.YEAR_MIN,
 
   // --- Helper: method label (handles string or {label, tadirahUri} objects) ---
   mLabel(m) { return typeof m === 'object' ? m.label : m; },
@@ -91,7 +106,7 @@ const App = {
 
     App.filtered = App.data.filter(p => {
       // Year filter
-      if (App.yearMin > 2008 && (!p.earliestYear || p.earliestYear > App.yearMin)) return false;
+      if (App.yearMin > CONFIG.YEAR_MIN && (!p.earliestYear || p.earliestYear > App.yearMin)) return false;
 
       // Discipline filter
       if (disc.size > 0) {
@@ -139,7 +154,7 @@ const App = {
         [Math.min(...lngs) - 0.5, Math.min(...lats) - 0.3],
         [Math.max(...lngs) + 0.5, Math.max(...lats) + 0.3]
       ];
-      App.map.fitBounds(bounds, { padding: 60, duration: 800 });
+      App.map.fitBounds(bounds, { padding: CONFIG.BOUNDS_PADDING, duration: 800 });
     }
 
     console.log(`%c[Filter]%c ${App.filtered.length}/${App.data.length} Institutionen`, 'color:#3498DB;font-weight:bold', 'color:inherit');
@@ -159,165 +174,190 @@ const App = {
   showPanel(p) {
     const panel = document.getElementById('detail-panel');
     if (!panel) return;
-
-    // Name
-    const nameEl = document.getElementById('p-name');
-    if (nameEl) nameEl.textContent = p.name;
-
-    // Location + founded
-    const locEl = document.getElementById('p-loc');
-    if (locEl) {
-      const founded = p.founded ? ` · gegr. ${p.founded}` : '';
-      locEl.textContent = `${p.city}, ${p.country}${founded}`;
-    }
-
-    // Stats: Professuren, Zenodo-Records, DH-Kurse
-    const statsEl = document.getElementById('p-stats');
-    if (statsEl) {
-      const courses = App.parse(p.dhCourses || []);
-      statsEl.innerHTML = `
-        <div class="panel-stat">
-          <div class="panel-stat-num">${p.totalPositions || 0}</div>
-          <div class="panel-stat-label">Professuren</div>
-        </div>
-        <div class="panel-stat">
-          <div class="panel-stat-num">${p.zenodoRecordCount || 0}</div>
-          <div class="panel-stat-label">Zenodo-Records</div>
-        </div>
-        <div class="panel-stat">
-          <div class="panel-stat-num">${courses.length}</div>
-          <div class="panel-stat-label">DH-Kurse</div>
-        </div>`;
-    }
-
-    // TaDiRAH Profile as colored horizontal bars
-    const tadirahEl = document.getElementById('p-tadirah');
-    if (tadirahEl) {
-      const profile = p.tadirahProfile || {};
-      const entries = Object.entries(profile).sort((a, b) => b[1] - a[1]);
-      if (entries.length > 0) {
-        const maxVal = entries[0][1];
-        tadirahEl.innerHTML = `<div class="panel-section-title">TaDiRAH-Profil</div>` +
-          entries.map(([cat, val]) => {
-            const pct = Math.round((val / maxVal) * 100);
-            const color = TADIRAH_COLORS[cat] || TADIRAH_COLORS['Meta'];
-            return `<div class="panel-tadirah-bar">
-              <span class="panel-tadirah-label">${cat}</span>
-              <div class="panel-tadirah-track">
-                <div class="panel-tadirah-fill" style="width:${pct}%;background:${color}"></div>
-              </div>
-              <span class="panel-tadirah-val">${val}</span>
-            </div>`;
-          }).join('');
-      } else {
-        tadirahEl.innerHTML = '';
-      }
-    }
-
-    // Disciplines as tags
-    const discEl = document.getElementById('p-disc');
-    if (discEl) {
-      const discs = App.parse(p.disciplines || []);
-      if (discs.length > 0) {
-        discEl.innerHTML = `<div class="panel-section-title">Disziplinen</div>
-          <div class="panel-tags">${discs.map(d => `<span class="panel-tag">${d}</span>`).join('')}</div>`;
-      } else {
-        discEl.innerHTML = '';
-      }
-    }
-
-    // Methods as tags with TaDiRAH category color
-    const methEl = document.getElementById('p-meth');
-    if (methEl) {
-      const meths = App.parse(p.methods || []);
-      if (meths.length > 0) {
-        methEl.innerHTML = `<div class="panel-section-title">Methoden</div>
-          <div class="panel-tags">${meths.map(m => {
-            const label = App.mLabel(m);
-            const cat = App.mCategory(m);
-            const color = cat && TADIRAH_COLORS[cat] ? TADIRAH_COLORS[cat] : '';
-            const style = color ? ` style="border-color:${color};color:${color}"` : '';
-            return `<span class="panel-tag"${style}>${label}</span>`;
-          }).join('')}</div>`;
-      } else {
-        methEl.innerHTML = '';
-      }
-    }
-
-    // DH-Studiengaenge
-    const coursesEl = document.getElementById('p-courses');
-    if (coursesEl) {
-      const courses = App.parse(p.dhCourses || []);
-      if (courses.length > 0) {
-        coursesEl.innerHTML = `<div class="panel-section-title">DH-Studiengänge</div>
-          <div class="panel-tags">${courses.map(c => {
-            const label = typeof c === 'object' ? (c.name || c.label || c) : c;
-            return `<span class="panel-tag">${label}</span>`;
-          }).join('')}</div>`;
-      } else {
-        coursesEl.innerHTML = '';
-      }
-    }
-
-    // CLARIN Centre
-    const clarinEl = document.getElementById('p-clarin');
-    if (clarinEl) {
-      if (p.clarinCentre) {
-        const cc = p.clarinCentre;
-        const typeLabel = typeof cc === 'object' ? (cc.type || cc.label || JSON.stringify(cc)) : cc;
-        clarinEl.innerHTML = `<div class="panel-section-title">CLARIN-Zentrum</div>
-          <div class="panel-tags"><span class="panel-tag">${typeLabel}</span></div>`;
-      } else {
-        clarinEl.innerHTML = '';
-      }
-    }
-
-    // Positions (without open/filled distinction)
-    const posEl = document.getElementById('p-positions');
-    if (posEl) {
-      const positions = App.parse(p.positions || []);
-      if (positions.length > 0) {
-        posEl.innerHTML = `<div class="panel-section-title">Professuren</div>` +
-          positions.map(pos => {
-            const temp = pos.temporary ? ' · befristet' : '';
-            return `
-              <div class="panel-position">
-                <div class="panel-pos-name">${pos.name}</div>
-                <div class="panel-pos-meta">${pos.level || ''}${pos.year ? ' · ' + pos.year : ''}${temp}</div>
-              </div>`;
-          }).join('');
-      } else {
-        posEl.innerHTML = '';
-      }
-    }
-
-    // Links: Website, Wikidata, ROR, GND
-    const linksEl = document.getElementById('p-links');
-    if (linksEl) {
-      let html = '';
-      if (p.url) {
-        html += `<a class="panel-link" href="${p.url}" target="_blank" rel="noopener">Website</a>`;
-      }
-      if (p.wikidataId) {
-        const wdUrl = p.wikidataId.startsWith('http')
-          ? p.wikidataId
-          : `https://www.wikidata.org/wiki/${p.wikidataId}`;
-        html += `<a class="panel-link" href="${wdUrl}" target="_blank" rel="noopener">Wikidata</a>`;
-      }
-      if (p.rorId) {
-        const rorUrl = p.rorId.startsWith('http') ? p.rorId : `https://ror.org/${p.rorId}`;
-        html += `<a class="panel-link" href="${rorUrl}" target="_blank" rel="noopener">ROR</a>`;
-      }
-      if (p.gndId) {
-        const gndUrl = p.gndId.startsWith('http') ? p.gndId : `https://d-nb.info/gnd/${p.gndId}`;
-        html += `<a class="panel-link" href="${gndUrl}" target="_blank" rel="noopener">GND</a>`;
-      }
-      linksEl.innerHTML = html;
-    }
-
-    // Open panel
+    this._renderPanelName(p);
+    this._renderPanelLocation(p);
+    this._renderPanelStats(p);
+    this._renderPanelTaDiRAH(p);
+    this._renderPanelDisciplines(p);
+    this._renderPanelMethods(p);
+    this._renderPanelZenodoTopics(p);
+    this._renderPanelCollaborators(p);
+    this._renderPanelCourses(p);
+    this._renderPanelClarin(p);
+    this._renderPanelPositions(p);
+    this._renderPanelLinks(p);
     panel.classList.add('open');
-    console.log(`%c[Panel]%c ${p.name}`, 'color:#3498DB;font-weight:bold', 'color:inherit');
+  },
+
+  _renderPanelName(p) {
+    const el = document.getElementById('p-name');
+    if (el) el.textContent = p.name;
+  },
+
+  _renderPanelLocation(p) {
+    const el = document.getElementById('p-loc');
+    if (el) {
+      const founded = p.founded ? ` · gegr. ${p.founded}` : '';
+      el.textContent = `${p.city}, ${p.country}${founded}`;
+    }
+  },
+
+  _renderPanelStats(p) {
+    const el = document.getElementById('p-stats');
+    if (!el) return;
+    const courses = App.parse(p.dhCourses || []);
+    el.innerHTML = `
+      <div class="panel-stat-item">
+        <div class="panel-stat-value">${p.totalPositions || 0}</div>
+        <div class="panel-stat-label">Stellen</div>
+      </div>
+      <div class="panel-stat-item">
+        <div class="panel-stat-value">${p.zenodoRecordCount || 0}</div>
+        <div class="panel-stat-label">Zenodo-Records</div>
+      </div>
+      <div class="panel-stat-item">
+        <div class="panel-stat-value">${courses.length}</div>
+        <div class="panel-stat-label">DH-Kurse</div>
+      </div>`;
+  },
+
+  _renderPanelTaDiRAH(p) {
+    const el = document.getElementById('p-tadirah');
+    if (!el) return;
+    const profile = p.tadirahProfile || {};
+    const entries = Object.entries(profile).sort((a, b) => b[1] - a[1]);
+    if (entries.length === 0) { el.innerHTML = ''; return; }
+    const maxVal = entries[0][1];
+    el.innerHTML = `<div class="panel-section-title">TaDiRAH-Profil</div>` +
+      entries.map(([cat, val]) => {
+        const pct = Math.round((val / maxVal) * 100);
+        const color = TADIRAH_COLORS[cat] || TADIRAH_COLORS['Meta'];
+        return `<div class="tadirah-bar-row">
+          <span class="tadirah-bar-label">${cat}</span>
+          <div class="tadirah-bar-track">
+            <div class="tadirah-bar-fill" style="width:${pct}%;background:${color}"></div>
+          </div>
+          <span class="tadirah-bar-value">${val}</span>
+        </div>`;
+      }).join('');
+  },
+
+  _renderPanelDisciplines(p) {
+    const el = document.getElementById('p-disc');
+    if (!el) return;
+    const discs = App.parse(p.disciplines || []);
+    el.innerHTML = discs.length > 0
+      ? `<div class="panel-section-title">Disziplinen</div>
+         <div class="panel-tags">${discs.map(d => `<span class="tag tag-neutral">${d}</span>`).join('')}</div>`
+      : '';
+  },
+
+  _renderPanelMethods(p) {
+    const el = document.getElementById('p-meth');
+    if (!el) return;
+    const meths = App.parse(p.methods || []);
+    if (meths.length === 0) { el.innerHTML = ''; return; }
+    el.innerHTML = `<div class="panel-section-title">Methoden</div>
+      <div class="panel-tags">${meths.map(m => {
+        const label = App.mLabel(m);
+        const cat = App.mCategory(m);
+        const tagClass = cat ? `tag tag-${cat.toLowerCase()}` : 'tag tag-neutral';
+        return `<span class="${tagClass}">${label}</span>`;
+      }).join('')}</div>`;
+  },
+
+  _renderPanelZenodoTopics(p) {
+    const el = document.getElementById('p-zenodo');
+    if (!el) return;
+    const topics = p.zenodoTopics || [];
+    if (topics.length === 0 && !p.zenodoRecordCount) { el.innerHTML = ''; return; }
+    let html = `<div class="panel-section-title">DHd-Konferenzbeiträge</div>`;
+    if (p.zenodoRecordCount) {
+      html += `<div class="panel-zenodo-count">${p.zenodoRecordCount} Beiträge auf Zenodo</div>`;
+    }
+    if (topics.length > 0) {
+      const maxCount = topics[0].count;
+      html += `<div class="panel-tags">${topics.slice(0, 10).map(t => {
+        const opacity = 0.4 + 0.6 * (t.count / maxCount);
+        return `<span class="tag tag-neutral" style="opacity:${opacity.toFixed(2)}" title="${t.count} Beiträge">${t.topic}</span>`;
+      }).join('')}</div>`;
+    }
+    el.innerHTML = html;
+  },
+
+  _renderPanelCollaborators(p) {
+    const el = document.getElementById('p-collabs');
+    if (!el) return;
+    const collabs = p.collaborators || [];
+    if (collabs.length === 0) { el.innerHTML = ''; return; }
+    el.innerHTML = `<div class="panel-section-title">Kooperationspartner (DHd)</div>
+      <div class="panel-collabs">${collabs.slice(0, 8).map(c => {
+        const topics = c.sharedTopics.map(t => t.topic).join(', ');
+        return `<div class="collab-item">
+          <span class="collab-name">${c.institution}</span>
+          <span class="collab-count">${c.sharedPapers}</span>
+          ${topics ? `<span class="collab-topics">${topics}</span>` : ''}
+        </div>`;
+      }).join('')}</div>`;
+  },
+
+  _renderPanelCourses(p) {
+    const el = document.getElementById('p-courses');
+    if (!el) return;
+    const courses = App.parse(p.dhCourses || []);
+    if (courses.length === 0) { el.innerHTML = ''; return; }
+    el.innerHTML = `<div class="panel-section-title">DH-Studiengänge</div>
+      <div class="panel-tags">${courses.map(c => {
+        const label = typeof c === 'object' ? (c.name || c.label || c) : c;
+        return `<span class="tag tag-neutral">${label}</span>`;
+      }).join('')}</div>`;
+  },
+
+  _renderPanelClarin(p) {
+    const el = document.getElementById('p-clarin');
+    if (!el) return;
+    if (!p.clarinCentre) { el.innerHTML = ''; return; }
+    const cc = p.clarinCentre;
+    const typeLabel = typeof cc === 'object' ? (cc.type || cc.label || JSON.stringify(cc)) : cc;
+    el.innerHTML = `<div class="panel-section-title">CLARIN-Zentrum</div>
+      <div class="panel-tags"><span class="tag tag-neutral">${typeLabel}</span></div>`;
+  },
+
+  _renderPanelPositions(p) {
+    const el = document.getElementById('p-positions');
+    if (!el) return;
+    const positions = App.parse(p.positions || []);
+    if (positions.length === 0) { el.innerHTML = ''; return; }
+    el.innerHTML = `<div class="panel-section-title">Positionen</div>` +
+      positions.map(pos => {
+        const temp = pos.temporary ? ' · befristet' : '';
+        return `<div class="position-item">
+          <div class="position-name">${pos.name}</div>
+          <div class="position-detail">${pos.level || ''}${pos.year ? ' · ' + pos.year : ''}${temp}</div>
+        </div>`;
+      }).join('');
+  },
+
+  _renderPanelLinks(p) {
+    const el = document.getElementById('p-links');
+    if (!el) return;
+    let html = '';
+    if (p.url) {
+      html += `<a class="panel-link" href="${p.url}" target="_blank" rel="noopener">Website</a>`;
+    }
+    if (p.wikidataId) {
+      const wdUrl = p.wikidataId.startsWith('http') ? p.wikidataId : `https://www.wikidata.org/wiki/${p.wikidataId}`;
+      html += `<a class="panel-link" href="${wdUrl}" target="_blank" rel="noopener">Wikidata</a>`;
+    }
+    if (p.rorId) {
+      const rorUrl = p.rorId.startsWith('http') ? p.rorId : `https://ror.org/${p.rorId}`;
+      html += `<a class="panel-link" href="${rorUrl}" target="_blank" rel="noopener">ROR</a>`;
+    }
+    if (p.gndId) {
+      const gndUrl = p.gndId.startsWith('http') ? p.gndId : `https://d-nb.info/gnd/${p.gndId}`;
+      html += `<a class="panel-link" href="${gndUrl}" target="_blank" rel="noopener">GND</a>`;
+    }
+    el.innerHTML = html;
   },
 
   /* ------------------------------------------------
@@ -344,7 +384,7 @@ const App = {
     });
     const cities = new Set(f.map(p => p.city)).size;
 
-    el.textContent = `${f.length} Institutionen · ${stellen} Professuren · ${discs.size} Disziplinen · ${cities} Standorte`;
+    el.textContent = `${f.length} Institutionen · ${stellen} Stellen · ${discs.size} Disziplinen · ${cities} Standorte`;
   },
 
   /* ------------------------------------------------
@@ -409,9 +449,9 @@ const App = {
         }],
         glyphs: 'https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=get_your_own_OpIi9ZULNHzrESv6T2vL'
       },
-      center: [10.5, 50.0],
-      zoom: 3.5,
-      maxBounds: [[-5, 43], [25, 57]]
+      center: CONFIG.MAP_CENTER,
+      zoom: CONFIG.MAP_ZOOM_INITIAL,
+      maxBounds: CONFIG.MAP_MAX_BOUNDS
     });
 
     App.map.addControl(new maplibregl.NavigationControl(), 'top-right');
@@ -434,16 +474,7 @@ const App = {
         source: 'institutions',
         paint: {
           'circle-radius': 30,
-          'circle-color': ['match', ['get', 'dominantTadirah'],
-            'Capture', '#3498DB',
-            'Creation', '#9B59B6',
-            'Enrichment', '#27AE60',
-            'Analysis', '#E67E22',
-            'Interpretation', '#C0392B',
-            'Storage', '#34495E',
-            'Dissemination', '#16A085',
-            '#95A5A6'
-          ],
+          'circle-color': tadirahMatchExpr(),
           'circle-blur': 1,
           'circle-opacity': 0.08
         }
@@ -462,16 +493,7 @@ const App = {
             5, 12,
             7, 15
           ],
-          'circle-color': ['match', ['get', 'dominantTadirah'],
-            'Capture', '#3498DB',
-            'Creation', '#9B59B6',
-            'Enrichment', '#27AE60',
-            'Analysis', '#E67E22',
-            'Interpretation', '#C0392B',
-            'Storage', '#34495E',
-            'Dissemination', '#16A085',
-            '#95A5A6'
-          ],
+          'circle-color': tadirahMatchExpr(),
           'circle-stroke-width': [
             'case',
             ['boolean', ['feature-state', 'hover'], false],
@@ -553,7 +575,7 @@ const App = {
           const fId = e.features[0].properties.id;
           const inst = App.data.find(p => p.id === fId);
           if (inst) {
-            App.map.flyTo({ center: inst.coordinates, zoom: Math.max(App.map.getZoom(), 7), duration: 600 });
+            App.map.flyTo({ center: inst.coordinates, zoom: Math.max(App.map.getZoom(), CONFIG.MAP_ZOOM_DETAIL), duration: CONFIG.FLY_DURATION });
             App.showPanel(inst);
           }
         }
@@ -572,9 +594,9 @@ const App = {
 
       // ---- Fly-to animation on load ----
       App.map.flyTo({
-        center: [10.5, 50.0],
-        zoom: 5.5,
-        duration: 2000
+        center: CONFIG.MAP_CENTER,
+        zoom: CONFIG.MAP_ZOOM_TARGET,
+        duration: CONFIG.FLY_DURATION_LONG
       });
 
       console.log('%c[Map]%c Layers ready', 'color:#27AE60;font-weight:bold', 'color:inherit');

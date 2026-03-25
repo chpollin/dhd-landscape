@@ -88,18 +88,16 @@ Dieses Beispiel steht stellvertretend für den generischen Use Case: **Die Entwi
 | US-4 Institutionsprofil | Hoch | ✅ Vollständig (7 Datenquellen, TaDiRAH-Profil) | — |
 | US-2 Zeitliche Entwicklung | Hoch | ✅ Vollständig (Explorer: Timeline + Stacked Area) | — |
 | US-5 Landschafts-Überblick | Mittel | ✅ Vollständig (Übersicht-View + Barchart + Heatmap) | — |
-| US-3 Kooperationspartner | Mittel | Teilweise (Heatmap zeigt Disziplin-Überlappungen) | Konstellations-View |
+| US-3 Kooperationspartner | Mittel | ✅ Vollständig (Iteration 7: Zenodo-Ko-Autorschaftsnetzwerk, 156 Kanten, Collaborators im Panel) | — |
 | US-6 Entwicklungsgeschichte | Mittel | ✅ Vollständig (Explorer: Timeline + Area Chart) | — |
-| US-7 Geführter Einstieg | Hoch | ❌ Entfernt/Deferred (Narrative Scrollytelling in Iteration 6 entfernt — Übersicht-View als vereinfachter Ersatz) | — |
+| US-7 Geführter Einstieg | Niedrig | ❌ Deferred — Übersicht-View als vereinfachter Ersatz | — |
 
-## Iteration 6: Views statt Modes
+## Iteration 7: Forschungslandschaft statt Stellenkarte
 
-Die 3-View-Architektur (Iteration 6) ersetzt die 3-Modi-Architektur aus Iteration 4:
-- **Übersicht** adressiert US-5 (Landschafts-Überblick) — Startseite mit Kernzahlen
-- **Karte** adressiert US-1 (thematische Exploration), US-3 (Kooperationspartner), US-4 (Institutionsprofil) — TaDiRAH-farbkodierte Marker
-- **Explorer** adressiert US-2 (zeitliche Entwicklung) und US-6 (Entwicklungsgeschichte) — Timeline, Institutionen, Disziplinen Charts
-
-> **Hinweis**: US-7 (Geführter Einstieg via Narrative Scrollytelling) wurde in Iteration 6 entfernt. Die Übersicht-View bietet einen vereinfachten Einstieg, aber kein Scrollytelling. Ein möglicher Wiederaufbau als "Guided Tour" ist für spätere Iterationen denkbar.
+Die 3-View-Architektur adressiert alle User Stories:
+- **Übersicht** adressiert US-5 (Landschafts-Überblick) — Stats, TaDiRAH, Disziplinen, Timeline, Zenodo-Topics
+- **Karte** adressiert US-1 (thematische Exploration), US-3 (Kooperationspartner), US-4 (Institutionsprofil) — TaDiRAH-Marker, Detail-Panel mit Zenodo-Topics + Kooperationspartner
+- **Explorer** adressiert US-2 (zeitliche Entwicklung), US-3 (Kooperationen), US-6 (Entwicklungsgeschichte) — 5 Chart-Sektionen inkl. Forschungsthemen + Kooperationsnetzwerk
 
 ## Related
 

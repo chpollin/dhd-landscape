@@ -1,8 +1,84 @@
 /**
  * DHd Landscape — views.js
- * Simplified view controller. Three views: Overview, Map, Explorer.
- * Replaces modes.js (no more Narrative mode, no floating panels).
+ * View controller: Übersicht (stats + charts), Karte (map + filters), Explorer (5 chart sections).
+ * Shared helper: renderHorizontalBars() for D3 bar charts across views.
  */
+
+/* =============================================
+   0. Shared Helpers
+   ============================================= */
+
+/**
+ * Render a horizontal bar chart into a container element.
+ * @param {string} containerId - DOM element ID
+ * @param {Array<[string, number]>} entries - [label, value] pairs (pre-sorted)
+ * @param {Object} opts - { colorFn, barH, leftMargin, padding, fontSize, countFontSize, truncateAt, fontWeight }
+ */
+function renderHorizontalBars(containerId, entries, opts = {}) {
+    const el = opts.targetEl || document.getElementById(containerId);
+    if (!el) return;
+    el.innerHTML = '';
+    if (entries.length === 0) return;
+
+    const {
+        colorFn = () => '#95A5A6',
+        barH = 24,
+        leftMargin = 100,
+        padding = 0.3,
+        fontSize = '0.65rem',
+        countFontSize = '0.6rem',
+        truncateAt = 0,
+        fontWeight = 'normal'
+    } = opts;
+
+    const maxVal = d3.max(entries, d => d[1]) || 1;
+    const margin = { top: 4, right: 40, bottom: 4, left: leftMargin };
+    const width = el.clientWidth - margin.left - margin.right;
+    const height = entries.length * barH;
+
+    const svg = d3.select(el).append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+        .append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+    const x = d3.scaleLinear().domain([0, maxVal]).range([0, width]);
+    const y = d3.scaleBand().domain(entries.map(d => d[0])).range([0, height]).padding(padding);
+
+    svg.selectAll('.bar')
+        .data(entries)
+        .join('rect')
+        .attr('x', 0)
+        .attr('y', d => y(d[0]))
+        .attr('width', d => x(d[1]))
+        .attr('height', y.bandwidth())
+        .attr('fill', d => colorFn(d[0]))
+        .attr('rx', 3)
+        .attr('opacity', 0.85);
+
+    svg.selectAll('.label')
+        .data(entries)
+        .join('text')
+        .attr('x', -8)
+        .attr('y', d => y(d[0]) + y.bandwidth() / 2)
+        .attr('text-anchor', 'end')
+        .attr('dominant-baseline', 'central')
+        .attr('fill', '#666666')
+        .attr('font-size', fontSize)
+        .attr('font-weight', fontWeight)
+        .attr('font-family', 'Inter, sans-serif')
+        .text(d => truncateAt && d[0].length > truncateAt ? d[0].slice(0, truncateAt - 2) + '...' : d[0]);
+
+    svg.selectAll('.count')
+        .data(entries)
+        .join('text')
+        .attr('x', d => x(d[1]) + 6)
+        .attr('y', d => y(d[0]) + y.bandwidth() / 2)
+        .attr('dominant-baseline', 'central')
+        .attr('fill', '#666666')
+        .attr('font-size', countFontSize)
+        .attr('font-family', 'Inter, sans-serif')
+        .text(d => d[1]);
+}
 
 /* =============================================
    1. ViewManager — switches between views
@@ -41,32 +117,27 @@ const OverviewView = {
         const data = App.filtered || App.data;
         if (!data || data.length === 0) return;
 
-        this.renderTaDiRAHDonut('overview-tadirah', data);
-        this.renderDisciplinesBars('overview-disciplines', data);
-        this.renderTimelineSparkline('overview-timeline', data);
-        this.renderCountriesBars('overview-countries', data);
+        this.renderTaDiRAHDonut('ov-tadirah-chart', data);
+        this.renderDisciplinesBars('ov-disciplines-chart', data);
+        this.renderTimelineSparkline('ov-timeline-chart', data);
+        this.renderCountriesBars('ov-countries-chart', data);
+        this.renderZenodoTopicsBars('ov-topics-chart', data);
     },
 
     /**
      * Horizontal bars showing TaDiRAH category distribution across all institutions
      */
     renderTaDiRAHDonut(containerId, data) {
-        const el = document.getElementById(containerId);
-        if (!el) return;
-        el.innerHTML = '';
-
-        const TADIRAH_COLORS = DHdCharts.TADIRAH_COLORS;
-
+        const TC = DHdCharts.TADIRAH_COLORS;
         // Count methods across all institutions, categorized by TaDiRAH
         const counts = {};
         data.forEach(inst => {
             const methods = typeof inst.methods === 'string' ? JSON.parse(inst.methods) : (inst.methods || []);
             methods.forEach(m => {
-                const label = typeof m === 'object' ? m.label : m;
+                const label = App.mLabel(m);
                 const uri = typeof m === 'object' ? (m.tadirahUri || '') : '';
-                // Map to TaDiRAH category from URI or fallback
                 let cat = 'Meta';
-                Object.keys(TADIRAH_COLORS).forEach(c => {
+                Object.keys(TC).forEach(c => {
                     if (uri.toLowerCase().includes(c.toLowerCase()) || label.toLowerCase().includes(c.toLowerCase())) {
                         cat = c;
                     }
@@ -74,132 +145,28 @@ const OverviewView = {
                 counts[cat] = (counts[cat] || 0) + 1;
             });
         });
-
         const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-        if (entries.length === 0) return;
-
-        const maxVal = d3.max(entries, d => d[1]) || 1;
-
-        const margin = { top: 4, right: 40, bottom: 4, left: 100 };
-        const barH = 24;
-        const width = el.clientWidth - margin.left - margin.right;
-        const height = entries.length * barH;
-
-        const svg = d3.select(el).append('svg')
-            .attr('width', width + margin.left + margin.right)
-            .attr('height', height + margin.top + margin.bottom)
-            .append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-
-        const x = d3.scaleLinear().domain([0, maxVal]).range([0, width]);
-        const y = d3.scaleBand().domain(entries.map(d => d[0])).range([0, height]).padding(0.3);
-
-        // Bars
-        svg.selectAll('.bar')
-            .data(entries)
-            .join('rect')
-            .attr('x', 0)
-            .attr('y', d => y(d[0]))
-            .attr('width', d => x(d[1]))
-            .attr('height', y.bandwidth())
-            .attr('fill', d => TADIRAH_COLORS[d[0]] || '#95A5A6')
-            .attr('rx', 3)
-            .attr('opacity', 0.85);
-
-        // Labels
-        svg.selectAll('.label')
-            .data(entries)
-            .join('text')
-            .attr('x', -8)
-            .attr('y', d => y(d[0]) + y.bandwidth() / 2)
-            .attr('text-anchor', 'end')
-            .attr('dominant-baseline', 'central')
-            .attr('fill', '#666666')
-            .attr('font-size', '0.65rem')
-            .attr('font-family', 'Inter, sans-serif')
-            .text(d => d[0]);
-
-        // Count labels
-        svg.selectAll('.count')
-            .data(entries)
-            .join('text')
-            .attr('x', d => x(d[1]) + 6)
-            .attr('y', d => y(d[0]) + y.bandwidth() / 2)
-            .attr('dominant-baseline', 'central')
-            .attr('fill', '#666666')
-            .attr('font-size', '0.6rem')
-            .attr('font-family', 'Inter, sans-serif')
-            .text(d => d[1]);
+        renderHorizontalBars(containerId, entries, {
+            colorFn: name => TC[name] || '#95A5A6',
+            barH: 24, leftMargin: 100
+        });
     },
 
     /**
      * Top 15 disciplines as horizontal bars
      */
     renderDisciplinesBars(containerId, data) {
-        const el = document.getElementById(containerId);
-        if (!el) return;
-        el.innerHTML = '';
-
-        // Count disciplines
         const counts = {};
         data.forEach(inst => {
             const discs = typeof inst.disciplines === 'string' ? JSON.parse(inst.disciplines) : (inst.disciplines || []);
             discs.forEach(d => { counts[d] = (counts[d] || 0) + 1; });
         });
-
         const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 15);
-        if (entries.length === 0) return;
-
-        const maxVal = d3.max(entries, d => d[1]) || 1;
-
-        const margin = { top: 4, right: 40, bottom: 4, left: 160 };
-        const barH = 22;
-        const width = el.clientWidth - margin.left - margin.right;
-        const height = entries.length * barH;
-
-        const svg = d3.select(el).append('svg')
-            .attr('width', width + margin.left + margin.right)
-            .attr('height', height + margin.top + margin.bottom)
-            .append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-
-        const x = d3.scaleLinear().domain([0, maxVal]).range([0, width]);
-        const y = d3.scaleBand().domain(entries.map(d => d[0])).range([0, height]).padding(0.25);
-
-        // Bars
-        svg.selectAll('.bar')
-            .data(entries)
-            .join('rect')
-            .attr('x', 0)
-            .attr('y', d => y(d[0]))
-            .attr('width', d => x(d[1]))
-            .attr('height', y.bandwidth())
-            .attr('fill', d => DHdCharts.discColor(d[0]))
-            .attr('rx', 3)
-            .attr('opacity', 0.85);
-
-        // Labels
-        svg.selectAll('.label')
-            .data(entries)
-            .join('text')
-            .attr('x', -8)
-            .attr('y', d => y(d[0]) + y.bandwidth() / 2)
-            .attr('text-anchor', 'end')
-            .attr('dominant-baseline', 'central')
-            .attr('fill', '#666666')
-            .attr('font-size', '0.6rem')
-            .attr('font-family', 'Inter, sans-serif')
-            .text(d => d[0].length > 25 ? d[0].slice(0, 23) + '...' : d[0]);
-
-        // Count labels
-        svg.selectAll('.count')
-            .data(entries)
-            .join('text')
-            .attr('x', d => x(d[1]) + 6)
-            .attr('y', d => y(d[0]) + y.bandwidth() / 2)
-            .attr('dominant-baseline', 'central')
-            .attr('fill', '#666666')
-            .attr('font-size', '0.55rem')
-            .attr('font-family', 'Inter, sans-serif')
-            .text(d => d[1]);
+        renderHorizontalBars(containerId, entries, {
+            colorFn: name => DHdCharts.discColor(name),
+            barH: 22, leftMargin: 160, padding: 0.25,
+            fontSize: '0.6rem', countFontSize: '0.55rem', truncateAt: 25
+        });
     },
 
     /**
@@ -210,7 +177,7 @@ const OverviewView = {
         if (!el) return;
         el.innerHTML = '';
 
-        const years = d3.range(2008, 2027);
+        const years = d3.range(CONFIG.YEAR_MIN, CONFIG.YEAR_RANGE_END);
 
         // Build cumulative position counts
         const yearCounts = {};
@@ -219,7 +186,7 @@ const OverviewView = {
         data.forEach(inst => {
             const positions = typeof inst.positions === 'string' ? JSON.parse(inst.positions) : (inst.positions || []);
             positions.forEach(pos => {
-                if (pos.year && pos.year >= 2008 && pos.year <= 2026) {
+                if (pos.year && pos.year >= CONFIG.YEAR_MIN && pos.year <= CONFIG.YEAR_MAX) {
                     yearCounts[pos.year] = (yearCounts[pos.year] || 0) + 1;
                 }
             });
@@ -242,7 +209,7 @@ const OverviewView = {
             .attr('height', height + margin.top + margin.bottom)
             .append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-        const x = d3.scaleLinear().domain([2008, 2026]).range([0, width]);
+        const x = d3.scaleLinear().domain([CONFIG.YEAR_MIN, CONFIG.YEAR_MAX]).range([0, width]);
         const yMax = d3.max(cumulative, d => d.count) || 1;
         const yScale = d3.scaleLinear().domain([0, yMax]).nice().range([height, 0]);
 
@@ -300,74 +267,33 @@ const OverviewView = {
      * DE/AT/CH/LU bars
      */
     renderCountriesBars(containerId, data) {
-        const el = document.getElementById(containerId);
-        if (!el) return;
-        el.innerHTML = '';
-
-        const COUNTRY_COLORS = DHdCharts.COUNTRY_COLORS;
-
-        // Count by country
+        const CC = DHdCharts.COUNTRY_COLORS;
         const counts = {};
         data.forEach(inst => {
             const c = inst.country || 'Other';
             counts[c] = (counts[c] || 0) + 1;
         });
-
         const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-        if (entries.length === 0) return;
+        renderHorizontalBars(containerId, entries, {
+            colorFn: name => CC[name] || '#95A5A6',
+            barH: 28, leftMargin: 40,
+            fontSize: '0.7rem', fontWeight: '500'
+        });
+    },
 
-        const maxVal = d3.max(entries, d => d[1]) || 1;
-
-        const margin = { top: 4, right: 40, bottom: 4, left: 40 };
-        const barH = 28;
-        const width = el.clientWidth - margin.left - margin.right;
-        const height = entries.length * barH;
-
-        const svg = d3.select(el).append('svg')
-            .attr('width', width + margin.left + margin.right)
-            .attr('height', height + margin.top + margin.bottom)
-            .append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-
-        const x = d3.scaleLinear().domain([0, maxVal]).range([0, width]);
-        const y = d3.scaleBand().domain(entries.map(d => d[0])).range([0, height]).padding(0.3);
-
-        // Bars
-        svg.selectAll('.bar')
-            .data(entries)
-            .join('rect')
-            .attr('x', 0)
-            .attr('y', d => y(d[0]))
-            .attr('width', d => x(d[1]))
-            .attr('height', y.bandwidth())
-            .attr('fill', d => COUNTRY_COLORS[d[0]] || '#95A5A6')
-            .attr('rx', 3)
-            .attr('opacity', 0.85);
-
-        // Labels
-        svg.selectAll('.label')
-            .data(entries)
-            .join('text')
-            .attr('x', -8)
-            .attr('y', d => y(d[0]) + y.bandwidth() / 2)
-            .attr('text-anchor', 'end')
-            .attr('dominant-baseline', 'central')
-            .attr('fill', '#666666')
-            .attr('font-size', '0.7rem')
-            .attr('font-weight', '500')
-            .attr('font-family', 'Inter, sans-serif')
-            .text(d => d[0]);
-
-        // Count labels
-        svg.selectAll('.count')
-            .data(entries)
-            .join('text')
-            .attr('x', d => x(d[1]) + 6)
-            .attr('y', d => y(d[0]) + y.bandwidth() / 2)
-            .attr('dominant-baseline', 'central')
-            .attr('fill', '#666666')
-            .attr('font-size', '0.65rem')
-            .attr('font-family', 'Inter, sans-serif')
-            .text(d => d[1]);
+    renderZenodoTopicsBars(containerId, data) {
+        const counts = {};
+        data.forEach(inst => {
+            (inst.zenodoTopics || []).forEach(t => {
+                counts[t.topic] = (counts[t.topic] || 0) + t.count;
+            });
+        });
+        const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 15);
+        renderHorizontalBars(containerId, entries, {
+            colorFn: () => '#3498DB',
+            barH: 22, leftMargin: 180, padding: 0.25,
+            fontSize: '0.6rem', countFontSize: '0.55rem'
+        });
     }
 };
 
@@ -413,7 +339,7 @@ const MapView = {
                 App.yearMin = parseInt(slider.value);
                 const tlValue = document.getElementById('tl-value');
                 if (tlValue) {
-                    tlValue.textContent = App.yearMin === 2008 ? 'alle' : App.yearMin;
+                    tlValue.textContent = App.yearMin === CONFIG.YEAR_MIN ? 'alle' : App.yearMin;
                 }
                 App.applyFilters();
             });
@@ -438,7 +364,7 @@ const MapView = {
         App.data.forEach(inst => {
             const meths = typeof inst.methods === 'string' ? JSON.parse(inst.methods) : (inst.methods || []);
             meths.forEach(m => {
-                const label = typeof m === 'object' ? m.label : m;
+                const label = App.mLabel(m);
                 const uri = typeof m === 'object' ? (m.tadirahUri || '') : '';
                 methCounts[label] = (methCounts[label] || 0) + 1;
                 if (uri && !methTaDiRAH[label]) {
@@ -505,20 +431,13 @@ const MapView = {
             const dot = document.createElement('span');
             dot.className = 'filter-dot';
             dot.style.backgroundColor = colorFn(name);
-            dot.style.display = 'inline-block';
-            dot.style.width = '8px';
-            dot.style.height = '8px';
-            dot.style.borderRadius = '50%';
-            dot.style.marginRight = '8px';
-            dot.style.flexShrink = '0';
 
             const label = document.createElement('span');
-            label.className = 'filter-label';
+            label.className = 'filter-item-label';
             label.textContent = name;
-            label.style.flex = '1';
 
             const badge = document.createElement('span');
-            badge.className = 'filter-count';
+            badge.className = 'filter-item-count';
             badge.textContent = count;
 
             item.appendChild(dot);
@@ -557,14 +476,14 @@ const MapView = {
         App.active.meth.clear();
         App.active.country.clear();
         App.searchTerm = '';
-        App.yearMin = 2008;
+        App.yearMin = CONFIG.YEAR_MIN;
 
         // Reset UI
         const sidebarSearch = document.getElementById('sidebar-search');
         if (sidebarSearch) sidebarSearch.value = '';
 
         const slider = document.getElementById('timeline-slider');
-        if (slider) slider.value = '2008';
+        if (slider) slider.value = String(CONFIG.YEAR_MIN);
 
         const tlValue = document.getElementById('tl-value');
         if (tlValue) tlValue.textContent = 'alle';
@@ -579,38 +498,87 @@ const MapView = {
    4. ExplorerView — Sub-nav + charts
    ============================================= */
 const ExplorerView = {
-    activeChart: 'timeline',
-
     init() {
-        document.querySelectorAll('.explorer-tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.explorer-tab').forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                this.activeChart = tab.dataset.chart;
-                this.render();
-            });
-        });
+        // No tab wiring needed — all charts render together
     },
 
     render() {
-        const container = document.getElementById('explorer-chart');
-        if (!container) return;
-        container.innerHTML = '';
-
         const filtered = App.filtered || App.data;
         const full = App.data;
 
-        switch (this.activeChart) {
-            case 'timeline':
-                DHdCharts.renderTo('timeline', container, filtered, full);
-                break;
-            case 'institutions':
-                DHdCharts.renderTo('barchart', container, filtered, full);
-                break;
-            case 'disciplines':
-                DHdCharts.renderTo('heatmap', container, filtered, full);
-                break;
+        const timelineEl = document.getElementById('explorer-timeline');
+        const instEl = document.getElementById('explorer-institutions');
+        const discEl = document.getElementById('explorer-disciplines');
+
+        if (timelineEl) DHdCharts.renderTo('timeline', timelineEl, filtered, full);
+        if (instEl) DHdCharts.renderTo('barchart', instEl, filtered, full);
+        if (discEl) DHdCharts.renderTo('heatmap', discEl, filtered, full);
+
+        // Zenodo topics aggregation
+        const topicsEl = document.getElementById('explorer-topics');
+        if (topicsEl) this.renderZenodoTopics(topicsEl, filtered);
+
+        // Co-authorship network
+        const networkEl = document.getElementById('explorer-network');
+        if (networkEl) this.renderNetwork(networkEl, filtered);
+    },
+
+    renderZenodoTopics(el, data) {
+        // Aggregate topics across all filtered institutions
+        const topicCounts = {};
+        data.forEach(inst => {
+            (inst.zenodoTopics || []).forEach(t => {
+                topicCounts[t.topic] = (topicCounts[t.topic] || 0) + t.count;
+            });
+        });
+        const entries = Object.entries(topicCounts).sort((a, b) => b[1] - a[1]).slice(0, 25);
+        if (entries.length === 0) {
+            el.innerHTML = '<div style="padding:2rem;color:var(--text-tertiary);text-align:center">Keine Zenodo-Topics für die aktuelle Filterauswahl.</div>';
+            return;
         }
+        renderHorizontalBars(null, entries, {
+            colorFn: () => '#3498DB',
+            barH: 22, leftMargin: 180, padding: 0.25,
+            fontSize: '0.6rem', countFontSize: '0.55rem',
+            targetEl: el
+        });
+    },
+
+    renderNetwork(el, data) {
+        el.innerHTML = '';
+        // Collect all collaboration edges involving filtered institutions
+        const filteredNames = new Set(data.map(d => d.name));
+        const edges = [];
+        data.forEach(inst => {
+            (inst.collaborators || []).forEach(c => {
+                if (filteredNames.has(c.institution)) {
+                    const key = [inst.name, c.institution].sort().join('|||');
+                    if (!edges.find(e => e.key === key)) {
+                        edges.push({
+                            key,
+                            label: `${inst.name} ↔ ${c.institution}`,
+                            weight: c.sharedPapers,
+                            topics: c.sharedTopics.map(t => t.topic).join(', ')
+                        });
+                    }
+                }
+            });
+        });
+        edges.sort((a, b) => b.weight - a.weight);
+        const top = edges.slice(0, 20);
+
+        if (top.length === 0) {
+            el.innerHTML = '<div style="padding:2rem;color:var(--text-tertiary);text-align:center">Keine Kooperationen für die aktuelle Filterauswahl.</div>';
+            return;
+        }
+
+        const entries = top.map(e => [e.label, e.weight]);
+        renderHorizontalBars(null, entries, {
+            colorFn: () => '#9B59B6',
+            barH: 22, leftMargin: 280, padding: 0.2,
+            fontSize: '0.55rem', countFontSize: '0.55rem',
+            targetEl: el
+        });
     }
 };
 

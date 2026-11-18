@@ -1,12 +1,16 @@
 # GitHub Pages builds this site from the repository root, so every tracked
 # file is served unless excluded here. Agent instructions and the project's
-# internal knowledge stay in the repository but are not part of the site.
+# internal knowledge stay in the repository but are not part of the site,
+# and so do the raw position list with personal names and the OpenAlex
+# fetch script with its contact address; the app loads only institutions.json.
 # Setting exclude replaces Jekyll's defaults, so they are repeated.
 exclude:
   - CLAUDE.md
   - Journal.md
   - Journal-Promptotyping.md
   - Knowledge/
+  - Data/dh-professorships.json
+  - Data/fetch-openalex.js
   - Gemfile
   - Gemfile.lock
   - node_modules/

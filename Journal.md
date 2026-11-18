@@ -11,6 +11,86 @@ Inhaltliche Entwicklung des Projekts: Entscheidungen, Fortschritt, Daten, Visual
 
 ---
 
+## Offen
+
+Stand 18.11.2026, geschrieben als Übergabe. Dieser Abschnitt ist ohne den Sitzungsverlauf lesbar und wird bei jeder Übergabe als vollständige aktuelle Liste neu geschrieben.
+
+### Richtung
+
+Der Forscher hat am 18.11.2026 die Richtung gesetzt, im Wortlaut:
+
+> „In der DHD-Landschaft müssen wir wirklich ein bisschen experimentell vorgehen und einfach mal ein bisschen Daten aggregieren und Skripte schreiben: dass wir im Repository Datenvisualisierungen machen und von diesen Visualisierungen besser verstehen, welche Daten wir haben, und dann eben das Wissen zurückbringen in das Repository."
+
+Das ist Erkundung der Daten und noch kein Umbau der Anwendung. Über den Zuschnitt des Projekts ist nicht entschieden, die Erkundung soll die Fragen dazu erst entscheidbar machen.
+
+### Erkundungsauftrag, nicht begonnen
+
+Im Repository ist dazu noch nichts angelegt. Geplant und geprüft, aber nicht geschrieben, ist ein erster Durchgang mit einem Skript und drei Ansichten.
+
+- Ein eigener Ordner `exploration/` mit Skripten, die die Daten unter `Data/` aggregieren und profilieren. Abgeleitete Daten liegen in `exploration/derived/`, die Quelldaten bleiben unverändert.
+- Lokale HTML-Ansichten im Repository, jede zu einer Frage an die Daten. Vorgesehen sind zuerst die Beiträge je Jahr und Typ, die Zuordnung der Autorennennungen zu den 52 Institutionen mit der Liste der nicht zugeordneten Einrichtungen, und je Institution der Anteil der Treffer, die nur über eine Teilzeichenkette wie den Stadtnamen zustande kommen.
+- Nach jeder Ansicht geht das Gelernte mit Beleg in `Knowledge/Data.md` und in dieses Journal, Befund und Deutung getrennt.
+- Die Ansichten werden über einen lokalen Server gezeigt. Nach zwei oder drei Bildern wird angehalten, damit der Forscher sie ansieht.
+
+Grenzen des Auftrags:
+
+- `index.html`, `app.js`, `charts.js`, `views.js` und die Build-Pipeline bleiben unberührt, auch die drei Funktionsfehler werden in der Erkundung nicht repariert.
+- `_config.yml` gehört der Sitzung, die die öffentliche Auslieferung bereinigt. `exploration/` muss dort in die Ausschlussregel, bevor der Ordner gepusht wird.
+- Kein neuer Abruf bei Zenodo, OpenAlex oder einem anderen Dienst. Keine Personennamen in abgeleiteten Daten oder Bildern. Einige Affiliationen enthalten E-Mail-Adressen und werden deshalb nicht als Beschriftung ausgegeben.
+- Bibliotheken werden lokal eingebunden, kein CDN. Die geplanten Ansichten kommen ohne Bibliothek aus (HTML und CSS).
+- Es gilt der lockerere Standard des Forschers vom 23.05.2026 für dieses Repository, Commit-Disziplin bleibt.
+
+Zwei Vorarbeiten sind festgehalten, damit sie nicht neu erarbeitet werden müssen. Die Portierung des Namensabgleichs aus `Data/build-lod.js` lässt sich daran prüfen, dass sie für alle 52 Institutionen den Wert `zenodoRecordCount` aus `Data/institutions.json` reproduziert. Die Namensmuster `NAME_MAPPINGS` in `build-lod.js` eignen sich als untere Grenze dafür, ob eine Affiliation die Institution tatsächlich nennt.
+
+### Befunde der lesenden Analyse vom 18.11.2026
+
+Geprüft an der Live-Seite und an den Daten per Code. Die Pipeline selbst wurde nicht ausgeführt.
+
+Drei Funktionsfehler seit Iteration 7, mit gemeinsamer Ursache. `build-lod.js` schreibt kein Feld `id` mehr, Karte und Diagramme suchen danach.
+
+1. Ein Klick auf einen Kartenpunkt öffnet immer das Profil der Universität zu Köln (`app.js`, Klick-Handler, `App.data.find(p => p.id === fId)` mit beiden Seiten `undefined`).
+2. Im Explorer liegen alle Balken der Institutionen auf einer Zeile, und die Disziplinen-Heatmap hat eine Zeile (`charts.js`, `scaleBand` über `d.id`). Auf der Live-Seite gemessen, je ein einziger y-Wert.
+3. Das TaDiRAH-Diagramm der Übersicht zeigt nur „Meta 100" und „Analysis 39" (`views.js`, `renderTaDiRAHDonut` rät die Kategorie aus URI und Label und liest `tadirahCategory` nicht).
+
+Fehler im Namensabgleich (`build-lod.js`, `normalizeName` und `fuzzyMatch`):
+
+- „Technische Universität Berlin" wird zu „berlin" gekürzt und trifft jede Affiliation mit diesem Wort. Von 608 zugeordneten Autorennennungen nennen 22 die TU Berlin, die übrigen gehören vor allem zur Berlin-Brandenburgischen Akademie, zur FU, zur HU und zur Staatsbibliothek.
+- Das Berliner Kooperationscluster (HU und TU 78, TU und FU 67) ist deshalb ein Artefakt. 25 der 156 Kanten und 346 von 855 Kantengewichten hängen an der TU Berlin.
+- Wien, Potsdam und Leipzig sind in kleinerem Maß betroffen. TU Darmstadt und LMU München verlieren fast alle Treffer, weil die Kurzform nicht zur ausgeschriebenen Affiliation passt.
+- 2.745 von 6.890 Autorennennungen treffen keine der 52 Institutionen, darunter Universität Hamburg, Österreichische Akademie der Wissenschaften, Herzog August Bibliothek, Akademie Mainz, Leibniz-Institut für Deutsche Sprache.
+- FU, HU und TU Berlin teilen sich eine Wikidata- und eine ROR-Kennung, Universität und Hochschule Augsburg sowie Universität und FH Potsdam je eine ROR. Ursache ist der OpenAlex-Abgleich über die Stadt.
+- Alle 52 Institutionen tragen `dblpPublicationCount` 500, weil die DBLP-Daten kein Institutionsfeld haben und der Abgleich mit leerer Zeichenkette immer trifft.
+
+Weitere Abweichungen zwischen Dokumenten und Stand:
+
+- Die Themen entstehen aus Wortmustern über Titel. `zenodo-records.json` enthält keine Abstracts und keine Schlagwörter.
+- Die 52 Institutionen stammen allein aus der Stellenliste, die übrigen Quellen reichern sie nur an.
+- `Requirements.md` führt alle User Stories als vollständig. Eine Abnahme durch eine Person ist nirgends festgehalten, `Feedback/` ist leer.
+- 2016 hat im Zenodo-Bestand 5 Einträge, 2021 hat 63. Ob das den Tagungen entspricht, ist ungeprüft.
+
+Öffentliche Auslieferung: Am 18.11.2026 lieferte die Pages-Seite neben `CLAUDE.md`, den Journalen und `Knowledge/` auch zwei Dateien aus, die Stellen-Rohdatei `Data/dh-professorships.json` mit Personennamen bei 116 von 130 Stellen und `Data/fetch-openalex.js` mit einer persönlichen E-Mail-Adresse. Beide Ausschlüsse sind inzwischen in `_config.yml` committet. Ein erneuter Abruf der Seite zur Bestätigung steht aus, und im Repository selbst sind beide Dateien weiterhin öffentlich.
+
+### Sechs Fragen zum Zuschnitt, unentschieden
+
+Sie liegen beim Forscher und werden nicht erneut gestellt, bevor die Erkundung Material dazu geliefert hat. Die Empfehlung der Analyse steht jeweils dabei.
+
+1. Soll das Projekt die DHd-Konferenzbeiträge zur Grundlage nehmen und die Stellenliste zur Nebenschicht machen? Empfehlung ja.
+2. Dürfen Institutionen ohne DH-Professur aufgenommen werden, etwa Akademien, Bibliotheken und die Universität Hamburg? Empfehlung ja.
+3. Soll die Seite bis zur Reparatur als ungeprüfter Stand gekennzeichnet werden und das Kooperationsnetzwerk solange verschwinden? Empfehlung ja.
+4. Soll die Stellen-Rohdatei mit Personennamen aus dem Repository-Stand heraus? Empfehlung ja für den künftigen Stand, nein für ein Umschreiben der Historie.
+5. Soll die Themenzuordnung zunächst ohne LLM bleiben, also Schlagwörter und Muster über Abstracts? Empfehlung ja.
+6. Soll die TaDiRAH-Farbkodierung aus den Denominationen aufgegeben werden? Empfehlung ja.
+
+Offen ist außerdem die Rechtefrage. Die README weist alle Daten als CC BY 4.0 aus, die Nachnutzungsbedingungen der Stellenliste, des Kursregisters und von CLARIN sind ungeprüft. Eine Lizenzdatei fehlt.
+
+### Erster Schritt der nächsten Sitzung
+
+1. `git fetch` und `git status`, dann prüfen, ob `exploration/` in der Ausschlussregel von `_config.yml` steht. Wenn nicht, die zuständige Sitzung oder den Forscher darum bitten und bis dahin nur lokal committen.
+2. Das Erkundungsskript in `exploration/` schreiben, mit der oben genannten Prüfung gegen `zenodoRecordCount`, und die abgeleiteten Daten erzeugen.
+3. Die drei Ansichten bauen, im Browser ansehen, über einen lokalen Server zeigen und anhalten.
+
+---
+
 ## 2026-03-24 — Projektstart
 
 ### Ideation
@@ -431,3 +511,14 @@ Tab-Navigation entfernt → 5 Sektionen untereinander (scrollbar):
 4. DBLP-Matching über Autor-Affiliationen statt Venue-Matching
 5. Responsive Design / Mobile
 6. SPARQL-Endpoint oder LOD-Browser für JSON-LD
+
+---
+
+## 2026-11-18 — Lesende Analyse und Übergabe
+
+- Auslöser: Auftrag, das Projekt durchzuplanen, danach die Richtungsangabe des Forschers zur experimentellen Erkundung der Daten, am selben Abend der Auftrag, alle Sitzungen kontrolliert zu beenden.
+- Gefunden: drei Funktionsfehler seit Iteration 7, der Fehler im Namensabgleich mit seinem Berliner Artefakt, doppelte Kennungen, der konstante DBLP-Wert. Einzelheiten stehen unter „Offen".
+- Entschieden: nichts zum Zuschnitt. Die Erkundung ist beauftragt und nicht begonnen.
+- Geändert: nur dieses Journal. Anwendung, Pipeline, Daten und `_config.yml` sind unberührt, ein Ordner `exploration/` existiert noch nicht.
+- Beleg: Messung an der Live-Seite am 18.11.2026 (kein Feld `id` in 52 Datensätzen, ein y-Wert für alle Balken und alle Heatmap-Zellen), Datenprofil per Code über `Data/zenodo-records.json`, `Data/institutions.json` und `Data/collaborations.json`. Die Profilskripte lagen im Scratchpad der Sitzung und sind nicht versioniert, die Erkundung schreibt sie neu.
+- Nicht ausgeführt: die Build-Pipeline, die Dichteprüfung für Oberflächen (Playwright war nicht auffindbar), ein Test der Filter und der mobilen Ansicht.

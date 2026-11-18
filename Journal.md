@@ -68,7 +68,7 @@ Weitere Abweichungen zwischen Dokumenten und Stand:
 - `Requirements.md` führt alle User Stories als vollständig. Eine Abnahme durch eine Person ist nirgends festgehalten, `Feedback/` ist leer.
 - 2016 hat im Zenodo-Bestand 5 Einträge, 2021 hat 63. Ob das den Tagungen entspricht, ist ungeprüft.
 
-Öffentliche Auslieferung: Am 18.11.2026 lieferte die Pages-Seite neben `CLAUDE.md`, den Journalen und `Knowledge/` auch zwei Dateien aus, die Stellen-Rohdatei `Data/dh-professorships.json` mit Personennamen bei 116 von 130 Stellen und `Data/fetch-openalex.js` mit einer persönlichen E-Mail-Adresse. Beide Ausschlüsse sind inzwischen in `_config.yml` committet. Ein erneuter Abruf der Seite zur Bestätigung steht aus, und im Repository selbst sind beide Dateien weiterhin öffentlich.
+Öffentliche Auslieferung: Am 18.11.2026 lieferte die Pages-Seite neben `CLAUDE.md`, den Journalen und `Knowledge/` auch zwei Dateien aus, die Stellen-Rohdatei `Data/dh-professorships.json` mit Personennamen bei 116 von 130 Stellen und `Data/fetch-openalex.js` mit einer persönlichen E-Mail-Adresse. Beide Ausschlüsse sind inzwischen in `_config.yml` committet. Ein erneuter Abruf am späten Abend des 18.11.2026 lieferte für beide Dateien und für das Journal den Status 404. Im Repository selbst sind beide Dateien weiterhin öffentlich.
 
 ### Sechs Fragen zum Zuschnitt, unentschieden
 
